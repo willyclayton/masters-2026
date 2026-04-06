@@ -1,0 +1,1262 @@
+{
+  "lastUpdated": "2026-04-06T12:00:00Z",
+  "consensus": {
+    "rankings": [
+      {
+        "name": "Scottie Scheffler",
+        "winPct": 16.4,
+        "top5Pct": 46.7,
+        "top10Pct": 63.0,
+        "makeCutPct": 93.5,
+        "rationale": "The two-time green jacket holder is the most complete player in the world, and Augusta National rewards his elite ball-striking and iron play. His strokes gained profile is tailor-made for this cathedral in the pines.",
+        "simulatorRank": 1,
+        "scoutRank": 2,
+        "analystRank": 1
+      },
+      {
+        "name": "Rory McIlroy",
+        "winPct": 13.0,
+        "top5Pct": 41.4,
+        "top10Pct": 58.0,
+        "makeCutPct": 92.1,
+        "rationale": "The defending champion finally has the monkey off his back. Rory returns to Augusta with a career Grand Slam, supreme confidence, and the form of a man who knows every blade of grass on this course.",
+        "simulatorRank": 3,
+        "scoutRank": 1,
+        "analystRank": 2
+      },
+      {
+        "name": "Xander Schauffele",
+        "winPct": 10.0,
+        "top5Pct": 36.7,
+        "top10Pct": 53.3,
+        "makeCutPct": 90.8,
+        "rationale": "A perennial Augusta contender with two major titles now under his belt. Schauffele's consistency at the top of leaderboards is unmatched, and his course history here is littered with top-10 finishes.",
+        "simulatorRank": 2,
+        "scoutRank": 4,
+        "analystRank": 3
+      },
+      {
+        "name": "Ludvig Åberg",
+        "winPct": 7.4,
+        "top5Pct": 28.5,
+        "top10Pct": 42.9,
+        "makeCutPct": 86.5,
+        "rationale": "The Swedish phenom has the length, the iron play, and the fearlessness to overpower Augusta. His T-2 in 2024 showed he has no fear of the big stage, and he has only gotten better since.",
+        "simulatorRank": 4,
+        "scoutRank": 7,
+        "analystRank": 4
+      },
+      {
+        "name": "Collin Morikawa",
+        "winPct": 6.7,
+        "top5Pct": 26.8,
+        "top10Pct": 41.4,
+        "makeCutPct": 86.4,
+        "rationale": "The best iron player on the planet is peaking at the right time. Morikawa's precision approach game is perfectly suited to Augusta's demanding greens, and his ball-striking has been otherworldly this spring.",
+        "simulatorRank": 5,
+        "scoutRank": 6,
+        "analystRank": 5
+      },
+      {
+        "name": "Jon Rahm",
+        "winPct": 5.8,
+        "top5Pct": 23.9,
+        "top10Pct": 37.7,
+        "makeCutPct": 84.7,
+        "rationale": "The 2023 Masters champion knows how to win here, and his Augusta pedigree is among the best in the field. The LIV defection cost him reps, but Rahm's talent and course knowledge are undeniable.",
+        "simulatorRank": 8,
+        "scoutRank": 3,
+        "analystRank": 6
+      },
+      {
+        "name": "Bryson DeChambeau",
+        "winPct": 4.0,
+        "top5Pct": 18.3,
+        "top10Pct": 31.0,
+        "makeCutPct": 80.5,
+        "rationale": "The bomber is a different animal at Augusta since retooling his game. DeChambeau has the length to eat up the par 5s and the short game to handle the treacherous greens around Amen Corner.",
+        "simulatorRank": 6,
+        "scoutRank": 9,
+        "analystRank": 7
+      },
+      {
+        "name": "Viktor Hovland",
+        "winPct": 3.2,
+        "top5Pct": 16.2,
+        "top10Pct": 28.5,
+        "makeCutPct": 79.1,
+        "rationale": "Hovland's short game improvements have removed the one weakness that held him back at Augusta. His ball-striking has always been elite, and now he can actually get up and down around these greens.",
+        "simulatorRank": 7,
+        "scoutRank": 10,
+        "analystRank": 8
+      },
+      {
+        "name": "Hideki Matsuyama",
+        "winPct": 3.2,
+        "top5Pct": 15.6,
+        "top10Pct": 27.1,
+        "makeCutPct": 80.6,
+        "rationale": "The 2021 champion is one of the finest iron players to ever walk these fairways. Matsuyama consistently finds another gear at Augusta, and his experience through Amen Corner is invaluable.",
+        "simulatorRank": 10,
+        "scoutRank": 5,
+        "analystRank": 10
+      },
+      {
+        "name": "Patrick Cantlay",
+        "winPct": 2.6,
+        "top5Pct": 13.8,
+        "top10Pct": 25.1,
+        "makeCutPct": 77.7,
+        "rationale": "Cantlay's metronomic consistency and elite putting make him a threat every time he tees it up at Augusta. He grinds out pars when others make bogeys and capitalizes on the par 5s.",
+        "simulatorRank": 9,
+        "scoutRank": 12,
+        "analystRank": 9
+      },
+      {
+        "name": "Brooks Koepka",
+        "winPct": 2.4,
+        "top5Pct": 12.7,
+        "top10Pct": 23.5,
+        "makeCutPct": 76.6,
+        "rationale": "The big-game hunter elevates in major championships like few others. Koepka's physicality and mental fortitude suit Augusta, though his LIV schedule leaves question marks about competitive sharpness.",
+        "simulatorRank": 13,
+        "scoutRank": 8,
+        "analystRank": 11
+      },
+      {
+        "name": "Cameron Smith",
+        "winPct": 1.9,
+        "top5Pct": 11.4,
+        "top10Pct": 21.2,
+        "makeCutPct": 74.6,
+        "rationale": "Few players in the world have a better short game, and at Augusta, that is currency. Smith's creativity around the greens and his course knowledge from his 2022 contention make him a live longshot.",
+        "simulatorRank": 14,
+        "scoutRank": 11,
+        "analystRank": 12
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "winPct": 1.8,
+        "top5Pct": 10.7,
+        "top10Pct": 20.0,
+        "makeCutPct": 74.4,
+        "rationale": "Fleetwood's ball flight is perfectly suited to the shotmaking Augusta demands. His consistent major contention and improved putting make him a dark horse with serious credentials.",
+        "simulatorRank": 11,
+        "scoutRank": 15,
+        "analystRank": 13
+      },
+      {
+        "name": "Wyndham Clark",
+        "winPct": 1.7,
+        "top5Pct": 9.9,
+        "top10Pct": 19.2,
+        "makeCutPct": 73.4,
+        "rationale": "Clark's length off the tee and improving iron play make him a serious threat. He has the game to overpower Augusta's par 5s, and his confidence as a major champion is evident.",
+        "simulatorRank": 12,
+        "scoutRank": 16,
+        "analystRank": 14
+      },
+      {
+        "name": "Sahith Theegala",
+        "winPct": 1.5,
+        "top5Pct": 9.1,
+        "top10Pct": 17.5,
+        "makeCutPct": 71.5,
+        "rationale": "Theegala's aggressive style and elite ball-striking make him a fun watch at Augusta. He has the talent to go low, though his occasional wayward drives could spell trouble in the Georgia pines.",
+        "simulatorRank": 15,
+        "scoutRank": 17,
+        "analystRank": 15
+      },
+      {
+        "name": "Justin Rose",
+        "winPct": 1.5,
+        "top5Pct": 8.6,
+        "top10Pct": 16.9,
+        "makeCutPct": 72.5,
+        "rationale": "The 2025 runner-up has more top-5 finishes at Augusta than almost anyone in the field. Rose's pedigree at this course is extraordinary, and last year's playoff loss will fuel his fire.",
+        "simulatorRank": 20,
+        "scoutRank": 13,
+        "analystRank": 16
+      },
+      {
+        "name": "Shane Lowry",
+        "winPct": 1.3,
+        "top5Pct": 7.8,
+        "top10Pct": 15.5,
+        "makeCutPct": 70.7,
+        "rationale": "Lowry's short game wizardry and major championship pedigree make him a legitimate contender. His ability to grind in tough conditions and his touch around the greens translate beautifully to Augusta.",
+        "simulatorRank": 16,
+        "scoutRank": 18,
+        "analystRank": 17
+      },
+      {
+        "name": "Jordan Spieth",
+        "winPct": 1.2,
+        "top5Pct": 7.8,
+        "top10Pct": 15.4,
+        "makeCutPct": 70.2,
+        "rationale": "Nobody knows Augusta's greens like Spieth. The 2015 champion has had his struggles, but he consistently finds magic at this course, and a return to form here would surprise no one.",
+        "simulatorRank": 21,
+        "scoutRank": 14,
+        "analystRank": 18
+      },
+      {
+        "name": "Joaquin Niemann",
+        "winPct": 1.1,
+        "top5Pct": 6.7,
+        "top10Pct": 13.7,
+        "makeCutPct": 68.3,
+        "rationale": "Niemann's ball-striking is world-class, and his aggressive style suits the par 5s. The Chilean has the raw talent to contend, though limited Augusta reps are a concern.",
+        "simulatorRank": 17,
+        "scoutRank": 20,
+        "analystRank": 19
+      },
+      {
+        "name": "Tony Finau",
+        "winPct": 1.0,
+        "top5Pct": 6.2,
+        "top10Pct": 13.0,
+        "makeCutPct": 68.0,
+        "rationale": "Finau's length and solid all-around game give him the tools to contend. His Augusta history is a mixed bag, but when he is on, few can match his firepower through the back nine.",
+        "simulatorRank": 18,
+        "scoutRank": 19,
+        "analystRank": 20
+      },
+      {
+        "name": "Min Woo Lee",
+        "winPct": 0.9,
+        "top5Pct": 5.5,
+        "top10Pct": 11.6,
+        "makeCutPct": 65.9,
+        "rationale": "The athletic Australian has serious game and the swagger to match. Lee's power and creativity could unlock Augusta, though his experience deficit at the Masters is a legitimate concern.",
+        "simulatorRank": 19,
+        "scoutRank": 22,
+        "analystRank": 21
+      },
+      {
+        "name": "Robert MacIntyre",
+        "winPct": 0.8,
+        "top5Pct": 5.0,
+        "top10Pct": 10.8,
+        "makeCutPct": 64.2,
+        "rationale": "The fiery Scot has the shotmaking chops and competitive fire to handle Augusta. MacIntyre's left-to-right ball flight is a real asset on several key holes along the back nine.",
+        "simulatorRank": 22,
+        "scoutRank": 21,
+        "analystRank": 22
+      },
+      {
+        "name": "Sungjae Im",
+        "winPct": 0.7,
+        "top5Pct": 4.5,
+        "top10Pct": 9.9,
+        "makeCutPct": 64.8,
+        "rationale": "Im's tireless work ethic and consistent ball-striking have yielded several strong Augusta finishes. He knows the course well and rarely beats himself with mistakes.",
+        "simulatorRank": 23,
+        "scoutRank": 23,
+        "analystRank": 23
+      },
+      {
+        "name": "Dustin Johnson",
+        "winPct": 0.6,
+        "top5Pct": 3.7,
+        "top10Pct": 8.7,
+        "makeCutPct": 61.4,
+        "rationale": "The 2020 champion's talent is undeniable, but the LIV schedule and age have dulled his edge. Still, DJ's length and Augusta knowledge make him dangerous when the azaleas are in bloom.",
+        "simulatorRank": 26,
+        "scoutRank": 24,
+        "analystRank": 24
+      },
+      {
+        "name": "Adam Scott",
+        "winPct": 0.5,
+        "top5Pct": 3.3,
+        "top10Pct": 8.1,
+        "makeCutPct": 60.1,
+        "rationale": "The 2013 champion continues to defy age with his silky swing and deep Augusta knowledge. Scott's experience through Amen Corner is worth its weight in green jackets.",
+        "simulatorRank": 27,
+        "scoutRank": 25,
+        "analystRank": 25
+      },
+      {
+        "name": "Russell Henley",
+        "winPct": 0.5,
+        "top5Pct": 3.2,
+        "top10Pct": 7.7,
+        "makeCutPct": 60.1,
+        "rationale": "Henley's iron play ranks among the best on Tour, and his steady approach suits Augusta's demand for precision. He is the kind of under-the-radar pick that sharp bettors love.",
+        "simulatorRank": 24,
+        "scoutRank": 27,
+        "analystRank": 26
+      },
+      {
+        "name": "Cameron Young",
+        "winPct": 0.4,
+        "top5Pct": 2.9,
+        "top10Pct": 7.0,
+        "makeCutPct": 58.6,
+        "rationale": "Young's prodigious length and improved short game make him an intriguing outsider. He can reach the par 5s in two with ease, giving him birdie looks others simply do not get.",
+        "simulatorRank": 25,
+        "scoutRank": 28,
+        "analystRank": 27
+      },
+      {
+        "name": "Keegan Bradley",
+        "winPct": 0.4,
+        "top5Pct": 2.5,
+        "top10Pct": 6.4,
+        "makeCutPct": 57.6,
+        "rationale": "The Ryder Cup captain's competitive fire and major championship experience cannot be discounted. Bradley's game has quietly been in excellent form heading into Augusta week.",
+        "simulatorRank": 28,
+        "scoutRank": 26,
+        "analystRank": 28
+      },
+      {
+        "name": "Corey Conners",
+        "winPct": 0.3,
+        "top5Pct": 2.1,
+        "top10Pct": 5.7,
+        "makeCutPct": 56.6,
+        "rationale": "The Canadian ball-striking machine consistently produces strong results at Augusta. Conners will not beat himself, and his precision off the tee keeps him in play on every hole.",
+        "simulatorRank": 29,
+        "scoutRank": 29,
+        "analystRank": 29
+      },
+      {
+        "name": "Justin Thomas",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.2,
+        "makeCutPct": 54.2,
+        "rationale": "JT's talent has never been in question, but his form has been inconsistent. When he is on, he has the complete game to contend at Augusta, and he has flashed brilliance here before.",
+        "simulatorRank": 30,
+        "scoutRank": 30,
+        "analystRank": 30
+      }
+    ]
+  },
+  "simulator": {
+    "modelName": "The Simulator",
+    "emoji": "\ud83c\udfb2",
+    "description": "Monte Carlo simulation engine running 10,000 tournament simulations",
+    "methodology": "The Simulator runs 10,000 full tournament simulations using a player's strokes gained profile (off-the-tee, approach, around-the-green, putting) mapped against Augusta National's hole-by-hole demands. Historical course fit, driving distance, proximity to hole on par 5s, and scoring variance are weighted to produce probabilistic outcomes for each player across all four rounds.",
+    "rankings": [
+      {
+        "name": "Scottie Scheffler",
+        "winPct": 18.5,
+        "top5Pct": 50.0,
+        "top10Pct": 66.0,
+        "makeCutPct": 95.0
+      },
+      {
+        "name": "Xander Schauffele",
+        "winPct": 11.5,
+        "top5Pct": 40.0,
+        "top10Pct": 56.0,
+        "makeCutPct": 92.0
+      },
+      {
+        "name": "Rory McIlroy",
+        "winPct": 10.0,
+        "top5Pct": 36.0,
+        "top10Pct": 52.0,
+        "makeCutPct": 90.0
+      },
+      {
+        "name": "Ludvig Åberg",
+        "winPct": 8.0,
+        "top5Pct": 30.0,
+        "top10Pct": 45.0,
+        "makeCutPct": 88.0
+      },
+      {
+        "name": "Collin Morikawa",
+        "winPct": 7.0,
+        "top5Pct": 28.0,
+        "top10Pct": 42.0,
+        "makeCutPct": 87.0
+      },
+      {
+        "name": "Bryson DeChambeau",
+        "winPct": 5.0,
+        "top5Pct": 21.0,
+        "top10Pct": 34.0,
+        "makeCutPct": 82.0
+      },
+      {
+        "name": "Viktor Hovland",
+        "winPct": 4.0,
+        "top5Pct": 18.0,
+        "top10Pct": 30.0,
+        "makeCutPct": 80.0
+      },
+      {
+        "name": "Jon Rahm",
+        "winPct": 3.5,
+        "top5Pct": 17.0,
+        "top10Pct": 29.0,
+        "makeCutPct": 79.0
+      },
+      {
+        "name": "Patrick Cantlay",
+        "winPct": 3.0,
+        "top5Pct": 15.0,
+        "top10Pct": 26.0,
+        "makeCutPct": 78.0
+      },
+      {
+        "name": "Hideki Matsuyama",
+        "winPct": 2.5,
+        "top5Pct": 12.0,
+        "top10Pct": 22.0,
+        "makeCutPct": 77.0
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "winPct": 2.2,
+        "top5Pct": 11.0,
+        "top10Pct": 20.0,
+        "makeCutPct": 75.0
+      },
+      {
+        "name": "Wyndham Clark",
+        "winPct": 2.0,
+        "top5Pct": 10.5,
+        "top10Pct": 19.5,
+        "makeCutPct": 74.0
+      },
+      {
+        "name": "Brooks Koepka",
+        "winPct": 1.8,
+        "top5Pct": 10.0,
+        "top10Pct": 19.0,
+        "makeCutPct": 73.0
+      },
+      {
+        "name": "Cameron Smith",
+        "winPct": 1.6,
+        "top5Pct": 9.0,
+        "top10Pct": 17.0,
+        "makeCutPct": 71.0
+      },
+      {
+        "name": "Sahith Theegala",
+        "winPct": 1.5,
+        "top5Pct": 8.5,
+        "top10Pct": 16.0,
+        "makeCutPct": 70.0
+      },
+      {
+        "name": "Shane Lowry",
+        "winPct": 1.4,
+        "top5Pct": 8.0,
+        "top10Pct": 15.5,
+        "makeCutPct": 71.0
+      },
+      {
+        "name": "Joaquin Niemann",
+        "winPct": 1.2,
+        "top5Pct": 7.0,
+        "top10Pct": 14.0,
+        "makeCutPct": 68.0
+      },
+      {
+        "name": "Tony Finau",
+        "winPct": 1.1,
+        "top5Pct": 6.5,
+        "top10Pct": 13.0,
+        "makeCutPct": 68.0
+      },
+      {
+        "name": "Min Woo Lee",
+        "winPct": 1.0,
+        "top5Pct": 5.5,
+        "top10Pct": 11.0,
+        "makeCutPct": 65.0
+      },
+      {
+        "name": "Justin Rose",
+        "winPct": 0.8,
+        "top5Pct": 5.0,
+        "top10Pct": 10.0,
+        "makeCutPct": 65.0
+      },
+      {
+        "name": "Jordan Spieth",
+        "winPct": 0.7,
+        "top5Pct": 4.5,
+        "top10Pct": 10.0,
+        "makeCutPct": 63.0
+      },
+      {
+        "name": "Robert MacIntyre",
+        "winPct": 0.7,
+        "top5Pct": 4.5,
+        "top10Pct": 10.0,
+        "makeCutPct": 63.0
+      },
+      {
+        "name": "Sungjae Im",
+        "winPct": 0.6,
+        "top5Pct": 4.0,
+        "top10Pct": 9.0,
+        "makeCutPct": 63.0
+      },
+      {
+        "name": "Russell Henley",
+        "winPct": 0.5,
+        "top5Pct": 3.5,
+        "top10Pct": 8.0,
+        "makeCutPct": 61.0
+      },
+      {
+        "name": "Cameron Young",
+        "winPct": 0.5,
+        "top5Pct": 3.0,
+        "top10Pct": 7.0,
+        "makeCutPct": 58.0
+      },
+      {
+        "name": "Dustin Johnson",
+        "winPct": 0.4,
+        "top5Pct": 2.5,
+        "top10Pct": 6.0,
+        "makeCutPct": 56.0
+      },
+      {
+        "name": "Adam Scott",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.5,
+        "makeCutPct": 55.0
+      },
+      {
+        "name": "Keegan Bradley",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.0,
+        "makeCutPct": 54.0
+      },
+      {
+        "name": "Corey Conners",
+        "winPct": 0.2,
+        "top5Pct": 1.5,
+        "top10Pct": 4.5,
+        "makeCutPct": 53.0
+      },
+      {
+        "name": "Justin Thomas",
+        "winPct": 0.2,
+        "top5Pct": 1.5,
+        "top10Pct": 4.0,
+        "makeCutPct": 50.0
+      }
+    ]
+  },
+  "scout": {
+    "modelName": "The Scout",
+    "emoji": "\ud83d\udd0d",
+    "description": "Weighted intangibles scorer evaluating qualitative factors",
+    "methodology": "The Scout assigns weighted scores across five key intangible dimensions: recent Momentum (25%), Augusta Experience (25%), Major Clutch factor (20%), Weather Fit for expected conditions (15%), and raw Intangibles including confidence, narrative arc, and mental state (15%). Each dimension is scored 0-100 and combined into a weighted total that drives probabilistic rankings.",
+    "rankings": [
+      {
+        "name": "Rory McIlroy",
+        "winPct": 17.0,
+        "top5Pct": 48.0,
+        "top10Pct": 65.0,
+        "makeCutPct": 95.0,
+        "scores": {
+          "momentum": 95,
+          "augustaExperience": 90,
+          "majorClutch": 92,
+          "weatherFit": 80,
+          "intangibles": 98,
+          "total": 91.4
+        }
+      },
+      {
+        "name": "Scottie Scheffler",
+        "winPct": 14.0,
+        "top5Pct": 44.0,
+        "top10Pct": 60.0,
+        "makeCutPct": 93.0,
+        "scores": {
+          "momentum": 90,
+          "augustaExperience": 95,
+          "majorClutch": 88,
+          "weatherFit": 82,
+          "intangibles": 85,
+          "total": 88.9
+        }
+      },
+      {
+        "name": "Jon Rahm",
+        "winPct": 9.0,
+        "top5Pct": 33.0,
+        "top10Pct": 48.0,
+        "makeCutPct": 90.0,
+        "scores": {
+          "momentum": 72,
+          "augustaExperience": 92,
+          "majorClutch": 90,
+          "weatherFit": 78,
+          "intangibles": 82,
+          "total": 83.0
+        }
+      },
+      {
+        "name": "Xander Schauffele",
+        "winPct": 8.0,
+        "top5Pct": 32.0,
+        "top10Pct": 48.0,
+        "makeCutPct": 89.0,
+        "scores": {
+          "momentum": 85,
+          "augustaExperience": 82,
+          "majorClutch": 80,
+          "weatherFit": 78,
+          "intangibles": 80,
+          "total": 81.5
+        }
+      },
+      {
+        "name": "Hideki Matsuyama",
+        "winPct": 5.0,
+        "top5Pct": 22.0,
+        "top10Pct": 35.0,
+        "makeCutPct": 86.0,
+        "scores": {
+          "momentum": 75,
+          "augustaExperience": 95,
+          "majorClutch": 82,
+          "weatherFit": 75,
+          "intangibles": 78,
+          "total": 81.9
+        }
+      },
+      {
+        "name": "Collin Morikawa",
+        "winPct": 6.0,
+        "top5Pct": 25.0,
+        "top10Pct": 40.0,
+        "makeCutPct": 86.0,
+        "scores": {
+          "momentum": 82,
+          "augustaExperience": 70,
+          "majorClutch": 80,
+          "weatherFit": 76,
+          "intangibles": 78,
+          "total": 77.1
+        }
+      },
+      {
+        "name": "Ludvig Åberg",
+        "winPct": 6.0,
+        "top5Pct": 25.0,
+        "top10Pct": 38.0,
+        "makeCutPct": 84.0,
+        "scores": {
+          "momentum": 88,
+          "augustaExperience": 55,
+          "majorClutch": 72,
+          "weatherFit": 80,
+          "intangibles": 85,
+          "total": 74.9
+        }
+      },
+      {
+        "name": "Brooks Koepka",
+        "winPct": 3.5,
+        "top5Pct": 17.0,
+        "top10Pct": 30.0,
+        "makeCutPct": 82.0,
+        "scores": {
+          "momentum": 65,
+          "augustaExperience": 80,
+          "majorClutch": 92,
+          "weatherFit": 72,
+          "intangibles": 80,
+          "total": 77.5
+        }
+      },
+      {
+        "name": "Bryson DeChambeau",
+        "winPct": 3.0,
+        "top5Pct": 16.0,
+        "top10Pct": 28.0,
+        "makeCutPct": 80.0,
+        "scores": {
+          "momentum": 78,
+          "augustaExperience": 65,
+          "majorClutch": 75,
+          "weatherFit": 70,
+          "intangibles": 82,
+          "total": 73.5
+        }
+      },
+      {
+        "name": "Viktor Hovland",
+        "winPct": 2.5,
+        "top5Pct": 14.0,
+        "top10Pct": 26.0,
+        "makeCutPct": 78.0,
+        "scores": {
+          "momentum": 72,
+          "augustaExperience": 68,
+          "majorClutch": 70,
+          "weatherFit": 74,
+          "intangibles": 72,
+          "total": 70.9
+        }
+      },
+      {
+        "name": "Cameron Smith",
+        "winPct": 2.5,
+        "top5Pct": 14.0,
+        "top10Pct": 26.0,
+        "makeCutPct": 78.0,
+        "scores": {
+          "momentum": 60,
+          "augustaExperience": 80,
+          "majorClutch": 78,
+          "weatherFit": 68,
+          "intangibles": 75,
+          "total": 72.0
+        }
+      },
+      {
+        "name": "Patrick Cantlay",
+        "winPct": 2.0,
+        "top5Pct": 12.0,
+        "top10Pct": 24.0,
+        "makeCutPct": 77.0,
+        "scores": {
+          "momentum": 70,
+          "augustaExperience": 72,
+          "majorClutch": 68,
+          "weatherFit": 72,
+          "intangibles": 68,
+          "total": 70.1
+        }
+      },
+      {
+        "name": "Justin Rose",
+        "winPct": 2.5,
+        "top5Pct": 13.0,
+        "top10Pct": 25.0,
+        "makeCutPct": 80.0,
+        "scores": {
+          "momentum": 80,
+          "augustaExperience": 92,
+          "majorClutch": 75,
+          "weatherFit": 72,
+          "intangibles": 82,
+          "total": 81.1
+        }
+      },
+      {
+        "name": "Jordan Spieth",
+        "winPct": 2.0,
+        "top5Pct": 12.0,
+        "top10Pct": 23.0,
+        "makeCutPct": 78.0,
+        "scores": {
+          "momentum": 55,
+          "augustaExperience": 95,
+          "majorClutch": 85,
+          "weatherFit": 70,
+          "intangibles": 80,
+          "total": 77.0
+        }
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "winPct": 1.5,
+        "top5Pct": 10.0,
+        "top10Pct": 19.0,
+        "makeCutPct": 73.0,
+        "scores": {
+          "momentum": 72,
+          "augustaExperience": 68,
+          "majorClutch": 65,
+          "weatherFit": 78,
+          "intangibles": 70,
+          "total": 70.2
+        }
+      },
+      {
+        "name": "Wyndham Clark",
+        "winPct": 1.5,
+        "top5Pct": 9.0,
+        "top10Pct": 18.0,
+        "makeCutPct": 72.0,
+        "scores": {
+          "momentum": 75,
+          "augustaExperience": 50,
+          "majorClutch": 70,
+          "weatherFit": 72,
+          "intangibles": 72,
+          "total": 66.8
+        }
+      },
+      {
+        "name": "Sahith Theegala",
+        "winPct": 1.5,
+        "top5Pct": 9.0,
+        "top10Pct": 18.0,
+        "makeCutPct": 72.0,
+        "scores": {
+          "momentum": 80,
+          "augustaExperience": 45,
+          "majorClutch": 60,
+          "weatherFit": 74,
+          "intangibles": 75,
+          "total": 65.6
+        }
+      },
+      {
+        "name": "Shane Lowry",
+        "winPct": 1.2,
+        "top5Pct": 8.0,
+        "top10Pct": 16.0,
+        "makeCutPct": 71.0,
+        "scores": {
+          "momentum": 68,
+          "augustaExperience": 65,
+          "majorClutch": 72,
+          "weatherFit": 80,
+          "intangibles": 70,
+          "total": 70.2
+        }
+      },
+      {
+        "name": "Tony Finau",
+        "winPct": 1.0,
+        "top5Pct": 6.0,
+        "top10Pct": 13.0,
+        "makeCutPct": 68.0,
+        "scores": {
+          "momentum": 65,
+          "augustaExperience": 65,
+          "majorClutch": 55,
+          "weatherFit": 70,
+          "intangibles": 65,
+          "total": 63.8
+        }
+      },
+      {
+        "name": "Joaquin Niemann",
+        "winPct": 1.0,
+        "top5Pct": 6.0,
+        "top10Pct": 13.0,
+        "makeCutPct": 68.0,
+        "scores": {
+          "momentum": 72,
+          "augustaExperience": 48,
+          "majorClutch": 58,
+          "weatherFit": 68,
+          "intangibles": 70,
+          "total": 62.3
+        }
+      },
+      {
+        "name": "Robert MacIntyre",
+        "winPct": 0.9,
+        "top5Pct": 5.5,
+        "top10Pct": 11.5,
+        "makeCutPct": 65.0,
+        "scores": {
+          "momentum": 75,
+          "augustaExperience": 42,
+          "majorClutch": 62,
+          "weatherFit": 78,
+          "intangibles": 72,
+          "total": 64.1
+        }
+      },
+      {
+        "name": "Min Woo Lee",
+        "winPct": 0.8,
+        "top5Pct": 5.5,
+        "top10Pct": 12.0,
+        "makeCutPct": 66.0,
+        "scores": {
+          "momentum": 70,
+          "augustaExperience": 40,
+          "majorClutch": 55,
+          "weatherFit": 72,
+          "intangibles": 74,
+          "total": 60.4
+        }
+      },
+      {
+        "name": "Sungjae Im",
+        "winPct": 0.8,
+        "top5Pct": 5.0,
+        "top10Pct": 11.0,
+        "makeCutPct": 66.0,
+        "scores": {
+          "momentum": 60,
+          "augustaExperience": 72,
+          "majorClutch": 58,
+          "weatherFit": 68,
+          "intangibles": 60,
+          "total": 63.8
+        }
+      },
+      {
+        "name": "Dustin Johnson",
+        "winPct": 0.8,
+        "top5Pct": 5.0,
+        "top10Pct": 11.0,
+        "makeCutPct": 65.0,
+        "scores": {
+          "momentum": 45,
+          "augustaExperience": 92,
+          "majorClutch": 78,
+          "weatherFit": 65,
+          "intangibles": 58,
+          "total": 68.3
+        }
+      },
+      {
+        "name": "Adam Scott",
+        "winPct": 0.7,
+        "top5Pct": 4.5,
+        "top10Pct": 10.0,
+        "makeCutPct": 62.0,
+        "scores": {
+          "momentum": 50,
+          "augustaExperience": 92,
+          "majorClutch": 72,
+          "weatherFit": 68,
+          "intangibles": 65,
+          "total": 69.8
+        }
+      },
+      {
+        "name": "Keegan Bradley",
+        "winPct": 0.5,
+        "top5Pct": 3.0,
+        "top10Pct": 8.0,
+        "makeCutPct": 60.0,
+        "scores": {
+          "momentum": 68,
+          "augustaExperience": 60,
+          "majorClutch": 65,
+          "weatherFit": 65,
+          "intangibles": 72,
+          "total": 65.5
+        }
+      },
+      {
+        "name": "Russell Henley",
+        "winPct": 0.5,
+        "top5Pct": 3.0,
+        "top10Pct": 7.5,
+        "makeCutPct": 59.0,
+        "scores": {
+          "momentum": 65,
+          "augustaExperience": 55,
+          "majorClutch": 52,
+          "weatherFit": 70,
+          "intangibles": 60,
+          "total": 59.9
+        }
+      },
+      {
+        "name": "Cameron Young",
+        "winPct": 0.3,
+        "top5Pct": 2.5,
+        "top10Pct": 6.5,
+        "makeCutPct": 58.0,
+        "scores": {
+          "momentum": 62,
+          "augustaExperience": 42,
+          "majorClutch": 48,
+          "weatherFit": 68,
+          "intangibles": 65,
+          "total": 55.5
+        }
+      },
+      {
+        "name": "Corey Conners",
+        "winPct": 0.3,
+        "top5Pct": 2.5,
+        "top10Pct": 6.5,
+        "makeCutPct": 58.0,
+        "scores": {
+          "momentum": 58,
+          "augustaExperience": 60,
+          "majorClutch": 50,
+          "weatherFit": 68,
+          "intangibles": 55,
+          "total": 58.0
+        }
+      },
+      {
+        "name": "Justin Thomas",
+        "winPct": 0.3,
+        "top5Pct": 2.5,
+        "top10Pct": 6.5,
+        "makeCutPct": 56.0,
+        "scores": {
+          "momentum": 48,
+          "augustaExperience": 72,
+          "majorClutch": 70,
+          "weatherFit": 65,
+          "intangibles": 55,
+          "total": 62.0
+        }
+      }
+    ]
+  },
+  "analyst": {
+    "modelName": "The Analyst",
+    "emoji": "\ud83e\udde0",
+    "description": "AI-powered narrative analysis synthesizing the complete picture",
+    "methodology": "The Analyst synthesizes statistical models, course history, current form, and narrative context to produce a holistic tournament preview. It weighs recent performance trends, press conference sentiment, practice round reports, and historical analogues to identify edges the pure numbers might miss. The model also accounts for pressure dynamics, pairing effects, and the unique psychological demands of Augusta National.",
+    "narrative": "The 2026 Masters arrives with one of the most compelling storylines in recent memory: Rory McIlroy returns as defending champion, his career Grand Slam complete, the weight of decades finally lifted from his shoulders. The question is whether liberation breeds more greatness or whether the hunger that drove him to finally break through has been sated. History suggests defending champions rarely repeat -- only Tiger Woods, Jack Nicklaus, and Nick Faldo have managed it -- but McIlroy is not your typical defender.\n\nScottie Scheffler, however, remains the clear statistical favorite. The world number one has turned Augusta National into his personal playground, winning in 2022 and 2024, and his strokes gained numbers across every category are simply absurd. When you combine elite driving distance with laser precision on approach and a putting stroke that has quietly become one of the best on Tour, you get a player who can go wire-to-wire at Augusta or rally from five back on Sunday. The two-time champion's biggest threat may be complacency, but nothing in his demeanor suggests that is remotely possible.\n\nThe supporting cast is loaded with legitimate contenders. Xander Schauffele has been knocking on the door at Augusta for years and now carries the confidence of a two-time major champion. Ludvig Åberg is the most exciting young talent in the game, with the length and fearlessness to attack Augusta's risk-reward holes. Collin Morikawa's iron play is perhaps the best in the world, and his precision approach game is perfectly calibrated for Augusta's treacherous greens. And lurking, as always, is Jon Rahm -- the 2023 champion whose talent and Augusta knowledge make him dangerous despite the competitive rust from LIV.\n\nThe darkhorse tier is particularly deep this year. Justin Rose, the heartbroken 2025 playoff loser, returns with unfinished business and a course history that rivals anyone in the field. Jordan Spieth knows these greens better than his own living room and could produce one of his patented Augusta magic shows. And Hideki Matsuyama, the quiet assassin, has a way of producing his best golf when the azaleas are in bloom. This Masters has the makings of an all-time Sunday back nine.",
+    "rankings": [
+      {
+        "name": "Scottie Scheffler",
+        "winPct": 16.0,
+        "top5Pct": 45.0,
+        "top10Pct": 62.0,
+        "makeCutPct": 92.0,
+        "rationale": "The complete package at Augusta. Scheffler's strokes gained dominance, two green jackets, and unflappable temperament make him the clear pick. He has no weaknesses to exploit on this course."
+      },
+      {
+        "name": "Rory McIlroy",
+        "winPct": 13.0,
+        "top5Pct": 42.0,
+        "top10Pct": 59.0,
+        "makeCutPct": 92.0,
+        "rationale": "The defending champion returns unburdened, with supreme confidence and the form of his life. The Grand Slam monkey is gone, and a liberated Rory is a terrifying prospect for the rest of the field."
+      },
+      {
+        "name": "Xander Schauffele",
+        "winPct": 10.0,
+        "top5Pct": 37.0,
+        "top10Pct": 55.0,
+        "makeCutPct": 91.0,
+        "rationale": "Schauffele's Augusta consistency is remarkable -- he contends nearly every year. Now armed with major championship confidence, he has shed the label of best player without a green jacket."
+      },
+      {
+        "name": "Ludvig Åberg",
+        "winPct": 8.0,
+        "top5Pct": 30.0,
+        "top10Pct": 45.0,
+        "makeCutPct": 87.0,
+        "rationale": "The fearless Swede showed in 2024 he belongs on this stage. His length off the tee unlocks birdie opportunities most of the field cannot access, and he is only getting better."
+      },
+      {
+        "name": "Collin Morikawa",
+        "winPct": 7.0,
+        "top5Pct": 27.0,
+        "top10Pct": 42.0,
+        "makeCutPct": 86.0,
+        "rationale": "The best iron player in the game is peaking at the right time. Morikawa's precision is a perfect fit for Augusta's demanding approach shots, and his putting has caught up to his ball-striking."
+      },
+      {
+        "name": "Jon Rahm",
+        "winPct": 5.5,
+        "top5Pct": 24.0,
+        "top10Pct": 39.0,
+        "makeCutPct": 87.0,
+        "rationale": "The 2023 champion knows every inch of this course. Rahm's raw talent is top-three in the world, and Augusta has a way of erasing competitive rust for players who truly know the place."
+      },
+      {
+        "name": "Bryson DeChambeau",
+        "winPct": 3.5,
+        "top5Pct": 17.0,
+        "top10Pct": 30.0,
+        "makeCutPct": 79.0,
+        "rationale": "The mad scientist has quietly optimized his game for Augusta. DeChambeau's distance advantage on the par 5s is massive, and his improved wedge play makes him a genuine threat."
+      },
+      {
+        "name": "Viktor Hovland",
+        "winPct": 3.0,
+        "top5Pct": 16.0,
+        "top10Pct": 29.0,
+        "makeCutPct": 79.0,
+        "rationale": "Hovland's short game transformation has been the story of his season. The Norwegian finally has the tools to compete around Augusta's greens, and his ball-striking was never in question."
+      },
+      {
+        "name": "Patrick Cantlay",
+        "winPct": 2.5,
+        "top5Pct": 14.0,
+        "top10Pct": 25.0,
+        "makeCutPct": 78.0,
+        "rationale": "The thinking man's golfer, Cantlay grinds out pars like few others and pounces on the par 5s. His course management at Augusta is textbook, even if he lacks the explosiveness of others."
+      },
+      {
+        "name": "Hideki Matsuyama",
+        "winPct": 2.5,
+        "top5Pct": 14.0,
+        "top10Pct": 26.0,
+        "makeCutPct": 80.0,
+        "rationale": "Augusta brings out the best in Matsuyama. The 2021 champion's iron play is sublime here, and his quiet intensity masks a fierce competitor who has produced multiple top-5 Masters finishes."
+      },
+      {
+        "name": "Brooks Koepka",
+        "winPct": 2.0,
+        "top5Pct": 12.0,
+        "top10Pct": 23.0,
+        "makeCutPct": 76.0,
+        "rationale": "Koepka's major championship pedigree is among the best of his generation. He rises to the occasion on the biggest stages, and Augusta's demanding test of power and precision suits his game."
+      },
+      {
+        "name": "Cameron Smith",
+        "winPct": 1.8,
+        "top5Pct": 12.0,
+        "top10Pct": 22.0,
+        "makeCutPct": 76.0,
+        "rationale": "Smith's short game artistry is perfectly suited to Augusta's crowned greens. His ability to manufacture shots and scramble from trouble positions makes him a perennial sleeper pick."
+      },
+      {
+        "name": "Tommy Fleetwood",
+        "winPct": 1.7,
+        "top5Pct": 11.0,
+        "top10Pct": 21.0,
+        "makeCutPct": 75.0,
+        "rationale": "Fleetwood's low ball flight and elite shotmaking are tailor-made for Augusta's wind-affected shots. His major contention pedigree is strong, and a breakthrough feels overdue."
+      },
+      {
+        "name": "Wyndham Clark",
+        "winPct": 1.5,
+        "top5Pct": 10.0,
+        "top10Pct": 20.0,
+        "makeCutPct": 74.0,
+        "rationale": "Clark's length and major championship experience give him a real shot. He has the firepower to go low at Augusta, and his confidence as a U.S. Open champion carries weight in this field."
+      },
+      {
+        "name": "Sahith Theegala",
+        "winPct": 1.5,
+        "top5Pct": 10.0,
+        "top10Pct": 19.0,
+        "makeCutPct": 73.0,
+        "rationale": "Theegala's flair and aggressive approach make him box office at Augusta. He will make birdies in bunches, though his high-risk style could just as easily lead to a weekend collapse."
+      },
+      {
+        "name": "Justin Rose",
+        "winPct": 1.5,
+        "top5Pct": 9.0,
+        "top10Pct": 18.0,
+        "makeCutPct": 75.0,
+        "rationale": "Rose's Augusta record is extraordinary and his 2025 playoff loss only deepened his connection to this course. He has the craftsmanship and the motivation to contend once more."
+      },
+      {
+        "name": "Shane Lowry",
+        "winPct": 1.2,
+        "top5Pct": 7.5,
+        "top10Pct": 15.0,
+        "makeCutPct": 70.0,
+        "rationale": "Lowry's touch and feel around the greens translate beautifully to Augusta. His Open Championship pedigree proves he can handle the pressure of major Sunday contention."
+      },
+      {
+        "name": "Jordan Spieth",
+        "winPct": 1.2,
+        "top5Pct": 8.0,
+        "top10Pct": 15.0,
+        "makeCutPct": 72.0,
+        "rationale": "Spieth at Augusta is a different animal. His 2015 triumph and deep course knowledge give him an edge that transcends current form, and he has a habit of producing magic in April."
+      },
+      {
+        "name": "Joaquin Niemann",
+        "winPct": 1.0,
+        "top5Pct": 7.0,
+        "top10Pct": 14.0,
+        "makeCutPct": 69.0,
+        "rationale": "Niemann's ball-striking is elite, and his aggressive style can unlock Augusta's par 5s. Limited Masters experience is the main question mark for the talented Chilean."
+      },
+      {
+        "name": "Tony Finau",
+        "winPct": 0.8,
+        "top5Pct": 6.0,
+        "top10Pct": 13.0,
+        "makeCutPct": 68.0,
+        "rationale": "Finau's length gives him a structural advantage at Augusta, and his best is good enough to contend anywhere. Consistency has been the missing piece, but the talent is undeniable."
+      },
+      {
+        "name": "Min Woo Lee",
+        "winPct": 0.8,
+        "top5Pct": 5.5,
+        "top10Pct": 12.0,
+        "makeCutPct": 67.0,
+        "rationale": "The Australian has serious firepower and the creative shotmaking that Augusta rewards. His relative inexperience is a concern, but his ceiling is as high as anyone outside the top tier."
+      },
+      {
+        "name": "Robert MacIntyre",
+        "winPct": 0.7,
+        "top5Pct": 5.0,
+        "top10Pct": 11.0,
+        "makeCutPct": 65.0,
+        "rationale": "MacIntyre's competitive fire and natural left-to-right ball flight suit several key holes at Augusta. The Scot has the game and the temperament to surprise on the big stage."
+      },
+      {
+        "name": "Sungjae Im",
+        "winPct": 0.6,
+        "top5Pct": 4.5,
+        "top10Pct": 10.0,
+        "makeCutPct": 66.0,
+        "rationale": "Im's consistency and work ethic have produced multiple solid Masters finishes. He will not beat himself, and his iron play gives him legitimate birdie chances throughout the round."
+      },
+      {
+        "name": "Dustin Johnson",
+        "winPct": 0.5,
+        "top5Pct": 4.0,
+        "top10Pct": 10.0,
+        "makeCutPct": 65.0,
+        "rationale": "The 2020 champion's best days may be behind him, but Augusta magic is real. DJ's length and soft hands around the greens keep him in the conversation despite inconsistent LIV form."
+      },
+      {
+        "name": "Adam Scott",
+        "winPct": 0.5,
+        "top5Pct": 4.0,
+        "top10Pct": 9.5,
+        "makeCutPct": 65.0,
+        "rationale": "The ageless Australian's swing remains one of the prettiest in golf, and his 2013 title gives him a champion's knowledge of every pin position. Experience is his currency."
+      },
+      {
+        "name": "Russell Henley",
+        "winPct": 0.5,
+        "top5Pct": 3.0,
+        "top10Pct": 7.5,
+        "makeCutPct": 60.0,
+        "rationale": "Henley is the prototypical under-the-radar Augusta threat. His iron play is among the best on Tour, and his steady demeanor suits the patient game Augusta rewards."
+      },
+      {
+        "name": "Cameron Young",
+        "winPct": 0.4,
+        "top5Pct": 3.0,
+        "top10Pct": 7.5,
+        "makeCutPct": 60.0,
+        "rationale": "Young's prodigious length opens up Augusta in ways few can match. If his putter cooperates, he has the raw ability to post a seriously low number on any given day."
+      },
+      {
+        "name": "Keegan Bradley",
+        "winPct": 0.4,
+        "top5Pct": 2.5,
+        "top10Pct": 6.5,
+        "makeCutPct": 60.0,
+        "rationale": "The Ryder Cup captain's form has been quietly excellent, and his competitive fire burns hot in big events. Bradley's major pedigree and improved iron play make him a sneaky pick."
+      },
+      {
+        "name": "Corey Conners",
+        "winPct": 0.3,
+        "top5Pct": 2.5,
+        "top10Pct": 6.5,
+        "makeCutPct": 60.0,
+        "rationale": "Conners is a ball-striking machine who consistently produces solid results at Augusta. He will not light up the leaderboard, but he rarely shoots himself out of a tournament either."
+      },
+      {
+        "name": "Justin Thomas",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.5,
+        "makeCutPct": 58.0,
+        "rationale": "JT's form has been frustratingly inconsistent, but his talent remains elite. When he is dialed in, he has the complete game to contend at Augusta -- the question is which JT shows up."
+      }
+    ]
+  }
+}

@@ -1,0 +1,4799 @@
+[
+  {
+    "name": "Scottie Scheffler",
+    "initials": "SS",
+    "worldRanking": 1,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 6,
+    "mastersWins": 2,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T4",
+        "score": "-10"
+      },
+      {
+        "year": 2024,
+        "finish": "1st",
+        "score": "-11"
+      },
+      {
+        "year": 2023,
+        "finish": "T10",
+        "score": "-7"
+      },
+      {
+        "year": 2022,
+        "finish": "1st",
+        "score": "-10"
+      },
+      {
+        "year": 2021,
+        "finish": "T18",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 7,
+      "wins": 3,
+      "top10s": 6,
+      "earnings": "$12,450,000",
+      "fedexRank": 1
+    },
+    "strokesGained": {
+      "offTheTee": 0.85,
+      "approach": 1.45,
+      "aroundGreen": 0.25,
+      "putting": 0.15,
+      "total": 2.7
+    },
+    "momentumLast5": [
+      "W",
+      "T3",
+      "W",
+      "T2",
+      "W"
+    ],
+    "injuryStatus": null,
+    "narrative": "The most complete player in the world remains the man to beat at Augusta. Scheffler's iron play is borderline unfair on this course, and his two green jackets in three years tell you everything. The field is chasing a ghost.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Xander Schauffele",
+    "initials": "XS",
+    "worldRanking": 2,
+    "age": 32,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T2",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T6",
+        "score": "-8"
+      },
+      {
+        "year": 2024,
+        "finish": "T8",
+        "score": "-6"
+      },
+      {
+        "year": 2023,
+        "finish": "T2",
+        "score": "-10"
+      },
+      {
+        "year": 2022,
+        "finish": "T3",
+        "score": "-7"
+      },
+      {
+        "year": 2021,
+        "finish": "T3",
+        "score": "-7"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 8,
+      "wins": 2,
+      "top10s": 6,
+      "earnings": "$10,800,000",
+      "fedexRank": 2
+    },
+    "strokesGained": {
+      "offTheTee": 0.55,
+      "approach": 1.1,
+      "aroundGreen": 0.45,
+      "putting": 0.35,
+      "total": 2.45
+    },
+    "momentumLast5": [
+      "W",
+      "T5",
+      "T8",
+      "W",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "Since breaking through at the 2024 PGA and Open, Schauffele has played with a different gear. Augusta has been his white whale -- five top-10s without a jacket. The putter is finally matching the ball-striking, and that's terrifying for everyone else.",
+    "tags": [
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Rory McIlroy",
+    "initials": "RM",
+    "worldRanking": 3,
+    "age": 36,
+    "country": "NIR",
+    "isLIV": false,
+    "mastersAppearances": 17,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "1st",
+        "score": "-12"
+      },
+      {
+        "year": 2024,
+        "finish": "T22",
+        "score": "-1"
+      },
+      {
+        "year": 2023,
+        "finish": "T6",
+        "score": "-8"
+      },
+      {
+        "year": 2022,
+        "finish": "2nd",
+        "score": "-9"
+      },
+      {
+        "year": 2021,
+        "finish": "T7",
+        "score": "-5"
+      }
+    ],
+    "majorWins": 5,
+    "season2026": {
+      "events": 6,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$7,900,000",
+      "fedexRank": 5
+    },
+    "strokesGained": {
+      "offTheTee": 0.9,
+      "approach": 0.75,
+      "aroundGreen": 0.3,
+      "putting": 0.2,
+      "total": 2.15
+    },
+    "momentumLast5": [
+      "T3",
+      "W",
+      "T12",
+      "T5",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "The defending champion returns to Magnolia Lane having slain the dragon that haunted him for a decade. That playoff victory over Justin Rose last April completed the career Grand Slam and lifted an enormous psychological burden. The question now: does the monkey off his back unleash a new Rory, or was last year the summit?",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "Defending Champion",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Jon Rahm",
+    "initials": "JR",
+    "worldRanking": 5,
+    "age": 31,
+    "country": "ESP",
+    "isLIV": true,
+    "mastersAppearances": 8,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T8",
+        "score": "-7"
+      },
+      {
+        "year": 2024,
+        "finish": "T4",
+        "score": "-8"
+      },
+      {
+        "year": 2023,
+        "finish": "1st",
+        "score": "-12"
+      },
+      {
+        "year": 2022,
+        "finish": "T27",
+        "score": "-1"
+      },
+      {
+        "year": 2021,
+        "finish": "T5",
+        "score": "-6"
+      }
+    ],
+    "majorWins": 3,
+    "season2026": {
+      "events": 5,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,200,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.7,
+      "approach": 1.05,
+      "aroundGreen": 0.15,
+      "putting": 0.1,
+      "total": 2
+    },
+    "momentumLast5": [
+      "T4",
+      "W",
+      "T15",
+      "T7",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "Rahm's move to LIV hasn't dulled his edge at the majors -- his 2023 green jacket proved that. His combination of power and touch around Augusta's greens makes him a perpetual top-5 favorite. The limited reps against top fields are the only question mark, and even that feels like a minor quibble.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Ludvig Åberg",
+    "initials": "LA",
+    "worldRanking": 4,
+    "age": 26,
+    "country": "SWE",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "2nd",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T5",
+        "score": "-9"
+      },
+      {
+        "year": 2024,
+        "finish": "2nd",
+        "score": "-9"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 8,
+      "wins": 2,
+      "top10s": 5,
+      "earnings": "$9,100,000",
+      "fedexRank": 3
+    },
+    "strokesGained": {
+      "offTheTee": 1.05,
+      "approach": 0.95,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 2.15
+    },
+    "momentumLast5": [
+      "T2",
+      "W",
+      "T6",
+      "W",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Swede nearly won the thing as a Masters rookie in 2024 and backed it up with another top-5 last year. At 26, Åberg has the length, the temperament, and the trajectory of a future champion. It's not a matter of if, but when -- and Augusta feels like where.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Collin Morikawa",
+    "initials": "CM",
+    "worldRanking": 6,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 5,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T12",
+        "score": "-5"
+      },
+      {
+        "year": 2024,
+        "finish": "T5",
+        "score": "-7"
+      },
+      {
+        "year": 2023,
+        "finish": "T16",
+        "score": "-4"
+      },
+      {
+        "year": 2022,
+        "finish": "T5",
+        "score": "-6"
+      },
+      {
+        "year": 2021,
+        "finish": "T18",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 8,
+      "wins": 1,
+      "top10s": 5,
+      "earnings": "$7,200,000",
+      "fedexRank": 6
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 1.35,
+      "aroundGreen": 0.2,
+      "putting": 0.05,
+      "total": 1.9
+    },
+    "momentumLast5": [
+      "T5",
+      "T3",
+      "W",
+      "T10",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "Morikawa's iron play is tailor-made for Augusta's second-shot course, and the improved putting that carried him through 2025 has held. Two majors at 29 with none at Augusta feels like an oversight that's about to be corrected.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Bryson DeChambeau",
+    "initials": "BD",
+    "worldRanking": 8,
+    "age": 32,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T26",
+        "score": "-1"
+      },
+      {
+        "year": 2023,
+        "finish": "T34",
+        "score": "E"
+      },
+      {
+        "year": 2022,
+        "finish": "T5",
+        "score": "-6"
+      },
+      {
+        "year": 2021,
+        "finish": "T26",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 5,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,800,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 1.15,
+      "approach": 0.55,
+      "aroundGreen": -0.05,
+      "putting": 0.1,
+      "total": 1.75
+    },
+    "momentumLast5": [
+      "W",
+      "T8",
+      "T20",
+      "T5",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Scientist has turned Augusta into a par-68 course with his driver, but the short game has always been his Achilles heel on these slick greens. Back-to-back US Open titles give him undeniable major pedigree. If the wedges cooperate, look out.",
+    "tags": [
+      "Major Winner",
+      "LIV Golfer",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Wyndham Clark",
+    "initials": "WC",
+    "worldRanking": 9,
+    "age": 32,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T8",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T8",
+        "score": "-7"
+      },
+      {
+        "year": 2024,
+        "finish": "T14",
+        "score": "-4"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+5"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$6,500,000",
+      "fedexRank": 8
+    },
+    "strokesGained": {
+      "offTheTee": 0.8,
+      "approach": 0.6,
+      "aroundGreen": 0.1,
+      "putting": 0.25,
+      "total": 1.75
+    },
+    "momentumLast5": [
+      "T5",
+      "T12",
+      "W",
+      "T20",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "Clark's raw power and improving course management have made him a legitimate threat at Augusta. The 2023 US Open winner has learned how to navigate major pressure, and his upward trajectory at the Masters suggests a big week is coming.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Viktor Hovland",
+    "initials": "VH",
+    "worldRanking": 7,
+    "age": 28,
+    "country": "NOR",
+    "isLIV": false,
+    "mastersAppearances": 6,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T15",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T16",
+        "score": "-3"
+      },
+      {
+        "year": 2023,
+        "finish": "T5",
+        "score": "-8"
+      },
+      {
+        "year": 2022,
+        "finish": "T25",
+        "score": "E"
+      },
+      {
+        "year": 2021,
+        "finish": "T21",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 8,
+      "wins": 2,
+      "top10s": 5,
+      "earnings": "$8,300,000",
+      "fedexRank": 4
+    },
+    "strokesGained": {
+      "offTheTee": 0.5,
+      "approach": 0.85,
+      "aroundGreen": 0.3,
+      "putting": 0.25,
+      "total": 1.9
+    },
+    "momentumLast5": [
+      "W",
+      "T2",
+      "T8",
+      "W",
+      "T5"
+    ],
+    "injuryStatus": null,
+    "narrative": "Hovland's short game transformation is complete, and the Norwegian is playing the best golf of his life in 2026. Augusta's green complexes used to expose him -- now they're a weapon. A maiden major feels imminent.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Patrick Cantlay",
+    "initials": "PC",
+    "worldRanking": 10,
+    "age": 34,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T3",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T3",
+        "score": "-10"
+      },
+      {
+        "year": 2024,
+        "finish": "T9",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2022,
+        "finish": "T14",
+        "score": "-3"
+      },
+      {
+        "year": 2021,
+        "finish": "T17",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 8,
+      "wins": 1,
+      "top10s": 5,
+      "earnings": "$6,800,000",
+      "fedexRank": 7
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.8,
+      "aroundGreen": 0.35,
+      "putting": 0.5,
+      "total": 1.9
+    },
+    "momentumLast5": [
+      "T3",
+      "T5",
+      "W",
+      "T8",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "Cantlay's game is a metronome -- boring in the best possible way. That T3 last year showed he has the patience and putting touch for Augusta. The question remains whether his conservative approach can generate enough birdies on the par-5s to keep up with the bombers.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Tommy Fleetwood",
+    "initials": "TF",
+    "worldRanking": 11,
+    "age": 35,
+    "country": "ENG",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T7",
+        "score": "-8"
+      },
+      {
+        "year": 2024,
+        "finish": "T12",
+        "score": "-4"
+      },
+      {
+        "year": 2023,
+        "finish": "T14",
+        "score": "-4"
+      },
+      {
+        "year": 2022,
+        "finish": "T5",
+        "score": "-6"
+      },
+      {
+        "year": 2021,
+        "finish": "T20",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,100,000",
+      "fedexRank": 12
+    },
+    "strokesGained": {
+      "offTheTee": 0.45,
+      "approach": 0.9,
+      "aroundGreen": 0.2,
+      "putting": 0.1,
+      "total": 1.65
+    },
+    "momentumLast5": [
+      "T5",
+      "W",
+      "T10",
+      "T15",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "Fleetwood's silky ball-striking is a perfect fit for Augusta, and the Englishman is riding the confidence of his breakthrough PGA Tour wins. He's been knocking on the door at majors for years. At 35, the clock is ticking but the game has never been sharper.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Hideki Matsuyama",
+    "initials": "HM",
+    "worldRanking": 12,
+    "age": 34,
+    "country": "JPN",
+    "isLIV": false,
+    "mastersAppearances": 12,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T7",
+        "score": "-6"
+      },
+      {
+        "year": 2023,
+        "finish": "T14",
+        "score": "-4"
+      },
+      {
+        "year": 2022,
+        "finish": "T14",
+        "score": "-3"
+      },
+      {
+        "year": 2021,
+        "finish": "1st",
+        "score": "-10"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 8,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,600,000",
+      "fedexRank": 10
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 1,
+      "aroundGreen": 0.15,
+      "putting": -0.05,
+      "total": 1.5
+    },
+    "momentumLast5": [
+      "W",
+      "T8",
+      "T20",
+      "T5",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2021 champion knows every blade of grass at Augusta National. When Matsuyama gets hot with the irons, he's as dangerous as anyone in the field. His ball-striking can carry an average putting week -- and sometimes that's all you need on these greens.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Brooks Koepka",
+    "initials": "BK",
+    "worldRanking": 18,
+    "age": 36,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 9,
+    "mastersWins": 0,
+    "mastersBestFinish": "2nd",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "+1"
+      },
+      {
+        "year": 2023,
+        "finish": "2nd",
+        "score": "-11"
+      },
+      {
+        "year": 2022,
+        "finish": "T35",
+        "score": "+1"
+      },
+      {
+        "year": 2021,
+        "finish": "MC",
+        "score": "+5"
+      }
+    ],
+    "majorWins": 5,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,800,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.6,
+      "approach": 0.55,
+      "aroundGreen": 0.05,
+      "putting": -0.1,
+      "total": 1.1
+    },
+    "momentumLast5": [
+      "T10",
+      "T25",
+      "T8",
+      "T30",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "Koepka's major record speaks for itself -- five wins and a near-miss at the 2023 Masters. The body has taken a beating, but he has an uncanny ability to peak for the biggest stages. Write him off at your own peril.",
+    "tags": [
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Cameron Smith",
+    "initials": "CS",
+    "worldRanking": 20,
+    "age": 32,
+    "country": "AUS",
+    "isLIV": true,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "3rd",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T14",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T25",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2022,
+        "finish": "3rd",
+        "score": "-8"
+      },
+      {
+        "year": 2021,
+        "finish": "T10",
+        "score": "-5"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 5,
+      "wins": 1,
+      "top10s": 2,
+      "earnings": "$3,200,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.15,
+      "approach": 0.3,
+      "aroundGreen": 0.65,
+      "putting": 0.45,
+      "total": 1.55
+    },
+    "momentumLast5": [
+      "T5",
+      "W",
+      "T20",
+      "T10",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "The best short game in professional golf meets the most demanding green complexes in the world -- that's always going to be a potent combination. Smith's flat stick wizardry nearly won him the jacket in 2022, and Augusta's greens reward creativity he has in spades.",
+    "tags": [
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Shane Lowry",
+    "initials": "SL",
+    "worldRanking": 14,
+    "age": 39,
+    "country": "IRL",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T6",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T6",
+        "score": "-8"
+      },
+      {
+        "year": 2024,
+        "finish": "T11",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T25",
+        "score": "-1"
+      },
+      {
+        "year": 2022,
+        "finish": "T38",
+        "score": "+2"
+      },
+      {
+        "year": 2021,
+        "finish": "T21",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,400,000",
+      "fedexRank": 11
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.65,
+      "aroundGreen": 0.3,
+      "putting": 0.25,
+      "total": 1.4
+    },
+    "momentumLast5": [
+      "T3",
+      "T10",
+      "W",
+      "T8",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Irishman's game ages like fine wine. Lowry's touch and imagination around the greens have elevated his Masters results in recent years, and his emotional intelligence in major pressure situations is elite. Don't sleep on him.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Sahith Theegala",
+    "initials": "ST",
+    "worldRanking": 13,
+    "age": 28,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T9",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T9",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2023,
+        "finish": "T28",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 2,
+      "top10s": 5,
+      "earnings": "$7,400,000",
+      "fedexRank": 9
+    },
+    "strokesGained": {
+      "offTheTee": 0.5,
+      "approach": 0.7,
+      "aroundGreen": 0.2,
+      "putting": 0.3,
+      "total": 1.7
+    },
+    "momentumLast5": [
+      "W",
+      "T3",
+      "T8",
+      "W",
+      "T5"
+    ],
+    "injuryStatus": null,
+    "narrative": "Theegala has graduated from lovable near-miss merchant to legitimate multiple PGA Tour winner, and his all-around game translates perfectly to Augusta. The kid plays with infectious joy and fearless aggression -- a combination that can win here.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Justin Thomas",
+    "initials": "JT",
+    "worldRanking": 16,
+    "age": 33,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 9,
+    "mastersWins": 0,
+    "mastersBestFinish": "T4",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T16",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2023,
+        "finish": "T33",
+        "score": "E"
+      },
+      {
+        "year": 2022,
+        "finish": "T8",
+        "score": "-5"
+      },
+      {
+        "year": 2021,
+        "finish": "T21",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,900,000",
+      "fedexRank": 15
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.65,
+      "aroundGreen": 0.15,
+      "putting": 0.2,
+      "total": 1.4
+    },
+    "momentumLast5": [
+      "T8",
+      "W",
+      "T20",
+      "T12",
+      "T5"
+    ],
+    "injuryStatus": null,
+    "narrative": "JT's resurgence in 2026 has quieted the doubters. The two-time PGA champion has always had the shot-making chops for Augusta -- his up-and-down game with the wedges here is elite. A green jacket would cap a redemption arc for the ages.",
+    "tags": [
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Tony Finau",
+    "initials": "AF",
+    "worldRanking": 17,
+    "age": 36,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T22",
+        "score": "-1"
+      },
+      {
+        "year": 2023,
+        "finish": "T5",
+        "score": "-8"
+      },
+      {
+        "year": 2022,
+        "finish": "T14",
+        "score": "-3"
+      },
+      {
+        "year": 2021,
+        "finish": "T10",
+        "score": "-5"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,000,000",
+      "fedexRank": 14
+    },
+    "strokesGained": {
+      "offTheTee": 0.7,
+      "approach": 0.5,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 1.35
+    },
+    "momentumLast5": [
+      "T5",
+      "T10",
+      "W",
+      "T15",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "Finau's length and athleticism give him a natural advantage at Augusta, and his par-5 scoring is among the best in the field. He's knocked on the door enough times at majors -- eventually one of these doors has to open.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Jordan Spieth",
+    "initials": "JS",
+    "worldRanking": 35,
+    "age": 32,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 12,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2024,
+        "finish": "T38",
+        "score": "+2"
+      },
+      {
+        "year": 2023,
+        "finish": "T33",
+        "score": "E"
+      },
+      {
+        "year": 2022,
+        "finish": "T12",
+        "score": "-4"
+      },
+      {
+        "year": 2021,
+        "finish": "3rd",
+        "score": "-7"
+      }
+    ],
+    "majorWins": 3,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,800,000",
+      "fedexRank": 42
+    },
+    "strokesGained": {
+      "offTheTee": -0.1,
+      "approach": 0.3,
+      "aroundGreen": 0.4,
+      "putting": 0.15,
+      "total": 0.75
+    },
+    "momentumLast5": [
+      "T15",
+      "T30",
+      "T8",
+      "MC",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2015 champion hasn't been the same player in years, but Augusta is his spiritual home. Spieth sees shots here that others can't imagine, and his creative genius around these greens is timeless. If the putter gets hot for 72 holes, stranger things have happened.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Max Homa",
+    "initials": "MH",
+    "worldRanking": 22,
+    "age": 35,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T32",
+        "score": "+1"
+      },
+      {
+        "year": 2023,
+        "finish": "T16",
+        "score": "-4"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,400,000",
+      "fedexRank": 18
+    },
+    "strokesGained": {
+      "offTheTee": 0.55,
+      "approach": 0.5,
+      "aroundGreen": 0.15,
+      "putting": 0.1,
+      "total": 1.3
+    },
+    "momentumLast5": [
+      "T5",
+      "W",
+      "T12",
+      "T20",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "Homa's ball-striking and course management are built for Augusta, and his improved results here show a growing comfort with the place. The best personality in golf would be the most entertaining Masters champion since Bubba Watson.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Dustin Johnson",
+    "initials": "DJ",
+    "worldRanking": 55,
+    "age": 41,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 13,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T35",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T38",
+        "score": "+2"
+      },
+      {
+        "year": 2023,
+        "finish": "T42",
+        "score": "+4"
+      },
+      {
+        "year": 2022,
+        "finish": "T12",
+        "score": "-4"
+      },
+      {
+        "year": 2021,
+        "finish": "T10",
+        "score": "-5"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,500,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.45,
+      "approach": 0.2,
+      "aroundGreen": 0.05,
+      "putting": -0.15,
+      "total": 0.55
+    },
+    "momentumLast5": [
+      "T20",
+      "T35",
+      "T15",
+      "T40",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2020 champion's best golf is behind him, but DJ's natural talent and Augusta knowledge mean he can never be fully dismissed. That said, the competitive edge has clearly dulled on the LIV circuit.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Joaquin Niemann",
+    "initials": "JN",
+    "worldRanking": 15,
+    "age": 27,
+    "country": "CHI",
+    "isLIV": true,
+    "mastersAppearances": 5,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T15",
+        "score": "-3"
+      },
+      {
+        "year": 2023,
+        "finish": "T22",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 5,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,500,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.75,
+      "approach": 0.65,
+      "aroundGreen": 0.1,
+      "putting": 0.15,
+      "total": 1.65
+    },
+    "momentumLast5": [
+      "W",
+      "T3",
+      "T12",
+      "T5",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "Niemann is the best player on LIV Golf and his trajectory suggests a major breakthrough is coming. The Chilean's combination of length and precision makes Augusta a perfect playground. A dark horse with the talent of a favorite.",
+    "tags": [
+      "LIV Golfer",
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Cameron Young",
+    "initials": "CY",
+    "worldRanking": 19,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T12",
+        "score": "-5"
+      },
+      {
+        "year": 2024,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2023,
+        "finish": "T28",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,200,000",
+      "fedexRank": 13
+    },
+    "strokesGained": {
+      "offTheTee": 0.9,
+      "approach": 0.4,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 1.35
+    },
+    "momentumLast5": [
+      "T5",
+      "T10",
+      "W",
+      "T8",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Young's prodigious length turns Augusta's par-5s into birdie machines, and the all-around game has matured considerably. He's overdue for a major moment.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Tom Kim",
+    "initials": "TK",
+    "worldRanking": 21,
+    "age": 23,
+    "country": "KOR",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T12",
+        "score": "-5"
+      },
+      {
+        "year": 2024,
+        "finish": "T20",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,800,000",
+      "fedexRank": 16
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.65,
+      "aroundGreen": 0.25,
+      "putting": 0.3,
+      "total": 1.55
+    },
+    "momentumLast5": [
+      "T3",
+      "W",
+      "T8",
+      "T5",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "Tom Kim plays with the swagger of a veteran and the fearlessness of youth. At 23, he's already a multiple PGA Tour winner and Augusta's big stage suits his personality. His putting stroke is pure money.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Robert MacIntyre",
+    "initials": "RMc",
+    "worldRanking": 23,
+    "age": 29,
+    "country": "SCO",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T12",
+        "score": "-5"
+      },
+      {
+        "year": 2024,
+        "finish": "T28",
+        "score": "-1"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+6"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,600,000",
+      "fedexRank": 17
+    },
+    "strokesGained": {
+      "offTheTee": 0.45,
+      "approach": 0.55,
+      "aroundGreen": 0.2,
+      "putting": 0.1,
+      "total": 1.3
+    },
+    "momentumLast5": [
+      "W",
+      "T10",
+      "T5",
+      "T15",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "The fiery Scotsman has blossomed on the PGA Tour and brings a fearless, go-for-broke mentality that either produces magic or mayhem at Augusta. His left-handed swing is tailor-made for the dogleg-right holes.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Sungjae Im",
+    "initials": "SI",
+    "worldRanking": 24,
+    "age": 28,
+    "country": "KOR",
+    "isLIV": false,
+    "mastersAppearances": 6,
+    "mastersWins": 0,
+    "mastersBestFinish": "2nd",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T14",
+        "score": "-4"
+      },
+      {
+        "year": 2023,
+        "finish": "T16",
+        "score": "-4"
+      },
+      {
+        "year": 2022,
+        "finish": "T14",
+        "score": "-3"
+      },
+      {
+        "year": 2020,
+        "finish": "2nd",
+        "score": "-11"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$4,800,000",
+      "fedexRank": 19
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.55,
+      "aroundGreen": 0.15,
+      "putting": 0.2,
+      "total": 1.2
+    },
+    "momentumLast5": [
+      "T8",
+      "W",
+      "T12",
+      "T5",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Im's tireless work ethic and rock-solid iron play have produced consistent results at Augusta. The 2020 runner-up knows he belongs on this stage.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Corey Conners",
+    "initials": "CC",
+    "worldRanking": 28,
+    "age": 34,
+    "country": "CAN",
+    "isLIV": false,
+    "mastersAppearances": 6,
+    "mastersWins": 0,
+    "mastersBestFinish": "T6",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T6",
+        "score": "-6"
+      },
+      {
+        "year": 2023,
+        "finish": "T10",
+        "score": "-6"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 4,
+      "earnings": "$3,800,000",
+      "fedexRank": 22
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.9,
+      "aroundGreen": 0.1,
+      "putting": -0.1,
+      "total": 1.2
+    },
+    "momentumLast5": [
+      "T8",
+      "T5",
+      "T15",
+      "T10",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "One of the purest ball-strikers on Tour, Conners' approach play is perfectly suited for Augusta's demanding second shots. If the putter ever shows up for four days, watch out.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Sam Burns",
+    "initials": "SB",
+    "worldRanking": 25,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T15",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T15",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T22",
+        "score": "-1"
+      },
+      {
+        "year": 2023,
+        "finish": "T33",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 4,
+      "earnings": "$5,000,000",
+      "fedexRank": 20
+    },
+    "strokesGained": {
+      "offTheTee": 0.5,
+      "approach": 0.45,
+      "aroundGreen": 0.2,
+      "putting": 0.25,
+      "total": 1.4
+    },
+    "momentumLast5": [
+      "W",
+      "T5",
+      "T10",
+      "T15",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "Burns has steadily climbed the world rankings with a well-rounded game and clutch putting. His Augusta pedigree is building, and a breakthrough week feels close.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Keegan Bradley",
+    "initials": "KB",
+    "worldRanking": 30,
+    "age": 39,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 9,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2023,
+        "finish": "T28",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 10,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,200,000",
+      "fedexRank": 24
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.4,
+      "aroundGreen": 0.15,
+      "putting": 0.2,
+      "total": 1.1
+    },
+    "momentumLast5": [
+      "T10",
+      "W",
+      "T15",
+      "T25",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2025 Ryder Cup captain rode a wave of momentum into the best stretch of his career. Bradley's renewed confidence and bulldog mentality make him a sneaky pick.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Russell Henley",
+    "initials": "RH",
+    "worldRanking": 26,
+    "age": 37,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T10",
+        "score": "-6"
+      },
+      {
+        "year": 2024,
+        "finish": "T25",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T22",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 4,
+      "earnings": "$3,900,000",
+      "fedexRank": 21
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.65,
+      "aroundGreen": 0.2,
+      "putting": 0.15,
+      "total": 1.2
+    },
+    "momentumLast5": [
+      "T8",
+      "T12",
+      "T5",
+      "T20",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "Henley is the quintessential under-the-radar contender -- methodical, precise, and lethal with mid-irons. Augusta rewards his brand of disciplined golf.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Billy Horschel",
+    "initials": "BH",
+    "worldRanking": 32,
+    "age": 39,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      },
+      {
+        "year": 2024,
+        "finish": "T10",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T20",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$3,200,000",
+      "fedexRank": 28
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.45,
+      "aroundGreen": 0.15,
+      "putting": 0.1,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T8",
+      "T30",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "The fiery Floridian brings infectious passion and a gritty all-around game. Horschel has quietly posted respectable Masters results and always plays with something to prove.",
+    "tags": []
+  },
+  {
+    "name": "Chris Kirk",
+    "initials": "CK",
+    "worldRanking": 33,
+    "age": 41,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T10",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T14",
+        "score": "-4"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,800,000",
+      "fedexRank": 30
+    },
+    "strokesGained": {
+      "offTheTee": 0.15,
+      "approach": 0.5,
+      "aroundGreen": 0.1,
+      "putting": 0.15,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T15",
+      "T10",
+      "T25",
+      "T8",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Kirk's comeback story is one of golf's most inspiring, and his steady, cerebral game can contend at Augusta if everything clicks for four days.",
+    "tags": []
+  },
+  {
+    "name": "Jason Day",
+    "initials": "JD",
+    "worldRanking": 40,
+    "age": 38,
+    "country": "AUS",
+    "isLIV": false,
+    "mastersAppearances": 14,
+    "mastersWins": 0,
+    "mastersBestFinish": "T2",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T30",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T35",
+        "score": "+2"
+      },
+      {
+        "year": 2023,
+        "finish": "T5",
+        "score": "-8"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,200,000",
+      "fedexRank": 38
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.3,
+      "aroundGreen": 0.2,
+      "putting": 0.1,
+      "total": 0.85
+    },
+    "momentumLast5": [
+      "T15",
+      "T30",
+      "T10",
+      "T25",
+      "T40"
+    ],
+    "injuryStatus": "Minor back stiffness, managing through tournament",
+    "narrative": "Day's body has betrayed his immense talent for years, but Augusta's par-5s and his creative short game keep him in the conversation. The back is always a concern.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Adam Scott",
+    "initials": "AS",
+    "worldRanking": 50,
+    "age": 45,
+    "country": "AUS",
+    "isLIV": false,
+    "mastersAppearances": 23,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T30",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T30",
+        "score": "E"
+      },
+      {
+        "year": 2022,
+        "finish": "T18",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 8,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,800,000",
+      "fedexRank": 55
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.35,
+      "aroundGreen": 0.05,
+      "putting": -0.1,
+      "total": 0.6
+    },
+    "momentumLast5": [
+      "T25",
+      "T35",
+      "T15",
+      "T40",
+      "T30"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2013 champion still has the prettiest swing in golf at 45, and his Augusta knowledge is encyclopedic. Father Time is undefeated, but Scott competes with grace.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Sergio Garcia",
+    "initials": "SG",
+    "worldRanking": 65,
+    "age": 46,
+    "country": "ESP",
+    "isLIV": true,
+    "mastersAppearances": 25,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T38",
+        "score": "+3"
+      },
+      {
+        "year": 2024,
+        "finish": "T40",
+        "score": "+4"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+8"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$900,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.25,
+      "aroundGreen": 0,
+      "putting": -0.2,
+      "total": 0.25
+    },
+    "momentumLast5": [
+      "T25",
+      "T40",
+      "T30",
+      "T35",
+      "T45"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2017 champion returns to the scene of his greatest triumph, but the competitive edge has faded considerably on the LIV circuit. A sentimental favorite more than a genuine contender.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Patrick Reed",
+    "initials": "PR",
+    "worldRanking": 80,
+    "age": 35,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 9,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T40",
+        "score": "+4"
+      },
+      {
+        "year": 2024,
+        "finish": "T42",
+        "score": "+5"
+      },
+      {
+        "year": 2023,
+        "finish": "T38",
+        "score": "+2"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$700,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.05,
+      "approach": 0.15,
+      "aroundGreen": 0,
+      "putting": -0.05,
+      "total": 0.15
+    },
+    "momentumLast5": [
+      "T30",
+      "T45",
+      "T35",
+      "T50",
+      "T40"
+    ],
+    "injuryStatus": null,
+    "narrative": "Captain America's 2018 triumph feels like a lifetime ago. Reed's game has declined sharply, and his Masters week is now more about the lifetime exemption than genuine contention.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Bubba Watson",
+    "initials": "BW",
+    "worldRanking": 150,
+    "age": 47,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 16,
+    "mastersWins": 2,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T45",
+        "score": "+6"
+      },
+      {
+        "year": 2024,
+        "finish": "T48",
+        "score": "+8"
+      },
+      {
+        "year": 2023,
+        "finish": "T45",
+        "score": "+6"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 4,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$400,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.1,
+      "approach": -0.1,
+      "aroundGreen": -0.05,
+      "putting": -0.15,
+      "total": -0.2
+    },
+    "momentumLast5": [
+      "T40",
+      "T50",
+      "T45",
+      "T55",
+      "T50"
+    ],
+    "injuryStatus": null,
+    "narrative": "The two-time champion is well past his competitive prime, but his creative shotmaking and love affair with Augusta make him a sentimental presence. The hook shot on 10 lives forever.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Danny Willett",
+    "initials": "DW",
+    "worldRanking": 90,
+    "age": 38,
+    "country": "ENG",
+    "isLIV": false,
+    "mastersAppearances": 9,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T35",
+        "score": "+2"
+      },
+      {
+        "year": 2024,
+        "finish": "T38",
+        "score": "+3"
+      },
+      {
+        "year": 2023,
+        "finish": "T42",
+        "score": "+4"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 8,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,100,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.1,
+      "approach": 0.25,
+      "aroundGreen": 0.05,
+      "putting": -0.05,
+      "total": 0.35
+    },
+    "momentumLast5": [
+      "T30",
+      "T35",
+      "T20",
+      "T40",
+      "T30"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2016 champion benefited from Spieth's collapse and has never reached those heights again. The lifetime exemption ensures he'll keep coming back, but contending feels unlikely.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Charl Schwartzel",
+    "initials": "CSc",
+    "worldRanking": 120,
+    "age": 41,
+    "country": "RSA",
+    "isLIV": true,
+    "mastersAppearances": 15,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T42",
+        "score": "+5"
+      },
+      {
+        "year": 2024,
+        "finish": "T45",
+        "score": "+6"
+      },
+      {
+        "year": 2023,
+        "finish": "T40",
+        "score": "+3"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$600,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.1,
+      "approach": 0.1,
+      "aroundGreen": -0.05,
+      "putting": -0.15,
+      "total": 0
+    },
+    "momentumLast5": [
+      "T35",
+      "T45",
+      "T40",
+      "T50",
+      "T40"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2011 champion's closing 66 that year remains one of the great Masters Sunday rounds. These days, Schwartzel is here for the memories and the lifetime invitation.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Zach Johnson",
+    "initials": "ZJ",
+    "worldRanking": 200,
+    "age": 50,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 19,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T48",
+        "score": "+8"
+      },
+      {
+        "year": 2024,
+        "finish": "T50",
+        "score": "+10"
+      },
+      {
+        "year": 2023,
+        "finish": "T48",
+        "score": "+8"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 6,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$300,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -0.3,
+      "approach": 0.05,
+      "aroundGreen": 0,
+      "putting": -0.1,
+      "total": -0.35
+    },
+    "momentumLast5": [
+      "MC",
+      "T55",
+      "T50",
+      "MC",
+      "T60"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2007 champion is a ceremonial presence at this point, but nobody appreciates walking Magnolia Lane more than ZJ. A testament to what heart and wedge play can accomplish.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Justin Rose",
+    "initials": "JRo",
+    "worldRanking": 38,
+    "age": 45,
+    "country": "ENG",
+    "isLIV": false,
+    "mastersAppearances": 20,
+    "mastersWins": 0,
+    "mastersBestFinish": "2nd",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "2nd",
+        "score": "-12"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T20",
+        "score": "-3"
+      },
+      {
+        "year": 2022,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2021,
+        "finish": "T7",
+        "score": "-5"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 8,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,500,000",
+      "fedexRank": 35
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.5,
+      "aroundGreen": 0.15,
+      "putting": 0.05,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T8",
+      "T25",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "Rose came agonizingly close to the green jacket in last year's playoff loss to McIlroy, and the heartbreak at 44 was palpable. At 45, this might be his last realistic crack -- and the motivation of unfinished business is powerful.",
+    "tags": [
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Min Woo Lee",
+    "initials": "ML",
+    "worldRanking": 27,
+    "age": 27,
+    "country": "AUS",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T15",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T15",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,300,000",
+      "fedexRank": 23
+    },
+    "strokesGained": {
+      "offTheTee": 0.65,
+      "approach": 0.4,
+      "aroundGreen": 0.1,
+      "putting": 0.15,
+      "total": 1.3
+    },
+    "momentumLast5": [
+      "W",
+      "T8",
+      "T15",
+      "T5",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The younger Lee sibling has electric talent and length to burn. His breakout PGA Tour campaign makes him a live dark horse at Augusta.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Tyrrell Hatton",
+    "initials": "TH",
+    "worldRanking": 29,
+    "age": 34,
+    "country": "ENG",
+    "isLIV": true,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T10",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T22",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 6,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,500,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.55,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 1.05
+    },
+    "momentumLast5": [
+      "T10",
+      "T15",
+      "T8",
+      "T25",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "Hatton's fiery temperament and crisp ball-striking make him compelling theater at Augusta. The move to LIV hasn't dampened his major ambitions.",
+    "tags": [
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Will Zalatoris",
+    "initials": "WZ",
+    "worldRanking": 31,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T2",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T16",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+5"
+      },
+      {
+        "year": 2022,
+        "finish": "T6",
+        "score": "-6"
+      },
+      {
+        "year": 2021,
+        "finish": "T2",
+        "score": "-9"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 8,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$3,500,000",
+      "fedexRank": 25
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.85,
+      "aroundGreen": 0,
+      "putting": -0.15,
+      "total": 1
+    },
+    "momentumLast5": [
+      "T8",
+      "T15",
+      "T5",
+      "T20",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "Zalatoris nearly won this thing as a 24-year-old in 2021 and his iron play is still among the best in the world. The back injuries cost him prime years, but a healthy Willy Z at Augusta is a scary proposition for the rest of the field.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Sepp Straka",
+    "initials": "SSt",
+    "worldRanking": 34,
+    "age": 33,
+    "country": "AUT",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T8",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T8",
+        "score": "-6"
+      },
+      {
+        "year": 2023,
+        "finish": "T25",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$3,200,000",
+      "fedexRank": 26
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.45,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 1
+    },
+    "momentumLast5": [
+      "T10",
+      "T15",
+      "T8",
+      "T20",
+      "T5"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Austrian has quietly become one of the more reliable players on Tour. His length and solid approach play make him a competent Augusta contender.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Matt Fitzpatrick",
+    "initials": "MF",
+    "worldRanking": 36,
+    "age": 31,
+    "country": "ENG",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T5",
+        "score": "-7"
+      },
+      {
+        "year": 2023,
+        "finish": "T16",
+        "score": "-4"
+      },
+      {
+        "year": 2022,
+        "finish": "T14",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$3,400,000",
+      "fedexRank": 27
+    },
+    "strokesGained": {
+      "offTheTee": 0.05,
+      "approach": 0.7,
+      "aroundGreen": 0.2,
+      "putting": 0.1,
+      "total": 1.05
+    },
+    "momentumLast5": [
+      "T8",
+      "T15",
+      "T5",
+      "T25",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2022 US Open champion is a precision player in a bomber's world, but Augusta rewards smart course management and Fitzpatrick has that in spades.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Denny McCarthy",
+    "initials": "DM",
+    "worldRanking": 37,
+    "age": 33,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T22",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T35",
+        "score": "+2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,600,000",
+      "fedexRank": 29
+    },
+    "strokesGained": {
+      "offTheTee": -0.15,
+      "approach": 0.25,
+      "aroundGreen": 0.4,
+      "putting": 0.55,
+      "total": 1.05
+    },
+    "momentumLast5": [
+      "W",
+      "T10",
+      "T15",
+      "T5",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "McCarthy's putter is a magic wand, and Augusta's treacherous greens reward the best putters in the world. If the ball-striking holds up, the flat stick can do the rest.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Akshay Bhatia",
+    "initials": "AB",
+    "worldRanking": 39,
+    "age": 24,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T18",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T25",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$4,000,000",
+      "fedexRank": 31
+    },
+    "strokesGained": {
+      "offTheTee": 0.5,
+      "approach": 0.35,
+      "aroundGreen": 0.15,
+      "putting": 0.2,
+      "total": 1.2
+    },
+    "momentumLast5": [
+      "T5",
+      "W",
+      "T12",
+      "T8",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "Bhatia's lefty creativity and explosive talent make him a fascinating wildcard. At 24, his best golf is well ahead of him, and Augusta rewards shotmakers.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Davis Thompson",
+    "initials": "DT",
+    "worldRanking": 41,
+    "age": 25,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T25",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,800,000",
+      "fedexRank": 32
+    },
+    "strokesGained": {
+      "offTheTee": 0.55,
+      "approach": 0.4,
+      "aroundGreen": 0.1,
+      "putting": 0.1,
+      "total": 1.15
+    },
+    "momentumLast5": [
+      "W",
+      "T8",
+      "T15",
+      "T5",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Thompson's long, athletic game and Georgia roots make Augusta a natural fit. The young gun is knocking on the door of stardom.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Taylor Pendrith",
+    "initials": "TP",
+    "worldRanking": 42,
+    "age": 35,
+    "country": "CAN",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T20",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T32",
+        "score": "+1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$3,000,000",
+      "fedexRank": 33
+    },
+    "strokesGained": {
+      "offTheTee": 0.75,
+      "approach": 0.25,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 1.05
+    },
+    "momentumLast5": [
+      "T10",
+      "T20",
+      "T8",
+      "T15",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "Pendrith's enormous length is his calling card, and he can overpower Augusta's par-5s. The Canadian is steadily building major experience.",
+    "tags": []
+  },
+  {
+    "name": "Eric Cole",
+    "initials": "EC",
+    "worldRanking": 43,
+    "age": 37,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T15",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T15",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T22",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$2,900,000",
+      "fedexRank": 34
+    },
+    "strokesGained": {
+      "offTheTee": 0.6,
+      "approach": 0.35,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 1
+    },
+    "momentumLast5": [
+      "T8",
+      "T15",
+      "T12",
+      "T20",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "The late bloomer continues to produce solid results, and his length off the tee gives him natural advantages at Augusta.",
+    "tags": []
+  },
+  {
+    "name": "Brian Harman",
+    "initials": "BHa",
+    "worldRanking": 44,
+    "age": 39,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      },
+      {
+        "year": 2024,
+        "finish": "T10",
+        "score": "-5"
+      },
+      {
+        "year": 2023,
+        "finish": "T28",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,600,000",
+      "fedexRank": 36
+    },
+    "strokesGained": {
+      "offTheTee": -0.05,
+      "approach": 0.4,
+      "aroundGreen": 0.25,
+      "putting": 0.2,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T15",
+      "T20",
+      "T10",
+      "T30",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2023 Open champion is a lefty with a surgeon's touch around the greens. What he lacks in length, he makes up for with guile.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Nick Dunlap",
+    "initials": "ND",
+    "worldRanking": 45,
+    "age": 22,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T22",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,500,000",
+      "fedexRank": 37
+    },
+    "strokesGained": {
+      "offTheTee": 0.45,
+      "approach": 0.35,
+      "aroundGreen": 0.15,
+      "putting": 0.2,
+      "total": 1.15
+    },
+    "momentumLast5": [
+      "W",
+      "T5",
+      "T15",
+      "T8",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "Dunlap won as an amateur on the PGA Tour and hasn't looked back. The kid has ice in his veins and the game to compete anywhere.",
+    "tags": []
+  },
+  {
+    "name": "Byeong Hun An",
+    "initials": "BA",
+    "worldRanking": 46,
+    "age": 34,
+    "country": "KOR",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T20",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T28",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$2,800,000",
+      "fedexRank": 39
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.4,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T10",
+      "T15",
+      "T20",
+      "T8",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "Ben An has been a consistent performer on Tour and brings solid all-around game to Augusta. Not flashy, but dangerous when everything clicks.",
+    "tags": []
+  },
+  {
+    "name": "Matthieu Pavon",
+    "initials": "MP",
+    "worldRanking": 47,
+    "age": 32,
+    "country": "FRA",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T18",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T38",
+        "score": "+3"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,500,000",
+      "fedexRank": 40
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.5,
+      "aroundGreen": 0.05,
+      "putting": -0.05,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T8",
+      "T25",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Frenchman's ball-striking and competitive fire have made him a fixture on Tour. Augusta's second-shot demands suit his iron play.",
+    "tags": []
+  },
+  {
+    "name": "Stephan Jaeger",
+    "initials": "SJ",
+    "worldRanking": 48,
+    "age": 36,
+    "country": "GER",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T30",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T30",
+        "score": "+1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 1,
+      "top10s": 3,
+      "earnings": "$3,100,000",
+      "fedexRank": 41
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.45,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 0.9
+    },
+    "momentumLast5": [
+      "T8",
+      "W",
+      "T15",
+      "T20",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The German journeyman's late-career breakout has been a wonderful story. Making his Masters debut at 35, he brings a steady hand and nothing to lose.",
+    "tags": [
+      "First Timer"
+    ]
+  },
+  {
+    "name": "Si Woo Kim",
+    "initials": "SK",
+    "worldRanking": 49,
+    "age": 31,
+    "country": "KOR",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2024,
+        "finish": "T12",
+        "score": "-4"
+      },
+      {
+        "year": 2023,
+        "finish": "T20",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,200,000",
+      "fedexRank": 43
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.35,
+      "aroundGreen": 0.1,
+      "putting": 0.1,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T10",
+      "T30",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Si Woo Kim's enigmatic talent can produce both 64s and 84s. When he's on, he can beat anyone; when he's off, well...",
+    "tags": []
+  },
+  {
+    "name": "Thomas Detry",
+    "initials": "TD",
+    "worldRanking": 51,
+    "age": 33,
+    "country": "BEL",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T28",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,400,000",
+      "fedexRank": 44
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.4,
+      "aroundGreen": 0.05,
+      "putting": 0.05,
+      "total": 0.85
+    },
+    "momentumLast5": [
+      "T10",
+      "T20",
+      "T15",
+      "T25",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Belgian is a solid all-around player who has earned his spot in the field. Building Augusta experience with each visit.",
+    "tags": []
+  },
+  {
+    "name": "Aaron Rai",
+    "initials": "AR",
+    "worldRanking": 52,
+    "age": 31,
+    "country": "ENG",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T25",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 3,
+      "earnings": "$2,600,000",
+      "fedexRank": 45
+    },
+    "strokesGained": {
+      "offTheTee": 0.2,
+      "approach": 0.5,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 0.85
+    },
+    "momentumLast5": [
+      "T8",
+      "T15",
+      "T12",
+      "T20",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "Rai's precision approach play and quiet consistency have earned him a spot among the game's best. A thinking man's golfer at a thinking man's course.",
+    "tags": []
+  },
+  {
+    "name": "Jake Knapp",
+    "initials": "JK",
+    "worldRanking": 53,
+    "age": 29,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T30",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T30",
+        "score": "+1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,300,000",
+      "fedexRank": 46
+    },
+    "strokesGained": {
+      "offTheTee": 0.8,
+      "approach": 0.2,
+      "aroundGreen": -0.05,
+      "putting": -0.1,
+      "total": 0.85
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T8",
+      "T30",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "Knapp's prodigious length makes Augusta's par-5s reachable with a wedge in hand. If the rest of the game catches up to the driver, watch out.",
+    "tags": [
+      "First Timer"
+    ]
+  },
+  {
+    "name": "Harris English",
+    "initials": "HE",
+    "worldRanking": 54,
+    "age": 36,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 7,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2024,
+        "finish": "T35",
+        "score": "+2"
+      },
+      {
+        "year": 2023,
+        "finish": "T12",
+        "score": "-4"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,100,000",
+      "fedexRank": 47
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.3,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 0.75
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T12",
+      "T30",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Georgia native grew up idolizing Augusta National and brings local knowledge and veteran savvy.",
+    "tags": []
+  },
+  {
+    "name": "Christiaan Bezuidenhout",
+    "initials": "CB",
+    "worldRanking": 56,
+    "age": 32,
+    "country": "RSA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T15",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T15",
+        "score": "-4"
+      },
+      {
+        "year": 2024,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2023,
+        "finish": "T30",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,200,000",
+      "fedexRank": 48
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.4,
+      "aroundGreen": 0.15,
+      "putting": 0,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T10",
+      "T20",
+      "T15",
+      "T25",
+      "T12"
+    ],
+    "injuryStatus": null,
+    "narrative": "The South African plays with a smooth tempo and impressive ball-striking that translates well to Augusta's demands.",
+    "tags": []
+  },
+  {
+    "name": "Lucas Glover",
+    "initials": "LG",
+    "worldRanking": 57,
+    "age": 46,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 10,
+    "mastersWins": 0,
+    "mastersBestFinish": "T10",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T32",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T10",
+        "score": "-6"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,800,000",
+      "fedexRank": 50
+    },
+    "strokesGained": {
+      "offTheTee": 0.15,
+      "approach": 0.35,
+      "aroundGreen": 0.1,
+      "putting": 0.05,
+      "total": 0.65
+    },
+    "momentumLast5": [
+      "T20",
+      "T30",
+      "T15",
+      "T35",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 2009 US Open champion's renaissance in 2023 has extended into solid play. A grizzled veteran who knows his way around major championship venues.",
+    "tags": [
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Abraham Ancer",
+    "initials": "AA",
+    "worldRanking": 70,
+    "age": 35,
+    "country": "MEX",
+    "isLIV": true,
+    "mastersAppearances": 5,
+    "mastersWins": 0,
+    "mastersBestFinish": "T15",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T35",
+        "score": "+2"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "+1"
+      },
+      {
+        "year": 2023,
+        "finish": "T15",
+        "score": "-4"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,200,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.1,
+      "approach": 0.4,
+      "aroundGreen": 0.1,
+      "putting": 0,
+      "total": 0.6
+    },
+    "momentumLast5": [
+      "T20",
+      "T30",
+      "T15",
+      "T35",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Mexican's silky swing and precise iron play deserve a bigger Augusta stage, but LIV competition has dulled his competitive edge somewhat.",
+    "tags": [
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Mackenzie Hughes",
+    "initials": "MHu",
+    "worldRanking": 59,
+    "age": 35,
+    "country": "CAN",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T18",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T18",
+        "score": "-3"
+      },
+      {
+        "year": 2024,
+        "finish": "T35",
+        "score": "+2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$2,100,000",
+      "fedexRank": 49
+    },
+    "strokesGained": {
+      "offTheTee": 0.1,
+      "approach": 0.45,
+      "aroundGreen": 0.15,
+      "putting": 0.1,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T15",
+      "T25",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "Hughes is a crafty, underrated player whose precision approach play suits Augusta. The Canadian brings a blue-collar work ethic to golf's grandest stage.",
+    "tags": []
+  },
+  {
+    "name": "Rickie Fowler",
+    "initials": "RF",
+    "worldRanking": 60,
+    "age": 37,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 12,
+    "mastersWins": 0,
+    "mastersBestFinish": "T5",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "E"
+      },
+      {
+        "year": 2023,
+        "finish": "T16",
+        "score": "-4"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,900,000",
+      "fedexRank": 52
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.25,
+      "aroundGreen": 0.1,
+      "putting": 0,
+      "total": 0.6
+    },
+    "momentumLast5": [
+      "T20",
+      "T30",
+      "T15",
+      "T25",
+      "T35"
+    ],
+    "injuryStatus": null,
+    "narrative": "Fowler remains one of the most popular players in the field, even as the contention days grow fewer. The orange-clad fan favorite always draws a gallery at Augusta.",
+    "tags": [
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Gary Woodland",
+    "initials": "GW",
+    "worldRanking": 75,
+    "age": 42,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 8,
+    "mastersWins": 0,
+    "mastersBestFinish": "T12",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T35",
+        "score": "+2"
+      },
+      {
+        "year": 2024,
+        "finish": "T40",
+        "score": "+4"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 8,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$1,000,000",
+      "fedexRank": 70
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.15,
+      "aroundGreen": -0.05,
+      "putting": -0.1,
+      "total": 0.35
+    },
+    "momentumLast5": [
+      "T25",
+      "T40",
+      "T30",
+      "T45",
+      "T35"
+    ],
+    "injuryStatus": null,
+    "narrative": "Woodland's comeback from brain surgery remains one of golf's most remarkable stories. The 2019 US Open champion is an inspiration just teeing it up.",
+    "tags": [
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Talor Gooch",
+    "initials": "TG",
+    "worldRanking": 68,
+    "age": 34,
+    "country": "USA",
+    "isLIV": true,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T22",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T30",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,500,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.3,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 0.75
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T10",
+      "T30",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Gooch has been a consistent performer on LIV and brings solid length and iron play to Augusta. An outside contender with the tools to surprise.",
+    "tags": [
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "J.T. Poston",
+    "initials": "JP",
+    "worldRanking": 62,
+    "age": 33,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T20",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T25",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$1,900,000",
+      "fedexRank": 54
+    },
+    "strokesGained": {
+      "offTheTee": 0.15,
+      "approach": 0.35,
+      "aroundGreen": 0.15,
+      "putting": 0.15,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T12",
+      "T20",
+      "T15",
+      "T28",
+      "T18"
+    ],
+    "injuryStatus": null,
+    "narrative": "The one-glove wonder is steady and smart -- exactly the kind of player who can post a number and wait on Sunday at Augusta.",
+    "tags": []
+  },
+  {
+    "name": "Kurt Kitayama",
+    "initials": "KK",
+    "worldRanking": 63,
+    "age": 33,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T22",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T22",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T32",
+        "score": "+1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$1,800,000",
+      "fedexRank": 56
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.3,
+      "aroundGreen": 0.05,
+      "putting": -0.05,
+      "total": 0.7
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T12",
+      "T30",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "Kitayama's power game and international experience have made him a seasoned competitor. Improving at Augusta with each visit.",
+    "tags": []
+  },
+  {
+    "name": "Alex Noren",
+    "initials": "AN",
+    "worldRanking": 66,
+    "age": 43,
+    "country": "SWE",
+    "isLIV": false,
+    "mastersAppearances": 5,
+    "mastersWins": 0,
+    "mastersBestFinish": "T18",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      },
+      {
+        "year": 2024,
+        "finish": "T18",
+        "score": "-3"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,600,000",
+      "fedexRank": 58
+    },
+    "strokesGained": {
+      "offTheTee": 0.15,
+      "approach": 0.4,
+      "aroundGreen": 0.1,
+      "putting": 0,
+      "total": 0.65
+    },
+    "momentumLast5": [
+      "T18",
+      "T25",
+      "T12",
+      "T30",
+      "T22"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Swedish veteran's iron play and competitive experience make him a steady hand. Countryman Åberg gets the headlines, but Noren can quietly contend.",
+    "tags": []
+  },
+  {
+    "name": "Victor Perez",
+    "initials": "VP",
+    "worldRanking": 67,
+    "age": 33,
+    "country": "FRA",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T20",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2024,
+        "finish": "T28",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$1,500,000",
+      "fedexRank": 59
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.35,
+      "aroundGreen": 0.1,
+      "putting": -0.05,
+      "total": 0.7
+    },
+    "momentumLast5": [
+      "T15",
+      "T20",
+      "T10",
+      "T30",
+      "T18"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Frenchman is a classy ball-striker with the game to hang at Augusta. His European pedigree shows in the way he shapes the ball.",
+    "tags": []
+  },
+  {
+    "name": "Tom Hoge",
+    "initials": "THo",
+    "worldRanking": 69,
+    "age": 32,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 4,
+    "mastersWins": 0,
+    "mastersBestFinish": "T20",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      },
+      {
+        "year": 2024,
+        "finish": "T20",
+        "score": "-2"
+      },
+      {
+        "year": 2023,
+        "finish": "T28",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 10,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$1,800,000",
+      "fedexRank": 60
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.4,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 0.7
+    },
+    "momentumLast5": [
+      "T15",
+      "T20",
+      "T10",
+      "T30",
+      "T22"
+    ],
+    "injuryStatus": null,
+    "narrative": "Hoge is a ball-striking machine from North Dakota who has quietly carved out a solid career. Augusta rewards his precision approach play.",
+    "tags": []
+  },
+  {
+    "name": "Dean Burmester",
+    "initials": "DB",
+    "worldRanking": 71,
+    "age": 36,
+    "country": "RSA",
+    "isLIV": true,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T28",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,200,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.55,
+      "approach": 0.2,
+      "aroundGreen": 0,
+      "putting": -0.05,
+      "total": 0.7
+    },
+    "momentumLast5": [
+      "T10",
+      "T20",
+      "T15",
+      "T30",
+      "T25"
+    ],
+    "injuryStatus": null,
+    "narrative": "The big-hitting South African has been impressive on LIV and brings serious firepower to Augusta's par-5s.",
+    "tags": [
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Adrian Meronk",
+    "initials": "AM",
+    "worldRanking": 72,
+    "age": 33,
+    "country": "POL",
+    "isLIV": true,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T30",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T30",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T35",
+        "score": "+2"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 5,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,100,000",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.45,
+      "approach": 0.3,
+      "aroundGreen": 0,
+      "putting": -0.1,
+      "total": 0.65
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T20",
+      "T30",
+      "T18"
+    ],
+    "injuryStatus": null,
+    "narrative": "Poland's first Masters competitor continues to represent his country on the biggest stage. A long hitter finding his way at Augusta.",
+    "tags": [
+      "LIV Golfer"
+    ]
+  },
+  {
+    "name": "Nicolai Hojgaard",
+    "initials": "NH",
+    "worldRanking": 73,
+    "age": 25,
+    "country": "DEN",
+    "isLIV": false,
+    "mastersAppearances": 2,
+    "mastersWins": 0,
+    "mastersBestFinish": "T25",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T25",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 2,
+      "earnings": "$1,600,000",
+      "fedexRank": 61
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.35,
+      "aroundGreen": 0.05,
+      "putting": 0,
+      "total": 0.8
+    },
+    "momentumLast5": [
+      "T10",
+      "T20",
+      "T12",
+      "T25",
+      "T15"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Danish twin has serious talent and the fearlessness of youth. Gaining valuable Augusta experience with each trip down Magnolia Lane.",
+    "tags": [
+      "Dark Horse"
+    ]
+  },
+  {
+    "name": "Rasmus Hojgaard",
+    "initials": "RHo",
+    "worldRanking": 74,
+    "age": 25,
+    "country": "DEN",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T32",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T32",
+        "score": "+1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,400,000",
+      "fedexRank": 63
+    },
+    "strokesGained": {
+      "offTheTee": 0.35,
+      "approach": 0.3,
+      "aroundGreen": 0.1,
+      "putting": 0,
+      "total": 0.75
+    },
+    "momentumLast5": [
+      "T12",
+      "T22",
+      "T15",
+      "T30",
+      "T20"
+    ],
+    "injuryStatus": null,
+    "narrative": "The other Hojgaard twin brings similar tools and ambition. The brothers could make a joint run at Augusta one of these years.",
+    "tags": []
+  },
+  {
+    "name": "Ryan Fox",
+    "initials": "RFo",
+    "worldRanking": 76,
+    "age": 39,
+    "country": "NZL",
+    "isLIV": false,
+    "mastersAppearances": 3,
+    "mastersWins": 0,
+    "mastersBestFinish": "T22",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T32",
+        "score": "+1"
+      },
+      {
+        "year": 2024,
+        "finish": "T22",
+        "score": "-1"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,400,000",
+      "fedexRank": 62
+    },
+    "strokesGained": {
+      "offTheTee": 0.55,
+      "approach": 0.25,
+      "aroundGreen": -0.05,
+      "putting": -0.1,
+      "total": 0.65
+    },
+    "momentumLast5": [
+      "T18",
+      "T25",
+      "T15",
+      "T35",
+      "T22"
+    ],
+    "injuryStatus": null,
+    "narrative": "The New Zealander's massive length gives him pop at Augusta, but the short game needs to cooperate for a full week.",
+    "tags": []
+  },
+  {
+    "name": "Thriston Lawrence",
+    "initials": "TL",
+    "worldRanking": 86,
+    "age": 27,
+    "country": "RSA",
+    "isLIV": false,
+    "mastersAppearances": 1,
+    "mastersWins": 0,
+    "mastersBestFinish": "T28",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "T28",
+        "score": "E"
+      }
+    ],
+    "majorWins": 0,
+    "season2026": {
+      "events": 9,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$1,200,000",
+      "fedexRank": 71
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.3,
+      "aroundGreen": 0.05,
+      "putting": -0.05,
+      "total": 0.7
+    },
+    "momentumLast5": [
+      "T15",
+      "T25",
+      "T18",
+      "T30",
+      "T22"
+    ],
+    "injuryStatus": null,
+    "narrative": "The South African youngster has international chops and a powerful game that could translate well at Augusta with experience.",
+    "tags": []
+  },
+  {
+    "name": "Fred Couples",
+    "initials": "FC",
+    "worldRanking": 500,
+    "age": 66,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 35,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+10"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+12"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+9"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -0.5,
+      "approach": -0.3,
+      "aroundGreen": -0.1,
+      "putting": -0.2,
+      "total": -1.1
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": "Chronic back issues limit to one event per year",
+    "narrative": "Boom Boom is the most beloved Masters champion alive. At 66, he's here for the ovation at the first tee and to feel the azaleas one more time. The 1992 champion is Augusta royalty.",
+    "tags": [
+      "Past Champion",
+      "Major Winner",
+      "Fan Favorite"
+    ]
+  },
+  {
+    "name": "Jose Maria Olazabal",
+    "initials": "JO",
+    "worldRanking": 600,
+    "age": 60,
+    "country": "ESP",
+    "isLIV": false,
+    "mastersAppearances": 30,
+    "mastersWins": 2,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+12"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+14"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+11"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -0.8,
+      "approach": -0.4,
+      "aroundGreen": 0,
+      "putting": -0.3,
+      "total": -1.5
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": "Ongoing foot and back issues",
+    "narrative": "The two-time champion and Seve's spiritual heir is a living legend at Augusta. Every walk up 18 could be his last, and the standing ovations never get old.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Vijay Singh",
+    "initials": "VS",
+    "worldRanking": 700,
+    "age": 63,
+    "country": "FIJ",
+    "isLIV": false,
+    "mastersAppearances": 26,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+11"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+13"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+10"
+      }
+    ],
+    "majorWins": 3,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -0.7,
+      "approach": -0.5,
+      "aroundGreen": -0.1,
+      "putting": -0.3,
+      "total": -1.6
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": "Age-related physical limitations",
+    "narrative": "The Big Fijian and 2000 champion still hits the range harder than players half his age. A ceremonial presence who earned every step at Augusta.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Mike Weir",
+    "initials": "MW",
+    "worldRanking": 450,
+    "age": 55,
+    "country": "CAN",
+    "isLIV": false,
+    "mastersAppearances": 22,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+9"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+10"
+      },
+      {
+        "year": 2023,
+        "finish": "MC",
+        "score": "+8"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -0.55,
+      "approach": -0.3,
+      "aroundGreen": 0,
+      "putting": -0.2,
+      "total": -1.05
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": null,
+    "narrative": "Canada's only Masters champion remains a beloved figure at Augusta. The lefty's 2003 triumph was a crowning moment for Canadian golf.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Larry Mize",
+    "initials": "LM",
+    "worldRanking": 800,
+    "age": 67,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 38,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+14"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+16"
+      }
+    ],
+    "majorWins": 1,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -1,
+      "approach": -0.6,
+      "aroundGreen": -0.1,
+      "putting": -0.3,
+      "total": -2
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Augusta native and 1987 champion is the ultimate hometown hero. That chip-in on 11 to beat Greg Norman is etched in Masters lore forever.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Sandy Lyle",
+    "initials": "SLy",
+    "worldRanking": 900,
+    "age": 68,
+    "country": "SCO",
+    "isLIV": false,
+    "mastersAppearances": 36,
+    "mastersWins": 1,
+    "mastersBestFinish": "1st",
+    "mastersHistory": [
+      {
+        "year": 2025,
+        "finish": "MC",
+        "score": "+16"
+      },
+      {
+        "year": 2024,
+        "finish": "MC",
+        "score": "+18"
+      }
+    ],
+    "majorWins": 2,
+    "season2026": {
+      "events": 1,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": -1.1,
+      "approach": -0.7,
+      "aroundGreen": -0.2,
+      "putting": -0.4,
+      "total": -2.4
+    },
+    "momentumLast5": [
+      "MC",
+      "MC",
+      "MC",
+      "MC",
+      "MC"
+    ],
+    "injuryStatus": null,
+    "narrative": "The 1988 champion and first British Masters winner is approaching the end of his competitive appearances. That 7-iron from the fairway bunker on 18 is immortal.",
+    "tags": [
+      "Past Champion",
+      "Major Winner"
+    ]
+  },
+  {
+    "name": "Luke Clanton",
+    "initials": "LC",
+    "worldRanking": null,
+    "age": 21,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 0,
+    "mastersWins": 0,
+    "mastersBestFinish": "N/A",
+    "mastersHistory": [],
+    "majorWins": 0,
+    "season2026": {
+      "events": 3,
+      "wins": 0,
+      "top10s": 1,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.4,
+      "approach": 0.3,
+      "aroundGreen": 0.1,
+      "putting": 0.15,
+      "total": 0.95
+    },
+    "momentumLast5": [
+      "T5",
+      "T15",
+      "T8",
+      "T20",
+      "T10"
+    ],
+    "injuryStatus": null,
+    "narrative": "The FSU star is the most exciting amateur in golf and already has top-5 PGA Tour finishes on his resume. His Masters debut is appointment viewing -- this kid is the real deal.",
+    "tags": [
+      "Amateur",
+      "First Timer"
+    ]
+  },
+  {
+    "name": "Noah Kent",
+    "initials": "NK",
+    "worldRanking": null,
+    "age": 20,
+    "country": "USA",
+    "isLIV": false,
+    "mastersAppearances": 0,
+    "mastersWins": 0,
+    "mastersBestFinish": "N/A",
+    "mastersHistory": [],
+    "majorWins": 0,
+    "season2026": {
+      "events": 0,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.3,
+      "approach": 0.2,
+      "aroundGreen": 0.05,
+      "putting": 0.1,
+      "total": 0.65
+    },
+    "momentumLast5": [
+      "T3",
+      "T10",
+      "T5",
+      "W",
+      "T8"
+    ],
+    "injuryStatus": null,
+    "narrative": "The US Amateur champion earns his spot in the Masters field and will soak in every moment of his first trip down Magnolia Lane.",
+    "tags": [
+      "Amateur",
+      "First Timer"
+    ]
+  },
+  {
+    "name": "Santiago de la Fuente",
+    "initials": "SF",
+    "worldRanking": null,
+    "age": 22,
+    "country": "MEX",
+    "isLIV": false,
+    "mastersAppearances": 0,
+    "mastersWins": 0,
+    "mastersBestFinish": "N/A",
+    "mastersHistory": [],
+    "majorWins": 0,
+    "season2026": {
+      "events": 0,
+      "wins": 0,
+      "top10s": 0,
+      "earnings": "$0",
+      "fedexRank": null
+    },
+    "strokesGained": {
+      "offTheTee": 0.25,
+      "approach": 0.15,
+      "aroundGreen": 0.05,
+      "putting": 0.05,
+      "total": 0.5
+    },
+    "momentumLast5": [
+      "T5",
+      "T12",
+      "T8",
+      "T15",
+      "T3"
+    ],
+    "injuryStatus": null,
+    "narrative": "The Latin America Amateur champion represents the growing depth of Mexican golf. A special week awaits the young amateur at Augusta.",
+    "tags": [
+      "Amateur",
+      "First Timer"
+    ]
+  }
+]
