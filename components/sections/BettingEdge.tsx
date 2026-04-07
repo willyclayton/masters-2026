@@ -19,7 +19,6 @@ import { ParlayBuilder } from "@/components/betting/ParlayBuilder";
 import { WeatherEdge } from "@/components/betting/WeatherEdge";
 import { LiveTracker } from "@/components/betting/LiveTracker";
 import { RoundPropsComponent } from "@/components/betting/RoundProps";
-import { LiveDataProvider } from "@/lib/live-data-context";
 import { LiveStatusBar } from "@/components/betting/LiveStatusBar";
 import {
   Search,
@@ -294,7 +293,6 @@ export function BettingEdge() {
     .reduce((sum, e) => sum + e.ev100, 0);
 
   return (
-    <LiveDataProvider>
       <section>
         {/* Hero */}
         <div className="bg-gradient-to-b from-masters-green-dark to-masters-green px-4 py-10 text-white sm:py-14">
@@ -405,6 +403,5 @@ export function BettingEdge() {
           </div>
         </div>
       </section>
-    </LiveDataProvider>
   );
 }

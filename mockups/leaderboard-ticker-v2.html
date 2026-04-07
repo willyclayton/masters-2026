@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard Ticker V2 — ESPN-Style with Pinned Leader + Fanning</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006B54; --green-dark: #004D3C; --green-light: #E8F5F0;
+    --gold: #C8A951; --gold-light: #FBF5E6;
+    --red: #C0392B; --blue: #2E6B8A;
+    --bg: #FAFAF7; --text: #1A1A1A; --text2: #4A4A4A; --muted: #8A8A8A; --border: #E5E5DC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+  .heading { font-family: 'Playfair Display', serif; }
+
+  .top-bar { position: sticky; top: 0; z-index: 50; background: var(--green-dark); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .top-bar h1 { color: white; font-family: 'Playfair Display', serif; font-size: 18px; }
+  .top-bar span { color: var(--gold); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+  .selector { max-width: 940px; margin: 32px auto 0; padding: 0 20px; }
+  .selector-title { font-family: 'Playfair Display', serif; font-size: 28px; text-align: center; margin-bottom: 8px; }
+  .selector-sub { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+  .selector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .selector-btn { padding: 10px 12px; border-radius: 8px; border: 2px solid var(--border); background: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; text-align: left; }
+  .selector-btn:hover { border-color: var(--green); color: var(--green); }
+  .selector-btn.active { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .selector-btn .num { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-bottom: 2px; }
+
+  .mockup-wrap { max-width: 940px; margin: 24px auto 60px; padding: 0 20px; }
+  .mockup { display: none; }
+  .mockup.active { display: block; }
+
+  .desc { background: var(--bg); border: 1px dashed var(--border); border-radius: 8px; padding: 16px; margin-top: 16px; font-size: 13px; color: var(--text2); line-height: 1.6; }
+  .desc strong { color: var(--text); }
+
+  .fake-header { background: var(--green); padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+  .fake-header h2 { color: white; font-family: 'Playfair Display', serif; font-size: 16px; }
+  .fake-body { border: 1px solid var(--border); border-top: 0; border-radius: 0 0 10px 10px; background: white; padding: 20px; min-height: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+  .pulse { animation: pulse 2s infinite; }
+
+  /* Shared ticker base */
+  .ticker { border-radius: 10px 10px 0 0; overflow: hidden; }
+  .ticker-row { display: flex; align-items: stretch; }
+
+  /* Live badge variations */
+  .live-badge { display: flex; align-items: center; gap: 6px; padding: 8px 14px; flex-shrink: 0; }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ADE80; }
+
+  /* Player cell */
+  .cell { padding: 7px 14px; border-right: 1px solid; display: flex; align-items: center; gap: 6px; flex-shrink: 0; transition: all 0.3s ease; }
+  .cell-pos { font-size: 10px; font-weight: 800; }
+  .cell-name { font-size: 12px; font-weight: 600; }
+  .cell-score { font-size: 12px; font-weight: 800; margin-left: 2px; }
+  .cell-detail { font-size: 10px; margin-left: 3px; }
+  .cell-round { font-size: 10px; margin-left: 4px; }
+
+  /* Fan navigation */
+  .fan-nav { display: flex; align-items: center; gap: 0; margin-left: auto; flex-shrink: 0; }
+  .fan-btn { background: none; border: none; padding: 8px 10px; cursor: pointer; font-size: 14px; transition: all .15s; display: flex; align-items: center; }
+  .fan-dots { display: flex; gap: 4px; padding: 0 8px; }
+  .fan-dot { width: 5px; height: 5px; border-radius: 50%; transition: all .2s; }
+
+  /* Page indicator */
+  .page-label { font-size: 9px; padding: 0 8px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1 class="heading">Leaderboard Ticker V2</h1>
+  <span>Pinned Leader + Fan</span>
+</div>
+
+<div class="selector">
+  <h2 class="selector-title heading">ESPN-Style with Pinned Leader &amp; Fanning</h2>
+  <p class="selector-sub">All 10 variations keep the leader pinned in position 1. The remaining cells "fan" through groups of players (2-6, 7-11, 12-16, etc.) on a timer or with arrows.</p>
+  <div class="selector-grid">
+    <button class="selector-btn active" onclick="show(0)"><span class="num">#1</span>Clean White</button>
+    <button class="selector-btn" onclick="show(1)"><span class="num">#2</span>Dark Mode</button>
+    <button class="selector-btn" onclick="show(2)"><span class="num">#3</span>Green Gradient</button>
+    <button class="selector-btn" onclick="show(3)"><span class="num">#4</span>Leader Spotlight</button>
+    <button class="selector-btn" onclick="show(4)"><span class="num">#5</span>Minimal + Arrows</button>
+    <button class="selector-btn" onclick="show(5)"><span class="num">#6</span>Two-Tone Split</button>
+    <button class="selector-btn" onclick="show(6)"><span class="num">#7</span>Augusta Classic</button>
+    <button class="selector-btn" onclick="show(7)"><span class="num">#8</span>Compact + Round</button>
+    <button class="selector-btn" onclick="show(8)"><span class="num">#9</span>Gold Accent</button>
+    <button class="selector-btn" onclick="show(9)"><span class="num">#10</span>Stacked Mobile</button>
+  </div>
+</div>
+
+<div class="mockup-wrap">
+
+<!-- ========== 1: CLEAN WHITE ========== -->
+<div class="mockup active" id="m0">
+  <div class="ticker" style="background:white;border-bottom:2px solid var(--green);">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:var(--green);">
+        <span class="live-dot pulse"></span>
+        <span style="font-size:10px;color:white;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">R3</span>
+      </div>
+      <!-- Pinned leader -->
+      <div class="cell" style="background:var(--green-light);border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--gold);">1</span>
+        <span class="cell-name" style="font-weight:700;">Scheffler</span>
+        <span class="cell-score" style="color:var(--red);">-12</span>
+        <span class="cell-detail" style="color:var(--muted);">thru 14</span>
+      </div>
+      <div style="width:2px;background:var(--green);flex-shrink:0;"></div>
+      <!-- Fanning cells (page 1: 2-6) -->
+      <div class="cell" style="border-color:var(--border);background:white;">
+        <span class="cell-pos" style="color:var(--muted);">2</span>
+        <span class="cell-name">McIlroy</span>
+        <span class="cell-score" style="color:var(--red);">-10</span>
+        <span class="cell-round" style="color:var(--muted);">R3: 70</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:white;">
+        <span class="cell-pos" style="color:var(--muted);">3</span>
+        <span class="cell-name">Åberg</span>
+        <span class="cell-score" style="color:var(--red);">-9</span>
+        <span class="cell-round" style="color:var(--muted);">thru 12</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:white;">
+        <span class="cell-pos" style="color:var(--muted);">4</span>
+        <span class="cell-name">Schauffele</span>
+        <span class="cell-score" style="color:var(--red);">-8</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:white;">
+        <span class="cell-pos" style="color:var(--muted);">5</span>
+        <span class="cell-name">Morikawa</span>
+        <span class="cell-score" style="color:var(--red);">-7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;background:white;">
+        <span class="cell-pos" style="color:var(--muted);">6</span>
+        <span class="cell-name">Rahm</span>
+        <span class="cell-score" style="color:var(--red);">-6</span>
+      </div>
+      <!-- Nav -->
+      <div class="fan-nav">
+        <span class="page-label" style="color:var(--muted);">2-6</span>
+        <div class="fan-dots">
+          <span class="fan-dot" style="background:var(--green);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+        </div>
+        <button class="fan-btn" style="color:var(--green);">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#1 Clean White</strong> — White background, green bottom border. Leader pinned left with green highlight + green divider separating from the fan group. Cells show position, name, total score, round detail. Right side has page dots + arrow to fan to next 5. Fans through: 2-6 → 7-11 → 12-16. Clean, bright, easy to read.</div>
+</div>
+
+<!-- ========== 2: DARK MODE ========== -->
+<div class="mockup" id="m1">
+  <div class="ticker" style="background:#111;">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:rgba(255,255,255,0.05);border-right:1px solid rgba(255,255,255,0.1);">
+        <span class="live-dot pulse"></span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.6);font-weight:700;">LIVE R3</span>
+      </div>
+      <!-- Pinned -->
+      <div class="cell" style="background:rgba(0,107,84,0.2);border-color:rgba(255,255,255,0.08);">
+        <span class="cell-pos" style="color:var(--gold);">1</span>
+        <span class="cell-name" style="color:white;font-weight:700;">Scheffler</span>
+        <span class="cell-score" style="color:#4ADE80;">-12</span>
+        <span class="cell-detail" style="color:rgba(255,255,255,0.4);">(-4 today)</span>
+      </div>
+      <div style="width:2px;background:var(--gold);flex-shrink:0;"></div>
+      <!-- Fan -->
+      <div class="cell" style="border-color:rgba(255,255,255,0.06);background:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">2</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.8);">McIlroy</span>
+        <span class="cell-score" style="color:#4ADE80;">-10</span>
+        <span class="cell-round" style="color:rgba(255,255,255,0.3);">R3: 70</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.06);background:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">3</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.8);">Åberg</span>
+        <span class="cell-score" style="color:#4ADE80;">-9</span>
+        <span class="cell-round" style="color:rgba(255,255,255,0.3);">thru 12</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.06);background:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">4</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.7);">Schauffele</span>
+        <span class="cell-score" style="color:#4ADE80;">-8</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.06);background:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">5</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.7);">Morikawa</span>
+        <span class="cell-score" style="color:#4ADE80;">-7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;background:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.3);">6</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.6);">Rahm</span>
+        <span class="cell-score" style="color:#4ADE80;">-6</span>
+      </div>
+      <div class="fan-nav">
+        <div class="fan-dots">
+          <span class="fan-dot" style="background:#4ADE80;"></span>
+          <span class="fan-dot" style="background:rgba(255,255,255,0.2);"></span>
+          <span class="fan-dot" style="background:rgba(255,255,255,0.2);"></span>
+        </div>
+        <button class="fan-btn" style="color:rgba(255,255,255,0.5);">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#2 Dark Mode</strong> — Black background, gold divider between leader and fan group. Green scores pop against dark. Subtle cell borders. Leader has dark green tint. Sleek, modern, dramatic. Great for evening viewing.</div>
+</div>
+
+<!-- ========== 3: GREEN GRADIENT ========== -->
+<div class="mockup" id="m2">
+  <div class="ticker" style="background:linear-gradient(90deg,var(--green-dark),var(--green));">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:rgba(0,0,0,0.2);">
+        <span class="live-dot pulse" style="background:white;"></span>
+        <span style="font-size:10px;color:white;font-weight:700;">R3 LIVE</span>
+      </div>
+      <div class="cell" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.15);">
+        <span class="cell-pos" style="color:var(--gold);font-size:12px;">1</span>
+        <span class="cell-name" style="color:white;font-weight:800;font-size:13px;">Scheffler</span>
+        <span class="cell-score" style="color:white;font-size:14px;">-12</span>
+        <span class="cell-detail" style="color:rgba(255,255,255,0.5);">thru 14</span>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,0.2);flex-shrink:0;"></div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.1);">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.5);">2</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.9);">McIlroy</span>
+        <span class="cell-score" style="color:white;">-10</span>
+        <span class="cell-round" style="color:rgba(255,255,255,0.4);">70 (F)</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.1);">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.5);">3</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.9);">Åberg</span>
+        <span class="cell-score" style="color:white;">-9</span>
+        <span class="cell-round" style="color:rgba(255,255,255,0.4);">thru 12</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.1);">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">4</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.8);">Schauffele</span>
+        <span class="cell-score" style="color:white;">-8</span>
+      </div>
+      <div class="cell" style="border-color:rgba(255,255,255,0.1);">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.4);">5</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.8);">Morikawa</span>
+        <span class="cell-score" style="color:white;">-7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;">
+        <span class="cell-pos" style="color:rgba(255,255,255,0.3);">6</span>
+        <span class="cell-name" style="color:rgba(255,255,255,0.7);">Rahm</span>
+        <span class="cell-score" style="color:white;">-6</span>
+      </div>
+      <div class="fan-nav">
+        <span class="page-label" style="color:rgba(255,255,255,0.4);">2–6</span>
+        <button class="fan-btn" style="color:rgba(255,255,255,0.6);font-size:16px;">‹</button>
+        <button class="fan-btn" style="color:white;font-size:16px;">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#3 Green Gradient</strong> — Full Masters green gradient. Leader has a frosted-glass highlight. White scores on green. Arrow navigation left/right. Seamless with the header below — feels like one cohesive brand bar. The whole strip is "Masters green."</div>
+</div>
+
+<!-- ========== 4: LEADER SPOTLIGHT ========== -->
+<div class="mockup" id="m3">
+  <div class="ticker" style="background:white;border-bottom:2px solid var(--green);">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:var(--green);">
+        <span class="live-dot pulse"></span>
+        <span style="font-size:10px;color:white;font-weight:700;">R3</span>
+      </div>
+      <!-- Leader gets extra room -->
+      <div class="cell" style="background:var(--green-light);border-color:var(--border);padding:7px 20px;">
+        <span class="cell-pos" style="color:var(--gold);font-size:11px;">1</span>
+        <span style="font-size:14px;font-weight:800;color:var(--text);font-family:'Playfair Display',serif;">Scheffler</span>
+        <span style="font-size:18px;font-weight:800;color:var(--red);margin-left:4px;">-12</span>
+        <div style="display:flex;gap:6px;margin-left:8px;">
+          <span style="font-size:10px;color:var(--muted);background:white;padding:1px 6px;border-radius:3px;">66</span>
+          <span style="font-size:10px;color:var(--muted);background:white;padding:1px 6px;border-radius:3px;">68</span>
+          <span style="font-size:10px;color:var(--green);background:var(--green-light);padding:1px 6px;border-radius:3px;font-weight:700;">64*</span>
+        </div>
+      </div>
+      <div style="width:2px;background:var(--green);flex-shrink:0;"></div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">2</span>
+        <span class="cell-name">McIlroy</span>
+        <span class="cell-score" style="color:var(--red);">-10</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">3</span>
+        <span class="cell-name">Åberg</span>
+        <span class="cell-score" style="color:var(--red);">-9</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">4</span>
+        <span class="cell-name">Schauffele</span>
+        <span class="cell-score" style="color:var(--red);">-8</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">5</span>
+        <span class="cell-name">Morikawa</span>
+        <span class="cell-score" style="color:var(--red);">-7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;">
+        <span class="cell-pos" style="color:var(--muted);">6</span>
+        <span class="cell-name">Rahm</span>
+        <span class="cell-score" style="color:var(--red);">-6</span>
+      </div>
+      <div class="fan-nav">
+        <div class="fan-dots">
+          <span class="fan-dot" style="background:var(--green);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+        </div>
+        <button class="fan-btn" style="color:var(--green);">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#4 Leader Spotlight</strong> — Like #1 but the leader cell is wider with individual round score pills (66, 68, 64*). Bigger score. The leader gets the "spotlight" treatment while the fan cells stay compact. Asterisk on in-progress round. Best for showing the leader's full story at a glance.</div>
+</div>
+
+<!-- ========== 5: MINIMAL + ARROWS ========== -->
+<div class="mockup" id="m4">
+  <div class="ticker" style="background:#fafafa;border-bottom:1px solid var(--border);">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:transparent;padding:8px 10px;">
+        <span class="live-dot pulse" style="background:var(--green);"></span>
+        <span style="font-size:10px;color:var(--green);font-weight:700;">R3</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:white;border-right-width:2px;">
+        <span style="font-size:11px;font-weight:800;color:var(--gold);">1</span>
+        <span style="font-size:13px;font-weight:700;">Scheffler</span>
+        <span style="font-size:13px;font-weight:800;color:var(--red);">-12</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:transparent;">
+        <span style="font-size:10px;color:var(--muted);font-weight:700;">2</span>
+        <span style="font-size:12px;font-weight:500;color:var(--text2);">McIlroy -10</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:transparent;">
+        <span style="font-size:10px;color:var(--muted);font-weight:700;">3</span>
+        <span style="font-size:12px;font-weight:500;color:var(--text2);">Åberg -9</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:transparent;">
+        <span style="font-size:10px;color:var(--muted);font-weight:700;">4</span>
+        <span style="font-size:12px;font-weight:500;color:var(--text2);">Schauffele -8</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);background:transparent;">
+        <span style="font-size:10px;color:var(--muted);font-weight:700;">5</span>
+        <span style="font-size:12px;font-weight:500;color:var(--text2);">Morikawa -7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;background:transparent;">
+        <span style="font-size:10px;color:var(--muted);font-weight:700;">6</span>
+        <span style="font-size:12px;font-weight:500;color:var(--text2);">Rahm -6</span>
+      </div>
+      <div class="fan-nav" style="gap:0;">
+        <button class="fan-btn" style="color:var(--border);background:var(--border);width:28px;height:28px;border-radius:50%;margin:0 3px;font-size:12px;justify-content:center;color:var(--text2);">‹</button>
+        <button class="fan-btn" style="color:white;background:var(--green);width:28px;height:28px;border-radius:50%;margin:0 3px;font-size:12px;justify-content:center;">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#5 Minimal + Arrows</strong> — Ultra-clean light gray background. No color on scores — just weight. Leader has a white card-like cell with thicker border. Round circle arrow buttons for fanning. Stripped to essentials: name + score only in fan cells. Most minimalist option.</div>
+</div>
+
+<!-- ========== 6: TWO-TONE SPLIT ========== -->
+<div class="mockup" id="m5">
+  <div class="ticker">
+    <div class="ticker-row">
+      <!-- Leader side (green) -->
+      <div style="background:var(--green);display:flex;align-items:center;">
+        <div class="live-badge">
+          <span class="live-dot pulse"></span>
+          <span style="font-size:10px;color:white;font-weight:700;">R3</span>
+        </div>
+        <div style="padding:6px 16px;display:flex;align-items:center;gap:8px;">
+          <span style="font-size:11px;color:var(--gold);font-weight:800;">1</span>
+          <span style="font-size:14px;font-weight:800;color:white;">Scheffler</span>
+          <span style="font-size:18px;font-weight:800;color:white;">-12</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.5);">(-4 R3, thru 14)</span>
+        </div>
+      </div>
+      <!-- Field side (white) -->
+      <div style="background:white;display:flex;align-items:center;flex:1;border-bottom:2px solid var(--border);">
+        <div class="cell" style="border-color:var(--border);">
+          <span class="cell-pos" style="color:var(--muted);">2</span>
+          <span class="cell-name">McIlroy</span>
+          <span class="cell-score" style="color:var(--red);">-10</span>
+          <span class="cell-round" style="color:var(--muted);">70 (F)</span>
+        </div>
+        <div class="cell" style="border-color:var(--border);">
+          <span class="cell-pos" style="color:var(--muted);">3</span>
+          <span class="cell-name">Åberg</span>
+          <span class="cell-score" style="color:var(--red);">-9</span>
+        </div>
+        <div class="cell" style="border-color:var(--border);">
+          <span class="cell-pos" style="color:var(--muted);">4</span>
+          <span class="cell-name">Schauffele</span>
+          <span class="cell-score" style="color:var(--red);">-8</span>
+        </div>
+        <div class="cell" style="border-color:var(--border);">
+          <span class="cell-pos" style="color:var(--muted);">5</span>
+          <span class="cell-name">Morikawa</span>
+          <span class="cell-score" style="color:var(--red);">-7</span>
+        </div>
+        <div class="cell" style="border-color:transparent;">
+          <span class="cell-pos" style="color:var(--muted);">6</span>
+          <span class="cell-name">Rahm</span>
+          <span class="cell-score" style="color:var(--red);">-6</span>
+        </div>
+        <div class="fan-nav">
+          <span class="page-label" style="color:var(--muted);">2-6</span>
+          <button class="fan-btn" style="color:var(--green);">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#6 Two-Tone Split</strong> — Leader pinned in green zone (left), field fans in white zone (right). Strong visual separation. Leader shows round detail, field shows just scores. The green/white boundary instantly communicates "leader vs. field." Merges naturally into the green header.</div>
+</div>
+
+<!-- ========== 7: AUGUSTA CLASSIC ========== -->
+<div class="mockup" id="m6">
+  <div class="ticker" style="background:#2D5A27;border:2px solid #3D7A35;border-bottom:3px solid #3D7A35;">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:rgba(0,0,0,0.2);">
+        <span style="font-size:10px;color:rgba(255,255,255,0.6);font-weight:600;letter-spacing:1px;text-transform:uppercase;">R3 · Live</span>
+      </div>
+      <div class="cell" style="background:#1E3E1A;border-color:#3D7A35;padding:6px 16px;">
+        <span style="font-size:12px;color:var(--gold);font-weight:800;font-family:'Playfair Display',serif;">1</span>
+        <span style="font-size:14px;font-weight:700;color:white;font-family:'Playfair Display',serif;">Scheffler</span>
+        <span style="font-size:16px;font-weight:800;color:#F5E6B8;font-family:'Playfair Display',serif;">-12</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.4);">thru 14</span>
+      </div>
+      <div style="width:2px;background:#3D7A35;flex-shrink:0;"></div>
+      <div class="cell" style="background:#1E3E1A;border-color:#3D7A35;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:800;">2</span>
+        <span style="font-size:12px;font-weight:700;color:white;font-family:'Playfair Display',serif;">McIlroy</span>
+        <span style="font-size:13px;font-weight:800;color:#F5E6B8;">-10</span>
+      </div>
+      <div class="cell" style="background:#1E3E1A;border-color:#3D7A35;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:800;">3</span>
+        <span style="font-size:12px;font-weight:700;color:white;font-family:'Playfair Display',serif;">Åberg</span>
+        <span style="font-size:13px;font-weight:800;color:#F5E6B8;">-9</span>
+      </div>
+      <div class="cell" style="background:#1E3E1A;border-color:#3D7A35;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.4);font-weight:800;">4</span>
+        <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.8);font-family:'Playfair Display',serif;">Schauffele</span>
+        <span style="font-size:13px;font-weight:800;color:#F5E6B8;">-8</span>
+      </div>
+      <div class="cell" style="background:#1E3E1A;border-color:#3D7A35;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.4);font-weight:800;">5</span>
+        <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.8);font-family:'Playfair Display',serif;">Morikawa</span>
+        <span style="font-size:13px;font-weight:800;color:#F5E6B8;">-7</span>
+      </div>
+      <div class="cell" style="background:#1E3E1A;border-color:transparent;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.3);font-weight:800;">6</span>
+        <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);font-family:'Playfair Display',serif;">Rahm</span>
+        <span style="font-size:13px;font-weight:800;color:#F5E6B8;">-6</span>
+      </div>
+      <div class="fan-nav">
+        <button class="fan-btn" style="color:#F5E6B8;font-size:16px;">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#7 Augusta Classic</strong> — Styled after the iconic green manual scoreboards. Pine green background, amber/cream scores, Playfair Display serif font. Deep green cell borders mimicking the scoreboard slats. The most authentic "at Augusta" feel. Fan arrow in cream.</div>
+</div>
+
+<!-- ========== 8: COMPACT + ROUND SCORES ========== -->
+<div class="mockup" id="m7">
+  <div class="ticker" style="background:white;border-bottom:2px solid var(--green);">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:var(--green);">
+        <span class="live-dot pulse"></span>
+        <span style="font-size:10px;color:white;font-weight:700;">R3</span>
+      </div>
+      <div class="cell" style="background:var(--green-light);border-color:var(--border);flex-direction:column;align-items:flex-start;padding:4px 14px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;color:var(--gold);font-weight:800;">1</span>
+          <span style="font-size:13px;font-weight:700;">Scheffler</span>
+          <span style="font-size:14px;font-weight:800;color:var(--red);">-12</span>
+        </div>
+        <div style="font-size:9px;color:var(--muted);margin-top:1px;">66 · 68 · <span style="color:var(--green);font-weight:600;">64*</span></div>
+      </div>
+      <div style="width:2px;background:var(--green);flex-shrink:0;"></div>
+      <div class="cell" style="border-color:var(--border);flex-direction:column;align-items:flex-start;padding:4px 12px;">
+        <div style="display:flex;align-items:center;gap:5px;">
+          <span style="font-size:10px;color:var(--muted);font-weight:700;">2</span>
+          <span style="font-size:12px;font-weight:600;">McIlroy</span>
+          <span style="font-size:12px;font-weight:800;color:var(--red);">-10</span>
+        </div>
+        <div style="font-size:9px;color:var(--muted);">68 · 68 · 70</div>
+      </div>
+      <div class="cell" style="border-color:var(--border);flex-direction:column;align-items:flex-start;padding:4px 12px;">
+        <div style="display:flex;align-items:center;gap:5px;">
+          <span style="font-size:10px;color:var(--muted);font-weight:700;">3</span>
+          <span style="font-size:12px;font-weight:600;">Åberg</span>
+          <span style="font-size:12px;font-weight:800;color:var(--red);">-9</span>
+        </div>
+        <div style="font-size:9px;color:var(--muted);">66 · 69 · <span style="color:var(--green);">66*</span></div>
+      </div>
+      <div class="cell" style="border-color:var(--border);flex-direction:column;align-items:flex-start;padding:4px 12px;">
+        <div style="display:flex;align-items:center;gap:5px;">
+          <span style="font-size:10px;color:var(--muted);font-weight:700;">4</span>
+          <span style="font-size:12px;font-weight:600;">Schauffele</span>
+          <span style="font-size:12px;font-weight:800;color:var(--red);">-8</span>
+        </div>
+        <div style="font-size:9px;color:var(--muted);">69 · 67 · 70</div>
+      </div>
+      <div class="cell" style="border-color:transparent;flex-direction:column;align-items:flex-start;padding:4px 12px;">
+        <div style="display:flex;align-items:center;gap:5px;">
+          <span style="font-size:10px;color:var(--muted);font-weight:700;">5</span>
+          <span style="font-size:12px;font-weight:600;">Morikawa</span>
+          <span style="font-size:12px;font-weight:800;color:var(--red);">-7</span>
+        </div>
+        <div style="font-size:9px;color:var(--muted);">70 · 67 · 69</div>
+      </div>
+      <div class="fan-nav">
+        <div class="fan-dots">
+          <span class="fan-dot" style="background:var(--green);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+        </div>
+        <button class="fan-btn" style="color:var(--green);">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#8 Compact + Round Scores</strong> — Two-line cells: top line is name + total, bottom line is all round scores. In-progress rounds marked with asterisk and green text. Packs the most info per cell. White background, clean. You can see every round at a glance without expanding anything.</div>
+</div>
+
+<!-- ========== 9: GOLD ACCENT ========== -->
+<div class="mockup" id="m8">
+  <div class="ticker" style="background:white;border-bottom:3px solid var(--gold);">
+    <div class="ticker-row">
+      <div class="live-badge" style="background:var(--gold);">
+        <span style="font-size:10px;color:white;font-weight:700;letter-spacing:0.5px;">ROUND 3</span>
+      </div>
+      <div class="cell" style="background:var(--gold-light);border-color:var(--gold);border-right-width:2px;">
+        <span style="font-size:11px;color:var(--gold);font-weight:800;">1</span>
+        <span style="font-size:14px;font-weight:800;color:var(--text);font-family:'Playfair Display',serif;">Scheffler</span>
+        <span style="font-size:16px;font-weight:800;color:var(--red);">-12</span>
+        <span style="font-size:10px;color:var(--muted);margin-left:3px;">thru 14</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">2</span>
+        <span class="cell-name">McIlroy</span>
+        <span class="cell-score" style="color:var(--red);">-10</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">3</span>
+        <span class="cell-name">Åberg</span>
+        <span class="cell-score" style="color:var(--red);">-9</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">4</span>
+        <span class="cell-name">Schauffele</span>
+        <span class="cell-score" style="color:var(--red);">-8</span>
+      </div>
+      <div class="cell" style="border-color:var(--border);">
+        <span class="cell-pos" style="color:var(--muted);">5</span>
+        <span class="cell-name">Morikawa</span>
+        <span class="cell-score" style="color:var(--red);">-7</span>
+      </div>
+      <div class="cell" style="border-color:transparent;">
+        <span class="cell-pos" style="color:var(--muted);">6</span>
+        <span class="cell-name">Rahm</span>
+        <span class="cell-score" style="color:var(--red);">-6</span>
+      </div>
+      <div class="fan-nav">
+        <div class="fan-dots">
+          <span class="fan-dot" style="background:var(--gold);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+          <span class="fan-dot" style="background:var(--border);"></span>
+        </div>
+        <button class="fan-btn" style="color:var(--gold);font-size:16px;">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#9 Gold Accent</strong> — White background with gold bottom border and gold badge. Leader cell has gold-light background with gold border — the "green jacket" winner treatment. Elegant, premium, different from the green-dominant options. Pairs well with the Masters gold tradition.</div>
+</div>
+
+<!-- ========== 10: STACKED MOBILE ========== -->
+<div class="mockup" id="m9">
+  <div class="ticker" style="background:white;border-bottom:2px solid var(--green);">
+    <!-- Top row: Leader always visible -->
+    <div style="display:flex;align-items:center;background:var(--green-light);padding:6px 14px;border-bottom:1px solid var(--border);">
+      <span class="live-dot pulse" style="background:var(--green);margin-right:6px;"></span>
+      <span style="font-size:10px;color:var(--green);font-weight:700;margin-right:10px;">R3</span>
+      <span style="font-size:11px;color:var(--gold);font-weight:800;">1</span>
+      <span style="font-size:14px;font-weight:800;margin-left:8px;">Scheffler</span>
+      <span style="font-size:16px;font-weight:800;color:var(--red);margin-left:8px;">-12</span>
+      <span style="font-size:10px;color:var(--muted);margin-left:6px;">66 · 68 · <span style="color:var(--green);">64*</span></span>
+      <span style="margin-left:auto;font-size:10px;color:var(--muted);">thru 14</span>
+    </div>
+    <!-- Bottom row: Fanning field (scrollable) -->
+    <div style="display:flex;align-items:center;padding:5px 14px;overflow-x:auto;gap:12px;">
+      <span style="font-size:11px;color:var(--text2);white-space:nowrap;"><span style="color:var(--muted);font-weight:700;">2</span> McIlroy <span style="font-weight:700;color:var(--red);">-10</span></span>
+      <span style="font-size:11px;color:var(--text2);white-space:nowrap;"><span style="color:var(--muted);font-weight:700;">3</span> Åberg <span style="font-weight:700;color:var(--red);">-9</span></span>
+      <span style="font-size:11px;color:var(--text2);white-space:nowrap;"><span style="color:var(--muted);font-weight:700;">4</span> Schauffele <span style="font-weight:700;color:var(--red);">-8</span></span>
+      <span style="font-size:11px;color:var(--text2);white-space:nowrap;"><span style="color:var(--muted);font-weight:700;">5</span> Morikawa <span style="font-weight:700;color:var(--red);">-7</span></span>
+      <span style="font-size:11px;color:var(--muted);white-space:nowrap;"><span style="font-weight:700;">6</span> Rahm <span style="font-weight:700;color:var(--red);">-6</span></span>
+      <span style="font-size:11px;color:var(--muted);white-space:nowrap;"><span style="font-weight:700;">7</span> DeChambeau <span style="font-weight:700;">-5</span></span>
+      <span style="font-size:11px;color:var(--muted);white-space:nowrap;"><span style="font-weight:700;">8</span> Hovland <span style="font-weight:700;">-4</span></span>
+      <span style="font-size:11px;color:var(--muted);white-space:nowrap;"><span style="font-weight:700;">9</span> Cantlay <span style="font-weight:700;">-3</span></span>
+      <span style="font-size:11px;color:var(--muted);white-space:nowrap;"><span style="font-weight:700;">10</span> Koepka <span style="font-weight:700;">-3</span></span>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#10 Stacked Mobile</strong> — Two-row layout optimized for mobile. Top row: leader pinned with full round scores, always visible. Bottom row: horizontally scrollable field with compact name+score entries. No fanning needed on the bottom row — just swipe. Works perfectly on narrow screens while keeping the leader prominent. On desktop, both rows fit comfortably.</div>
+</div>
+
+</div>
+
+<script>
+function show(idx) {
+  document.querySelectorAll('.mockup').forEach((m,i) => m.classList.toggle('active', i===idx));
+  document.querySelectorAll('.selector-btn').forEach((b,i) => b.classList.toggle('active', i===idx));
+  document.querySelector('.mockup-wrap').scrollIntoView({ behavior:'smooth', block:'start' });
+}
+</script>
+</body>
+</html>

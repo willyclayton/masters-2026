@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { LiveDataProvider } from "@/lib/live-data-context";
 import { Header } from "@/components/layout/Header";
+import { LeaderboardTicker } from "@/components/layout/LeaderboardTicker";
 import { MobileNav, type Section } from "@/components/layout/MobileNav";
 import { DesktopTabs } from "@/components/layout/DesktopTabs";
 import { Footer } from "@/components/layout/Footer";
@@ -15,27 +17,30 @@ export default function Home() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header onMenuToggle={() => setMobileNavOpen(true)} />
-      <MobileNav
-        open={mobileNavOpen}
-        onOpenChange={setMobileNavOpen}
-        activeSection={activeSection}
-        onSectionChange={setActiveSection}
-      />
-      <DesktopTabs
-        activeSection={activeSection}
-        onSectionChange={setActiveSection}
-      />
+    <LiveDataProvider>
+      <div className="flex min-h-screen flex-col">
+        <LeaderboardTicker />
+        <Header onMenuToggle={() => setMobileNavOpen(true)} />
+        <MobileNav
+          open={mobileNavOpen}
+          onOpenChange={setMobileNavOpen}
+          activeSection={activeSection}
+          onSectionChange={setActiveSection}
+        />
+        <DesktopTabs
+          activeSection={activeSection}
+          onSectionChange={setActiveSection}
+        />
 
-      <main className="flex-1 pb-20">
-        {activeSection === "predictions" && <Predictions />}
-        {activeSection === "betting" && <BettingEdge />}
-        {activeSection === "players" && <PlayerProfiles />}
-        {activeSection === "methodology" && <Methodology />}
-      </main>
+        <main className="flex-1 pb-20">
+          {activeSection === "predictions" && <Predictions />}
+          {activeSection === "betting" && <BettingEdge />}
+          {activeSection === "players" && <PlayerProfiles />}
+          {activeSection === "methodology" && <Methodology />}
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </LiveDataProvider>
   );
 }

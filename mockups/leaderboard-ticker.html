@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard Ticker — Mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006B54; --green-dark: #004D3C; --green-light: #E8F5F0;
+    --gold: #C8A951; --gold-light: #FBF5E6;
+    --red: #C0392B; --blue: #2E6B8A;
+    --bg: #FAFAF7; --text: #1A1A1A; --text2: #4A4A4A; --muted: #8A8A8A; --border: #E5E5DC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+  .heading { font-family: 'Playfair Display', serif; }
+
+  .top-bar { position: sticky; top: 0; z-index: 50; background: var(--green-dark); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .top-bar h1 { color: white; font-family: 'Playfair Display', serif; font-size: 18px; }
+  .top-bar span { color: var(--gold); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+  .selector { max-width: 900px; margin: 32px auto 0; padding: 0 20px; }
+  .selector-title { font-family: 'Playfair Display', serif; font-size: 28px; text-align: center; margin-bottom: 8px; }
+  .selector-sub { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .selector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+  .selector-btn { padding: 10px 12px; border-radius: 8px; border: 2px solid var(--border); background: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; text-align: left; }
+  .selector-btn:hover { border-color: var(--green); color: var(--green); }
+  .selector-btn.active { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .selector-btn .num { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-bottom: 2px; }
+
+  .mockup-wrap { max-width: 900px; margin: 24px auto 60px; padding: 0 20px; }
+  .mockup { display: none; }
+  .mockup.active { display: block; }
+
+  .desc { background: var(--bg); border: 1px dashed var(--border); border-radius: 8px; padding: 16px; margin-top: 16px; font-size: 13px; color: var(--text2); line-height: 1.6; }
+  .desc strong { color: var(--text); }
+
+  /* Fake header for context */
+  .fake-header { background: var(--green); padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; border-radius: 10px 10px 0 0; }
+  .fake-header h2 { color: white; font-family: 'Playfair Display', serif; font-size: 16px; }
+  .fake-header .flag { font-size: 18px; }
+  .fake-body { border: 1px solid var(--border); border-top: 0; border-radius: 0 0 10px 10px; background: white; padding: 20px; min-height: 60px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  /* Score helpers */
+  .score-red { color: var(--red); font-weight: 800; }
+  .score-even { color: var(--text); font-weight: 700; }
+  .score-over { color: var(--muted); font-weight: 700; }
+  .pos { font-weight: 800; }
+  .name-bold { font-weight: 700; }
+  .detail { font-size: 11px; color: var(--muted); }
+  .gold-text { color: var(--gold); }
+
+  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+  .pulse { animation: pulse 2s infinite; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1 class="heading">Leaderboard Ticker</h1>
+  <span>10 Mockups</span>
+</div>
+
+<div class="selector">
+  <h2 class="selector-title heading">Choose a Ticker Style</h2>
+  <p class="selector-sub">Each sits above or below the header. Click to preview.</p>
+  <div class="selector-grid">
+    <button class="selector-btn active" onclick="show(0)"><span class="num">#1</span>Minimal Bar</button>
+    <button class="selector-btn" onclick="show(1)"><span class="num">#2</span>Scrolling Tape</button>
+    <button class="selector-btn" onclick="show(2)"><span class="num">#3</span>Gold Spotlight</button>
+    <button class="selector-btn" onclick="show(3)"><span class="num">#4</span>Top 5 Cards</button>
+    <button class="selector-btn" onclick="show(4)"><span class="num">#5</span>ESPN-Style Bar</button>
+    <button class="selector-btn" onclick="show(5)"><span class="num">#6</span>Compact Pill Row</button>
+    <button class="selector-btn" onclick="show(6)"><span class="num">#7</span>Dark Cinematic</button>
+    <button class="selector-btn" onclick="show(7)"><span class="num">#8</span>Split Leader</button>
+    <button class="selector-btn" onclick="show(8)"><span class="num">#9</span>Augusta Scoreboard</button>
+    <button class="selector-btn" onclick="show(9)"><span class="num">#10</span>Floating Overlay</button>
+  </div>
+</div>
+
+<div class="mockup-wrap">
+
+<!-- ========== 1: MINIMAL BAR ========== -->
+<div class="mockup active" id="m0">
+  <div style="background: var(--green-dark); padding: 6px 20px; border-radius: 10px 10px 0 0; display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#4ADE80;" class="pulse"></span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;font-weight:600;">R3 In Progress</span>
+      </div>
+      <div style="height:12px;width:1px;background:rgba(255,255,255,0.15);"></div>
+      <span style="font-size:13px;color:white;">
+        <span class="pos" style="color:var(--gold);">1.</span>
+        <span class="name-bold" style="color:white;">Scheffler</span>
+        <span class="score-red" style="color:#4ADE80;">-12</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.5);margin-left:4px;">(-4 today)</span>
+      </span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.7);">
+        <span style="font-weight:700;">2.</span> McIlroy <span style="color:#4ADE80;">-10</span>
+      </span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.7);">
+        <span style="font-weight:700;">3.</span> Åberg <span style="color:#4ADE80;">-9</span>
+      </span>
+    </div>
+    <span style="font-size:10px;color:rgba(255,255,255,0.4);">Updated 2:34 PM</span>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#1 Minimal Bar</strong> — Thin dark strip above the header. Leader + score + today's round score, plus 2nd and 3rd place. Live pulse dot. Extremely compact, always visible. No scrolling.</div>
+</div>
+
+<!-- ========== 2: SCROLLING TAPE ========== -->
+<div class="mockup" id="m1">
+  <div style="background:#1a1a1a; padding:6px 0; overflow:hidden; border-radius:10px 10px 0 0; position:relative;">
+    <div style="display:flex;gap:40px;animation:scroll 20s linear infinite;white-space:nowrap;padding-left:20px;">
+      <span style="font-size:12px;color:white;">
+        <span style="color:var(--gold);font-weight:800;">1</span>
+        <span style="font-weight:700;margin:0 4px;">S. Scheffler</span>
+        <span style="color:#4ADE80;font-weight:800;">-12</span>
+        <span style="color:rgba(255,255,255,0.4);font-size:10px;margin-left:3px;">(R3: -4 thru 14)</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="color:silver;font-weight:800;">2</span>
+        <span style="font-weight:600;margin:0 4px;">R. McIlroy</span>
+        <span style="color:#4ADE80;font-weight:800;">-10</span>
+        <span style="color:rgba(255,255,255,0.4);font-size:10px;margin-left:3px;">(R3: -2 thru 16)</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="color:#CD7F32;font-weight:800;">3</span>
+        <span style="font-weight:600;margin:0 4px;">L. Åberg</span>
+        <span style="color:#4ADE80;font-weight:800;">-9</span>
+        <span style="color:rgba(255,255,255,0.4);font-size:10px;margin-left:3px;">(R3: -3 thru 12)</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="font-weight:800;">4</span>
+        <span style="font-weight:600;margin:0 4px;">X. Schauffele</span>
+        <span style="color:#4ADE80;font-weight:800;">-8</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="font-weight:800;">5</span>
+        <span style="font-weight:600;margin:0 4px;">C. Morikawa</span>
+        <span style="color:#4ADE80;font-weight:800;">-7</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.5);">
+        <span style="font-weight:800;">6</span>
+        <span style="margin:0 4px;">J. Rahm</span>
+        <span style="color:#4ADE80;">-6</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.5);">
+        <span style="font-weight:800;">7</span>
+        <span style="margin:0 4px;">B. DeChambeau</span>
+        <span style="color:#4ADE80;">-5</span>
+      </span>
+      <!-- duplicate for seamless scroll -->
+      <span style="font-size:12px;color:white;">
+        <span style="color:var(--gold);font-weight:800;">1</span>
+        <span style="font-weight:700;margin:0 4px;">S. Scheffler</span>
+        <span style="color:#4ADE80;font-weight:800;">-12</span>
+        <span style="color:rgba(255,255,255,0.4);font-size:10px;margin-left:3px;">(R3: -4 thru 14)</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="color:silver;font-weight:800;">2</span>
+        <span style="font-weight:600;margin:0 4px;">R. McIlroy</span>
+        <span style="color:#4ADE80;font-weight:800;">-10</span>
+      </span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);">
+        <span style="color:#CD7F32;font-weight:800;">3</span>
+        <span style="font-weight:600;margin:0 4px;">L. Åberg</span>
+        <span style="color:#4ADE80;font-weight:800;">-9</span>
+      </span>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#2 Scrolling Tape</strong> — ESPN-style infinite scroll ticker on dark background. Shows top ~7 players continuously scrolling. Each entry has position, name, total score, and round detail. Classic broadcast feel.</div>
+</div>
+
+<!-- ========== 3: GOLD SPOTLIGHT ========== -->
+<div class="mockup" id="m2">
+  <div style="background:linear-gradient(135deg,#92700C,var(--gold));padding:10px 20px;border-radius:10px 10px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="background:rgba(255,255,255,0.2);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+        <span style="font-size:14px;">🏆</span>
+      </div>
+      <div>
+        <div style="font-size:9px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;">Tournament Leader</div>
+        <div style="font-size:18px;font-weight:800;color:white;font-family:'Playfair Display',serif;">Scottie Scheffler</div>
+      </div>
+      <div style="margin-left:8px;text-align:center;">
+        <div style="font-size:28px;font-weight:800;color:white;line-height:1;">-12</div>
+        <div style="font-size:9px;color:rgba(255,255,255,0.7);">TOTAL</div>
+      </div>
+      <div style="height:30px;width:1px;background:rgba(255,255,255,0.2);margin:0 4px;"></div>
+      <div style="text-align:center;">
+        <div style="font-size:16px;font-weight:700;color:white;">-4</div>
+        <div style="font-size:9px;color:rgba(255,255,255,0.7);">R3 (thru 14)</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;">
+      <div style="text-align:center;">
+        <div style="font-size:10px;color:rgba(255,255,255,0.6);">2nd</div>
+        <div style="font-size:12px;font-weight:700;color:white;">McIlroy -10</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:10px;color:rgba(255,255,255,0.6);">3rd</div>
+        <div style="font-size:12px;font-weight:700;color:white;">Åberg -9</div>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#3 Gold Spotlight</strong> — Premium gold gradient banner highlighting the tournament leader. Large score, round detail, trophy icon. 2nd and 3rd on the right. Feels like a broadcast lower-third. Bold and luxurious.</div>
+</div>
+
+<!-- ========== 4: TOP 5 CARDS ========== -->
+<div class="mockup" id="m3">
+  <div style="background:var(--green-dark);padding:10px 16px;border-radius:10px 10px 0 0;display:flex;gap:8px;overflow-x:auto;">
+    <div style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;min-width:130px;text-align:center;flex-shrink:0;">
+      <div style="font-size:9px;color:var(--gold);font-weight:700;">LEADER</div>
+      <div style="font-size:14px;font-weight:800;color:white;margin-top:2px;">Scheffler</div>
+      <div style="font-size:22px;font-weight:800;color:#4ADE80;margin-top:2px;">-12</div>
+      <div style="font-size:10px;color:rgba(255,255,255,0.5);">R3: 68 (thru 14)</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px 14px;min-width:110px;text-align:center;flex-shrink:0;">
+      <div style="font-size:9px;color:silver;font-weight:700;">2ND</div>
+      <div style="font-size:13px;font-weight:700;color:white;margin-top:2px;">McIlroy</div>
+      <div style="font-size:18px;font-weight:800;color:#4ADE80;margin-top:2px;">-10</div>
+      <div style="font-size:10px;color:rgba(255,255,255,0.4);">R3: 70 (F)</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px 14px;min-width:110px;text-align:center;flex-shrink:0;">
+      <div style="font-size:9px;color:#CD7F32;font-weight:700;">3RD</div>
+      <div style="font-size:13px;font-weight:700;color:white;margin-top:2px;">Åberg</div>
+      <div style="font-size:18px;font-weight:800;color:#4ADE80;margin-top:2px;">-9</div>
+      <div style="font-size:10px;color:rgba(255,255,255,0.4);">R3: 67 (thru 12)</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:8px 14px;min-width:100px;text-align:center;flex-shrink:0;">
+      <div style="font-size:9px;color:rgba(255,255,255,0.4);font-weight:700;">4TH</div>
+      <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.8);margin-top:2px;">Schauffele</div>
+      <div style="font-size:16px;font-weight:800;color:#4ADE80;margin-top:2px;">-8</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:8px 14px;min-width:100px;text-align:center;flex-shrink:0;">
+      <div style="font-size:9px;color:rgba(255,255,255,0.4);font-weight:700;">5TH</div>
+      <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.8);margin-top:2px;">Morikawa</div>
+      <div style="font-size:16px;font-weight:800;color:#4ADE80;margin-top:2px;">-7</div>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#4 Top 5 Cards</strong> — Horizontally scrollable mini-cards for top 5 players. Leader card is slightly larger with gold accent. Each shows position, name, total score, and round score. Swipeable on mobile. Game-day feel.</div>
+</div>
+
+<!-- ========== 5: ESPN-STYLE BAR ========== -->
+<div class="mockup" id="m4">
+  <div style="background:white;border-bottom:2px solid var(--green);padding:0;border-radius:10px 10px 0 0;display:flex;align-items:stretch;">
+    <div style="background:var(--green);padding:8px 14px;display:flex;align-items:center;gap:6px;">
+      <span style="width:6px;height:6px;border-radius:50%;background:#4ADE80;" class="pulse"></span>
+      <span style="font-size:10px;color:white;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Live R3</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:0;flex:1;overflow-x:auto;">
+      <div style="padding:6px 16px;border-right:1px solid var(--border);background:var(--green-light);">
+        <span style="font-size:10px;color:var(--gold);font-weight:800;">1</span>
+        <span style="font-size:13px;font-weight:700;margin-left:6px;">Scheffler</span>
+        <span style="font-size:13px;font-weight:800;color:var(--red);margin-left:6px;">-12</span>
+        <span style="font-size:10px;color:var(--muted);margin-left:4px;">thru 14</span>
+      </div>
+      <div style="padding:6px 16px;border-right:1px solid var(--border);">
+        <span style="font-size:10px;color:var(--muted);font-weight:800;">2</span>
+        <span style="font-size:12px;font-weight:600;margin-left:6px;">McIlroy</span>
+        <span style="font-size:12px;font-weight:800;color:var(--red);margin-left:6px;">-10</span>
+      </div>
+      <div style="padding:6px 16px;border-right:1px solid var(--border);">
+        <span style="font-size:10px;color:var(--muted);font-weight:800;">3</span>
+        <span style="font-size:12px;font-weight:600;margin-left:6px;">Åberg</span>
+        <span style="font-size:12px;font-weight:800;color:var(--red);margin-left:6px;">-9</span>
+      </div>
+      <div style="padding:6px 16px;border-right:1px solid var(--border);">
+        <span style="font-size:10px;color:var(--muted);font-weight:800;">4</span>
+        <span style="font-size:12px;font-weight:600;margin-left:6px;">Schauffele</span>
+        <span style="font-size:12px;font-weight:800;color:var(--red);margin-left:6px;">-8</span>
+      </div>
+      <div style="padding:6px 16px;">
+        <span style="font-size:10px;color:var(--muted);font-weight:800;">5</span>
+        <span style="font-size:12px;font-weight:600;margin-left:6px;">Morikawa</span>
+        <span style="font-size:12px;font-weight:800;color:var(--red);margin-left:6px;">-7</span>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#5 ESPN-Style Bar</strong> — White background with green left badge. Players in segmented cells divided by borders. Leader highlighted with light green background. Clean, structured, familiar sports app layout. Scrollable on mobile.</div>
+</div>
+
+<!-- ========== 6: COMPACT PILL ROW ========== -->
+<div class="mockup" id="m5">
+  <div style="background:var(--green-dark);padding:8px 16px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:6px;overflow-x:auto;">
+    <span style="font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-right:4px;flex-shrink:0;">Leaders</span>
+    <span style="background:var(--gold);color:white;padding:4px 10px;border-radius:50px;font-size:11px;font-weight:700;white-space:nowrap;flex-shrink:0;">
+      1 Scheffler -12
+    </span>
+    <span style="background:rgba(255,255,255,0.12);color:white;padding:4px 10px;border-radius:50px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0;">
+      2 McIlroy -10
+    </span>
+    <span style="background:rgba(255,255,255,0.12);color:white;padding:4px 10px;border-radius:50px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0;">
+      3 Åberg -9
+    </span>
+    <span style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);padding:4px 10px;border-radius:50px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0;">
+      4 Schauffele -8
+    </span>
+    <span style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);padding:4px 10px;border-radius:50px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0;">
+      5 Morikawa -7
+    </span>
+    <span style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);padding:4px 10px;border-radius:50px;font-size:11px;font-weight:500;white-space:nowrap;flex-shrink:0;">
+      6 Rahm -6
+    </span>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#6 Compact Pill Row</strong> — Horizontally scrolling pills on dark background. Leader gets gold pill, others fade out. Ultra-compact — just position, last name, score. Great on mobile. Minimal height.</div>
+</div>
+
+<!-- ========== 7: DARK CINEMATIC ========== -->
+<div class="mockup" id="m6">
+  <div style="background:linear-gradient(90deg,#0a0a0a,#1a1a1a);padding:12px 20px;border-radius:10px 10px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:white;">SS</div>
+        <div>
+          <div style="font-size:14px;font-weight:800;color:white;font-family:'Playfair Display',serif;">Scottie Scheffler</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);">World #1 · 2x Masters Champion</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:4px;">
+        <span style="font-size:32px;font-weight:800;color:#4ADE80;font-family:'Playfair Display',serif;line-height:1;">-12</span>
+        <span style="font-size:11px;color:rgba(255,255,255,0.4);">total</span>
+      </div>
+      <div style="height:28px;width:1px;background:rgba(255,255,255,0.1);"></div>
+      <div style="display:flex;gap:8px;">
+        <div style="text-align:center;">
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);">R1</div>
+          <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.7);">66</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);">R2</div>
+          <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.7);">68</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:10px;color:#4ADE80;">R3</div>
+          <div style="font-size:14px;font-weight:700;color:#4ADE80;">64*</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center;">
+      <span style="font-size:11px;color:rgba(255,255,255,0.5);">2. McIlroy -10</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.4);">3. Åberg -9</span>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#7 Dark Cinematic</strong> — Dramatic black bar with the leader's initials avatar, full name, title, massive score, and all round scores broken out. 2nd/3rd tucked to the right. Feels like a TV broadcast graphic. Premium, editorial, high-impact.</div>
+</div>
+
+<!-- ========== 8: SPLIT LEADER ========== -->
+<div class="mockup" id="m7">
+  <div style="display:flex;border-radius:10px 10px 0 0;overflow:hidden;">
+    <div style="background:var(--green);flex:1;padding:10px 20px;display:flex;align-items:center;gap:12px;">
+      <div>
+        <div style="font-size:9px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;font-weight:600;">Leader</div>
+        <div style="font-size:16px;font-weight:800;color:white;font-family:'Playfair Display',serif;">Scheffler <span style="font-size:24px;color:white;">-12</span></div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);">R3: 64 thru 14 · 68-68-64</div>
+      </div>
+    </div>
+    <div style="background:var(--green-dark);padding:8px 20px;display:flex;align-items:center;gap:20px;">
+      <div style="text-align:center;">
+        <div style="font-size:9px;color:rgba(255,255,255,0.5);">2nd</div>
+        <div style="font-size:12px;font-weight:700;color:white;">McIlroy</div>
+        <div style="font-size:14px;font-weight:800;color:#4ADE80;">-10</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:9px;color:rgba(255,255,255,0.5);">3rd</div>
+        <div style="font-size:12px;font-weight:700;color:white;">Åberg</div>
+        <div style="font-size:14px;font-weight:800;color:#4ADE80;">-9</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:9px;color:rgba(255,255,255,0.4);">Gap</div>
+        <div style="font-size:14px;font-weight:800;color:var(--gold);">2</div>
+        <div style="font-size:9px;color:rgba(255,255,255,0.4);">shots</div>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#8 Split Leader</strong> — Two-tone split: left (green) spotlights the leader with all round scores, right (dark green) shows chasers + the gap in shots. The "Gap" metric is unique — instantly tells you how close the race is. Clean separation of leader vs. field.</div>
+</div>
+
+<!-- ========== 9: AUGUSTA SCOREBOARD ========== -->
+<div class="mockup" id="m8">
+  <div style="background:#2D5A27;padding:8px 16px;border-radius:10px 10px 0 0;border:2px solid #3D7A35;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+      <span style="font-size:9px;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:2px;font-weight:600;">The Masters · Round 3</span>
+      <span style="font-size:9px;color:rgba(255,255,255,0.4);" class="pulse">● LIVE</span>
+    </div>
+    <div style="display:flex;gap:6px;font-family:'Playfair Display',serif;">
+      <div style="background:#1E3E1A;border:1px solid #3D7A35;border-radius:4px;padding:4px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;color:var(--gold);font-weight:800;">1</span>
+        <span style="font-size:13px;font-weight:700;color:white;">Scheffler</span>
+        <span style="font-size:15px;font-weight:800;color:#F5E6B8;">-12</span>
+      </div>
+      <div style="background:#1E3E1A;border:1px solid #3D7A35;border-radius:4px;padding:4px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:800;">2</span>
+        <span style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.9);">McIlroy</span>
+        <span style="font-size:14px;font-weight:800;color:#F5E6B8;">-10</span>
+      </div>
+      <div style="background:#1E3E1A;border:1px solid #3D7A35;border-radius:4px;padding:4px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:800;">3</span>
+        <span style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.9);">Åberg</span>
+        <span style="font-size:14px;font-weight:800;color:#F5E6B8;">-9</span>
+      </div>
+      <div style="background:#1E3E1A;border:1px solid #3D7A35;border-radius:4px;padding:4px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.4);font-weight:800;">4</span>
+        <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);">Schauffele</span>
+        <span style="font-size:14px;font-weight:800;color:#F5E6B8;">-8</span>
+      </div>
+      <div style="background:#1E3E1A;border:1px solid #3D7A35;border-radius:4px;padding:4px 12px;display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.4);font-weight:800;">5</span>
+        <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);">Morikawa</span>
+        <span style="font-size:14px;font-weight:800;color:#F5E6B8;">-7</span>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header" style="border-radius:0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body">Page content below...</div>
+  <div class="desc"><strong>#9 Augusta Scoreboard</strong> — Styled after the famous green manual scoreboards at Augusta National. Dark pine green background, amber/cream scores (like the real scoreboard numbers), serif font, subtle cell borders. The most "Masters" option. Iconic and authentic.</div>
+</div>
+
+<!-- ========== 10: FLOATING OVERLAY ========== -->
+<div class="mockup" id="m9">
+  <div class="fake-header" style="border-radius:10px 10px 0 0;"><h2 class="heading">The Green Jacket Lab</h2><span class="flag">⛳</span></div>
+  <div class="fake-body" style="min-height:120px;position:relative;padding-top:50px;">
+    <!-- Floating ticker overlapping the header -->
+    <div style="position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:white;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.1);border:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:12px;white-space:nowrap;">
+      <div style="display:flex;align-items:center;gap:4px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--green);" class="pulse"></span>
+        <span style="font-size:10px;color:var(--green);font-weight:700;">LIVE</span>
+      </div>
+      <div style="height:16px;width:1px;background:var(--border);"></div>
+      <span style="font-size:12px;">
+        <span style="color:var(--gold);font-weight:800;">1.</span>
+        <span style="font-weight:700;">Scheffler</span>
+        <span style="font-weight:800;color:var(--red);">-12</span>
+        <span style="font-size:10px;color:var(--muted);margin-left:2px;">(R3: -4)</span>
+      </span>
+      <span style="font-size:12px;color:var(--text2);">
+        <span style="font-weight:700;">2.</span> McIlroy <span style="font-weight:700;color:var(--red);">-10</span>
+      </span>
+      <span style="font-size:12px;color:var(--text2);">
+        <span style="font-weight:700;">3.</span> Åberg <span style="font-weight:700;color:var(--red);">-9</span>
+      </span>
+    </div>
+    Page content below...
+  </div>
+  <div class="desc"><strong>#10 Floating Overlay</strong> — A floating white card that overlaps between the header and content. Centered, rounded, with a soft shadow. Feels like a notification toast that persists. Clean and modern. Doesn't add vertical height — overlaps instead.</div>
+</div>
+
+</div>
+
+<script>
+function show(idx) {
+  document.querySelectorAll('.mockup').forEach((m,i) => m.classList.toggle('active', i===idx));
+  document.querySelectorAll('.selector-btn').forEach((b,i) => b.classList.toggle('active', i===idx));
+  document.querySelector('.mockup-wrap').scrollIntoView({ behavior:'smooth', block:'start' });
+}
+</script>
+</body>
+</html>
