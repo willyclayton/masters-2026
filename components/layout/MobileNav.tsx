@@ -34,7 +34,7 @@ export function MobileNav({
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent side="left" className="w-72 p-0 bg-[#004D3C]">
         <SheetHeader className="border-b border-white/10 px-6 py-4">
-          <SheetTitle className="font-heading text-lg text-white board-header-paint">
+          <SheetTitle className="font-masters-italic text-lg text-white board-header-paint">
             The Green Jacket Lab
           </SheetTitle>
         </SheetHeader>

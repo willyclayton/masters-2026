@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masters 2026 — Home Page Redesigns</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════
+   RESET & SELECTOR
+   ═══════════════════════════════════════ */
+:root {
+  --green: #006B54;
+  --green-dark: #004D3C;
+  --green-darker: #00352A;
+  --green-light: #E8F5F0;
+  --gold: #C8A951;
+  --gold-light: #FBF5E6;
+  --red: #C0392B;
+  --cream: #FAFAF7;
+  --white: #FFFFFF;
+  --text: #1A1A1A;
+  --text2: #4A4A4A;
+  --muted: #8A8A8A;
+  --border: #E5E5DC;
+  --tile-bg: linear-gradient(175deg, #FFF 0%, #F5F0E8 60%, #E8E0D0 100%);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family:'DM Sans',sans-serif; background:#0a0a0a; color:var(--text); }
+
+/* Selector */
+.sel {
+  position:fixed; top:0; left:0; right:0; z-index:9999;
+  background:rgba(10,10,10,0.95); backdrop-filter:blur(12px);
+  border-bottom:1px solid #222; padding:8px 16px;
+  display:flex; align-items:center; gap:6px; overflow-x:auto;
+}
+.sel::-webkit-scrollbar { height:0; }
+.sel-label { color:var(--gold); font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap; margin-right:4px; }
+.sel-btn {
+  padding:5px 12px; border-radius:3px; border:1px solid #333;
+  background:transparent; color:#666; font-size:10px; font-weight:600;
+  cursor:pointer; transition:all .15s; white-space:nowrap;
+  font-family:'DM Sans',sans-serif;
+}
+.sel-btn:hover { border-color:var(--gold); color:var(--gold); }
+.sel-btn.active { background:var(--green-dark); border-color:var(--green); color:#fff; }
+
+/* Mockup containers */
+.mockup { display:none; margin-top:44px; }
+.mockup.active { display:block; }
+
+/* Shared tile */
+.tile {
+  display:inline-flex; align-items:center; justify-content:center;
+  background: var(--tile-bg);
+  border-radius:2px; font-weight:800; position:relative;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.9), inset 0 -1px 0 rgba(0,0,0,0.06);
+}
+.tile::after {
+  content:''; position:absolute; inset:0; border-radius:2px;
+  border:1px solid rgba(0,0,0,0.1); border-top-color:rgba(255,255,255,0.3);
+  pointer-events:none;
+}
+.t-red { color:var(--red); }
+.t-black { color:var(--text); }
+.t-gold { color:#8B7535; }
+
+/* Micro texture */
+.paint-tex {
+  position:relative;
+}
+.paint-tex::before {
+  content:''; position:absolute; inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events:none; border-radius:inherit;
+}
+
+/* Description */
+.desc { max-width:800px; margin:24px auto; padding:0 20px; }
+.desc-box { background:rgba(255,255,255,0.03); border:1px dashed rgba(255,255,255,0.12); border-radius:6px; padding:14px 16px; font-size:11px; color:rgba(255,255,255,0.4); line-height:1.7; }
+.desc-box b { color:rgba(255,255,255,0.7); }
+/* Light-bg overrides */
+.light-desc .desc-box { background:rgba(0,0,0,0.02); border-color:var(--border); color:var(--text2); }
+.light-desc .desc-box b { color:var(--text); }
+
+
+/* ═══════════════════════════════════════
+   1: SEAMLESS GREEN COLUMN
+   One continuous green surface, no boxes
+   ═══════════════════════════════════════ */
+#m1 {
+  background: linear-gradient(180deg, var(--green-dark) 0%, var(--green) 300px, var(--green) calc(100% - 200px), var(--green-dark) 100%);
+  min-height:100vh;
+}
+#m1 .inner { max-width:640px; margin:0 auto; padding:0 20px; position:relative; }
+
+/* Ticker */
+#m1 .ticker { background:rgba(0,0,0,0.15); padding:8px 0; overflow:hidden; }
+#m1 .ticker-track { display:flex; gap:20px; padding:0 16px; white-space:nowrap; }
+#m1 .ticker-item { display:inline-flex; align-items:center; gap:6px; }
+#m1 .ticker-item .pos { font-size:10px; color:rgba(255,255,255,0.4); font-weight:700; }
+#m1 .ticker-item .nm { font-size:11px; color:rgba(255,255,255,0.7); font-weight:600; }
+#m1 .ticker-item .sc { font-size:11px; }
+
+/* Header */
+#m1 .hdr { padding:40px 0 0; text-align:center; }
+#m1 .hdr .brand { font-family:'Cormorant Garamond',serif; font-size:14px; color:var(--gold); letter-spacing:4px; text-transform:uppercase; }
+#m1 .hdr h1 { font-family:'Oswald',sans-serif; font-size:52px; font-weight:700; color:#fff; letter-spacing:10px; text-transform:uppercase; margin-top:8px; text-shadow:0 2px 8px rgba(0,0,0,0.3); }
+#m1 .hdr .sub { color:rgba(255,255,255,0.4); font-size:12px; margin-top:8px; letter-spacing:2px; }
+
+/* Winner */
+#m1 .winner { margin-top:48px; text-align:center; }
+#m1 .winner .label { font-size:10px; color:var(--gold); letter-spacing:3px; text-transform:uppercase; margin-bottom:16px; }
+#m1 .winner .name-plate {
+  display:inline-block; padding:10px 28px;
+  background:linear-gradient(180deg,#fff 0%,#f0ead8 100%);
+  box-shadow:2px 4px 12px rgba(0,0,0,0.3); border-radius:2px;
+  font-family:'Oswald',sans-serif; font-size:28px; font-weight:600;
+  color:var(--text); letter-spacing:3px; text-transform:uppercase;
+  transform:rotate(-0.3deg);
+}
+#m1 .winner .stats { display:flex; justify-content:center; gap:16px; margin-top:20px; }
+#m1 .winner .stat { display:flex; flex-direction:column; align-items:center; gap:4px; }
+#m1 .winner .stat .tile { width:56px; height:44px; font-size:20px; }
+#m1 .winner .stat .lbl { font-size:9px; color:rgba(255,255,255,0.4); letter-spacing:1.5px; text-transform:uppercase; }
+
+/* Divider */
+#m1 .divider { width:60px; height:2px; background:rgba(255,255,255,0.1); margin:40px auto; }
+
+/* Leaderboard — seamless rows, no box */
+#m1 .lb-title { font-family:'Oswald',sans-serif; font-size:14px; color:rgba(255,255,255,0.5); letter-spacing:6px; text-transform:uppercase; text-align:center; margin-bottom:20px; }
+#m1 .lb-row {
+  display:flex; align-items:center; gap:10px; padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+#m1 .lb-row .tile { width:32px; height:28px; font-size:14px; }
+#m1 .lb-row .nm { flex:1; color:rgba(255,255,255,0.85); font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+#m1 .lb-row .pct { color:rgba(255,255,255,0.4); font-size:12px; font-weight:600; tabular-nums; }
+#m1 .lb-row .tile.win-tile { width:44px; height:28px; font-size:12px; }
+
+/* Nav pills */
+#m1 .nav-pills { display:flex; justify-content:center; gap:3px; margin-top:40px; padding-bottom:60px; }
+#m1 .nav-pill {
+  padding:8px 18px; font-size:10px; font-weight:700; letter-spacing:1.5px;
+  text-transform:uppercase; color:rgba(255,255,255,0.4); cursor:pointer;
+  border-bottom:2px solid transparent; transition:all .15s;
+}
+#m1 .nav-pill:hover { color:rgba(255,255,255,0.7); }
+#m1 .nav-pill.active { color:#fff; border-bottom-color:var(--gold); }
+
+
+/* ═══════════════════════════════════════
+   2: EDITORIAL SPLIT
+   Left: big typography. Right: data tiles
+   ═══════════════════════════════════════ */
+#m2 { background:var(--cream); min-height:100vh; }
+#m2 .top-bar { background:var(--green-dark); padding:10px 24px; display:flex; align-items:center; justify-content:space-between; }
+#m2 .top-bar h1 { font-family:'Cormorant Garamond',serif; color:#fff; font-size:16px; }
+#m2 .top-bar .pills { display:flex; gap:4px; }
+#m2 .top-bar .pill { color:rgba(255,255,255,0.5); font-size:10px; font-weight:600; letter-spacing:1px; text-transform:uppercase; padding:4px 12px; cursor:pointer; transition:color .15s; }
+#m2 .top-bar .pill:hover { color:#fff; }
+#m2 .top-bar .pill.active { color:var(--gold); }
+
+#m2 .hero-split {
+  display:grid; grid-template-columns:1fr 1fr; min-height:70vh;
+}
+@media(max-width:768px){ #m2 .hero-split { grid-template-columns:1fr; } }
+
+#m2 .hero-left {
+  display:flex; flex-direction:column; justify-content:center;
+  padding:60px 48px;
+}
+#m2 .hero-left .eyebrow { font-size:11px; color:var(--gold); letter-spacing:4px; text-transform:uppercase; font-weight:600; }
+#m2 .hero-left h2 { font-family:'Cormorant Garamond',serif; font-size:48px; font-weight:900; color:var(--green-dark); line-height:1.1; margin-top:12px; }
+#m2 .hero-left .desc-text { font-size:14px; color:var(--text2); line-height:1.7; margin-top:16px; max-width:400px; }
+#m2 .hero-left .winner-line { margin-top:28px; display:flex; align-items:center; gap:12px; }
+#m2 .hero-left .winner-line .tile { width:48px; height:40px; font-size:22px; }
+#m2 .hero-left .winner-line .win-name { font-family:'Oswald',sans-serif; font-size:24px; font-weight:600; color:var(--text); text-transform:uppercase; letter-spacing:2px; }
+#m2 .hero-left .winner-line .win-pct { font-size:13px; color:var(--muted); margin-left:auto; }
+
+#m2 .hero-right {
+  background:var(--green-dark); display:flex; flex-direction:column;
+  justify-content:center; padding:40px 32px; position:relative; overflow:hidden;
+}
+#m2 .hero-right::before {
+  content:''; position:absolute; inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+#m2 .hero-right .section-label { font-family:'Oswald',sans-serif; font-size:12px; color:rgba(255,255,255,0.4); letter-spacing:5px; text-transform:uppercase; margin-bottom:16px; position:relative; }
+#m2 .r-row {
+  display:flex; align-items:center; gap:8px; padding:8px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06); position:relative;
+}
+#m2 .r-row .tile { width:30px; height:26px; font-size:13px; }
+#m2 .r-row .nm { flex:1; color:rgba(255,255,255,0.8); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+#m2 .r-row .tile.stat-tile { width:40px; height:26px; font-size:11px; }
+#m2 .r-row .stat-lbl { font-size:8px; color:rgba(255,255,255,0.3); margin-left:2px; }
+
+
+/* ═══════════════════════════════════════
+   3: STACKED CARDS — NO BORDERS
+   Floating cards on cream, generous spacing
+   ═══════════════════════════════════════ */
+#m3 { background:var(--cream); min-height:100vh; }
+#m3 .bar { background:var(--green-dark); display:flex; align-items:center; justify-content:space-between; padding:12px 24px; }
+#m3 .bar h1 { font-family:'Cormorant Garamond',serif; color:#fff; font-size:17px; }
+#m3 .bar .nav { display:flex; gap:16px; }
+#m3 .bar .nav a { color:rgba(255,255,255,0.5); font-size:11px; text-decoration:none; font-weight:600; letter-spacing:1px; text-transform:uppercase; transition:color .15s; }
+#m3 .bar .nav a:hover { color:#fff; }
+#m3 .bar .nav a.active { color:var(--gold); }
+
+#m3 .content { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+
+/* Winner card — soft shadow, no border */
+#m3 .win-card {
+  background:#fff; border-radius:12px; padding:32px;
+  box-shadow:0 4px 24px rgba(0,0,0,0.06); margin-bottom:24px;
+}
+#m3 .win-card .eyebrow { font-size:10px; color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:700; }
+#m3 .win-card .name-row { display:flex; align-items:center; gap:14px; margin-top:14px; }
+#m3 .win-card .name-row .tile { width:44px; height:38px; font-size:20px; }
+#m3 .win-card .name-row h2 { font-family:'Cormorant Garamond',serif; font-size:30px; font-weight:800; color:var(--green-dark); }
+#m3 .win-card .stat-strip { display:flex; gap:20px; margin-top:18px; padding-top:18px; border-top:1px solid var(--border); }
+#m3 .win-card .stat-strip .stat { display:flex; flex-direction:column; gap:3px; }
+#m3 .win-card .stat-strip .stat .val { font-size:22px; font-weight:800; color:var(--red); tabular-nums; }
+#m3 .win-card .stat-strip .stat .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+
+/* Model pills */
+#m3 .model-row { display:flex; gap:8px; margin-bottom:24px; }
+#m3 .model-pill {
+  flex:1; background:#fff; border-radius:10px; padding:16px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.04); text-align:center;
+}
+#m3 .model-pill .emoji { font-size:20px; }
+#m3 .model-pill .m-name { font-size:11px; font-weight:700; color:var(--text); margin-top:4px; }
+#m3 .model-pill .m-pick { font-size:10px; color:var(--muted); margin-top:2px; }
+#m3 .model-pill .m-pct { font-size:18px; font-weight:800; color:var(--red); margin-top:6px; }
+
+/* Leaderboard card */
+#m3 .lb-card {
+  background:#fff; border-radius:12px; padding:24px;
+  box-shadow:0 4px 24px rgba(0,0,0,0.06);
+}
+#m3 .lb-card h3 { font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--green-dark); margin-bottom:16px; }
+#m3 .lb-entry {
+  display:flex; align-items:center; gap:10px; padding:10px 0;
+  border-bottom:1px solid rgba(0,0,0,0.04);
+}
+#m3 .lb-entry:last-child { border-bottom:none; }
+#m3 .lb-entry .tile { width:30px; height:26px; font-size:13px; }
+#m3 .lb-entry .nm { flex:1; font-size:13px; font-weight:600; color:var(--text); }
+#m3 .lb-entry .bar-wrap { width:80px; height:6px; background:var(--green-light); border-radius:3px; overflow:hidden; }
+#m3 .lb-entry .bar-fill { height:100%; background:var(--green); border-radius:3px; }
+#m3 .lb-entry .pct { font-size:12px; font-weight:700; color:var(--text2); width:40px; text-align:right; tabular-nums; }
+
+
+/* ═══════════════════════════════════════
+   4: FULL-WIDTH BANDS
+   Alternating green/white horizontal bands
+   ═══════════════════════════════════════ */
+#m4 { background:var(--cream); min-height:100vh; }
+
+/* Band 1: Header — slim */
+#m4 .band-hdr { background:var(--green-dark); padding:12px 0; }
+#m4 .band-hdr .inner { max-width:960px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; }
+#m4 .band-hdr h1 { font-family:'Cormorant Garamond',serif; color:#fff; font-size:16px; }
+#m4 .band-hdr .nav { display:flex; gap:20px; }
+#m4 .band-hdr .nav span { color:rgba(255,255,255,0.4); font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:color .15s; }
+#m4 .band-hdr .nav span:hover { color:rgba(255,255,255,0.8); }
+#m4 .band-hdr .nav span.active { color:var(--gold); }
+
+/* Band 2: Hero — green */
+#m4 .band-hero {
+  background:linear-gradient(135deg, var(--green-dark), var(--green));
+  padding:60px 0; position:relative; overflow:hidden;
+}
+#m4 .band-hero::before {
+  content:''; position:absolute; inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.03)'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+#m4 .band-hero .inner { max-width:960px; margin:0 auto; padding:0 24px; position:relative; display:flex; align-items:center; gap:40px; }
+#m4 .band-hero .hero-text h2 { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:900; color:#fff; line-height:1.1; }
+#m4 .band-hero .hero-text .sub { color:rgba(255,255,255,0.5); font-size:13px; margin-top:8px; line-height:1.6; max-width:400px; }
+#m4 .band-hero .hero-winner { display:flex; flex-direction:column; align-items:center; gap:8px; }
+#m4 .band-hero .hero-winner .tile { width:60px; height:50px; font-size:28px; }
+#m4 .band-hero .hero-winner .plate {
+  background:linear-gradient(180deg,#fff,#f0ead8);
+  padding:8px 20px; border-radius:2px;
+  box-shadow:2px 4px 10px rgba(0,0,0,0.3);
+  font-family:'Oswald',sans-serif; font-size:20px; font-weight:600;
+  color:var(--text); text-transform:uppercase; letter-spacing:2px;
+}
+#m4 .band-hero .hero-winner .pct-row { display:flex; gap:8px; }
+#m4 .band-hero .hero-winner .pct-row .tile { width:48px; height:34px; font-size:15px; }
+#m4 .band-hero .hero-winner .pct-row .lbl { font-size:9px; color:rgba(255,255,255,0.4); text-align:center; margin-top:2px; letter-spacing:1px; text-transform:uppercase; }
+
+/* Band 3: Leaderboard — cream */
+#m4 .band-lb { padding:40px 0; }
+#m4 .band-lb .inner { max-width:960px; margin:0 auto; padding:0 24px; }
+#m4 .band-lb h3 { font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--green-dark); margin-bottom:20px; }
+#m4 .lb-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:8px; }
+@media(max-width:640px){ #m4 .lb-grid { grid-template-columns:1fr; } }
+#m4 .lb-item {
+  display:flex; align-items:center; gap:10px;
+  background:#fff; border-radius:6px; padding:12px 16px;
+  transition:box-shadow .15s;
+}
+#m4 .lb-item:hover { box-shadow:0 4px 16px rgba(0,0,0,0.08); }
+#m4 .lb-item .tile { width:32px; height:28px; font-size:14px; }
+#m4 .lb-item .nm { flex:1; font-size:13px; font-weight:600; color:var(--text); text-transform:uppercase; letter-spacing:0.3px; }
+#m4 .lb-item .tile.pct { width:46px; height:28px; font-size:12px; }
+
+/* Band 4: Models — green */
+#m4 .band-models { background:var(--green-dark); padding:40px 0; }
+#m4 .band-models .inner { max-width:960px; margin:0 auto; padding:0 24px; }
+#m4 .band-models h3 { font-family:'Oswald',sans-serif; font-size:14px; color:rgba(255,255,255,0.4); letter-spacing:5px; text-transform:uppercase; margin-bottom:20px; }
+#m4 .model-strip { display:flex; gap:12px; }
+@media(max-width:640px){ #m4 .model-strip { flex-direction:column; } }
+#m4 .model-strip .m-card {
+  flex:1; background:rgba(255,255,255,0.05); border-radius:8px; padding:20px;
+  border:1px solid rgba(255,255,255,0.06);
+}
+#m4 .model-strip .m-card .emoji { font-size:20px; }
+#m4 .model-strip .m-card .m-name { color:#fff; font-size:13px; font-weight:700; margin-top:4px; }
+#m4 .model-strip .m-card .m-pick { color:rgba(255,255,255,0.5); font-size:11px; margin-top:6px; }
+#m4 .model-strip .m-card .m-tile-row { display:flex; gap:6px; margin-top:10px; }
+#m4 .model-strip .m-card .m-tile-row .tile { width:40px; height:30px; font-size:13px; }
+
+
+/* ═══════════════════════════════════════
+   5: CENTERED MINIMAL
+   Ultra-clean, everything centered, lots of white space
+   ═══════════════════════════════════════ */
+#m5 { background:#fff; min-height:100vh; }
+#m5 .top { border-bottom:2px solid var(--green); padding:14px 0; text-align:center; }
+#m5 .top h1 { font-family:'Cormorant Garamond',serif; color:var(--green-dark); font-size:18px; }
+
+#m5 .page { max-width:560px; margin:0 auto; padding:60px 20px; text-align:center; }
+#m5 .page .date { font-size:11px; color:var(--muted); letter-spacing:3px; text-transform:uppercase; }
+#m5 .page h2 { font-family:'Cormorant Garamond',serif; font-size:44px; font-weight:900; color:var(--green-dark); margin-top:8px; line-height:1.1; }
+#m5 .page .tagline { font-size:14px; color:var(--text2); margin-top:12px; line-height:1.6; }
+
+#m5 .winner-block { margin-top:48px; }
+#m5 .winner-block .lbl { font-size:10px; color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:700; }
+#m5 .winner-block .big-name { font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:900; color:var(--text); margin-top:8px; }
+#m5 .winner-block .tiles-row { display:flex; justify-content:center; gap:12px; margin-top:16px; }
+#m5 .winner-block .tiles-row .stat { display:flex; flex-direction:column; align-items:center; gap:4px; }
+#m5 .winner-block .tiles-row .tile { width:52px; height:42px; font-size:19px; }
+#m5 .winner-block .tiles-row .lbl2 { font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+
+#m5 .sep { width:40px; height:1px; background:var(--border); margin:40px auto; }
+
+#m5 .mini-lb { text-align:left; }
+#m5 .mini-lb h3 { font-size:12px; color:var(--muted); letter-spacing:3px; text-transform:uppercase; text-align:center; margin-bottom:16px; }
+#m5 .mini-row { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.04); }
+#m5 .mini-row .tile { width:28px; height:24px; font-size:12px; }
+#m5 .mini-row .nm { flex:1; font-size:13px; font-weight:600; color:var(--text); }
+#m5 .mini-row .pct { font-size:12px; color:var(--muted); font-weight:600; }
+
+#m5 .nav-bottom { display:flex; justify-content:center; gap:24px; margin-top:48px; padding-top:24px; border-top:1px solid var(--border); }
+#m5 .nav-bottom a { font-size:11px; color:var(--muted); text-decoration:none; letter-spacing:1px; text-transform:uppercase; font-weight:600; transition:color .15s; }
+#m5 .nav-bottom a:hover { color:var(--green); }
+#m5 .nav-bottom a.active { color:var(--green-dark); }
+
+
+/* ═══════════════════════════════════════
+   6: DARK CINEMATIC
+   Black bg, green board accents, dramatic
+   ═══════════════════════════════════════ */
+#m6 { background:#080808; min-height:100vh; color:#fff; }
+#m6 .hdr { padding:14px 24px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.06); }
+#m6 .hdr h1 { font-family:'Cormorant Garamond',serif; font-size:16px; }
+#m6 .hdr .nav { display:flex; gap:16px; }
+#m6 .hdr .nav span { font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; font-weight:600; transition:color .15s; }
+#m6 .hdr .nav span:hover { color:rgba(255,255,255,0.6); }
+#m6 .hdr .nav span.active { color:var(--gold); }
+
+#m6 .hero {
+  max-width:800px; margin:0 auto; padding:80px 24px 40px; text-align:center;
+}
+#m6 .hero .small { font-size:11px; color:var(--gold); letter-spacing:4px; text-transform:uppercase; }
+#m6 .hero h2 {
+  font-family:'Cormorant Garamond',serif; font-size:54px; font-weight:900;
+  background:linear-gradient(180deg, #fff 40%, rgba(255,255,255,0.5));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  line-height:1.1; margin-top:12px;
+}
+#m6 .hero .sub { color:rgba(255,255,255,0.3); font-size:13px; margin-top:12px; }
+
+/* Winner spotlight */
+#m6 .spotlight-card {
+  max-width:600px; margin:0 auto; padding:0 24px;
+  position:relative;
+}
+#m6 .spotlight-inner {
+  background:linear-gradient(135deg, var(--green-dark), var(--green));
+  border-radius:8px; padding:28px 32px; position:relative; overflow:hidden;
+}
+#m6 .spotlight-inner::before {
+  content:''; position:absolute; inset:0; border-radius:8px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200,169,81,0.08) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+#m6 .spotlight-inner .top-row { position:relative; display:flex; align-items:center; gap:16px; }
+#m6 .spotlight-inner .tile { width:48px; height:42px; font-size:22px; }
+#m6 .spotlight-inner .info h3 { font-family:'Oswald',sans-serif; font-size:24px; font-weight:600; color:#fff; text-transform:uppercase; letter-spacing:2px; }
+#m6 .spotlight-inner .info .sub { font-size:11px; color:rgba(255,255,255,0.5); }
+#m6 .spotlight-inner .tile-row { position:relative; display:flex; gap:10px; margin-top:20px; }
+#m6 .spotlight-inner .tile-row .stat { display:flex; flex-direction:column; align-items:center; gap:3px; }
+#m6 .spotlight-inner .tile-row .stat .tile { width:52px; height:38px; font-size:17px; }
+#m6 .spotlight-inner .tile-row .stat .lbl { font-size:8px; color:rgba(255,255,255,0.35); text-transform:uppercase; letter-spacing:1px; }
+
+/* Leaderboard */
+#m6 .lb-section { max-width:600px; margin:32px auto 0; padding:0 24px 60px; }
+#m6 .lb-section h3 { font-size:11px; color:rgba(255,255,255,0.25); letter-spacing:4px; text-transform:uppercase; margin-bottom:16px; text-align:center; }
+#m6 .d-row {
+  display:flex; align-items:center; gap:10px; padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+#m6 .d-row .tile { width:30px; height:26px; font-size:13px; }
+#m6 .d-row .nm { flex:1; font-size:12px; font-weight:600; color:rgba(255,255,255,0.7); text-transform:uppercase; letter-spacing:0.5px; }
+#m6 .d-row .tile.pct-t { width:42px; height:26px; font-size:11px; }
+
+
+/* ═══════════════════════════════════════
+   7: NEWSPAPER / BROADSHEET
+   Two-column editorial with tile accents
+   ═══════════════════════════════════════ */
+#m7 { background:#F8F6F0; min-height:100vh; }
+#m7 .masthead {
+  text-align:center; padding:24px 0 16px;
+  border-bottom:3px double var(--text);
+}
+#m7 .masthead .pre { font-size:10px; color:var(--muted); letter-spacing:3px; text-transform:uppercase; }
+#m7 .masthead h1 { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:900; color:var(--text); letter-spacing:2px; }
+#m7 .masthead .post { font-size:11px; color:var(--muted); margin-top:4px; }
+
+#m7 .edition-bar {
+  display:flex; align-items:center; justify-content:center; gap:20px;
+  padding:8px 0; border-bottom:1px solid var(--border);
+  font-size:10px; color:var(--muted); letter-spacing:1px; text-transform:uppercase;
+}
+
+#m7 .paper { max-width:900px; margin:0 auto; padding:32px 24px; }
+#m7 .headline {
+  text-align:center; margin-bottom:32px;
+}
+#m7 .headline h2 { font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:900; color:var(--text); line-height:1.15; }
+#m7 .headline .deck { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:16px; color:var(--text2); margin-top:8px; }
+
+#m7 .cols { display:grid; grid-template-columns:2fr 1fr; gap:32px; }
+@media(max-width:640px){ #m7 .cols { grid-template-columns:1fr; } }
+#m7 .col-main .lead { font-size:14px; color:var(--text2); line-height:1.8; }
+#m7 .col-main .lead::first-letter { font-family:'Cormorant Garamond',serif; font-size:48px; float:left; line-height:1; margin-right:8px; color:var(--green-dark); font-weight:900; }
+#m7 .col-main .inline-tile-row { display:flex; gap:6px; margin:20px 0; padding:16px; background:var(--green-dark); border-radius:4px; position:relative; }
+#m7 .col-main .inline-tile-row::before { content:''; position:absolute; inset:0; border-radius:4px; background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E"); pointer-events:none; }
+#m7 .col-main .inline-tile-row .stat { position:relative; display:flex; flex-direction:column; align-items:center; gap:3px; }
+#m7 .col-main .inline-tile-row .stat .tile { width:48px; height:36px; font-size:16px; }
+#m7 .col-main .inline-tile-row .stat .lbl { font-size:8px; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:1px; }
+
+#m7 .col-side h3 { font-family:'Cormorant Garamond',serif; font-size:16px; color:var(--text); margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid var(--text); }
+#m7 .side-entry { display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px solid rgba(0,0,0,0.06); }
+#m7 .side-entry .tile { width:26px; height:22px; font-size:11px; }
+#m7 .side-entry .nm { flex:1; font-size:12px; font-weight:600; }
+#m7 .side-entry .pct { font-size:11px; color:var(--muted); font-weight:700; }
+
+
+/* ═══════════════════════════════════════
+   8: SCOREBOARD TABLE — FULL-WIDTH
+   The leaderboard IS the page. No hero.
+   ═══════════════════════════════════════ */
+#m8 { background:var(--green-dark); min-height:100vh; }
+#m8 .topstrip {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 24px; border-bottom:1px solid rgba(255,255,255,0.08);
+}
+#m8 .topstrip h1 { font-family:'Oswald',sans-serif; color:#fff; font-size:16px; letter-spacing:6px; text-transform:uppercase; }
+#m8 .topstrip .nav { display:flex; gap:4px; }
+#m8 .topstrip .nav .tile { width:auto; min-width:unset; height:auto; padding:5px 12px; font-size:9px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; font-family:'DM Sans',sans-serif; }
+#m8 .topstrip .nav .tile.active { background:var(--gold-light); }
+
+#m8 .board-wrap { max-width:960px; margin:0 auto; padding:24px 20px; }
+#m8 .board-title { font-family:'Oswald',sans-serif; font-size:20px; color:rgba(255,255,255,0.6); letter-spacing:8px; text-transform:uppercase; text-align:center; margin-bottom:20px; }
+
+#m8 .board-table { width:100%; border-collapse:separate; border-spacing:0 3px; }
+#m8 .board-table th {
+  font-size:10px; color:rgba(255,255,255,0.35); text-transform:uppercase;
+  letter-spacing:1.5px; padding:6px 8px; text-align:center; font-weight:600;
+  font-family:'Oswald',sans-serif;
+}
+#m8 .board-table th:nth-child(2) { text-align:left; }
+#m8 .board-table td { padding:4px 8px; vertical-align:middle; }
+#m8 .board-table tr td:first-child { text-align:center; }
+#m8 .board-table .nm-cell {
+  font-family:'Oswald',sans-serif; font-size:14px; color:#fff;
+  text-transform:uppercase; letter-spacing:0.5px; font-weight:500;
+}
+#m8 .board-table .tile { width:38px; height:30px; font-size:14px; margin:0 auto; }
+#m8 .board-table .tile.pos-t { width:32px; height:28px; font-size:15px; }
+#m8 .board-table tr { position:relative; }
+#m8 .board-table tr::after {
+  content:''; position:absolute; bottom:0; left:8px; right:8px; height:1px;
+  background:rgba(255,255,255,0.04);
+}
+
+
+/* ═══════════════════════════════════════
+   9: MOBILE-FIRST VERTICAL
+   Phone-optimized single column, thumb-friendly
+   ═══════════════════════════════════════ */
+#m9 { background:var(--cream); min-height:100vh; max-width:420px; margin:44px auto 0; box-shadow:0 0 60px rgba(0,0,0,0.3); }
+#m9 .mob-hdr {
+  background:var(--green-dark); padding:12px 16px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+#m9 .mob-hdr h1 { font-family:'Cormorant Garamond',serif; color:#fff; font-size:15px; }
+#m9 .mob-hdr .flag { font-size:16px; }
+
+/* Segmented tabs */
+#m9 .seg { display:flex; margin:12px 16px; background:var(--green-light); border-radius:8px; padding:3px; }
+#m9 .seg button {
+  flex:1; padding:8px 4px; font-size:10px; font-weight:700;
+  letter-spacing:0.5px; text-transform:uppercase; border:none;
+  background:transparent; color:var(--green); cursor:pointer;
+  border-radius:6px; transition:all .15s;
+}
+#m9 .seg button.active { background:#fff; color:var(--green-dark); box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+
+/* Winner card */
+#m9 .mob-winner {
+  margin:8px 16px; background:var(--green-dark); border-radius:12px;
+  padding:20px; position:relative; overflow:hidden;
+}
+#m9 .mob-winner::before { content:''; position:absolute; inset:0; border-radius:12px; background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E"); pointer-events:none; }
+#m9 .mob-winner .eyebrow { position:relative; font-size:9px; color:var(--gold); letter-spacing:2px; text-transform:uppercase; }
+#m9 .mob-winner .row { position:relative; display:flex; align-items:center; gap:12px; margin-top:10px; }
+#m9 .mob-winner .row .tile { width:42px; height:36px; font-size:20px; }
+#m9 .mob-winner .row .name { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:800; color:#fff; }
+#m9 .mob-winner .stat-row { position:relative; display:flex; gap:8px; margin-top:14px; }
+#m9 .mob-winner .stat-row .stat { display:flex; flex-direction:column; align-items:center; gap:2px; }
+#m9 .mob-winner .stat-row .stat .tile { width:48px; height:34px; font-size:15px; }
+#m9 .mob-winner .stat-row .stat .lbl { font-size:8px; color:rgba(255,255,255,0.35); text-transform:uppercase; letter-spacing:1px; }
+
+/* List */
+#m9 .mob-list { padding:8px 16px 60px; }
+#m9 .mob-item {
+  display:flex; align-items:center; gap:10px; padding:12px 0;
+  border-bottom:1px solid var(--border);
+}
+#m9 .mob-item .tile { width:30px; height:26px; font-size:13px; }
+#m9 .mob-item .info { flex:1; }
+#m9 .mob-item .info .nm { font-size:14px; font-weight:700; color:var(--text); }
+#m9 .mob-item .info .sub { font-size:10px; color:var(--muted); margin-top:1px; }
+#m9 .mob-item .pct { font-size:15px; font-weight:800; color:var(--red); }
+
+
+/* ═══════════════════════════════════════
+   10: HORIZONTAL SCROLL PANELS
+   Side-scrolling sections, modern app feel
+   ═══════════════════════════════════════ */
+#m10 { background:#f4f3ee; min-height:100vh; }
+#m10 .bar { background:var(--green-dark); padding:10px 20px; display:flex; align-items:center; justify-content:space-between; }
+#m10 .bar h1 { font-family:'Cormorant Garamond',serif; color:#fff; font-size:15px; }
+#m10 .bar .tag { font-size:9px; color:var(--gold); letter-spacing:2px; text-transform:uppercase; font-weight:700; }
+
+#m10 .section-hdr { padding:24px 20px 8px; display:flex; align-items:baseline; gap:8px; }
+#m10 .section-hdr h3 { font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--green-dark); }
+#m10 .section-hdr .more { font-size:10px; color:var(--muted); margin-left:auto; }
+
+/* Horizontal scroll */
+#m10 .h-scroll {
+  display:flex; gap:12px; padding:0 20px 20px;
+  overflow-x:auto; scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+}
+#m10 .h-scroll::-webkit-scrollbar { height:0; }
+#m10 .h-card {
+  min-width:260px; flex-shrink:0; scroll-snap-align:start;
+  background:#fff; border-radius:10px; overflow:hidden;
+  box-shadow:0 2px 12px rgba(0,0,0,0.05);
+}
+#m10 .h-card .card-top {
+  background:var(--green-dark); padding:14px 16px; position:relative; overflow:hidden;
+}
+#m10 .h-card .card-top::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E"); pointer-events:none; }
+#m10 .h-card .card-top .rank-row { position:relative; display:flex; align-items:center; gap:10px; }
+#m10 .h-card .card-top .rank-row .tile { width:34px; height:30px; font-size:16px; }
+#m10 .h-card .card-top .rank-row .nm { font-family:'Oswald',sans-serif; color:#fff; font-size:16px; text-transform:uppercase; letter-spacing:1px; }
+
+#m10 .h-card .card-body { padding:14px 16px; }
+#m10 .h-card .card-body .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+#m10 .h-card .card-body .stat-grid .sg { display:flex; flex-direction:column; align-items:center; gap:2px; }
+#m10 .h-card .card-body .stat-grid .sg .tile { width:44px; height:32px; font-size:14px; }
+#m10 .h-card .card-body .stat-grid .sg .lbl { font-size:8px; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; }
+#m10 .h-card .card-body .rationale { font-size:11px; color:var(--text2); line-height:1.5; margin-top:10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+
+/* Compact list below */
+#m10 .compact-list { padding:0 20px 40px; }
+#m10 .compact-list h3 { font-family:'Cormorant Garamond',serif; font-size:16px; color:var(--green-dark); margin-bottom:10px; }
+#m10 .cl-row { display:flex; align-items:center; gap:8px; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.05); }
+#m10 .cl-row .tile { width:26px; height:22px; font-size:11px; }
+#m10 .cl-row .nm { flex:1; font-size:12px; font-weight:600; color:var(--text); }
+#m10 .cl-row .pct { font-size:11px; color:var(--muted); font-weight:700; }
+
+</style>
+</head>
+<body>
+
+<!-- SELECTOR -->
+<div class="sel">
+  <span class="sel-label">Designs</span>
+  <button class="sel-btn active" onclick="show(1)">1 — Seamless</button>
+  <button class="sel-btn" onclick="show(2)">2 — Editorial Split</button>
+  <button class="sel-btn" onclick="show(3)">3 — Soft Cards</button>
+  <button class="sel-btn" onclick="show(4)">4 — Band Layout</button>
+  <button class="sel-btn" onclick="show(5)">5 — Centered Min</button>
+  <button class="sel-btn" onclick="show(6)">6 — Dark Cinema</button>
+  <button class="sel-btn" onclick="show(7)">7 — Broadsheet</button>
+  <button class="sel-btn" onclick="show(8)">8 — Pure Board</button>
+  <button class="sel-btn" onclick="show(9)">9 — Mobile-First</button>
+  <button class="sel-btn" onclick="show(10)">10 — Scroll Panels</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     1: SEAMLESS GREEN COLUMN
+     ═══════════════════════════════════════════ -->
+<div class="mockup active" id="m1">
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <div class="ticker-item"><span class="pos">1</span><span class="nm">Scheffler</span><span class="tile sc t-red" style="width:28px;height:18px;font-size:10px">-14</span></div>
+      <div class="ticker-item"><span class="pos">2</span><span class="nm">McIlroy</span><span class="tile sc t-red" style="width:28px;height:18px;font-size:10px">-12</span></div>
+      <div class="ticker-item"><span class="pos">3</span><span class="nm">Morikawa</span><span class="tile sc t-red" style="width:28px;height:18px;font-size:10px">-11</span></div>
+      <div class="ticker-item"><span class="pos">4</span><span class="nm">Rahm</span><span class="tile sc t-red" style="width:28px;height:18px;font-size:10px">-10</span></div>
+      <div class="ticker-item"><span class="pos">5</span><span class="nm">Koepka</span><span class="tile sc t-red" style="width:28px;height:18px;font-size:10px">-9</span></div>
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="hdr">
+      <div class="brand">The Green Jacket Lab</div>
+      <h1>LEADERS</h1>
+      <div class="sub">Three AI Models · 10,000 Simulations · April 2026</div>
+    </div>
+
+    <div class="winner">
+      <div class="label">AI Consensus Pick</div>
+      <div class="name-plate">Scottie Scheffler</div>
+      <div class="stats">
+        <div class="stat"><div class="tile t-red" style="width:56px;height:44px;font-size:20px;transform:rotate(-0.5deg)">18.2</div><div class="lbl">Win %</div></div>
+        <div class="stat"><div class="tile t-red" style="width:56px;height:44px;font-size:20px;transform:rotate(0.8deg)">42.1</div><div class="lbl">Top 5</div></div>
+        <div class="stat"><div class="tile t-black" style="width:56px;height:44px;font-size:20px;transform:rotate(-0.3deg)">61.4</div><div class="lbl">Top 10</div></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="lb-title">Predicted Leaderboard</div>
+    <div class="lb-row"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.5deg)">1</div><span class="nm">Scottie Scheffler</span><span class="pct">18.2%</span></div>
+    <div class="lb-row"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(0.3deg)">2</div><span class="nm">Rory McIlroy</span><span class="pct">12.4%</span></div>
+    <div class="lb-row"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.8deg)">3</div><span class="nm">Collin Morikawa</span><span class="pct">9.1%</span></div>
+    <div class="lb-row"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(0.6deg)">4</div><span class="nm">Jon Rahm</span><span class="pct">8.3%</span></div>
+    <div class="lb-row"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.4deg)">5</div><span class="nm">Brooks Koepka</span><span class="pct">7.0%</span></div>
+    <div class="lb-row"><div class="tile t-black" style="width:32px;height:28px;font-size:14px;transform:rotate(0.5deg)">6</div><span class="nm">Viktor Hovland</span><span class="pct">5.8%</span></div>
+    <div class="lb-row"><div class="tile t-black" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.7deg)">7</div><span class="nm">Ludvig Aberg</span><span class="pct">5.2%</span></div>
+    <div class="lb-row"><div class="tile t-black" style="width:32px;height:28px;font-size:14px;transform:rotate(0.4deg)">8</div><span class="nm">Jordan Spieth</span><span class="pct">4.5%</span></div>
+
+    <div class="nav-pills">
+      <div class="nav-pill active">Predictions</div>
+      <div class="nav-pill">Betting</div>
+      <div class="nav-pill">Players</div>
+      <div class="nav-pill">Method</div>
+    </div>
+  </div>
+
+  <div class="desc"><div class="desc-box"><b>1 — Seamless Green Column.</b> One continuous green surface with no separate boxes or cards. Everything flows vertically — ticker, title, winner plate, leaderboard rows — as if painted onto a single board. The cream background never shows. Navigation sits at the bottom like a footer inscription. Maximum cohesion.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     2: EDITORIAL SPLIT
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m2">
+  <div class="top-bar">
+    <h1>The Green Jacket Lab</h1>
+    <div class="pills">
+      <span class="pill active">Predictions</span>
+      <span class="pill">Betting</span>
+      <span class="pill">Players</span>
+      <span class="pill">Method</span>
+    </div>
+  </div>
+  <div class="hero-split">
+    <div class="hero-left">
+      <div class="eyebrow">Masters 2026 · AI Predictions</div>
+      <h2>Who Wins the Green Jacket?</h2>
+      <p class="desc-text">Three independent AI models analyzed 60+ players across strokes gained, course history, momentum, and weather. Here's who they picked.</p>
+      <div class="winner-line">
+        <div class="tile t-red" style="width:48px;height:40px;font-size:22px;transform:rotate(-1deg)">1</div>
+        <span class="win-name">Scheffler</span>
+        <span class="win-pct">18.2% win probability</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="section-label">Predicted Leaderboard</div>
+      <div class="r-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.5deg)">1</div><span class="nm">Scheffler</span><div class="tile stat-tile t-red" style="width:40px;height:26px;font-size:11px;transform:rotate(0.5deg)">18.2</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.3deg)">2</div><span class="nm">McIlroy</span><div class="tile stat-tile t-red" style="width:40px;height:26px;font-size:11px;transform:rotate(-0.3deg)">12.4</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.8deg)">3</div><span class="nm">Morikawa</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px">9.1</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.6deg)">4</div><span class="nm">Rahm</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px;transform:rotate(0.8deg)">8.3</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px">5</div><span class="nm">Koepka</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px;transform:rotate(-0.5deg)">7.0</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(0.4deg)">6</div><span class="nm">Hovland</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px">5.8</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.6deg)">7</div><span class="nm">Aberg</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px;transform:rotate(0.5deg)">5.2</div><span class="stat-lbl">%</span></div>
+      <div class="r-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px">8</div><span class="nm">Spieth</span><div class="tile stat-tile t-black" style="width:40px;height:26px;font-size:11px;transform:rotate(-0.4deg)">4.5</div><span class="stat-lbl">%</span></div>
+    </div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>2 — Editorial Split.</b> Left half is pure editorial — big serif question, narrative copy, winner callout. Right half is the scoreboard with tile rows on green. Story meets data. On mobile these stack: narrative first, then board.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     3: STACKED CARDS
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m3">
+  <div class="bar">
+    <h1>The Green Jacket Lab</h1>
+    <div class="nav"><a href="#" class="active">Predictions</a><a href="#">Betting</a><a href="#">Players</a><a href="#">Method</a></div>
+  </div>
+  <div class="content">
+    <div class="win-card">
+      <div class="eyebrow">AI Consensus Pick</div>
+      <div class="name-row">
+        <div class="tile t-red" style="width:44px;height:38px;font-size:20px;transform:rotate(-1deg)">1</div>
+        <h2>Scottie Scheffler</h2>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><span class="val">18.2%</span><span class="lbl">Win</span></div>
+        <div class="stat"><span class="val">42.1%</span><span class="lbl">Top 5</span></div>
+        <div class="stat"><span class="val">61.4%</span><span class="lbl">Top 10</span></div>
+        <div class="stat"><span class="val">94.2%</span><span class="lbl">Cut</span></div>
+      </div>
+    </div>
+
+    <div class="model-row">
+      <div class="model-pill"><div class="emoji">🎲</div><div class="m-name">Simulator</div><div class="m-pick">Scheffler</div><div class="m-pct">19.4%</div></div>
+      <div class="model-pill"><div class="emoji">🔍</div><div class="m-name">Scout</div><div class="m-pick">Scheffler</div><div class="m-pct">17.8%</div></div>
+      <div class="model-pill"><div class="emoji">🧠</div><div class="m-name">Analyst</div><div class="m-pick">McIlroy</div><div class="m-pct">15.2%</div></div>
+    </div>
+
+    <div class="lb-card">
+      <h3>Predicted Leaderboard</h3>
+      <div class="lb-entry"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.5deg)">1</div><span class="nm">Scottie Scheffler</span><div class="bar-wrap"><div class="bar-fill" style="width:100%"></div></div><span class="pct">18.2%</span></div>
+      <div class="lb-entry"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.3deg)">2</div><span class="nm">Rory McIlroy</span><div class="bar-wrap"><div class="bar-fill" style="width:68%"></div></div><span class="pct">12.4%</span></div>
+      <div class="lb-entry"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.8deg)">3</div><span class="nm">Collin Morikawa</span><div class="bar-wrap"><div class="bar-fill" style="width:50%"></div></div><span class="pct">9.1%</span></div>
+      <div class="lb-entry"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.6deg)">4</div><span class="nm">Jon Rahm</span><div class="bar-wrap"><div class="bar-fill" style="width:46%"></div></div><span class="pct">8.3%</span></div>
+      <div class="lb-entry"><div class="tile t-red" style="width:30px;height:26px;font-size:13px">5</div><span class="nm">Brooks Koepka</span><div class="bar-wrap"><div class="bar-fill" style="width:38%"></div></div><span class="pct">7.0%</span></div>
+      <div class="lb-entry"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(0.5deg)">6</div><span class="nm">Viktor Hovland</span><div class="bar-wrap"><div class="bar-fill" style="width:32%"></div></div><span class="pct">5.8%</span></div>
+      <div class="lb-entry"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.4deg)">7</div><span class="nm">Ludvig Aberg</span><div class="bar-wrap"><div class="bar-fill" style="width:29%"></div></div><span class="pct">5.2%</span></div>
+      <div class="lb-entry"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(0.7deg)">8</div><span class="nm">Jordan Spieth</span><div class="bar-wrap"><div class="bar-fill" style="width:25%"></div></div><span class="pct">4.5%</span></div>
+    </div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>3 — Soft Stacked Cards.</b> No borders, only shadow. Generous rounded corners and white space. Cards float on cream. The winner card uses big serif type + red stat numbers. Model pills give at-a-glance agreement. Leaderboard has mini progress bars. Everything breathes.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     4: FULL-WIDTH BANDS
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m4">
+  <div class="band-hdr"><div class="inner"><h1>The Green Jacket Lab</h1><div class="nav"><span class="active">Predictions</span><span>Betting</span><span>Players</span><span>Method</span></div></div></div>
+
+  <div class="band-hero">
+    <div class="inner">
+      <div class="hero-text">
+        <h2>2026 Masters<br>Predictions</h2>
+        <p class="sub">Three AI models analyzed strokes gained, course history, and form to predict who wins the green jacket this April.</p>
+      </div>
+      <div class="hero-winner">
+        <div class="tile t-red" style="width:60px;height:50px;font-size:28px;transform:rotate(-1deg)">1</div>
+        <div class="plate">Scheffler</div>
+        <div class="pct-row">
+          <div style="text-align:center"><div class="tile t-red" style="width:48px;height:34px;font-size:15px;transform:rotate(0.5deg)">18.2</div><div class="lbl" style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;margin-top:2px">Win %</div></div>
+          <div style="text-align:center"><div class="tile t-red" style="width:48px;height:34px;font-size:15px;transform:rotate(-0.5deg)">42.1</div><div class="lbl" style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;margin-top:2px">Top 5</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band-lb">
+    <div class="inner">
+      <h3>Predicted Leaderboard</h3>
+      <div class="lb-grid">
+        <div class="lb-item"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.5deg)">1</div><span class="nm">Scheffler</span><div class="tile pct t-red" style="width:46px;height:28px;font-size:12px;transform:rotate(0.5deg)">18.2%</div></div>
+        <div class="lb-item"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(0.3deg)">2</div><span class="nm">McIlroy</span><div class="tile pct t-red" style="width:46px;height:28px;font-size:12px;transform:rotate(-0.3deg)">12.4%</div></div>
+        <div class="lb-item"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.8deg)">3</div><span class="nm">Morikawa</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px">9.1%</div></div>
+        <div class="lb-item"><div class="tile t-red" style="width:32px;height:28px;font-size:14px;transform:rotate(0.6deg)">4</div><span class="nm">Rahm</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px;transform:rotate(0.8deg)">8.3%</div></div>
+        <div class="lb-item"><div class="tile t-red" style="width:32px;height:28px;font-size:14px">5</div><span class="nm">Koepka</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px;transform:rotate(-0.5deg)">7.0%</div></div>
+        <div class="lb-item"><div class="tile t-black" style="width:32px;height:28px;font-size:14px;transform:rotate(0.4deg)">6</div><span class="nm">Hovland</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px">5.8%</div></div>
+        <div class="lb-item"><div class="tile t-black" style="width:32px;height:28px;font-size:14px;transform:rotate(-0.6deg)">7</div><span class="nm">Aberg</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px;transform:rotate(0.5deg)">5.2%</div></div>
+        <div class="lb-item"><div class="tile t-black" style="width:32px;height:28px;font-size:14px">8</div><span class="nm">Spieth</span><div class="tile pct t-black" style="width:46px;height:28px;font-size:12px;transform:rotate(-0.4deg)">4.5%</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band-models">
+    <div class="inner">
+      <h3>Model Breakdown</h3>
+      <div class="model-strip">
+        <div class="m-card"><div class="emoji">🎲</div><div class="m-name">Simulator</div><div class="m-pick">10,000 Monte Carlo sims</div><div class="m-tile-row"><div class="tile t-red" style="width:40px;height:30px;font-size:13px;transform:rotate(-0.5deg)">19.4</div><div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:auto">%</div></div></div>
+        <div class="m-card"><div class="emoji">🔍</div><div class="m-name">Scout</div><div class="m-pick">5-factor scoring model</div><div class="m-tile-row"><div class="tile t-red" style="width:40px;height:30px;font-size:13px;transform:rotate(0.5deg)">17.8</div><div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:auto">%</div></div></div>
+        <div class="m-card"><div class="emoji">🧠</div><div class="m-name">Analyst</div><div class="m-pick">Narrative intelligence</div><div class="m-tile-row"><div class="tile t-red" style="width:40px;height:30px;font-size:13px;transform:rotate(-0.3deg)">15.2</div><div style="font-size:9px;color:rgba(255,255,255,0.4);margin-top:auto">%</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>4 — Full-Width Bands.</b> Alternating green/cream horizontal bands that span the full viewport. Each section is a distinct band — hero (green), leaderboard (cream grid), models (green). No containers feel boxy because the bands ARE the page. Natural rhythm.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     5: CENTERED MINIMAL
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m5">
+  <div class="top"><h1>The Green Jacket Lab</h1></div>
+  <div class="page">
+    <div class="date">April 9–12, 2026 · Augusta National</div>
+    <h2>Masters Predictions</h2>
+    <p class="tagline">Three AI models. 10,000 simulations. One green jacket.</p>
+
+    <div class="winner-block">
+      <div class="lbl">Consensus Pick</div>
+      <div class="big-name">Scottie Scheffler</div>
+      <div class="tiles-row">
+        <div class="stat"><div class="tile t-red" style="width:52px;height:42px;font-size:19px;transform:rotate(-0.5deg)">18.2</div><div class="lbl2">Win %</div></div>
+        <div class="stat"><div class="tile t-red" style="width:52px;height:42px;font-size:19px;transform:rotate(0.8deg)">42.1</div><div class="lbl2">Top 5</div></div>
+        <div class="stat"><div class="tile t-black" style="width:52px;height:42px;font-size:19px;transform:rotate(-0.3deg)">61.4</div><div class="lbl2">Top 10</div></div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="mini-lb">
+      <h3>Leaderboard</h3>
+      <div class="mini-row"><div class="tile t-red" style="width:28px;height:24px;font-size:12px;transform:rotate(-0.5deg)">1</div><span class="nm">Scottie Scheffler</span><span class="pct">18.2%</span></div>
+      <div class="mini-row"><div class="tile t-red" style="width:28px;height:24px;font-size:12px;transform:rotate(0.3deg)">2</div><span class="nm">Rory McIlroy</span><span class="pct">12.4%</span></div>
+      <div class="mini-row"><div class="tile t-red" style="width:28px;height:24px;font-size:12px;transform:rotate(-0.8deg)">3</div><span class="nm">Collin Morikawa</span><span class="pct">9.1%</span></div>
+      <div class="mini-row"><div class="tile t-red" style="width:28px;height:24px;font-size:12px;transform:rotate(0.6deg)">4</div><span class="nm">Jon Rahm</span><span class="pct">8.3%</span></div>
+      <div class="mini-row"><div class="tile t-red" style="width:28px;height:24px;font-size:12px">5</div><span class="nm">Brooks Koepka</span><span class="pct">7.0%</span></div>
+      <div class="mini-row"><div class="tile t-black" style="width:28px;height:24px;font-size:12px;transform:rotate(0.5deg)">6</div><span class="nm">Viktor Hovland</span><span class="pct">5.8%</span></div>
+      <div class="mini-row"><div class="tile t-black" style="width:28px;height:24px;font-size:12px;transform:rotate(-0.4deg)">7</div><span class="nm">Ludvig Aberg</span><span class="pct">5.2%</span></div>
+      <div class="mini-row"><div class="tile t-black" style="width:28px;height:24px;font-size:12px;transform:rotate(0.7deg)">8</div><span class="nm">Jordan Spieth</span><span class="pct">4.5%</span></div>
+    </div>
+
+    <div class="nav-bottom">
+      <a href="#" class="active">Predictions</a>
+      <a href="#">Betting</a>
+      <a href="#">Players</a>
+      <a href="#">Method</a>
+    </div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>5 — Centered Minimal.</b> Ultra-clean. One narrow column, everything centered. Massive white space. The tiles are the only decorative element — tiny cream rectangles that ground the data. A single thin separator between sections. Feels like a high-end printed program.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     6: DARK CINEMATIC
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m6">
+  <div class="hdr"><h1>The Green Jacket Lab</h1><div class="nav"><span class="active">Predictions</span><span>Betting</span><span>Players</span><span>Method</span></div></div>
+  <div class="hero">
+    <div class="small">Masters 2026 · AI Predictions</div>
+    <h2>Who Wins the Green Jacket?</h2>
+    <div class="sub">Three models. 10,000 simulations. Updated daily.</div>
+  </div>
+
+  <div class="spotlight-card">
+    <div class="spotlight-inner">
+      <div class="top-row">
+        <div class="tile t-red" style="width:48px;height:42px;font-size:22px;transform:rotate(-1deg)">1</div>
+        <div class="info"><h3>Scottie Scheffler</h3><div class="sub">AI Consensus Pick · Unanimous</div></div>
+      </div>
+      <div class="tile-row">
+        <div class="stat"><div class="tile t-red" style="width:52px;height:38px;font-size:17px;transform:rotate(0.5deg)">18.2</div><div class="lbl">Win %</div></div>
+        <div class="stat"><div class="tile t-red" style="width:52px;height:38px;font-size:17px;transform:rotate(-0.8deg)">42.1</div><div class="lbl">Top 5</div></div>
+        <div class="stat"><div class="tile t-black" style="width:52px;height:38px;font-size:17px;transform:rotate(0.3deg)">61.4</div><div class="lbl">Top 10</div></div>
+        <div class="stat"><div class="tile t-black" style="width:52px;height:38px;font-size:17px;transform:rotate(-0.5deg)">94.2</div><div class="lbl">Cut</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lb-section">
+    <h3>Predicted Leaderboard</h3>
+    <div class="d-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.5deg)">1</div><span class="nm">Scheffler</span><div class="tile pct-t t-red" style="width:42px;height:26px;font-size:11px;transform:rotate(0.5deg)">18.2%</div></div>
+    <div class="d-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.3deg)">2</div><span class="nm">McIlroy</span><div class="tile pct-t t-red" style="width:42px;height:26px;font-size:11px;transform:rotate(-0.3deg)">12.4%</div></div>
+    <div class="d-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.8deg)">3</div><span class="nm">Morikawa</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px">9.1%</div></div>
+    <div class="d-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.6deg)">4</div><span class="nm">Rahm</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px;transform:rotate(0.8deg)">8.3%</div></div>
+    <div class="d-row"><div class="tile t-red" style="width:30px;height:26px;font-size:13px">5</div><span class="nm">Koepka</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px;transform:rotate(-0.5deg)">7.0%</div></div>
+    <div class="d-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(0.4deg)">6</div><span class="nm">Hovland</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px">5.8%</div></div>
+    <div class="d-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.6deg)">7</div><span class="nm">Aberg</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px;transform:rotate(0.5deg)">5.2%</div></div>
+    <div class="d-row"><div class="tile t-black" style="width:30px;height:26px;font-size:13px">8</div><span class="nm">Spieth</span><div class="tile pct-t t-black" style="width:42px;height:26px;font-size:11px;transform:rotate(-0.4deg)">4.5%</div></div>
+  </div>
+  <div class="desc"><div class="desc-box"><b>6 — Dark Cinematic.</b> Near-black background. Gradient text hero. The only color comes from the green board card holding the winner spotlight and the cream tiles. Premium, atmospheric, like a night broadcast. Tiles glow against the dark.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     7: NEWSPAPER / BROADSHEET
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m7">
+  <div class="masthead">
+    <div class="pre">Augusta National Golf Club · April 2026</div>
+    <h1>The Green Jacket Lab</h1>
+    <div class="post">AI-Powered Masters Predictions · Three Models, One Green Jacket</div>
+  </div>
+  <div class="edition-bar">
+    <span>Predictions</span><span>·</span><span>Betting Edge</span><span>·</span><span>Player Profiles</span><span>·</span><span>Methodology</span>
+  </div>
+  <div class="paper">
+    <div class="headline">
+      <h2>Scheffler Tops All Three<br>AI Models for 2026 Masters</h2>
+      <div class="deck">Consensus gives world No. 1 an 18.2% win probability — highest margin in model history</div>
+    </div>
+    <div class="cols">
+      <div class="col-main">
+        <p class="lead">Scottie Scheffler enters the 2026 Masters as the prohibitive favorite across all three artificial intelligence models employed by The Green Jacket Lab. The world's top-ranked player accumulated the highest win probability in the three-year history of this prediction system, driven by elite strokes-gained metrics, proven Augusta National form, and relentless consistency on the PGA Tour this season.</p>
+        <div class="inline-tile-row">
+          <div class="stat"><div class="tile t-red" style="width:48px;height:36px;font-size:16px;transform:rotate(-0.5deg)">18.2</div><div class="lbl">Win %</div></div>
+          <div class="stat"><div class="tile t-red" style="width:48px;height:36px;font-size:16px;transform:rotate(0.8deg)">42.1</div><div class="lbl">Top 5</div></div>
+          <div class="stat"><div class="tile t-black" style="width:48px;height:36px;font-size:16px;transform:rotate(-0.3deg)">61.4</div><div class="lbl">Top 10</div></div>
+          <div class="stat"><div class="tile t-black" style="width:48px;height:36px;font-size:16px;transform:rotate(0.5deg)">94.2</div><div class="lbl">Cut</div></div>
+        </div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.8;margin-top:16px">Rory McIlroy, chasing the career Grand Slam, sits second at 12.4%. The Northern Irishman's approach play metrics rank top-3 in the field, and his recent Augusta form has steadily improved. Collin Morikawa rounds out the top three at 9.1%, with elite iron play that translates perfectly to Augusta's demanding approach shots.</p>
+      </div>
+      <div class="col-side">
+        <h3>Leaderboard</h3>
+        <div class="side-entry"><div class="tile t-red" style="width:26px;height:22px;font-size:11px;transform:rotate(-0.5deg)">1</div><span class="nm">Scheffler</span><span class="pct">18.2%</span></div>
+        <div class="side-entry"><div class="tile t-red" style="width:26px;height:22px;font-size:11px;transform:rotate(0.3deg)">2</div><span class="nm">McIlroy</span><span class="pct">12.4%</span></div>
+        <div class="side-entry"><div class="tile t-red" style="width:26px;height:22px;font-size:11px;transform:rotate(-0.8deg)">3</div><span class="nm">Morikawa</span><span class="pct">9.1%</span></div>
+        <div class="side-entry"><div class="tile t-red" style="width:26px;height:22px;font-size:11px;transform:rotate(0.6deg)">4</div><span class="nm">Rahm</span><span class="pct">8.3%</span></div>
+        <div class="side-entry"><div class="tile t-red" style="width:26px;height:22px;font-size:11px">5</div><span class="nm">Koepka</span><span class="pct">7.0%</span></div>
+        <div class="side-entry"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(0.4deg)">6</div><span class="nm">Hovland</span><span class="pct">5.8%</span></div>
+        <div class="side-entry"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(-0.6deg)">7</div><span class="nm">Aberg</span><span class="pct">5.2%</span></div>
+        <div class="side-entry"><div class="tile t-black" style="width:26px;height:22px;font-size:11px">8</div><span class="nm">Spieth</span><span class="pct">4.5%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>7 — Broadsheet.</b> Newspaper editorial layout. Drop-cap lead paragraph. Two-column grid with story left, leaderboard right. A scoreboard tile strip is embedded mid-article. The masthead uses double-rule borders. Tiles are the only non-typographic element — data artifacts in a sea of words.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     8: PURE BOARD TABLE
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m8">
+  <div class="topstrip">
+    <h1>LEADERS</h1>
+    <div class="nav">
+      <div class="tile active" style="width:auto;min-width:unset;height:auto;padding:5px 12px;font-size:9px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:700;color:var(--green-dark)">Predictions</div>
+      <div class="tile" style="width:auto;min-width:unset;height:auto;padding:5px 12px;font-size:9px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:700">Betting</div>
+      <div class="tile" style="width:auto;min-width:unset;height:auto;padding:5px 12px;font-size:9px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:700">Players</div>
+      <div class="tile" style="width:auto;min-width:unset;height:auto;padding:5px 12px;font-size:9px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:700">Method</div>
+    </div>
+  </div>
+  <div class="board-wrap">
+    <div class="board-title">AI Predicted Finish · Masters 2026</div>
+    <table class="board-table">
+      <thead><tr><th>Pos</th><th>Player</th><th>Win %</th><th>Top 5</th><th>Top 10</th><th>Cut</th></tr></thead>
+      <tbody>
+        <tr><td><div class="tile pos-t t-red" style="transform:rotate(-0.5deg)">1</div></td><td class="nm-cell">Scottie Scheffler</td><td><div class="tile t-red" style="transform:rotate(0.5deg)">18.2</div></td><td><div class="tile t-red" style="transform:rotate(-0.3deg)">42.1</div></td><td><div class="tile t-red" style="transform:rotate(0.8deg)">61.4</div></td><td><div class="tile t-black" style="transform:rotate(-0.5deg)">94.2</div></td></tr>
+        <tr><td><div class="tile pos-t t-red" style="transform:rotate(0.3deg)">2</div></td><td class="nm-cell">Rory McIlroy</td><td><div class="tile t-red" style="transform:rotate(-0.8deg)">12.4</div></td><td><div class="tile t-red" style="transform:rotate(0.5deg)">38.5</div></td><td><div class="tile t-red" style="transform:rotate(-0.3deg)">55.2</div></td><td><div class="tile t-black">91.1</div></td></tr>
+        <tr><td><div class="tile pos-t t-red" style="transform:rotate(-0.8deg)">3</div></td><td class="nm-cell">Collin Morikawa</td><td><div class="tile t-black" style="transform:rotate(0.6deg)">9.1</div></td><td><div class="tile t-red" style="transform:rotate(-0.5deg)">31.3</div></td><td><div class="tile t-red" style="transform:rotate(0.3deg)">48.7</div></td><td><div class="tile t-black" style="transform:rotate(-0.8deg)">89.4</div></td></tr>
+        <tr><td><div class="tile pos-t t-red" style="transform:rotate(0.6deg)">4</div></td><td class="nm-cell">Jon Rahm</td><td><div class="tile t-black" style="transform:rotate(-0.5deg)">8.3</div></td><td><div class="tile t-red" style="transform:rotate(0.8deg)">28.1</div></td><td><div class="tile t-red" style="transform:rotate(-0.3deg)">45.6</div></td><td><div class="tile t-black" style="transform:rotate(0.5deg)">88.2</div></td></tr>
+        <tr><td><div class="tile pos-t t-red">5</div></td><td class="nm-cell">Brooks Koepka</td><td><div class="tile t-black" style="transform:rotate(0.5deg)">7.0</div></td><td><div class="tile t-red" style="transform:rotate(-0.5deg)">25.4</div></td><td><div class="tile t-red">41.2</div></td><td><div class="tile t-black" style="transform:rotate(-0.3deg)">86.5</div></td></tr>
+        <tr><td><div class="tile pos-t t-black" style="transform:rotate(0.4deg)">6</div></td><td class="nm-cell">Viktor Hovland</td><td><div class="tile t-black" style="transform:rotate(-0.8deg)">5.8</div></td><td><div class="tile t-black" style="transform:rotate(0.3deg)">22.1</div></td><td><div class="tile t-red" style="transform:rotate(-0.5deg)">38.5</div></td><td><div class="tile t-black" style="transform:rotate(0.8deg)">84.1</div></td></tr>
+        <tr><td><div class="tile pos-t t-black" style="transform:rotate(-0.6deg)">7</div></td><td class="nm-cell">Ludvig Aberg</td><td><div class="tile t-black">5.2</div></td><td><div class="tile t-black" style="transform:rotate(0.5deg)">20.3</div></td><td><div class="tile t-red" style="transform:rotate(-0.8deg)">36.1</div></td><td><div class="tile t-black" style="transform:rotate(0.3deg)">82.4</div></td></tr>
+        <tr><td><div class="tile pos-t t-black">8</div></td><td class="nm-cell">Jordan Spieth</td><td><div class="tile t-black" style="transform:rotate(0.5deg)">4.5</div></td><td><div class="tile t-black" style="transform:rotate(-0.3deg)">18.2</div></td><td><div class="tile t-black">33.4</div></td><td><div class="tile t-black" style="transform:rotate(-0.5deg)">80.7</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="desc"><div class="desc-box"><b>8 — Pure Board Table.</b> No hero. No narrative. The scoreboard IS the entire page. Dark green background, white player names, every data cell is a physical tile. Navigation is tiles. The closest digital replica of standing in front of the actual Augusta leaderboard. Maximum authenticity.</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     9: MOBILE-FIRST VERTICAL
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m9">
+  <div class="mob-hdr"><h1>The Green Jacket Lab</h1><span class="flag">⛳</span></div>
+  <div class="seg">
+    <button class="active">Predictions</button>
+    <button>Betting</button>
+    <button>Players</button>
+    <button>Method</button>
+  </div>
+  <div class="mob-winner">
+    <div class="eyebrow">AI Consensus Pick</div>
+    <div class="row">
+      <div class="tile t-red" style="width:42px;height:36px;font-size:20px;transform:rotate(-1deg)">1</div>
+      <span class="name">Scheffler</span>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="tile t-red" style="width:48px;height:34px;font-size:15px;transform:rotate(0.5deg)">18.2</div><div class="lbl">Win %</div></div>
+      <div class="stat"><div class="tile t-red" style="width:48px;height:34px;font-size:15px;transform:rotate(-0.8deg)">42.1</div><div class="lbl">Top 5</div></div>
+      <div class="stat"><div class="tile t-black" style="width:48px;height:34px;font-size:15px;transform:rotate(0.3deg)">61.4</div><div class="lbl">Top 10</div></div>
+    </div>
+  </div>
+  <div class="mob-list">
+    <div class="mob-item"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.3deg)">2</div><div class="info"><span class="nm">Rory McIlroy</span><span class="sub">Grand Slam chaser · 3 models agree</span></div><span class="pct">12.4%</span></div>
+    <div class="mob-item"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.8deg)">3</div><div class="info"><span class="nm">Collin Morikawa</span><span class="sub">Elite iron play · Rising form</span></div><span class="pct">9.1%</span></div>
+    <div class="mob-item"><div class="tile t-red" style="width:30px;height:26px;font-size:13px;transform:rotate(0.6deg)">4</div><div class="info"><span class="nm">Jon Rahm</span><span class="sub">Augusta pedigree · Power game</span></div><span class="pct">8.3%</span></div>
+    <div class="mob-item"><div class="tile t-red" style="width:30px;height:26px;font-size:13px">5</div><div class="info"><span class="nm">Brooks Koepka</span><span class="sub">Major specialist · Peak form</span></div><span class="pct">7.0%</span></div>
+    <div class="mob-item"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(0.4deg)">6</div><div class="info"><span class="nm">Viktor Hovland</span><span class="sub">Consistent ball-striker</span></div><span class="pct">5.8%</span></div>
+    <div class="mob-item"><div class="tile t-black" style="width:30px;height:26px;font-size:13px;transform:rotate(-0.6deg)">7</div><div class="info"><span class="nm">Ludvig Aberg</span><span class="sub">Breakout season · Augusta debut</span></div><span class="pct">5.2%</span></div>
+    <div class="mob-item"><div class="tile t-black" style="width:30px;height:26px;font-size:13px">8</div><div class="info"><span class="nm">Jordan Spieth</span><span class="sub">2015 champion · Course knowledge</span></div><span class="pct">4.5%</span></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     10: HORIZONTAL SCROLL PANELS
+     ═══════════════════════════════════════════ -->
+<div class="mockup" id="m10">
+  <div class="bar"><h1>The Green Jacket Lab</h1><span class="tag">Masters 2026</span></div>
+
+  <div class="section-hdr"><h3>Top Predictions</h3><span class="more">Scroll →</span></div>
+  <div class="h-scroll">
+    <div class="h-card">
+      <div class="card-top"><div class="rank-row"><div class="tile t-red" style="width:34px;height:30px;font-size:16px;transform:rotate(-1deg)">1</div><span class="nm">Scheffler</span></div></div>
+      <div class="card-body"><div class="stat-grid"><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(0.5deg)">18.2</div><span class="lbl">Win %</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(-0.3deg)">42.1</div><span class="lbl">Top 5</span></div><div class="sg"><div class="tile t-black" style="width:44px;height:32px;font-size:14px">61.4</div><span class="lbl">Top 10</span></div></div><p class="rationale">Dominant strokes-gained profile. All three models rank him #1 or #2. The most complete player in the field.</p></div>
+    </div>
+    <div class="h-card">
+      <div class="card-top"><div class="rank-row"><div class="tile t-red" style="width:34px;height:30px;font-size:16px;transform:rotate(0.5deg)">2</div><span class="nm">McIlroy</span></div></div>
+      <div class="card-body"><div class="stat-grid"><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(-0.5deg)">12.4</div><span class="lbl">Win %</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(0.8deg)">38.5</div><span class="lbl">Top 5</span></div><div class="sg"><div class="tile t-black" style="width:44px;height:32px;font-size:14px">55.2</div><span class="lbl">Top 10</span></div></div><p class="rationale">Career Grand Slam on the line. Approach metrics rank top-3. Augusta form improving year over year.</p></div>
+    </div>
+    <div class="h-card">
+      <div class="card-top"><div class="rank-row"><div class="tile t-red" style="width:34px;height:30px;font-size:16px;transform:rotate(-0.8deg)">3</div><span class="nm">Morikawa</span></div></div>
+      <div class="card-body"><div class="stat-grid"><div class="sg"><div class="tile t-black" style="width:44px;height:32px;font-size:14px;transform:rotate(0.3deg)">9.1</div><span class="lbl">Win %</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(-0.5deg)">31.3</div><span class="lbl">Top 5</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px">48.7</div><span class="lbl">Top 10</span></div></div><p class="rationale">The best iron player in golf. Augusta's demanding approaches play to his greatest strength.</p></div>
+    </div>
+    <div class="h-card">
+      <div class="card-top"><div class="rank-row"><div class="tile t-red" style="width:34px;height:30px;font-size:16px;transform:rotate(0.6deg)">4</div><span class="nm">Rahm</span></div></div>
+      <div class="card-body"><div class="stat-grid"><div class="sg"><div class="tile t-black" style="width:44px;height:32px;font-size:14px;transform:rotate(-0.8deg)">8.3</div><span class="lbl">Win %</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(0.5deg)">28.1</div><span class="lbl">Top 5</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px">45.6</div><span class="lbl">Top 10</span></div></div><p class="rationale">Power game built for Augusta. Won in 2023. Amen Corner specialist.</p></div>
+    </div>
+    <div class="h-card">
+      <div class="card-top"><div class="rank-row"><div class="tile t-red" style="width:34px;height:30px;font-size:16px">5</div><span class="nm">Koepka</span></div></div>
+      <div class="card-body"><div class="stat-grid"><div class="sg"><div class="tile t-black" style="width:44px;height:32px;font-size:14px;transform:rotate(0.5deg)">7.0</div><span class="lbl">Win %</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px;transform:rotate(-0.3deg)">25.4</div><span class="lbl">Top 5</span></div><div class="sg"><div class="tile t-red" style="width:44px;height:32px;font-size:14px">41.2</div><span class="lbl">Top 10</span></div></div><p class="rationale">The ultimate major-tournament player. Peaks for the biggest events. Physical advantage off the tee.</p></div>
+    </div>
+  </div>
+
+  <div class="compact-list">
+    <h3>Full Leaderboard</h3>
+    <div class="cl-row"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(0.4deg)">6</div><span class="nm">Viktor Hovland</span><span class="pct">5.8%</span></div>
+    <div class="cl-row"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(-0.6deg)">7</div><span class="nm">Ludvig Aberg</span><span class="pct">5.2%</span></div>
+    <div class="cl-row"><div class="tile t-black" style="width:26px;height:22px;font-size:11px">8</div><span class="nm">Jordan Spieth</span><span class="pct">4.5%</span></div>
+    <div class="cl-row"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(0.5deg)">9</div><span class="nm">Xander Schauffele</span><span class="pct">4.1%</span></div>
+    <div class="cl-row"><div class="tile t-black" style="width:26px;height:22px;font-size:11px;transform:rotate(-0.3deg)">10</div><span class="nm">Tommy Fleetwood</span><span class="pct">3.6%</span></div>
+  </div>
+  <div class="desc light-desc"><div class="desc-box"><b>10 — Horizontal Scroll Panels.</b> Top predictions are swipeable cards with green board headers and tile stats. Below, a compact list continues the leaderboard. Modern app feel — like a sports news feed. Each card packs a full player snapshot: tiles for data, one-line rationale below. Scroll gesture makes it feel alive.</div></div>
+</div>
+
+
+<script>
+function show(n){
+  document.querySelectorAll('.mockup').forEach(m=>m.classList.remove('active'));
+  document.querySelectorAll('.sel-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('m'+n).classList.add('active');
+  document.querySelectorAll('.sel-btn')[n-1].classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>

@@ -21,7 +21,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
           <Menu className="h-6 w-6" />
         </Button>
 
-        <h1 className="font-heading text-lg font-bold tracking-tight text-white md:text-xl board-header-paint">
+        <h1 className="font-masters-italic text-lg tracking-tight text-white md:text-xl board-header-paint">
           The Green Jacket Lab
         </h1>
 

@@ -105,9 +105,16 @@
   }
 }
 
-/* Heading font utility */
+/* Heading font utility — Cormorant Garamond (closest to Masters logo) */
 .font-heading {
   font-family: var(--font-heading), serif;
+}
+
+/* Masters italic style — use on brand/logo elements for the authentic swash feel */
+.font-masters-italic {
+  font-family: var(--font-heading), serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* ═══════════════════════════════════════════
