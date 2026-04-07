@@ -57,13 +57,13 @@ export function BestBetsCard({ bets }: BestBetsCardProps) {
                 </div>
               </div>
 
-              {/* Edge */}
+              {/* Edge + EV */}
               <div className="shrink-0 text-right">
                 <div className="text-sm font-bold text-masters-green">
                   +{bet.edge.toFixed(1)}%
                 </div>
-                <div className="text-[10px] text-[var(--text-muted)]">
-                  AI: {bet.aiProb.toFixed(1)}%
+                <div className="text-[10px] font-semibold tabular-nums text-masters-green">
+                  EV: +${bet.ev100.toFixed(2)}
                 </div>
               </div>
             </div>

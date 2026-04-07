@@ -1,21 +1,51 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { BetMarket, BettingEdgeResult, Player, PredictionsData, BettingOddsData } from "@/lib/types";
+import type {
+  BetMarket,
+  BettingEdgeResult,
+  Player,
+  PredictionsData,
+  BettingOddsData,
+} from "@/lib/types";
 import {
   calculateAllEdges,
   getTopValueBets,
-  MARKET_LABELS,
-  FINISH_MARKETS,
   NATIONALITY_MARKETS,
 } from "@/lib/edge-calculations";
 import { BestBetsCard } from "@/components/cards/BestBetsCard";
 import { EdgeCard } from "@/components/cards/EdgeCard";
-import { Search, TrendingUp, SlidersHorizontal } from "lucide-react";
+import { ParlayBuilder } from "@/components/betting/ParlayBuilder";
+import { WeatherEdge } from "@/components/betting/WeatherEdge";
+import { LiveTracker } from "@/components/betting/LiveTracker";
+import { RoundPropsComponent } from "@/components/betting/RoundProps";
+import {
+  Search,
+  TrendingUp,
+  SlidersHorizontal,
+  Layers,
+  CloudRain,
+  Radio,
+  Target,
+} from "lucide-react";
 
 import bettingData from "@/data/betting-odds.json";
 import predictionsData from "@/data/predictions.json";
 import playersData from "@/data/players-2026.json";
+
+// ── Sub-tab types ───────────────────────────────────────────────
+
+type SubTab = "edge" | "parlays" | "weather" | "live" | "rounds";
+
+const SUB_TABS: { id: SubTab; label: string; icon: React.ElementType }[] = [
+  { id: "edge", label: "Edge Finder", icon: TrendingUp },
+  { id: "parlays", label: "Parlay Builder", icon: Layers },
+  { id: "weather", label: "Weather Edge", icon: CloudRain },
+  { id: "live", label: "Live Tracker", icon: Radio },
+  { id: "rounds", label: "Round Props", icon: Target },
+];
+
+// ── Edge Finder types ───────────────────────────────────────────
 
 type MarketFilter =
   | "all"
@@ -26,7 +56,7 @@ type MarketFilter =
   | "makeCut"
   | "nationality";
 
-type SortOption = "edge" | "odds" | "ranking";
+type SortOption = "edge" | "ev" | "odds" | "ranking";
 
 const MARKET_FILTERS: { id: MarketFilter; label: string }[] = [
   { id: "all", label: "All Markets" },
@@ -40,12 +70,14 @@ const MARKET_FILTERS: { id: MarketFilter; label: string }[] = [
 
 const SORT_OPTIONS: { id: SortOption; label: string }[] = [
   { id: "edge", label: "Biggest Edge" },
+  { id: "ev", label: "Highest EV" },
   { id: "odds", label: "Best Odds" },
   { id: "ranking", label: "World Ranking" },
 ];
 
-// Parse search queries like "Scheffler top 10" into player name + market
-function parseSearch(query: string): { name: string; market: BetMarket | null } {
+function parseSearch(
+  query: string
+): { name: string; market: BetMarket | null } {
   const lower = query.toLowerCase().trim();
   if (!lower) return { name: "", market: null };
 
@@ -54,12 +86,21 @@ function parseSearch(query: string): { name: string; market: BetMarket | null } 
     { pattern: /\btop\s*5\b/, market: "top5" },
     { pattern: /\btop\s*10\b/, market: "top10" },
     { pattern: /\btop\s*20\b/, market: "top20" },
-    { pattern: /\b(make\s*cut|make\s*the\s*cut|cut)\b/, market: "makeCut" },
+    {
+      pattern: /\b(make\s*cut|make\s*the\s*cut|cut)\b/,
+      market: "makeCut",
+    },
     { pattern: /\b(american|usa|us)\b/, market: "topAmerican" },
     { pattern: /\b(european|europe)\b/, market: "topEuropean" },
     { pattern: /\b(asian|asia)\b/, market: "topAsian" },
-    { pattern: /\b(australasian|australian|aussie)\b/, market: "topAustralasian" },
-    { pattern: /\b(south\s*american|latin)\b/, market: "topSouthAmerican" },
+    {
+      pattern: /\b(australasian|australian|aussie)\b/,
+      market: "topAustralasian",
+    },
+    {
+      pattern: /\b(south\s*american|latin)\b/,
+      market: "topSouthAmerican",
+    },
   ];
 
   let detectedMarket: BetMarket | null = null;
@@ -76,21 +117,13 @@ function parseSearch(query: string): { name: string; market: BetMarket | null } 
   return { name: remaining, market: detectedMarket };
 }
 
-export function BettingEdge() {
+// ── Edge Finder sub-component ───────────────────────────────────
+
+function EdgeFinder({ allEdges }: { allEdges: BettingEdgeResult[] }) {
   const [search, setSearch] = useState("");
   const [marketFilter, setMarketFilter] = useState<MarketFilter>("all");
   const [sortBy, setSortBy] = useState<SortOption>("edge");
   const [showAll, setShowAll] = useState(false);
-
-  const allEdges = useMemo(
-    () =>
-      calculateAllEdges(
-        bettingData as unknown as BettingOddsData,
-        predictionsData as unknown as PredictionsData,
-        playersData as unknown as Player[]
-      ),
-    []
-  );
 
   const bestBets = useMemo(() => getTopValueBets(allEdges, 5), [allEdges]);
 
@@ -98,7 +131,6 @@ export function BettingEdge() {
     let edges = [...allEdges];
     const { name: searchName, market: searchMarket } = parseSearch(search);
 
-    // Search filter
     if (searchName) {
       edges = edges.filter((e) =>
         e.playerName.toLowerCase().includes(searchName)
@@ -108,7 +140,6 @@ export function BettingEdge() {
       edges = edges.filter((e) => e.market === searchMarket);
     }
 
-    // Market filter (only if no search-based market filter)
     if (!searchMarket && marketFilter !== "all") {
       if (marketFilter === "nationality") {
         edges = edges.filter((e) => NATIONALITY_MARKETS.includes(e.market));
@@ -117,10 +148,12 @@ export function BettingEdge() {
       }
     }
 
-    // Sort
     switch (sortBy) {
       case "edge":
         edges.sort((a, b) => b.edge - a.edge);
+        break;
+      case "ev":
+        edges.sort((a, b) => b.ev100 - a.ev100);
         break;
       case "odds":
         edges.sort((a, b) => b.decimalOdds - a.decimalOdds);
@@ -135,7 +168,128 @@ export function BettingEdge() {
 
   const displayEdges = showAll ? filteredEdges : filteredEdges.slice(0, 20);
   const hasMore = filteredEdges.length > 20;
-  const positiveEdges = filteredEdges.filter((e) => e.edge > 0).length;
+
+  return (
+    <div className="space-y-6">
+      <BestBetsCard bets={bestBets} />
+
+      <div className="space-y-3">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--text-muted)]" />
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder='Search player or bet... e.g. "Scheffler top 10"'
+            className="w-full rounded-lg border border-[var(--border-color)] bg-white py-2.5 pl-10 pr-4 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:border-masters-green focus:outline-none focus:ring-1 focus:ring-masters-green"
+          />
+        </div>
+
+        <div className="flex gap-2 overflow-x-auto pb-1">
+          {MARKET_FILTERS.map((filter) => {
+            const isActive = marketFilter === filter.id;
+            return (
+              <button
+                key={filter.id}
+                onClick={() => setMarketFilter(filter.id)}
+                className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+                  isActive
+                    ? "bg-masters-green text-white"
+                    : "border border-[var(--border-color)] bg-white text-[var(--text-secondary)] hover:border-masters-green hover:text-masters-green"
+                }`}
+              >
+                {filter.label}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-[var(--text-muted)]">
+            {filteredEdges.length} results
+            {search && (
+              <button
+                onClick={() => setSearch("")}
+                className="ml-2 text-masters-green hover:underline"
+              >
+                Clear search
+              </button>
+            )}
+          </span>
+          <div className="flex items-center gap-1.5">
+            <SlidersHorizontal className="h-3.5 w-3.5 text-[var(--text-muted)]" />
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="rounded border border-[var(--border-color)] bg-white px-2 py-1 text-xs text-[var(--text-secondary)] focus:border-masters-green focus:outline-none"
+            >
+              {SORT_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        {displayEdges.length === 0 ? (
+          <div className="rounded-lg border border-[var(--border-color)] bg-white p-8 text-center">
+            <p className="text-sm text-[var(--text-muted)]">
+              No edges found for this search. Try a different player or market.
+            </p>
+          </div>
+        ) : (
+          displayEdges.map((edge, i) => (
+            <EdgeCard
+              key={`${edge.playerName}-${edge.market}`}
+              edge={edge}
+              rank={sortBy === "edge" || sortBy === "ev" ? i + 1 : undefined}
+            />
+          ))
+        )}
+      </div>
+
+      {hasMore && !showAll && (
+        <button
+          onClick={() => setShowAll(true)}
+          className="w-full rounded-lg border border-[var(--border-color)] bg-white py-3 text-sm font-medium text-masters-green transition-colors hover:bg-masters-green-light"
+        >
+          Show All {filteredEdges.length} Results
+        </button>
+      )}
+      {showAll && hasMore && (
+        <button
+          onClick={() => setShowAll(false)}
+          className="w-full rounded-lg border border-[var(--border-color)] bg-white py-3 text-sm font-medium text-[var(--text-muted)] transition-colors hover:bg-gray-50"
+        >
+          Show Less
+        </button>
+      )}
+    </div>
+  );
+}
+
+// ── Main BettingEdge Section ────────────────────────────────────
+
+export function BettingEdge() {
+  const [activeTab, setActiveTab] = useState<SubTab>("edge");
+
+  const allEdges = useMemo(
+    () =>
+      calculateAllEdges(
+        bettingData as unknown as BettingOddsData,
+        predictionsData as unknown as PredictionsData,
+        playersData as unknown as Player[]
+      ),
+    []
+  );
+
+  const positiveEdges = allEdges.filter((e) => e.edge > 0).length;
+  const totalEV = allEdges
+    .filter((e) => e.ev100 > 0)
+    .reduce((sum, e) => sum + e.ev100, 0);
 
   return (
     <section>
@@ -160,123 +314,69 @@ export function BettingEdge() {
               <span className="text-xl font-bold text-masters-gold">
                 {positiveEdges}
               </span>
-              <span className="ml-1 text-white/70">value bets found</span>
+              <span className="ml-1 text-white/70">value bets</span>
             </div>
             <div className="h-6 w-px bg-white/20" />
             <div>
               <span className="text-xl font-bold text-masters-gold">
                 {allEdges.length}
               </span>
-              <span className="ml-1 text-white/70">markets analyzed</span>
+              <span className="ml-1 text-white/70">markets</span>
+            </div>
+            <div className="h-6 w-px bg-white/20" />
+            <div>
+              <span className="text-xl font-bold text-masters-gold">
+                +${totalEV.toFixed(0)}
+              </span>
+              <span className="ml-1 text-white/70">total EV</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
-        {/* Best Bets */}
-        <BestBetsCard bets={bestBets} />
-
-        {/* Controls */}
-        <div className="mt-6 space-y-3">
-          {/* Search */}
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--text-muted)]" />
-            <input
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder='Search player or bet... e.g. "Scheffler top 10"'
-              className="w-full rounded-lg border border-[var(--border-color)] bg-white py-2.5 pl-10 pr-4 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:border-masters-green focus:outline-none focus:ring-1 focus:ring-masters-green"
-            />
-          </div>
-
-          {/* Market filters */}
-          <div className="flex gap-2 overflow-x-auto pb-1">
-            {MARKET_FILTERS.map((filter) => {
-              const isActive = marketFilter === filter.id;
-              return (
-                <button
-                  key={filter.id}
-                  onClick={() => setMarketFilter(filter.id)}
-                  className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
-                    isActive
-                      ? "bg-masters-green text-white"
-                      : "border border-[var(--border-color)] bg-white text-[var(--text-secondary)] hover:border-masters-green hover:text-masters-green"
-                  }`}
-                >
-                  {filter.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Sort + count */}
-          <div className="flex items-center justify-between">
-            <span className="text-xs text-[var(--text-muted)]">
-              {filteredEdges.length} results
-              {search && (
-                <button
-                  onClick={() => setSearch("")}
-                  className="ml-2 text-masters-green hover:underline"
-                >
-                  Clear search
-                </button>
-              )}
-            </span>
-            <div className="flex items-center gap-1.5">
-              <SlidersHorizontal className="h-3.5 w-3.5 text-[var(--text-muted)]" />
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="rounded border border-[var(--border-color)] bg-white px-2 py-1 text-xs text-[var(--text-secondary)] focus:border-masters-green focus:outline-none"
+      {/* Sub-tabs */}
+      <div className="border-b border-[var(--border-color)] bg-white">
+        <div className="mx-auto flex max-w-4xl items-center gap-1 overflow-x-auto px-4">
+          {SUB_TABS.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`relative flex shrink-0 items-center gap-1.5 px-4 py-3 text-xs font-medium transition-colors ${
+                  isActive
+                    ? "text-masters-green"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                }`}
               >
-                {SORT_OPTIONS.map((opt) => (
-                  <option key={opt.id} value={opt.id}>
-                    {opt.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
+                <Icon className="h-3.5 w-3.5" />
+                {tab.label}
+                {isActive && (
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-masters-green" />
+                )}
+              </button>
+            );
+          })}
         </div>
+      </div>
 
-        {/* Edge cards list */}
-        <div className="mt-4 space-y-2">
-          {displayEdges.length === 0 ? (
-            <div className="rounded-lg border border-[var(--border-color)] bg-white p-8 text-center">
-              <p className="text-sm text-[var(--text-muted)]">
-                No edges found for this search. Try a different player or
-                market.
-              </p>
-            </div>
-          ) : (
-            displayEdges.map((edge, i) => (
-              <EdgeCard
-                key={`${edge.playerName}-${edge.market}`}
-                edge={edge}
-                rank={sortBy === "edge" ? i + 1 : undefined}
-              />
-            ))
-          )}
-        </div>
-
-        {/* Show more */}
-        {hasMore && !showAll && (
-          <button
-            onClick={() => setShowAll(true)}
-            className="mt-4 w-full rounded-lg border border-[var(--border-color)] bg-white py-3 text-sm font-medium text-masters-green transition-colors hover:bg-masters-green-light"
-          >
-            Show All {filteredEdges.length} Results
-          </button>
+      {/* Content */}
+      <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
+        {activeTab === "edge" && <EdgeFinder allEdges={allEdges} />}
+        {activeTab === "parlays" && <ParlayBuilder edges={allEdges} />}
+        {activeTab === "weather" && (
+          <WeatherEdge
+            edges={allEdges}
+            players={playersData as unknown as Player[]}
+          />
         )}
-        {showAll && hasMore && (
-          <button
-            onClick={() => setShowAll(false)}
-            className="mt-4 w-full rounded-lg border border-[var(--border-color)] bg-white py-3 text-sm font-medium text-[var(--text-muted)] transition-colors hover:bg-gray-50"
-          >
-            Show Less
-          </button>
+        {activeTab === "live" && <LiveTracker edges={allEdges} />}
+        {activeTab === "rounds" && (
+          <RoundPropsComponent
+            edges={allEdges}
+            players={playersData as unknown as Player[]}
+          />
         )}
 
         {/* Footer note */}
@@ -292,9 +392,9 @@ export function BettingEdge() {
               hour: "numeric",
               minute: "2-digit",
             })}
-            . Edge = AI Model Probability - DK Implied Probability. Positive
-            edge indicates potential value. Top 20 probabilities are estimated.
-            Not financial advice.
+            . Edge = AI Probability - DK Implied Probability. EV = Expected
+            Value per $100 bet. Positive values indicate profitable bets over
+            time. Not financial advice.
           </p>
         </div>
       </div>

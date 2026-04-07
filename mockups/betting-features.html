@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betting Edge — Feature Mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006B54;
+    --green-dark: #004D3C;
+    --green-light: #E8F5F0;
+    --gold: #C8A951;
+    --gold-light: #FBF5E6;
+    --red: #C0392B;
+    --blue: #2E6B8A;
+    --bg: #FAFAF7;
+    --text: #1A1A1A;
+    --text2: #4A4A4A;
+    --muted: #8A8A8A;
+    --border: #E5E5DC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+  .heading { font-family: 'Playfair Display', serif; }
+
+  /* Nav */
+  .top-bar { position: sticky; top: 0; z-index: 50; background: var(--green-dark); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .top-bar h1 { color: white; font-family: 'Playfair Display', serif; font-size: 18px; }
+  .top-bar span { color: var(--gold); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+  /* Selector */
+  .selector { max-width: 900px; margin: 32px auto 0; padding: 0 20px; }
+  .selector-title { font-family: 'Playfair Display', serif; font-size: 28px; text-align: center; margin-bottom: 8px; }
+  .selector-sub { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .selector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+  .selector-btn { padding: 10px 12px; border-radius: 8px; border: 2px solid var(--border); background: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; text-align: left; }
+  .selector-btn:hover { border-color: var(--green); color: var(--green); }
+  .selector-btn.active { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .selector-btn .num { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-bottom: 2px; }
+
+  /* Mockup container */
+  .mockup-wrap { max-width: 900px; margin: 24px auto 60px; padding: 0 20px; }
+  .mockup { display: none; }
+  .mockup.active { display: block; }
+
+  /* Shared card styles */
+  .card { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .card-gold { border-left: 4px solid var(--gold); }
+  .card-green { border-left: 4px solid var(--green); }
+  .card-blue { border-left: 4px solid var(--blue); }
+  .card-header { padding: 20px 24px 16px; }
+  .card-body { padding: 0 24px 24px; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 50px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge-gold { background: var(--gold-light); color: var(--gold); }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-blue { background: #E8F0F5; color: var(--blue); }
+  .badge-red { background: #FDECEB; color: var(--red); }
+  .badge-outline { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+
+  .section-title { font-family: 'Playfair Display', serif; font-size: 22px; margin-top: 8px; }
+  .section-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* Rows */
+  .row { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: none; }
+  .row:hover { background: var(--bg); }
+  .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .avatar-sm { width: 28px; height: 28px; font-size: 10px; }
+  .row-main { flex: 1; min-width: 0; }
+  .row-name { font-size: 14px; font-weight: 600; }
+  .row-detail { font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .row-right { text-align: right; flex-shrink: 0; }
+  .edge-pos { color: var(--green); font-weight: 700; font-size: 14px; }
+  .edge-neg { color: var(--red); font-weight: 700; font-size: 14px; }
+  .odds { font-weight: 700; font-size: 14px; }
+  .implied { font-size: 11px; color: var(--muted); }
+
+  /* Edge pill */
+  .edge-pill { display: inline-block; padding: 2px 8px; border-radius: 50px; font-size: 10px; font-weight: 700; }
+  .edge-pill.strong { background: #D1FAE5; color: #065F46; }
+  .edge-pill.value { background: #ECFDF5; color: #047857; }
+  .edge-pill.slight { background: #F0FDF4; color: #15803D; }
+  .edge-pill.over { background: #FEF2F2; color: var(--red); }
+
+  /* Parlay visual */
+  .parlay-leg { display: flex; align-items: center; gap: 12px; padding: 14px 16px; position: relative; }
+  .parlay-leg:not(:last-child)::after { content: '+'; position: absolute; bottom: -12px; left: 32px; width: 20px; height: 20px; background: var(--gold); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; z-index: 1; }
+  .parlay-leg:not(:last-child) { border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+
+  /* Bar chart */
+  .bar-wrap { margin-top: 6px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .bar-label { font-size: 11px; color: var(--muted); width: 50px; text-align: right; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 8px; background: #F3F3EE; border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 4px; }
+  .bar-fill.green { background: var(--green); }
+  .bar-fill.gray { background: #CBD5E1; }
+  .bar-fill.gold { background: var(--gold); }
+  .bar-fill.red { background: var(--red); }
+  .bar-value { font-size: 11px; font-weight: 600; width: 40px; flex-shrink: 0; }
+
+  /* Toggle */
+  .toggle-wrap { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .toggle-btn { padding: 6px 14px; border-radius: 50px; border: 1px solid var(--border); background: white; font-size: 12px; font-weight: 500; cursor: pointer; }
+  .toggle-btn.on { background: var(--green); color: white; border-color: var(--green); }
+
+  /* Grid layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .stat-box { padding: 12px; border-radius: 8px; background: var(--bg); }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+  .stat-value { font-size: 20px; font-weight: 700; margin-top: 2px; }
+  .stat-value.green { color: var(--green); }
+  .stat-value.gold { color: var(--gold); }
+  .stat-value.red { color: var(--red); }
+
+  /* Matchup */
+  .matchup { display: flex; align-items: center; padding: 16px; }
+  .matchup-player { flex: 1; text-align: center; }
+  .matchup-vs { padding: 0 16px; font-weight: 800; color: var(--muted); font-size: 12px; }
+  .matchup-name { font-size: 14px; font-weight: 700; margin-top: 6px; }
+  .matchup-odds { font-size: 18px; font-weight: 800; margin-top: 4px; }
+  .matchup-edge { margin-top: 4px; }
+
+  /* Hole card */
+  .hole-card { padding: 14px; border-radius: 8px; border: 1px solid var(--border); background: white; }
+  .hole-num { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 800; color: var(--green); }
+  .hole-name { font-size: 11px; color: var(--muted); font-style: italic; }
+
+  /* Weather badge */
+  .weather-tag { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 50px; font-size: 11px; font-weight: 600; }
+  .weather-tag.wind { background: #EFF6FF; color: #1D4ED8; }
+  .weather-tag.rain { background: #F0F9FF; color: #0369A1; }
+  .weather-tag.cold { background: #F8FAFC; color: #475569; }
+
+  /* Tracker */
+  .tracker-row { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .tracker-status { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .tracker-status.live { background: var(--green); animation: pulse 2s infinite; }
+  .tracker-status.pending { background: var(--gold); }
+  .tracker-status.lost { background: var(--red); }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  /* Bankroll */
+  .bankroll-header { display: flex; align-items: baseline; gap: 12px; }
+  .bankroll-amount { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 800; }
+  .bankroll-change { font-size: 14px; font-weight: 600; }
+
+  /* Description box */
+  .desc-box { background: var(--bg); border-radius: 8px; padding: 16px; margin-top: 16px; font-size: 13px; color: var(--text2); line-height: 1.6; border: 1px dashed var(--border); }
+  .desc-box strong { color: var(--text); }
+
+  .mt-12 { margin-top: 12px; }
+  .mt-16 { margin-top: 16px; }
+  .mt-24 { margin-top: 24px; }
+  .mb-8 { margin-bottom: 8px; }
+  .mb-12 { margin-bottom: 12px; }
+  .text-xs { font-size: 11px; }
+  .text-muted { color: var(--muted); }
+  .text-green { color: var(--green); }
+  .text-gold { color: var(--gold); }
+  .fw-700 { font-weight: 700; }
+  .flex-between { display: flex; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1 class="heading">The Green Jacket Lab</h1>
+  <span>Feature Mockups</span>
+</div>
+
+<div class="selector">
+  <h2 class="selector-title heading">Choose a Feature to Preview</h2>
+  <p class="selector-sub">10 new betting features — click to preview each mockup</p>
+  <div class="selector-grid">
+    <button class="selector-btn active" onclick="show(0)"><span class="num">#1</span>AI Parlay Builder</button>
+    <button class="selector-btn" onclick="show(1)"><span class="num">#2</span>Head-to-Head Matchups</button>
+    <button class="selector-btn" onclick="show(2)"><span class="num">#3</span>Hole Props &amp; Specials</button>
+    <button class="selector-btn" onclick="show(3)"><span class="num">#4</span>Fade the Public</button>
+    <button class="selector-btn" onclick="show(4)"><span class="num">#5</span>Weather Edge Bets</button>
+    <button class="selector-btn" onclick="show(5)"><span class="num">#6</span>Correlated Parlays</button>
+    <button class="selector-btn" onclick="show(6)"><span class="num">#7</span>Live Edge Tracker</button>
+    <button class="selector-btn" onclick="show(7)"><span class="num">#8</span>Round-by-Round Props</button>
+    <button class="selector-btn" onclick="show(8)"><span class="num">#9</span>Bankroll &amp; Bet Tracker</button>
+    <button class="selector-btn" onclick="show(9)"><span class="num">#10</span>Historical Pattern Bets</button>
+  </div>
+</div>
+
+<div class="mockup-wrap">
+
+<!-- ==================== MOCKUP 1: AI PARLAY BUILDER ==================== -->
+<div class="mockup active" id="m0">
+  <div class="card card-gold">
+    <div class="card-header">
+      <span class="badge badge-gold">AI-Powered</span>
+      <h3 class="section-title heading">Parlay Builder</h3>
+      <p class="section-sub">AI assembles high-edge parlays by combining uncorrelated value bets. Each leg has positive edge — stacked together, they compound.</p>
+    </div>
+    <div class="card-body">
+
+      <!-- Featured Parlay -->
+      <div style="background: var(--bg); border-radius: 10px; overflow: hidden; border: 1px solid var(--border);">
+        <div style="background: linear-gradient(135deg, var(--green-dark), var(--green)); padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <span style="font-size: 10px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Top AI Parlay</span>
+            <div style="color: white; font-size: 16px; font-weight: 700; margin-top: 2px;">3-Leg Value Stack</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="color: var(--gold); font-size: 22px; font-weight: 800;">+892</div>
+            <div style="color: rgba(255,255,255,0.7); font-size: 11px;">Combined edge: +8.4%</div>
+          </div>
+        </div>
+
+        <div class="parlay-leg">
+          <div class="avatar avatar-sm">XS</div>
+          <div class="row-main">
+            <div class="row-name">Schauffele Top 10</div>
+            <div class="row-detail">DK: -110 (52.4%) &bull; AI: 53.3%</div>
+          </div>
+          <div><span class="edge-pill value">+3.7%</span></div>
+        </div>
+        <div class="parlay-leg">
+          <div class="avatar avatar-sm">CM</div>
+          <div class="row-main">
+            <div class="row-name">Morikawa Top 5</div>
+            <div class="row-detail">DK: +310 (24.4%) &bull; AI: 26.8%</div>
+          </div>
+          <div><span class="edge-pill value">+2.4%</span></div>
+        </div>
+        <div class="parlay-leg">
+          <div class="avatar avatar-sm">SL</div>
+          <div class="row-main">
+            <div class="row-name">Shane Lowry Make Cut</div>
+            <div class="row-detail">DK: -210 (67.7%) &bull; AI: 70.7%</div>
+          </div>
+          <div><span class="edge-pill slight">+3.0%</span></div>
+        </div>
+      </div>
+
+      <!-- Parlay controls -->
+      <div class="mt-16">
+        <div class="flex-between mb-8">
+          <span style="font-size: 13px; font-weight: 600;">Build Your Own</span>
+          <span class="text-xs text-muted">Select 2-6 legs</span>
+        </div>
+        <div class="toggle-wrap">
+          <button class="toggle-btn on">Only Value Bets</button>
+          <button class="toggle-btn">All Markets</button>
+          <button class="toggle-btn">Same-Game Parlay</button>
+        </div>
+
+        <!-- Add legs mockup -->
+        <div style="border: 2px dashed var(--border); border-radius: 10px; padding: 24px; text-align: center; color: var(--muted);">
+          <div style="font-size: 24px;">+</div>
+          <div style="font-size: 13px; margin-top: 4px;">Search player to add a leg</div>
+          <div style="margin-top: 8px; max-width: 300px; margin-left: auto; margin-right: auto;">
+            <input type="text" placeholder='e.g. "Rahm top 20"' style="width: 100%; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); font-size: 13px; text-align: center;">
+          </div>
+        </div>
+      </div>
+
+      <!-- More parlays -->
+      <div class="mt-16">
+        <div class="flex-between mb-8">
+          <span style="font-size: 13px; font-weight: 600;">More AI Parlays</span>
+          <span class="text-xs text-muted">Auto-generated daily</span>
+        </div>
+        <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+          <div style="flex:1">
+            <div class="row-name">Conservative 2-Leg</div>
+            <div class="row-detail">McIlroy Make Cut + Scheffler Top 20</div>
+          </div>
+          <div class="row-right">
+            <div class="odds">+145</div>
+            <div class="implied"><span class="edge-pill slight">+4.1%</span></div>
+          </div>
+        </div>
+        <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+          <div style="flex:1">
+            <div class="row-name">Longshot 4-Leg</div>
+            <div class="row-detail">Niemann Top 10 + Hovland Top 5 + Kim Make Cut + Lowry Top 20</div>
+          </div>
+          <div class="row-right">
+            <div class="odds">+4200</div>
+            <div class="implied"><span class="edge-pill value">+11.2%</span></div>
+          </div>
+        </div>
+        <div class="row" style="border: 1px solid var(--border); border-radius: 8px;">
+          <div style="flex:1">
+            <div class="row-name">Dark Horse Special</div>
+            <div class="row-detail">MacIntyre Top 20 + Min Woo Lee Top 20 + Theegala Make Cut</div>
+          </div>
+          <div class="row-right">
+            <div class="odds">+680</div>
+            <div class="implied"><span class="edge-pill strong">+9.7%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-box">
+    <strong>Feature: AI Parlay Builder</strong> — The AI scans all positive-edge bets and assembles optimal parlays by combining uncorrelated legs (different players, different markets). Users can also build custom parlays with real-time edge calculation. Pre-built parlays range from conservative 2-leggers to high-upside longshots. Each parlay shows combined odds, individual leg edges, and correlation warnings.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 2: HEAD-TO-HEAD MATCHUPS ==================== -->
+<div class="mockup" id="m1">
+  <div class="card card-green">
+    <div class="card-header">
+      <span class="badge badge-green">Matchup Bets</span>
+      <h3 class="section-title heading">Head-to-Head Matchups</h3>
+      <p class="section-sub">DraftKings 72-hole matchup bets analyzed by AI. Find where the book has the wrong favorite.</p>
+    </div>
+    <div class="card-body">
+
+      <div class="toggle-wrap">
+        <button class="toggle-btn on">Value Matchups</button>
+        <button class="toggle-btn">All Matchups</button>
+        <button class="toggle-btn">3-Ball Groups</button>
+      </div>
+
+      <!-- Matchup 1 -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: var(--green-light); padding: 6px 16px; font-size: 10px; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between;">
+          <span>72-Hole Matchup</span>
+          <span class="edge-pill strong">AI DISAGREES</span>
+        </div>
+        <div class="matchup">
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto;">VH</div>
+            <div class="matchup-name">Hovland</div>
+            <div class="matchup-odds text-green">-115</div>
+            <div class="matchup-edge"><span class="edge-pill value">+4.2% edge</span></div>
+            <div class="text-xs text-muted mt-12">AI: 56.8%</div>
+          </div>
+          <div class="matchup-vs">VS</div>
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto; background: var(--muted);">BK</div>
+            <div class="matchup-name">Koepka</div>
+            <div class="matchup-odds" style="color: var(--text2);">-105</div>
+            <div class="matchup-edge"><span class="edge-pill over">-4.2%</span></div>
+            <div class="text-xs text-muted mt-12">AI: 43.2%</div>
+          </div>
+        </div>
+        <div style="padding: 0 16px 12px;">
+          <div class="bar-wrap">
+            <div class="bar-row">
+              <div class="bar-label">SG Approach</div>
+              <div class="bar-track"><div class="bar-fill green" style="width: 72%;"></div></div>
+              <div class="bar-value text-green">+1.12</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Form</div>
+              <div class="bar-track"><div class="bar-fill green" style="width: 65%;"></div></div>
+              <div class="bar-value text-green">T3, W</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Augusta</div>
+              <div class="bar-track"><div class="bar-fill gray" style="width: 45%;"></div></div>
+              <div class="bar-value text-muted">3 starts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matchup 2 -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: var(--gold-light); padding: 6px 16px; font-size: 10px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between;">
+          <span>72-Hole Matchup</span>
+          <span class="edge-pill value">SLIGHT LEAN</span>
+        </div>
+        <div class="matchup">
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto;">RM</div>
+            <div class="matchup-name">McIlroy</div>
+            <div class="matchup-odds text-green">-140</div>
+            <div class="matchup-edge"><span class="edge-pill slight">+2.1%</span></div>
+          </div>
+          <div class="matchup-vs">VS</div>
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto; background: var(--muted);">JR</div>
+            <div class="matchup-name">Rahm</div>
+            <div class="matchup-odds" style="color: var(--text2);">+120</div>
+            <div class="matchup-edge"><span class="edge-pill over">-2.1%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matchup 3 -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden;">
+        <div style="background: var(--green-light); padding: 6px 16px; font-size: 10px; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between;">
+          <span>72-Hole Matchup</span>
+          <span class="edge-pill strong">AI DISAGREES</span>
+        </div>
+        <div class="matchup">
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto;">ST</div>
+            <div class="matchup-name">Theegala</div>
+            <div class="matchup-odds text-green">+130</div>
+            <div class="matchup-edge"><span class="edge-pill strong">+6.8% edge</span></div>
+          </div>
+          <div class="matchup-vs">VS</div>
+          <div class="matchup-player">
+            <div class="avatar" style="margin: 0 auto; background: var(--muted);">JT</div>
+            <div class="matchup-name">J. Thomas</div>
+            <div class="matchup-odds" style="color: var(--text2);">-150</div>
+            <div class="matchup-edge"><span class="edge-pill over">-6.8%</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Head-to-Head Matchups</strong> — Displays all DraftKings 72-hole matchup bets with AI edge analysis. Highlights where the AI picks a different side than the book's favorite. Shows supporting stats (strokes gained, form, Augusta history) so the user can validate the AI's lean. Includes 3-ball group matchups too.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 3: HOLE PROPS ==================== -->
+<div class="mockup" id="m2">
+  <div class="card card-blue">
+    <div class="card-header">
+      <span class="badge badge-blue">Obscure Props</span>
+      <h3 class="section-title heading">Hole Props &amp; Specials</h3>
+      <p class="section-sub">Exotic DraftKings bets: hole-in-one, eagles, bogey-free rounds, and other obscure props with AI analysis.</p>
+    </div>
+    <div class="card-body">
+
+      <div class="toggle-wrap">
+        <button class="toggle-btn on">Hole-in-One</button>
+        <button class="toggle-btn">Eagles</button>
+        <button class="toggle-btn">Bogey-Free</button>
+        <button class="toggle-btn">Scoring</button>
+        <button class="toggle-btn">Oddball</button>
+      </div>
+
+      <!-- Hole cards grid -->
+      <div class="grid-3 mb-12">
+        <div class="hole-card">
+          <div class="flex-between">
+            <div><div class="hole-num">12</div><div class="hole-name">Golden Bell</div></div>
+            <span class="badge badge-gold">155 yds</span>
+          </div>
+          <div class="mt-12">
+            <div class="text-xs text-muted">Any HIO Rd 1-4</div>
+            <div class="odds mt-12">+600</div>
+            <div class="text-xs mt-12">Historical rate: <strong class="text-green">1 per 4.2 yrs</strong></div>
+            <div class="mt-12"><span class="edge-pill value">+3.1% edge</span></div>
+          </div>
+        </div>
+        <div class="hole-card">
+          <div class="flex-between">
+            <div><div class="hole-num">16</div><div class="hole-name">Redbud</div></div>
+            <span class="badge badge-gold">170 yds</span>
+          </div>
+          <div class="mt-12">
+            <div class="text-xs text-muted">Any HIO Rd 1-4</div>
+            <div class="odds mt-12">+700</div>
+            <div class="text-xs mt-12">Historical rate: <strong class="text-green">1 per 3.8 yrs</strong></div>
+            <div class="mt-12"><span class="edge-pill strong">+4.5% edge</span></div>
+          </div>
+        </div>
+        <div class="hole-card">
+          <div class="flex-between">
+            <div><div class="hole-num">6</div><div class="hole-name">Juniper</div></div>
+            <span class="badge badge-gold">180 yds</span>
+          </div>
+          <div class="mt-12">
+            <div class="text-xs text-muted">Any HIO Rd 1-4</div>
+            <div class="odds mt-12">+1200</div>
+            <div class="text-xs mt-12">Historical rate: <strong>1 per 7.1 yrs</strong></div>
+            <div class="mt-12"><span class="edge-pill slight">+1.8% edge</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specials -->
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Obscure Specials</div>
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div style="flex:1">
+          <div class="row-name">Will there be an albatross?</div>
+          <div class="row-detail">Holes 2, 8, 13, 15 eligible &bull; Historical: 4 total in Masters history</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">Yes +2500</div>
+          <div class="mt-12"><span class="edge-pill slight">+2.3%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div style="flex:1">
+          <div class="row-name">Winning score Over/Under 274.5 (-10.5)</div>
+          <div class="row-detail">AI model: median winning score -11 &bull; Weather: favorable for low scores</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">Under -115</div>
+          <div class="mt-12"><span class="edge-pill value">+3.8%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div style="flex:1">
+          <div class="row-name">Any player to shoot 62 or lower?</div>
+          <div class="row-detail">Course record: 63 (multiple) &bull; Never broken</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">Yes +1800</div>
+          <div class="mt-12"><span class="edge-pill over">-1.2%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px;">
+        <div style="flex:1">
+          <div class="row-name">Playoff to decide winner?</div>
+          <div class="row-detail">AI simulation: 14.2% of sims end in playoff &bull; DK implies 10.5%</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">Yes +850</div>
+          <div class="mt-12"><span class="edge-pill value">+3.7%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Hole Props &amp; Specials</strong> — Covers all the obscure DraftKings bets: hole-in-one props per hole (with historical rates), albatross odds, winning score O/U, playoff probability, bogey-free round props, and more. AI provides edge estimates using Monte Carlo simulations and historical Augusta data. Great for finding mispriced novelty bets.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 4: FADE THE PUBLIC ==================== -->
+<div class="mockup" id="m3">
+  <div class="card card-green">
+    <div class="card-header">
+      <span class="badge badge-red">Contrarian</span>
+      <h3 class="section-title heading">Fade the Public</h3>
+      <p class="section-sub">Where the public is loading up on one side and the AI says they're wrong. Contrarian bets backed by data.</p>
+    </div>
+    <div class="card-body">
+
+      <div class="grid-3 mb-12">
+        <div class="stat-box">
+          <div class="stat-label">Contrarian Picks</div>
+          <div class="stat-value green">12</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Avg Edge</div>
+          <div class="stat-value green">+5.4%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Win Rate (Historical)</div>
+          <div class="stat-value gold">58%</div>
+        </div>
+      </div>
+
+      <!-- Fade row -->
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Overvalued by the Public</div>
+
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+        <div style="background: #FEF2F2; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-size: 14px; font-weight: 700;">Jordan Spieth — To Win</div>
+            <div style="font-size: 11px; color: var(--muted); margin-top: 2px;">78% of public bets on Spieth to win &bull; Line hasn't moved</div>
+          </div>
+          <span class="badge badge-red">FADE</span>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="grid-2">
+            <div>
+              <div class="text-xs text-muted">Public Sentiment</div>
+              <div class="bar-wrap">
+                <div class="bar-track" style="height: 12px;">
+                  <div class="bar-fill red" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div class="text-xs" style="color: var(--red); margin-top: 4px;">78% backing Spieth</div>
+            </div>
+            <div>
+              <div class="text-xs text-muted">AI Assessment</div>
+              <div style="margin-top: 4px;">
+                <span style="font-size: 18px; font-weight: 800; color: var(--red);">1.2%</span>
+                <span class="text-xs text-muted"> win prob (rank #18)</span>
+              </div>
+              <div class="text-xs text-muted mt-12">Name recognition inflating action</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+        <div style="background: #FEF2F2; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-size: 14px; font-weight: 700;">Dustin Johnson — Top 10</div>
+            <div style="font-size: 11px; color: var(--muted); margin-top: 2px;">65% of public bets on DJ top 10 &bull; Odds shortening</div>
+          </div>
+          <span class="badge badge-red">FADE</span>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="text-xs">AI Top 10 probability: <strong style="color: var(--red);">8.7%</strong> vs DK implied <strong>15.4%</strong>. LIV form and declining strokes gained suggest public is chasing the name.</div>
+        </div>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px; margin-top: 20px;">Undervalued — Public Sleeping On</div>
+
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+        <div style="background: var(--green-light); padding: 10px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-size: 14px; font-weight: 700;">Justin Rose — Top 20</div>
+            <div style="font-size: 11px; color: var(--muted); margin-top: 2px;">Only 8% of public bets &bull; AI ranks #16 in field</div>
+          </div>
+          <span class="badge badge-green">BUY</span>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="text-xs">Augusta specialist with 11 top-10 finishes. AI sees <strong class="text-green">72.5%</strong> top 20 probability vs DK's 61.2%. Public ignoring aging veteran = value.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Fade the Public</strong> — Shows where heavy public action is creating inflated lines. Combines betting handle percentages (simulated from odds movement) with AI probability to find contrarian plays. "Overvalued" section shows popular picks the AI disagrees with. "Undervalued" section shows quiet players the public is ignoring that have real edge.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 5: WEATHER EDGE ==================== -->
+<div class="mockup" id="m4">
+  <div class="card card-blue">
+    <div class="card-header">
+      <span class="badge badge-blue">Weather Intel</span>
+      <h3 class="section-title heading">Weather Edge Bets</h3>
+      <p class="section-sub">The forecast changes who wins. Our models factor in weather — DraftKings often doesn't adjust fast enough.</p>
+    </div>
+    <div class="card-body">
+
+      <!-- Weather forecast -->
+      <div class="grid-2 mb-12" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px;">
+        <div style="background: var(--bg); border-radius: 8px; padding: 10px; text-align: center;">
+          <div class="text-xs fw-700">Thu R1</div>
+          <div style="font-size: 20px; margin: 4px 0;">&#9728;&#65039;</div>
+          <div class="text-xs">72&deg; / 58&deg;</div>
+          <div class="weather-tag wind" style="margin-top: 6px; font-size: 10px;justify-content:center;width:100%;">12 mph W</div>
+        </div>
+        <div style="background: var(--bg); border-radius: 8px; padding: 10px; text-align: center;">
+          <div class="text-xs fw-700">Fri R2</div>
+          <div style="font-size: 20px; margin: 4px 0;">&#9925;</div>
+          <div class="text-xs">68&deg; / 54&deg;</div>
+          <div class="weather-tag wind" style="margin-top: 6px; font-size: 10px;justify-content:center;width:100%;">18 mph NW</div>
+        </div>
+        <div style="background: #EFF6FF; border-radius: 8px; padding: 10px; text-align: center; border: 1px solid #BFDBFE;">
+          <div class="text-xs fw-700" style="color: #1D4ED8;">Sat R3</div>
+          <div style="font-size: 20px; margin: 4px 0;">&#127783;&#65039;</div>
+          <div class="text-xs">62&deg; / 48&deg;</div>
+          <div class="weather-tag rain" style="margin-top: 6px; font-size: 10px;justify-content:center;width:100%;">65% rain</div>
+        </div>
+        <div style="background: var(--bg); border-radius: 8px; padding: 10px; text-align: center;">
+          <div class="text-xs fw-700">Sun R4</div>
+          <div style="font-size: 20px; margin: 4px 0;">&#9728;&#65039;</div>
+          <div class="text-xs">74&deg; / 60&deg;</div>
+          <div class="weather-tag wind" style="margin-top: 6px; font-size: 10px;justify-content:center;width:100%;">8 mph S</div>
+        </div>
+      </div>
+
+      <div style="background: #EFF6FF; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; border: 1px solid #BFDBFE;">
+        <div style="font-size: 12px; font-weight: 700; color: #1D4ED8;">Weather Alert: Saturday Rain Advantage</div>
+        <div class="text-xs" style="color: #1E40AF; margin-top: 4px;">Saturday's expected rain softens greens and reduces wind. Players with high-ball-flight iron play historically gain 0.8 strokes per round in these conditions at Augusta.</div>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Weather-Boosted Value Bets</div>
+
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div class="avatar avatar-sm">VH</div>
+        <div style="flex:1">
+          <div class="row-name">Hovland Top 10 <span class="weather-tag wind" style="font-size: 9px; padding: 2px 6px;">wind player</span></div>
+          <div class="row-detail">Wind advantage: +0.6 SG in 15+ mph &bull; Fri conditions favor him</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-pos">+5.2%</div>
+          <div class="implied">weather-adjusted edge</div>
+        </div>
+      </div>
+
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div class="avatar avatar-sm">CM</div>
+        <div style="flex:1">
+          <div class="row-name">Morikawa Top 5 <span class="weather-tag rain" style="font-size: 9px; padding: 2px 6px;">rain player</span></div>
+          <div class="row-detail">Wet-course specialist: +0.9 SG approach in rain &bull; Sat conditions favor him</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-pos">+4.8%</div>
+          <div class="implied">weather-adjusted edge</div>
+        </div>
+      </div>
+
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px;">
+        <div class="avatar avatar-sm">TF</div>
+        <div style="flex:1">
+          <div class="row-name">Fleetwood Top 10 <span class="weather-tag cold" style="font-size: 9px; padding: 2px 6px;">cold/wind</span></div>
+          <div class="row-detail">European tour hardened: excels in adverse conditions &bull; +1.2 SG in cold</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-pos">+6.1%</div>
+          <div class="implied">weather-adjusted edge</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Weather Edge Bets</strong> — Integrates the 4-day Augusta forecast with player weather profiles (from the existing weatherImpact data). When weather changes, some players gain an edge that DK odds haven't priced in yet. Shows the forecast, highlights which conditions create opportunity, and surfaces the highest weather-adjusted edges. Updates as forecast changes.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 6: CORRELATED PARLAYS ==================== -->
+<div class="mockup" id="m5">
+  <div class="card card-gold">
+    <div class="card-header">
+      <span class="badge badge-gold">Smart Combos</span>
+      <h3 class="section-title heading">Correlated Parlays</h3>
+      <p class="section-sub">Same-player multi-leg parlays where outcomes are correlated — if one hits, the others are much more likely. Books underprice these.</p>
+    </div>
+    <div class="card-body">
+
+      <div style="background: var(--gold-light); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 12px; color: #92700C;">
+        <strong>Why correlated parlays have edge:</strong> DK prices each leg independently, but if Schauffele is having a great week (makes cut), he's much more likely to also finish top 20 and top 10. The conditional probability is higher than the implied parlay odds suggest.
+      </div>
+
+      <!-- Correlated parlay 1 -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: linear-gradient(135deg, #92700C, var(--gold)); padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="color: white;">
+            <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Same-Player Ladder</div>
+            <div style="font-size: 15px; font-weight: 700; margin-top: 2px;">Schauffele Sweep</div>
+          </div>
+          <div style="text-align: right; color: white;">
+            <div style="font-size: 20px; font-weight: 800;">+425</div>
+            <div style="font-size: 10px; opacity: 0.8;">True prob: ~24% | DK implies: ~19%</div>
+          </div>
+        </div>
+        <div style="padding: 12px 16px;">
+          <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 8px;">
+            <span style="background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">Leg 1</span>
+            <span style="font-size: 13px;">Make the Cut (-1400)</span>
+            <span class="text-xs text-muted">— 93.5% if he's playing well</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 8px;">
+            <span style="background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">Leg 2</span>
+            <span style="font-size: 13px;">Top 20 (-300)</span>
+            <span class="text-xs text-muted">— 82% conditional on making cut</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <span style="background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">Leg 3</span>
+            <span style="font-size: 13px;">Top 10 (+105)</span>
+            <span class="text-xs text-muted">— 58% conditional on top 20</span>
+          </div>
+          <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; justify-content: space-between;">
+            <span class="text-xs text-muted">Correlation boost: legs are ~72% correlated</span>
+            <span class="edge-pill strong">+5.2% edge</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Correlated parlay 2 -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: linear-gradient(135deg, #92700C, var(--gold)); padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="color: white;">
+            <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Same-Player Ladder</div>
+            <div style="font-size: 15px; font-weight: 700; margin-top: 2px;">Aberg Breakout</div>
+          </div>
+          <div style="text-align: right; color: white;">
+            <div style="font-size: 20px; font-weight: 800;">+310</div>
+            <div style="font-size: 10px; opacity: 0.8;">Correlation edge: +4.8%</div>
+          </div>
+        </div>
+        <div style="padding: 12px 16px;">
+          <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 8px;">
+            <span style="background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">Leg 1</span>
+            <span style="font-size: 13px;">Top 20 (-200)</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <span style="background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">Leg 2</span>
+            <span style="font-size: 13px;">Top European (+350)</span>
+          </div>
+          <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);">
+            <span class="text-xs text-muted">If Aberg finishes top 20, he's likely the top European (highest-ranked EU player in field)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Correlated Parlays</strong> — Exploits a known sportsbook weakness: DK prices parlay legs independently, but some outcomes are highly correlated. A "Same-Player Ladder" (make cut + top 20 + top 10) has much higher conditional probability than the parlay odds imply. Also pairs finish positions with nationality props (if Aberg finishes top 20, he's almost certainly Top European). Shows correlation percentage and true conditional probability.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 7: LIVE EDGE TRACKER ==================== -->
+<div class="mockup" id="m6">
+  <div class="card card-green">
+    <div class="card-header">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-green" style="animation: pulse 2s infinite;">LIVE</span>
+          <h3 class="section-title heading">Live Edge Tracker</h3>
+          <p class="section-sub">Real-time edge monitoring as the tournament unfolds. Edges shift as odds move and players perform.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="grid-3 mb-12">
+        <div class="stat-box">
+          <div class="stat-label">Active Edges</div>
+          <div class="stat-value green">28</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">New Since R1</div>
+          <div class="stat-value gold">7</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Closed Edges</div>
+          <div class="stat-value" style="color: var(--muted);">4</div>
+        </div>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Live Edge Movement</div>
+
+      <div class="tracker-row" style="border: 1px solid var(--border); border-radius: 8px 8px 0 0;">
+        <span class="tracker-status live"></span>
+        <div class="avatar avatar-sm">RM</div>
+        <div style="flex:1">
+          <div class="row-name">McIlroy Top 5 <span style="font-size: 10px; color: var(--green);">EDGE GROWING</span></div>
+          <div class="row-detail">Started round at -4, birdied 2 of last 3 holes &bull; DK slow to adjust</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-pos">+6.2%</div>
+          <div class="implied">was +3.1% pre-round</div>
+        </div>
+      </div>
+      <div class="tracker-row" style="border: 1px solid var(--border); border-top: 0;">
+        <span class="tracker-status live"></span>
+        <div class="avatar avatar-sm">TF</div>
+        <div style="flex:1">
+          <div class="row-name">Fleetwood Top European <span style="font-size: 10px; color: var(--gold);">NEW EDGE</span></div>
+          <div class="row-detail">Hovland double-bogeyed 12 &bull; Fleetwood now leads EU group by 3</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-pos">+8.4%</div>
+          <div class="implied">appeared 14 min ago</div>
+        </div>
+      </div>
+      <div class="tracker-row" style="border: 1px solid var(--border); border-top: 0;">
+        <span class="tracker-status pending"></span>
+        <div class="avatar avatar-sm">XS</div>
+        <div style="flex:1">
+          <div class="row-name">Schauffele Top 10 <span style="font-size: 10px; color: var(--muted);">SHRINKING</span></div>
+          <div class="row-detail">Odds adjusted after strong R1 &bull; Edge was +3.7%, now tighter</div>
+        </div>
+        <div class="row-right">
+          <div style="color: var(--gold); font-weight: 700; font-size: 14px;">+1.2%</div>
+          <div class="implied">was +3.7% pre-tournament</div>
+        </div>
+      </div>
+      <div class="tracker-row" style="border: 1px solid var(--border); border-top: 0; border-radius: 0 0 8px 8px;">
+        <span class="tracker-status lost"></span>
+        <div class="avatar avatar-sm">BD</div>
+        <div style="flex:1">
+          <div class="row-name" style="text-decoration: line-through; opacity: 0.5;">DeChambeau Make Cut</div>
+          <div class="row-detail" style="opacity: 0.5;">Missed cut after +6 second round</div>
+        </div>
+        <div class="row-right">
+          <div class="edge-neg">DEAD</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 16px; padding: 12px 16px; background: var(--green-light); border-radius: 8px; border: 1px solid #B7E4D3;">
+        <div style="font-size: 12px; font-weight: 700; color: var(--green);">Live Alerts</div>
+        <div class="text-xs" style="color: var(--green-dark); margin-top: 4px;">New value detected: Koepka Top 20 at +180 (AI: 42%, DK: 35.7%). His ball-striking through 12 holes is elite today — book hasn't caught up.</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Live Edge Tracker</strong> — During the tournament, monitors how edges shift in real-time. As players perform and odds move, some edges grow (DK is slow to adjust), some shrink (book caught up), and new ones appear. Includes live alerts for sudden edge opportunities. Shows status: active, shrinking, new, dead (player missed cut/withdrawn). This is the "during tournament" view the user specifically asked for.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 8: ROUND PROPS ==================== -->
+<div class="mockup" id="m7">
+  <div class="card card-green">
+    <div class="card-header">
+      <span class="badge badge-green">Round Props</span>
+      <h3 class="section-title heading">Round-by-Round Props</h3>
+      <p class="section-sub">First round leader, best round score, over/under individual round totals, and round matchups.</p>
+    </div>
+    <div class="card-body">
+
+      <div class="toggle-wrap">
+        <button class="toggle-btn on">R1 Leader</button>
+        <button class="toggle-btn">Round Scores</button>
+        <button class="toggle-btn">Round Matchups</button>
+        <button class="toggle-btn">Over/Under</button>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">First Round Leader</div>
+      <div style="font-size: 11px; color: var(--muted); margin-bottom: 12px;">Who leads after 18 holes on Thursday? AI R1 probabilities vs DK odds.</div>
+
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px 8px 0 0;">
+        <span style="color: var(--gold); font-weight: 800; width: 20px; text-align: center;">1</span>
+        <div class="avatar avatar-sm">SS</div>
+        <div style="flex:1">
+          <div class="row-name">Scottie Scheffler</div>
+          <div class="row-detail">AI R1 prob: 9.8% &bull; Historically starts strong</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">+900</div>
+          <div class="mt-12"><span class="edge-pill slight">+1.2%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-top: 0;">
+        <span style="color: var(--text2); font-weight: 800; width: 20px; text-align: center;">2</span>
+        <div class="avatar avatar-sm">BD</div>
+        <div style="flex:1">
+          <div class="row-name">Bryson DeChambeau</div>
+          <div class="row-detail">AI R1 prob: 7.2% &bull; Fast starter, aggressive early</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">+2000</div>
+          <div class="mt-12"><span class="edge-pill strong">+4.7%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-top: 0;">
+        <span style="color: var(--text2); font-weight: 800; width: 20px; text-align: center;">3</span>
+        <div class="avatar avatar-sm">XS</div>
+        <div style="flex:1">
+          <div class="row-name">Xander Schauffele</div>
+          <div class="row-detail">AI R1 prob: 6.8% &bull; Elite R1 scoring avg in 2026</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">+1100</div>
+          <div class="mt-12"><span class="edge-pill value">+2.3%</span></div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-top: 0; border-radius: 0 0 8px 8px;">
+        <span style="color: var(--text2); font-weight: 800; width: 20px; text-align: center;">4</span>
+        <div class="avatar avatar-sm">HM</div>
+        <div style="flex:1">
+          <div class="row-name">Hideki Matsuyama</div>
+          <div class="row-detail">AI R1 prob: 5.4% &bull; 2021 champ, loves early rounds</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">+2500</div>
+          <div class="mt-12"><span class="edge-pill strong">+5.1%</span></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; font-size: 13px; font-weight: 600; margin-bottom: 8px;">Player Round O/U</div>
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;">
+        <div class="avatar avatar-sm">RM</div>
+        <div style="flex:1">
+          <div class="row-name">McIlroy R1 Over/Under 70.5</div>
+          <div class="row-detail">AI projected: 69.8 &bull; Course suits his length on calm days</div>
+        </div>
+        <div class="row-right">
+          <div class="odds">Under -110</div>
+          <div class="mt-12"><span class="edge-pill value">+2.8%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Round-by-Round Props</strong> — Covers DraftKings round-specific markets: first round leader, round-by-round matchups, individual round score over/unders, and best round score. AI calculates round-specific probabilities using historical round-by-round data and player tendencies (some players start fast, others are Sunday closers). Updates each day with new round props.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 9: BANKROLL TRACKER ==================== -->
+<div class="mockup" id="m8">
+  <div class="card card-gold">
+    <div class="card-header">
+      <span class="badge badge-gold">Your Bets</span>
+      <h3 class="section-title heading">Bankroll &amp; Bet Tracker</h3>
+      <p class="section-sub">Track your bets, monitor P&amp;L, and get AI-suggested unit sizing based on edge and confidence.</p>
+    </div>
+    <div class="card-body">
+
+      <div class="bankroll-header mb-12">
+        <div class="bankroll-amount heading">$1,250</div>
+        <div class="bankroll-change" style="color: var(--green);">+$250 (+25%)</div>
+      </div>
+
+      <div class="grid-3 mb-12">
+        <div class="stat-box">
+          <div class="stat-label">Active Bets</div>
+          <div class="stat-value">8</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Win Rate</div>
+          <div class="stat-value green">62%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">ROI</div>
+          <div class="stat-value green">+18.4%</div>
+        </div>
+      </div>
+
+      <!-- Kelly criterion suggestion -->
+      <div style="background: var(--gold-light); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; border: 1px solid #E8D5A0;">
+        <div style="font-size: 12px; font-weight: 700; color: #92700C;">AI Bet Sizing (Kelly Criterion)</div>
+        <div class="text-xs" style="color: #92700C; margin-top: 4px;">Based on your bankroll and current edges, suggested next bets:</div>
+        <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="background: white; border-radius: 6px; padding: 8px 12px; flex: 1; min-width: 120px;">
+            <div class="text-xs text-muted">Fleetwood Top 10</div>
+            <div style="font-weight: 700; font-size: 16px; color: var(--green);">$38</div>
+            <div class="text-xs text-muted">3.0% of bankroll</div>
+          </div>
+          <div style="background: white; border-radius: 6px; padding: 8px 12px; flex: 1; min-width: 120px;">
+            <div class="text-xs text-muted">Rose Top 20</div>
+            <div style="font-weight: 700; font-size: 16px; color: var(--green);">$25</div>
+            <div class="text-xs text-muted">2.0% of bankroll</div>
+          </div>
+          <div style="background: white; border-radius: 6px; padding: 8px 12px; flex: 1; min-width: 120px;">
+            <div class="text-xs text-muted">3-Leg Parlay</div>
+            <div style="font-weight: 700; font-size: 16px; color: var(--gold);">$15</div>
+            <div class="text-xs text-muted">1.2% of bankroll</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Your Active Bets</div>
+
+      <div class="row" style="border: 1px solid var(--border); border-radius: 8px 8px 0 0;">
+        <span class="tracker-status live"></span>
+        <div style="flex:1">
+          <div class="row-name">Schauffele Top 10 @ -110</div>
+          <div class="row-detail">Placed pre-tournament &bull; Currently T4 thru 36 holes</div>
+        </div>
+        <div class="row-right">
+          <div style="font-size: 12px; font-weight: 600;">$50 to win $45</div>
+          <div class="text-xs text-green">Looking good</div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-top: 0;">
+        <span class="tracker-status live"></span>
+        <div style="flex:1">
+          <div class="row-name">Morikawa Top 5 @ +310</div>
+          <div class="row-detail">Placed pre-tournament &bull; Currently T8 thru 36 holes</div>
+        </div>
+        <div class="row-right">
+          <div style="font-size: 12px; font-weight: 600;">$30 to win $93</div>
+          <div class="text-xs" style="color: var(--gold);">In the hunt</div>
+        </div>
+      </div>
+      <div class="row" style="border: 1px solid var(--border); border-top: 0; border-radius: 0 0 8px 8px;">
+        <span class="tracker-status lost"></span>
+        <div style="flex:1; opacity: 0.5;">
+          <div class="row-name">DJ Make Cut @ -180</div>
+          <div class="row-detail">Missed cut &bull; -$36</div>
+        </div>
+        <div class="row-right" style="opacity: 0.5;">
+          <div style="font-size: 12px; font-weight: 600; color: var(--red);">-$36</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Bankroll &amp; Bet Tracker</strong> — Users input their starting bankroll and log bets. AI suggests optimal bet sizing using Kelly Criterion (edge / odds). Tracks active bets with live status, shows P&L, win rate, and ROI. During the tournament, updates bet status (winning, losing, dead). Helps users manage risk instead of YOLO-ing their whole bankroll on one parlay.
+  </div>
+</div>
+
+
+<!-- ==================== MOCKUP 10: HISTORICAL PATTERNS ==================== -->
+<div class="mockup" id="m9">
+  <div class="card card-green">
+    <div class="card-header">
+      <span class="badge badge-outline">Data-Driven</span>
+      <h3 class="section-title heading">Historical Pattern Bets</h3>
+      <p class="section-sub">Recurring Augusta patterns that the AI has identified from 20+ years of Masters data. When history rhymes, bet on it.</p>
+    </div>
+    <div class="card-body">
+
+      <!-- Pattern cards -->
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: var(--green-light); padding: 10px 16px;">
+          <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--green); font-weight: 600;">Pattern #1 — 85% historical hit rate</div>
+          <div style="font-size: 15px; font-weight: 700; margin-top: 2px;">The Par-5 Monster</div>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="text-xs" style="line-height: 1.6; color: var(--text2);">
+            <strong>Pattern:</strong> In 17 of the last 20 Masters, the winner ranked in the top 5 in par-5 scoring for the week. Augusta's four par 5s are where green jackets are won.<br><br>
+            <strong>2026 implication:</strong> Players with elite par-5 scoring potential (Scheffler, McIlroy, Aberg, DeChambeau) are more likely to win than their current odds suggest.
+          </div>
+          <div style="margin-top: 12px;">
+            <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">Bet triggers:</div>
+            <div class="row" style="border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; margin-bottom: 4px;">
+              <div class="avatar avatar-sm">LA</div>
+              <div style="flex:1"><div class="row-name text-xs">Aberg Win @ +800</div><div class="row-detail">Par-5 eagle rate: #2 on Tour</div></div>
+              <span class="edge-pill value">+3.2%</span>
+            </div>
+            <div class="row" style="border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px;">
+              <div class="avatar avatar-sm">BD</div>
+              <div style="flex:1"><div class="row-name text-xs">DeChambeau Win @ +2200</div><div class="row-detail">Par-5 eagle rate: #1 on Tour (distance)</div></div>
+              <span class="edge-pill strong">+5.8%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: var(--gold-light); padding: 10px 16px;">
+          <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); font-weight: 600;">Pattern #2 — 70% historical hit rate</div>
+          <div style="font-size: 15px; font-weight: 700; margin-top: 2px;">The Amen Corner Survivor</div>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="text-xs" style="line-height: 1.6; color: var(--text2);">
+            <strong>Pattern:</strong> The eventual winner plays Amen Corner (11, 12, 13) at even par or better in the final round 80% of the time. Surviving Amen Corner on Sunday is the single best predictor of who wins.<br><br>
+            <strong>2026 implication:</strong> Players with the best historical Amen Corner scoring (Scheffler -0.38 avg, McIlroy -0.22 avg) have a structural edge.
+          </div>
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px;">
+        <div style="background: var(--bg); padding: 10px 16px;">
+          <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-weight: 600;">Pattern #3 — 65% historical hit rate</div>
+          <div style="font-size: 15px; font-weight: 700; margin-top: 2px;">The Experience Tax</div>
+        </div>
+        <div style="padding: 14px 16px;">
+          <div class="text-xs" style="line-height: 1.6; color: var(--text2);">
+            <strong>Pattern:</strong> First-timers at Augusta make the cut only 38% of the time vs. 62% for players with 3+ appearances. The course punishes inexperience relentlessly.<br><br>
+            <strong>2026 implication:</strong> Fade first-timers in make-cut markets. Target experienced players like Lowry (8 appearances), Fleetwood (7), Rose (21) whose make-cut odds may be too generous.
+          </div>
+          <div style="margin-top: 8px;">
+            <div class="row" style="border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px;">
+              <div class="avatar avatar-sm">JR</div>
+              <div style="flex:1"><div class="row-name text-xs">Justin Rose Make Cut @ +100</div><div class="row-detail">21 appearances, 17 cuts made (81%)</div></div>
+              <span class="edge-pill strong">+8.2%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="desc-box">
+    <strong>Feature: Historical Pattern Bets</strong> — Mines 20+ years of Masters data (from masters-history.json) to identify recurring patterns that correlate with outcomes. Each pattern shows its historical hit rate, the logic behind it, and specific 2026 bets it suggests. Patterns include par-5 dominance, Amen Corner survival, experience advantage, Sunday closers, and weather-related trends. Gives users data-backed narratives for their bets.
+  </div>
+</div>
+
+</div><!-- /mockup-wrap -->
+
+<script>
+function show(idx) {
+  document.querySelectorAll('.mockup').forEach((m, i) => {
+    m.classList.toggle('active', i === idx);
+  });
+  document.querySelectorAll('.selector-btn').forEach((b, i) => {
+    b.classList.toggle('active', i === idx);
+  });
+  // scroll to mockup
+  document.querySelector('.mockup-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>

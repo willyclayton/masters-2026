@@ -267,4 +267,93 @@ export interface BettingEdgeResult {
   movement: "rising" | "falling" | "stable";
   confidence: "high" | "medium" | "low";
   tags: PlayerTag[];
+  ev100: number; // expected value per $100 bet
+}
+
+// Parlay types
+export interface ParlayLeg {
+  playerName: string;
+  initials: string;
+  market: BetMarket;
+  marketLabel: string;
+  americanOdds: string;
+  decimalOdds: number;
+  dkImpliedProb: number;
+  aiProb: number;
+  edge: number;
+}
+
+export interface ParlayCombo {
+  id: string;
+  name: string;
+  legs: ParlayLeg[];
+  combinedDecimalOdds: number;
+  combinedAmericanOdds: string;
+  combinedDkProb: number;
+  combinedAiProb: number;
+  combinedEdge: number;
+  ev100: number;
+  category: "conservative" | "moderate" | "aggressive" | "longshot";
+}
+
+// Round props types
+export interface RoundPropOdds {
+  playerName: string;
+  initials: string;
+  worldRanking: number;
+  americanOdds: string;
+  decimalOdds: number;
+  impliedProb: number;
+  aiProb: number;
+  edge: number;
+  ev100: number;
+}
+
+export interface RoundProps {
+  lastUpdated: string;
+  firstRoundLeader: RoundPropOdds[];
+  roundScoreOU: {
+    playerName: string;
+    initials: string;
+    round: number;
+    line: number;
+    overOdds: string;
+    underOdds: string;
+    aiProjected: number;
+    edge: number;
+    pick: "over" | "under";
+    ev100: number;
+  }[];
+}
+
+// Weather edge types
+export interface WeatherEdgeBet {
+  playerName: string;
+  initials: string;
+  worldRanking: number;
+  market: BetMarket;
+  marketLabel: string;
+  americanOdds: string;
+  decimalOdds: number;
+  baseEdge: number;
+  weatherBoost: number;
+  weatherAdjustedEdge: number;
+  ev100: number;
+  weatherTag: "wind" | "rain" | "cold" | "calm";
+  weatherReason: string;
+}
+
+// Live tracker types
+export interface LiveEdge {
+  playerName: string;
+  initials: string;
+  market: BetMarket;
+  marketLabel: string;
+  americanOdds: string;
+  currentEdge: number;
+  previousEdge: number;
+  ev100: number;
+  status: "growing" | "new" | "shrinking" | "dead";
+  reason: string;
+  timeAgo: string;
 }

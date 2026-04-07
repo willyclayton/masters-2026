@@ -87,7 +87,7 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
             </div>
           </div>
 
-          {/* Edge badge */}
+          {/* Edge + EV */}
           <div className="shrink-0 text-right">
             <span
               className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-bold uppercase ${edgeStyle}`}
@@ -95,8 +95,8 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
               {edge.edge > 0 ? "+" : ""}
               {edge.edge.toFixed(1)}%
             </span>
-            <div className="mt-0.5 text-[10px] font-medium text-[var(--text-muted)]">
-              {edgeLabel}
+            <div className="mt-0.5 text-[10px] font-semibold tabular-nums" style={{ color: edge.ev100 >= 0 ? "var(--color-masters-green)" : "var(--color-masters-red)" }}>
+              EV: {edge.ev100 >= 0 ? "+$" : "-$"}{Math.abs(edge.ev100).toFixed(2)}
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
           />
 
           {/* Details grid */}
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
             <div>
               <p className="text-[10px] font-medium uppercase text-[var(--text-muted)]">
                 DraftKings Odds
@@ -160,6 +160,18 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
                 {edge.edge > 0 ? "+" : ""}
                 {edge.edge.toFixed(1)}% ({edge.edgePct > 0 ? "+" : ""}
                 {edge.edgePct.toFixed(0)}% rel.)
+              </p>
+            </div>
+            <div>
+              <p className="text-[10px] font-medium uppercase text-[var(--text-muted)]">
+                EV per $100
+              </p>
+              <p
+                className={`mt-0.5 text-sm font-bold ${
+                  edge.ev100 >= 0 ? "text-masters-green" : "text-masters-red"
+                }`}
+              >
+                {edge.ev100 >= 0 ? "+$" : "-$"}{Math.abs(edge.ev100).toFixed(2)}
               </p>
             </div>
           </div>
