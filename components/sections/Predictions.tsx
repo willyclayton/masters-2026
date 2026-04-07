@@ -7,9 +7,9 @@ import type { PredictionsData, Player } from "@/lib/types";
 import { ConsensusCard } from "@/components/cards/ConsensusCard";
 import { ModelCard } from "@/components/cards/ModelCard";
 import { ModelAgreement } from "@/components/ui/ModelAgreement";
-import { InitialsAvatar } from "@/components/ui/InitialsAvatar";
 import { WinProbBar } from "@/components/ui/WinProbBar";
 import { ScoutBreakdownCard } from "@/components/cards/ScoutBreakdownCard";
+import { ScoreboardTile } from "@/components/ui/ScoreboardTile";
 import { ChevronDown } from "lucide-react";
 
 const predictions = predictionsData as unknown as PredictionsData;
@@ -24,6 +24,12 @@ function getInitials(name: string): string {
     .join("");
 }
 
+// Slight random-ish rotation for each tile to feel hand-placed
+function tileRotation(index: number, seed: number = 0): number {
+  const rotations = [-1.2, 0.5, -0.8, 1.0, -0.3, 0.7, -1.0, 0.4, -0.6, 1.1, -0.5, 0.3, -0.9, 0.6, -0.4];
+  return rotations[(index + seed) % rotations.length];
+}
+
 export function Predictions() {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
   const [showAll, setShowAll] = useState(false);
@@ -35,14 +41,23 @@ export function Predictions() {
 
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-6">
-      {/* Hero Banner */}
-      <div className="mb-6 rounded-lg bg-gradient-to-r from-masters-green to-masters-green-dark p-6 text-white">
-        <h2 className="font-heading text-2xl font-bold md:text-3xl">
-          2026 Masters Predictions
-        </h2>
-        <p className="mt-1 text-sm text-white/80">
-          Three AI models. 10,000 simulations. One green jacket.
-        </p>
+      {/* Hero Banner — Scoreboard style */}
+      <div className="board-surface mb-6 rounded-lg overflow-hidden shadow-lg">
+        <div className="relative px-6 py-8 text-center">
+          <h2 className="font-heading text-3xl font-black text-white tracking-wider uppercase board-header-paint md:text-4xl">
+            LEADERS
+          </h2>
+          <p className="mt-2 text-xs font-semibold tracking-[0.25em] uppercase text-[#C8A951]">
+            AI Predicted Finish · Masters 2026
+          </p>
+          <div className="mt-4 flex items-center justify-center gap-2">
+            <span className="text-[10px] tracking-widest uppercase text-white/40">Three models</span>
+            <ScoreboardTile size="xs" variant="gold" rotation={-1}>·</ScoreboardTile>
+            <span className="text-[10px] tracking-widest uppercase text-white/40">10,000 sims</span>
+            <ScoreboardTile size="xs" variant="gold" rotation={0.5}>·</ScoreboardTile>
+            <span className="text-[10px] tracking-widest uppercase text-white/40">One green jacket</span>
+          </div>
+        </div>
       </div>
 
       {/* Consensus Winner Card */}
@@ -58,12 +73,38 @@ export function Predictions() {
         <ModelAgreement predictions={predictions} />
       </div>
 
-      {/* Leaderboard */}
+      {/* Leaderboard — Scoreboard rows */}
       <div className="mb-8">
-        <h3 className="mb-3 font-heading text-lg font-bold text-[var(--text-primary)]">
-          Top {displayCount} Leaderboard
-        </h3>
-        <div className="overflow-hidden rounded-lg border border-[var(--border-color)] bg-white">
+        <div className="mb-3 flex items-center gap-3">
+          <h3 className="font-heading text-lg font-bold text-[var(--text-primary)]">
+            Top {displayCount} Leaderboard
+          </h3>
+          <span className="text-[10px] tracking-widest uppercase text-[var(--text-muted)]">
+            Predicted
+          </span>
+        </div>
+
+        <div className="overflow-hidden rounded-lg border border-[var(--border-color)] shadow-sm">
+          {/* Header row */}
+          <div className="board-surface">
+            <div className="relative flex items-center gap-2 px-4 py-2">
+              <span className="w-10 text-center text-[10px] font-bold tracking-wider uppercase text-white/60">
+                Pos
+              </span>
+              <span className="flex-1 text-[10px] font-bold tracking-wider uppercase text-white/60 pl-1">
+                Player
+              </span>
+              <span className="w-16 text-center text-[10px] font-bold tracking-wider uppercase text-white/60 hidden sm:block">
+                Win %
+              </span>
+              <span className="w-14 text-right text-[10px] font-bold tracking-wider uppercase text-white/60 sm:hidden">
+                Win
+              </span>
+              <span className="w-5" />
+            </div>
+          </div>
+
+          {/* Player rows */}
           {consensus.slice(0, displayCount).map((player, i) => {
             const isExpanded = expandedRow === i;
             const simRanking = predictions.simulator.rankings.find(
@@ -80,30 +121,49 @@ export function Predictions() {
             return (
               <div
                 key={player.name}
-                className={`border-b border-[var(--border-color)] last:border-b-0 ${
+                className={`border-b border-[var(--border-color)] last:border-b-0 row-enter ${
                   i % 2 === 0 ? "bg-white" : "bg-[var(--bg-primary)]"
                 }`}
+                style={{ animationDelay: `${Math.min(i * 40, 400)}ms` }}
               >
                 <button
                   onClick={() => setExpandedRow(isExpanded ? null : i)}
-                  className="flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-masters-green-light/50"
+                  className="flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-masters-green-light/30"
                 >
-                  <span className="w-6 text-center text-sm font-semibold text-[var(--text-muted)]">
-                    {i + 1}
-                  </span>
-                  <InitialsAvatar
-                    initials={getInitials(player.name)}
-                    size="sm"
-                  />
-                  <span className="flex-1 text-sm font-medium text-[var(--text-primary)]">
-                    {player.name}
-                  </span>
-                  <div className="hidden w-48 sm:block">
-                    <WinProbBar value={player.winPct} />
+                  {/* Position tile */}
+                  <div className="w-10 flex justify-center">
+                    <ScoreboardTile
+                      size="sm"
+                      variant={i < 5 ? "red" : "default"}
+                      rotation={tileRotation(i, 0)}
+                    >
+                      {i + 1}
+                    </ScoreboardTile>
                   </div>
-                  <span className="w-14 text-right text-sm font-semibold tabular-nums text-masters-green sm:hidden">
+
+                  {/* Player name as nameplate */}
+                  <div className="flex-1 min-w-0">
+                    <span className="text-sm font-bold text-[var(--text-primary)] uppercase tracking-wide">
+                      {player.name}
+                    </span>
+                  </div>
+
+                  {/* Win % as tile — desktop shows bar + tile */}
+                  <div className="hidden w-16 sm:flex justify-center">
+                    <ScoreboardTile
+                      size="sm"
+                      variant={player.winPct >= 5 ? "red" : "default"}
+                      rotation={tileRotation(i, 3)}
+                    >
+                      {player.winPct.toFixed(1)}
+                    </ScoreboardTile>
+                  </div>
+
+                  {/* Mobile: just the number */}
+                  <span className="w-14 text-right text-sm font-extrabold tabular-nums text-masters-red sm:hidden">
                     {player.winPct.toFixed(1)}%
                   </span>
+
                   <ChevronDown
                     className={`h-4 w-4 text-[var(--text-muted)] transition-transform ${
                       isExpanded ? "rotate-180" : ""
@@ -112,34 +172,116 @@ export function Predictions() {
                 </button>
 
                 {isExpanded && (
-                  <div className="border-t border-[var(--border-color)] bg-[var(--bg-primary)] px-4 py-3 space-y-3">
+                  <div className="border-t border-[var(--border-color)] bg-[var(--bg-primary)] px-4 py-4 space-y-4">
+                    {/* Tile stats row */}
+                    <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-col items-center gap-1">
+                        <ScoreboardTile
+                          size="md"
+                          variant={player.winPct >= 5 ? "red" : "default"}
+                          rotation={tileRotation(i, 1)}
+                          animated
+                          delay={0}
+                        >
+                          {player.winPct.toFixed(1)}
+                        </ScoreboardTile>
+                        <span className="text-[9px] font-semibold tracking-wider uppercase text-[var(--text-muted)]">Win %</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1">
+                        <ScoreboardTile
+                          size="md"
+                          variant="red"
+                          rotation={tileRotation(i, 2)}
+                          animated
+                          delay={80}
+                        >
+                          {player.top5Pct.toFixed(1)}
+                        </ScoreboardTile>
+                        <span className="text-[9px] font-semibold tracking-wider uppercase text-[var(--text-muted)]">Top 5</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1">
+                        <ScoreboardTile
+                          size="md"
+                          variant="red"
+                          rotation={tileRotation(i, 4)}
+                          animated
+                          delay={160}
+                        >
+                          {player.top10Pct.toFixed(1)}
+                        </ScoreboardTile>
+                        <span className="text-[9px] font-semibold tracking-wider uppercase text-[var(--text-muted)]">Top 10</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1">
+                        <ScoreboardTile
+                          size="md"
+                          variant="default"
+                          rotation={tileRotation(i, 5)}
+                          animated
+                          delay={240}
+                        >
+                          {player.makeCutPct.toFixed(0)}
+                        </ScoreboardTile>
+                        <span className="text-[9px] font-semibold tracking-wider uppercase text-[var(--text-muted)]">Cut %</span>
+                      </div>
+                    </div>
+
                     {/* Model Breakdown */}
                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                       {simRanking && (
-                        <div>
-                          <p className="text-xs font-medium text-[var(--text-muted)]">
+                        <div className="rounded-md board-surface p-3">
+                          <p className="relative text-[10px] font-bold tracking-wider uppercase text-white/70 mb-2">
                             🎲 Simulator
                           </p>
-                          <WinProbBar value={simRanking.winPct} label="Win" />
-                          <WinProbBar value={simRanking.top10Pct} max={100} label="Top 10" />
+                          <div className="relative flex gap-2">
+                            <ScoreboardTile size="sm" variant="red" rotation={-0.5}>
+                              {simRanking.winPct.toFixed(1)}
+                            </ScoreboardTile>
+                            <ScoreboardTile size="sm" variant="default" rotation={0.8}>
+                              {simRanking.top10Pct.toFixed(0)}
+                            </ScoreboardTile>
+                          </div>
+                          <div className="relative flex gap-4 mt-1">
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">Win</span>
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">T10</span>
+                          </div>
                         </div>
                       )}
                       {scoutRanking && (
-                        <div>
-                          <p className="text-xs font-medium text-[var(--text-muted)]">
+                        <div className="rounded-md board-surface p-3">
+                          <p className="relative text-[10px] font-bold tracking-wider uppercase text-white/70 mb-2">
                             🔍 Scout
                           </p>
-                          <WinProbBar value={scoutRanking.winPct} label="Win" />
-                          <WinProbBar value={scoutRanking.top10Pct} max={100} label="Top 10" />
+                          <div className="relative flex gap-2">
+                            <ScoreboardTile size="sm" variant="red" rotation={0.5}>
+                              {scoutRanking.winPct.toFixed(1)}
+                            </ScoreboardTile>
+                            <ScoreboardTile size="sm" variant="default" rotation={-0.3}>
+                              {scoutRanking.top10Pct.toFixed(0)}
+                            </ScoreboardTile>
+                          </div>
+                          <div className="relative flex gap-4 mt-1">
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">Win</span>
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">T10</span>
+                          </div>
                         </div>
                       )}
                       {analystRanking && (
-                        <div>
-                          <p className="text-xs font-medium text-[var(--text-muted)]">
+                        <div className="rounded-md board-surface p-3">
+                          <p className="relative text-[10px] font-bold tracking-wider uppercase text-white/70 mb-2">
                             🧠 Analyst
                           </p>
-                          <WinProbBar value={analystRanking.winPct} label="Win" />
-                          <WinProbBar value={analystRanking.top10Pct} max={100} label="Top 10" />
+                          <div className="relative flex gap-2">
+                            <ScoreboardTile size="sm" variant="red" rotation={-0.8}>
+                              {analystRanking.winPct.toFixed(1)}
+                            </ScoreboardTile>
+                            <ScoreboardTile size="sm" variant="default" rotation={0.6}>
+                              {analystRanking.top10Pct.toFixed(0)}
+                            </ScoreboardTile>
+                          </div>
+                          <div className="relative flex gap-4 mt-1">
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">Win</span>
+                            <span className="text-[9px] text-white/40 uppercase tracking-wide">T10</span>
+                          </div>
                         </div>
                       )}
                     </div>

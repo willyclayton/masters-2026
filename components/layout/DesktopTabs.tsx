@@ -19,24 +19,26 @@ export function DesktopTabs({
   onSectionChange,
 }: DesktopTabsProps) {
   return (
-    <nav className="hidden border-b border-[var(--border-color)] bg-white md:block">
-      <div className="mx-auto flex max-w-7xl items-center justify-center gap-1 px-4">
-        {tabs.map((tab) => {
+    <nav className="hidden border-b-2 border-[var(--masters-green-dark,#004D3C)] bg-[#004D3C] md:block">
+      <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2">
+        {tabs.map((tab, i) => {
           const isActive = activeSection === tab.id;
+          const rotation = [0.5, -0.3, 0.4, -0.5][i];
           return (
             <button
               key={tab.id}
               onClick={() => onSectionChange(tab.id)}
-              className={`relative px-5 py-3 text-sm font-medium transition-colors ${
-                isActive
-                  ? "text-masters-green"
-                  : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
-              }`}
+              className={`
+                relative px-4 py-2 text-xs font-bold tracking-wider uppercase transition-all rounded-[2px]
+                ${
+                  isActive
+                    ? "scoreboard-tile text-[#006B54]"
+                    : "text-white/60 hover:text-white/90 bg-transparent"
+                }
+              `}
+              style={isActive ? { transform: `rotate(${rotation}deg)` } : undefined}
             >
               {tab.label}
-              {isActive && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-masters-green" />
-              )}
             </button>
           );
         })}

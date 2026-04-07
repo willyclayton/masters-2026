@@ -109,3 +109,114 @@
 .font-heading {
   font-family: var(--font-heading), serif;
 }
+
+/* ═══════════════════════════════════════════
+   SCOREBOARD TILE SYSTEM
+   Manual scoreboard aesthetic — physical tiles
+   with shadows, bevels, and imperfections
+   ═══════════════════════════════════════════ */
+
+/* Base tile: cream gradient with physical depth */
+.scoreboard-tile {
+  background: linear-gradient(175deg, #FFF 0%, #F5F0E8 60%, #E8E0D0 100%);
+  box-shadow:
+    1px 2px 3px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    inset 0 -1px 0 rgba(0,0,0,0.06);
+}
+.scoreboard-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-top-color: rgba(255,255,255,0.3);
+  pointer-events: none;
+}
+
+/* Board surface: green paint with texture */
+.board-surface {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #004D3C 0%, #006B54 30%, #006B54 70%, #004D3C 100%);
+  position: relative;
+}
+.board-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Empty slot where a tile would go */
+.tile-slot {
+  background: rgba(0,0,0,0.2);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+/* Nameplate: metal-finish cream plate for player names */
+.nameplate {
+  background: linear-gradient(180deg, #fff 0%, #f0ead8 100%);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  border-radius: 2px;
+}
+.nameplate::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-top-color: rgba(255,255,255,0.5);
+  pointer-events: none;
+}
+
+/* Flip-in animation: tile flips from above like being placed */
+@keyframes tileFlipIn {
+  0% {
+    transform: rotateX(-90deg) translateY(-8px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    transform: rotateX(6deg) translateY(1px);
+  }
+  85% {
+    transform: rotateX(-2deg);
+  }
+  100% {
+    transform: rotateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.tile-flip-in {
+  animation: tileFlipIn 0.5s ease-out both;
+  transform-origin: top center;
+}
+
+/* Staggered row entrance */
+@keyframes rowSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.row-enter {
+  animation: rowSlideIn 0.4s ease-out both;
+}
+
+/* Board header paint style */
+.board-header-paint {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 0.15em;
+}

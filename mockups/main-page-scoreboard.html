@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masters 2026 — Main Page Mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   GLOBAL RESET & SELECTOR
+   ═══════════════════════════════════════════ */
+:root {
+  --green: #006B54;
+  --green-dark: #004D3C;
+  --green-darker: #00352A;
+  --green-light: #E8F5F0;
+  --gold: #C8A951;
+  --gold-light: #FBF5E6;
+  --red: #C0392B;
+  --cream: #FAFAF7;
+  --text: #1A1A1A;
+  --text2: #4A4A4A;
+  --muted: #8A8A8A;
+  --border: #E5E5DC;
+  --board-green: #006B54;
+  --board-dark: #004D3C;
+  --tile-cream: #F5F0E8;
+  --tile-shadow: rgba(0,0,0,0.35);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #111; color: var(--text); }
+
+/* Selector bar */
+.selector-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+  background: #0a0a0a; border-bottom: 1px solid #222;
+  padding: 10px 20px; display: flex; align-items: center; gap: 8px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
+.selector-bar::-webkit-scrollbar { height: 0; }
+.sel-label {
+  font-family: 'Playfair Display', serif; color: var(--gold);
+  font-size: 13px; font-weight: 700; white-space: nowrap; margin-right: 8px;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.sel-btn {
+  padding: 6px 14px; border-radius: 4px; border: 1px solid #333;
+  background: transparent; color: #777; font-size: 11px; font-weight: 600;
+  cursor: pointer; transition: all .15s; white-space: nowrap;
+  font-family: 'DM Sans', sans-serif; letter-spacing: 0.3px;
+}
+.sel-btn:hover { border-color: var(--gold); color: var(--gold); }
+.sel-btn.active { background: var(--green-dark); border-color: var(--green); color: #fff; }
+
+/* Mockup containers */
+.mockup { display: none; margin-top: 48px; min-height: 100vh; }
+.mockup.active { display: block; }
+
+/* ═══════════════════════════════════════════
+   SHARED TILE STYLES
+   ═══════════════════════════════════════════ */
+.tile {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: linear-gradient(175deg, #FFF 0%, var(--tile-cream) 60%, #E8E0D0 100%);
+  border-radius: 2px; font-weight: 800; position: relative;
+  box-shadow:
+    1px 2px 3px var(--tile-shadow),
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    inset 0 -1px 0 rgba(0,0,0,0.08);
+}
+.tile::after {
+  content: ''; position: absolute; inset: 0; border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-top-color: rgba(255,255,255,0.3);
+  pointer-events: none;
+}
+.tile-red { color: var(--red); }
+.tile-black { color: #1a1a1a; }
+
+/* Board texture overlay */
+.board-surface {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.04) 0%, transparent 50%),
+    linear-gradient(180deg, var(--board-dark) 0%, var(--board-green) 30%, var(--board-green) 70%, var(--board-dark) 100%);
+  position: relative;
+}
+.board-surface::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.06)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Slot groove */
+.slot {
+  background: rgba(0,0,0,0.25);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(0,0,0,0.15);
+  display: inline-flex; align-items: center; justify-content: center;
+  position: relative;
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 1: FULL SCOREBOARD HERO
+   ═══════════════════════════════════════════ */
+#m1 { background: #1a2e1a; }
+#m1 .board-wrap {
+  max-width: 1100px; margin: 0 auto; padding: 40px 20px 60px;
+}
+#m1 .board {
+  background: var(--board-dark);
+  border-radius: 200px 200px 8px 8px;
+  padding: 20px 30px 40px;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.5),
+    inset 0 2px 0 rgba(255,255,255,0.05);
+  position: relative;
+  overflow: hidden;
+}
+#m1 .board::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.08) 0%, transparent 40%),
+    url("data:image/svg+xml,%3Csvg width='6' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
+  border-radius: inherit;
+  pointer-events: none;
+}
+#m1 .board-title {
+  text-align: center; padding: 30px 0 20px;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  font-size: 42px; letter-spacing: 12px; color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+#m1 .board-subtitle {
+  text-align: center; color: var(--gold); font-size: 11px;
+  letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px;
+  font-weight: 600;
+}
+#m1 .board-grid {
+  display: grid;
+  grid-template-columns: 50px 180px repeat(6, 1fr) 80px;
+  gap: 3px; padding: 0 10px;
+}
+#m1 .board-grid .hdr {
+  background: rgba(0,0,0,0.2); color: #fff; font-weight: 700;
+  font-size: 11px; padding: 8px 4px; text-align: center;
+  letter-spacing: 1px; text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+}
+#m1 .board-grid .hdr-name { text-align: left; padding-left: 8px; }
+#m1 .row-cell {
+  display: flex; align-items: center; justify-content: center;
+  padding: 4px 2px; min-height: 44px;
+}
+#m1 .pos-tile {
+  width: 38px; height: 36px; font-size: 18px;
+}
+#m1 .name-plate {
+  background: linear-gradient(180deg, #fff 0%, #f0ead8 100%);
+  padding: 6px 10px; font-weight: 700; font-size: 13px;
+  color: #1a1a1a; text-align: left; width: 100%;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+  border-radius: 2px; letter-spacing: 0.5px;
+  text-transform: uppercase; font-family: 'Oswald', sans-serif;
+}
+#m1 .score-tile {
+  width: 36px; height: 34px; font-size: 16px;
+}
+#m1 .total-tile {
+  width: 56px; height: 34px; font-size: 18px; font-weight: 900;
+}
+#m1 .row-stripe:nth-child(even) .row-cell { background: rgba(0,0,0,0.06); }
+#m1 .board-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 10px 0; margin-top: 20px;
+  border-top: 2px solid rgba(255,255,255,0.1);
+}
+#m1 .board-footer span {
+  color: rgba(255,255,255,0.4); font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase;
+}
+#m1 .board-footer .ai-badge {
+  background: var(--gold); color: var(--green-dark);
+  padding: 4px 12px; border-radius: 2px; font-size: 10px;
+  font-weight: 800; letter-spacing: 2px;
+}
+
+/* Nav below board */
+#m1 .nav-row {
+  max-width: 1100px; margin: 0 auto; padding: 24px 20px;
+  display: flex; gap: 12px; justify-content: center;
+}
+#m1 .nav-tile {
+  background: var(--green-dark); color: #fff; padding: 12px 24px;
+  font-size: 12px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; border: 2px solid var(--green);
+  cursor: pointer; transition: all .15s;
+  font-family: 'Oswald', sans-serif;
+}
+#m1 .nav-tile:hover { background: var(--green); }
+#m1 .nav-tile.active { background: var(--gold); color: var(--green-dark); border-color: var(--gold); }
+
+/* ═══════════════════════════════════════════
+   MOCKUP 2: TILE-FLIP LEADERBOARD
+   ═══════════════════════════════════════════ */
+#m2 { background: var(--cream); }
+#m2 .header {
+  background: var(--green-dark); padding: 16px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+#m2 .header h1 {
+  font-family: 'Playfair Display', serif; color: #fff; font-size: 20px;
+}
+#m2 .header .tag {
+  color: var(--gold); font-size: 10px; letter-spacing: 3px;
+  text-transform: uppercase; font-weight: 700;
+}
+#m2 .hero {
+  text-align: center; padding: 50px 20px 30px;
+}
+#m2 .hero h2 {
+  font-family: 'Playfair Display', serif; font-size: 36px;
+  color: var(--green-dark); margin-bottom: 8px;
+}
+#m2 .hero p { color: var(--muted); font-size: 14px; }
+
+#m2 .flip-grid {
+  max-width: 900px; margin: 0 auto; padding: 0 20px 60px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+#m2 .flip-card {
+  perspective: 800px;
+}
+#m2 .flip-inner {
+  background: var(--board-green); border-radius: 6px; padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transform-style: preserve-3d;
+  animation: flipIn 0.6s ease-out both;
+  position: relative;
+  overflow: hidden;
+}
+#m2 .flip-inner::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m2 .flip-card:nth-child(1) .flip-inner { animation-delay: 0s; }
+#m2 .flip-card:nth-child(2) .flip-inner { animation-delay: 0.1s; }
+#m2 .flip-card:nth-child(3) .flip-inner { animation-delay: 0.2s; }
+#m2 .flip-card:nth-child(4) .flip-inner { animation-delay: 0.3s; }
+#m2 .flip-card:nth-child(5) .flip-inner { animation-delay: 0.4s; }
+#m2 .flip-card:nth-child(6) .flip-inner { animation-delay: 0.5s; }
+
+@keyframes flipIn {
+  0% { transform: rotateX(-90deg); opacity: 0; }
+  60% { transform: rotateX(8deg); }
+  100% { transform: rotateX(0); opacity: 1; }
+}
+
+#m2 .flip-rank {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+}
+#m2 .flip-pos {
+  width: 40px; height: 38px; font-size: 20px;
+  transform: rotate(-1deg);
+}
+#m2 .flip-name {
+  font-family: 'Oswald', sans-serif; color: #fff; font-size: 18px;
+  font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+}
+#m2 .flip-details {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+#m2 .flip-stat {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+#m2 .flip-stat-label {
+  font-size: 9px; color: rgba(255,255,255,0.5);
+  text-transform: uppercase; letter-spacing: 1px;
+}
+#m2 .flip-stat-tile {
+  width: 48px; height: 32px; font-size: 14px;
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 3: SCOREBOARD SLOTS
+   ═══════════════════════════════════════════ */
+#m3 { background: #f0ede6; }
+#m3 .header {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  padding: 14px 28px; display: flex; align-items: center;
+  justify-content: space-between;
+}
+#m3 .header h1 {
+  font-family: 'Playfair Display', serif; color: #fff; font-size: 18px;
+}
+#m3 .header nav { display: flex; gap: 20px; }
+#m3 .header nav a {
+  color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px;
+  letter-spacing: 1px; text-transform: uppercase; font-weight: 600;
+  transition: color .15s;
+}
+#m3 .header nav a:hover { color: var(--gold); }
+
+#m3 .slot-list {
+  max-width: 800px; margin: 40px auto; padding: 0 20px 60px;
+}
+#m3 .slot-row {
+  background: var(--board-green); margin-bottom: 6px;
+  border-radius: 4px; padding: 8px 16px;
+  display: flex; align-items: center; gap: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative; overflow: hidden;
+}
+#m3 .slot-row::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(90deg, transparent, transparent 56px, rgba(0,0,0,0.08) 56px, rgba(0,0,0,0.08) 58px);
+  pointer-events: none;
+}
+#m3 .slot-pos {
+  width: 44px; height: 40px; font-size: 20px; font-weight: 900;
+  flex-shrink: 0;
+}
+#m3 .slot-nameplate {
+  flex: 1; min-width: 0;
+  background: linear-gradient(180deg, #e8e0d0 0%, #d4cbb8 100%);
+  padding: 8px 14px; border-radius: 2px;
+  font-family: 'Oswald', sans-serif; font-size: 15px; font-weight: 600;
+  color: #2a2a2a; text-transform: uppercase; letter-spacing: 1px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 4px rgba(0,0,0,0.2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#m3 .slot-scores {
+  display: flex; gap: 4px; align-items: center;
+}
+#m3 .slot-s {
+  width: 38px; height: 36px; font-size: 15px;
+}
+/* Rail groove lines */
+#m3 .slot-rail {
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--green-dark), var(--green), var(--green-dark));
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+#m3 .slot-section-hdr {
+  font-family: 'Playfair Display', serif; font-size: 14px;
+  color: var(--muted); letter-spacing: 3px; text-transform: uppercase;
+  margin: 32px 0 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 4: HAND-PAINTED HEADER
+   ═══════════════════════════════════════════ */
+#m4 { background: #fff; }
+#m4 .painted-header {
+  background: var(--green-dark); padding: 60px 20px 50px;
+  text-align: center; position: relative; overflow: hidden;
+}
+#m4 .painted-header::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(0,80,60,0.5) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0,100,70,0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+#m4 .painted-title {
+  font-family: 'Playfair Display', serif; color: #fff;
+  font-size: 56px; font-weight: 900; letter-spacing: 6px;
+  text-transform: uppercase; position: relative;
+  display: inline-block;
+  /* Simulate brush stroke behind text */
+}
+#m4 .painted-title::after {
+  content: ''; position: absolute;
+  bottom: -4px; left: -10px; right: -10px; height: 12px;
+  background: var(--gold); opacity: 0.6; border-radius: 50%;
+  filter: blur(2px);
+  transform: skewX(-3deg);
+}
+#m4 .painted-sub {
+  color: var(--gold); font-size: 13px; letter-spacing: 6px;
+  text-transform: uppercase; margin-top: 16px; position: relative;
+}
+#m4 .painted-nav {
+  display: flex; gap: 2px; justify-content: center; margin-top: 30px; position: relative;
+}
+#m4 .painted-nav a {
+  color: rgba(255,255,255,0.6); text-decoration: none; padding: 8px 20px;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  font-weight: 700; transition: all .15s; border-bottom: 2px solid transparent;
+}
+#m4 .painted-nav a:hover { color: #fff; border-bottom-color: var(--gold); }
+#m4 .painted-nav a.active { color: #fff; border-bottom-color: var(--gold); }
+
+#m4 .content {
+  max-width: 900px; margin: 0 auto; padding: 40px 20px 60px;
+}
+#m4 .section-bar {
+  background: var(--green-dark); color: #fff; padding: 10px 20px;
+  font-family: 'Playfair Display', serif; font-size: 16px;
+  letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px;
+  position: relative;
+}
+#m4 .section-bar::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: var(--gold);
+}
+#m4 .pred-row {
+  display: flex; align-items: center; gap: 16px; padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+#m4 .pred-pos-tile {
+  width: 40px; height: 38px; font-size: 18px;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.15);
+}
+#m4 .pred-name {
+  flex: 1; font-weight: 700; font-size: 15px;
+}
+#m4 .pred-odds {
+  font-size: 13px; color: var(--muted);
+}
+#m4 .pred-score-tile {
+  width: 52px; height: 34px; font-size: 16px;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 5: WORKSHOP TABLE
+   ═══════════════════════════════════════════ */
+#m5 {
+  background:
+    radial-gradient(ellipse at 50% 30%, #1a5c4a 0%, #0d3a2e 50%, #071f18 100%);
+  min-height: 100vh; position: relative; overflow: hidden;
+}
+/* Table texture */
+#m5::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='8' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='0.5' fill='rgba(0,0,0,0.08)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m5 .table-header {
+  text-align: center; padding: 50px 20px 20px; position: relative;
+}
+#m5 .table-header h1 {
+  font-family: 'Playfair Display', serif; color: rgba(255,255,255,0.9);
+  font-size: 28px; letter-spacing: 6px; text-transform: uppercase;
+}
+#m5 .table-header p {
+  color: var(--gold); font-size: 11px; letter-spacing: 4px;
+  text-transform: uppercase; margin-top: 8px;
+}
+
+#m5 .loose-tiles {
+  position: relative; max-width: 1000px; margin: 0 auto;
+  padding: 20px; min-height: 500px;
+}
+/* Scattered decorative tiles */
+#m5 .scattered {
+  position: absolute; opacity: 0.4;
+}
+#m5 .scattered:nth-child(1) { top: 10px; left: 5%; transform: rotate(-15deg); }
+#m5 .scattered:nth-child(2) { top: 60px; right: 8%; transform: rotate(8deg); }
+#m5 .scattered:nth-child(3) { bottom: 40px; left: 12%; transform: rotate(-22deg); }
+#m5 .scattered:nth-child(4) { bottom: 80px; right: 15%; transform: rotate(12deg); }
+#m5 .scattered:nth-child(5) { top: 40%; left: 2%; transform: rotate(-5deg); }
+
+/* Main organized stack */
+#m5 .stack {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; padding: 20px;
+}
+#m5 .stack-card {
+  background: rgba(0,0,0,0.3); border-radius: 6px; padding: 16px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform .2s;
+}
+#m5 .stack-card:hover { transform: translateY(-4px); }
+#m5 .stack-card .s-rank {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+#m5 .stack-card .s-pos {
+  width: 36px; height: 34px; font-size: 18px;
+  transform: rotate(-2deg);
+}
+#m5 .stack-card .s-name {
+  font-family: 'Oswald', sans-serif; color: #fff; font-size: 14px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+#m5 .stack-card .s-details {
+  display: flex; gap: 6px;
+}
+#m5 .stack-card .s-tile {
+  width: 44px; height: 30px; font-size: 12px;
+}
+#m5 .stack-card .s-label {
+  font-size: 9px; color: rgba(255,255,255,0.4);
+  text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 6: SPLIT BOARD
+   ═══════════════════════════════════════════ */
+#m6 { background: var(--cream); }
+#m6 .split-header {
+  background: var(--green-dark); padding: 14px 28px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+#m6 .split-header h1 {
+  font-family: 'Playfair Display', serif; color: #fff; font-size: 18px;
+}
+#m6 .split-header .badge {
+  background: var(--gold); color: var(--green-dark); padding: 3px 10px;
+  font-size: 10px; font-weight: 800; letter-spacing: 2px; border-radius: 2px;
+}
+#m6 .split-body {
+  display: grid; grid-template-columns: 380px 1fr; min-height: calc(100vh - 48px);
+}
+@media (max-width: 768px) {
+  #m6 .split-body { grid-template-columns: 1fr; }
+}
+#m6 .board-side {
+  background:
+    linear-gradient(180deg, var(--board-dark) 0%, var(--board-green) 20%, var(--board-green) 80%, var(--board-dark) 100%);
+  padding: 24px 16px; position: relative;
+}
+#m6 .board-side::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m6 .board-side-title {
+  font-family: 'Oswald', sans-serif; color: #fff; font-size: 16px;
+  letter-spacing: 6px; text-transform: uppercase; text-align: center;
+  margin-bottom: 20px; position: relative;
+}
+#m6 .board-entry {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
+  position: relative;
+}
+#m6 .board-entry .b-pos {
+  width: 34px; height: 32px; font-size: 16px;
+}
+#m6 .board-entry .b-name {
+  flex: 1; color: #fff; font-family: 'Oswald', sans-serif;
+  font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+#m6 .board-entry .b-score {
+  width: 44px; height: 30px; font-size: 14px;
+}
+
+#m6 .cards-side { padding: 28px; }
+#m6 .cards-side h2 {
+  font-family: 'Playfair Display', serif; font-size: 24px;
+  color: var(--green-dark); margin-bottom: 6px;
+}
+#m6 .cards-side p { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+#m6 .analysis-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 8px;
+  padding: 20px; margin-bottom: 12px;
+}
+#m6 .analysis-card h3 {
+  font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 6px;
+  color: var(--green-dark);
+}
+#m6 .analysis-card .stat-row {
+  display: flex; gap: 12px; margin-top: 10px;
+}
+#m6 .analysis-card .stat-item {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+#m6 .analysis-card .stat-tile {
+  width: 48px; height: 32px; font-size: 14px;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.12);
+}
+#m6 .analysis-card .stat-label {
+  font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 7: TILE GRID DASHBOARD
+   ═══════════════════════════════════════════ */
+#m7 {
+  background: var(--board-green);
+  position: relative;
+}
+#m7::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='6' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m7 .dash-header {
+  padding: 24px 28px; display: flex; align-items: center;
+  justify-content: space-between; position: relative;
+  border-bottom: 3px solid rgba(0,0,0,0.15);
+}
+#m7 .dash-header h1 {
+  font-family: 'Oswald', sans-serif; color: #fff; font-size: 22px;
+  letter-spacing: 8px; text-transform: uppercase;
+}
+#m7 .dash-header .nav-tiles {
+  display: flex; gap: 4px;
+}
+#m7 .dash-header .nav-t {
+  padding: 6px 14px; font-size: 10px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  cursor: pointer;
+}
+
+#m7 .dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 4px; padding: 16px; position: relative; max-width: 1200px; margin: 0 auto;
+}
+#m7 .dash-cell {
+  aspect-ratio: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 4px;
+}
+#m7 .dash-cell .d-tile {
+  width: 72px; height: 52px; font-size: 22px;
+}
+#m7 .dash-cell .d-label {
+  font-size: 9px; color: rgba(255,255,255,0.5);
+  text-transform: uppercase; letter-spacing: 1px; text-align: center;
+}
+#m7 .dash-cell.name-cell .d-tile {
+  width: 100px; height: 36px; font-size: 12px;
+  font-family: 'Oswald', sans-serif; letter-spacing: 1px;
+}
+#m7 .dash-divider {
+  grid-column: 1 / -1; height: 3px;
+  background: rgba(0,0,0,0.15); margin: 4px 0;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 8: RETRO BROADCAST
+   ═══════════════════════════════════════════ */
+#m8 {
+  background: #0a0a0a; min-height: 100vh; position: relative;
+  overflow: hidden;
+}
+/* CRT scan lines */
+#m8::before {
+  content: ''; position: absolute; inset: 0; z-index: 3;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 2px,
+    rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+  );
+  pointer-events: none;
+}
+/* Screen glow */
+#m8::after {
+  content: ''; position: absolute; inset: 0; z-index: 2;
+  background: radial-gradient(ellipse at 50% 40%, rgba(0,107,84,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+#m8 .broadcast-frame {
+  position: relative; z-index: 4;
+  max-width: 900px; margin: 60px auto; padding: 0 20px;
+}
+#m8 .cbs-bar {
+  background: linear-gradient(90deg, var(--green-dark), var(--green));
+  padding: 8px 20px; display: flex; align-items: center;
+  justify-content: space-between; border-radius: 4px 4px 0 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+#m8 .cbs-bar .logo {
+  font-family: 'Oswald', sans-serif; color: #fff;
+  font-size: 14px; letter-spacing: 4px; text-transform: uppercase;
+}
+#m8 .cbs-bar .live-dot {
+  display: flex; align-items: center; gap: 6px;
+  color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: 2px;
+}
+#m8 .cbs-bar .live-dot::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--red); animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+#m8 .broadcast-board {
+  background: var(--board-dark); padding: 20px;
+  border: 1px solid rgba(255,255,255,0.1); border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+#m8 .broadcast-title {
+  font-family: 'Oswald', sans-serif; color: var(--gold);
+  font-size: 28px; letter-spacing: 8px; text-transform: uppercase;
+  text-align: center; margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(200,169,81,0.3);
+}
+#m8 .broadcast-grid {
+  display: grid; grid-template-columns: 40px 1fr repeat(4, 60px);
+  gap: 2px;
+}
+#m8 .broadcast-grid .bc-hdr {
+  color: rgba(255,255,255,0.5); font-size: 10px;
+  text-transform: uppercase; letter-spacing: 1px; padding: 6px 4px;
+  text-align: center; font-family: 'Oswald', sans-serif;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#m8 .broadcast-grid .bc-hdr:nth-child(2) { text-align: left; }
+#m8 .bc-row { display: contents; }
+#m8 .bc-cell {
+  padding: 6px 4px; display: flex; align-items: center; justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+#m8 .bc-cell.name-c {
+  justify-content: flex-start; color: #fff;
+  font-family: 'Oswald', sans-serif; font-size: 14px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+#m8 .bc-tile {
+  width: 40px; height: 30px; font-size: 14px;
+}
+#m8 .bc-pos {
+  width: 32px; height: 28px; font-size: 15px; font-weight: 900;
+}
+#m8 .broadcast-footer {
+  display: flex; justify-content: space-between; margin-top: 16px;
+  padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);
+}
+#m8 .broadcast-footer span {
+  color: rgba(255,255,255,0.3); font-size: 10px;
+  letter-spacing: 2px; text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 9: NIGHT BOARD
+   ═══════════════════════════════════════════ */
+#m9 {
+  background: #070d0a; min-height: 100vh; position: relative; overflow: hidden;
+}
+/* Atmospheric gradient */
+#m9::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 25%, rgba(200,169,81,0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 70% 20%, rgba(200,169,81,0.04) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 60%, rgba(0,107,84,0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+#m9 .night-header {
+  padding: 40px 28px 20px; position: relative;
+  display: flex; align-items: flex-end; justify-content: space-between;
+}
+#m9 .night-header h1 {
+  font-family: 'Playfair Display', serif; color: rgba(255,255,255,0.9);
+  font-size: 32px;
+}
+#m9 .night-header .sub {
+  color: var(--gold); font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#m9 .night-board-wrap {
+  max-width: 900px; margin: 30px auto; padding: 0 20px; position: relative;
+}
+/* Spotlight effect */
+#m9 .spotlight {
+  position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 200px;
+  background: radial-gradient(ellipse, rgba(200,169,81,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+#m9 .night-board {
+  background: var(--board-dark); border-radius: 8px; padding: 30px;
+  box-shadow:
+    0 0 80px rgba(0,107,84,0.15),
+    0 20px 60px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  position: relative;
+}
+#m9 .night-board::before {
+  content: ''; position: absolute; inset: 0; border-radius: 8px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(200,169,81,0.06) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.05)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m9 .night-title {
+  font-family: 'Oswald', sans-serif; color: rgba(255,255,255,0.9);
+  font-size: 24px; letter-spacing: 10px; text-transform: uppercase;
+  text-align: center; margin-bottom: 24px; position: relative;
+  text-shadow: 0 0 30px rgba(200,169,81,0.2);
+}
+#m9 .night-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 0; position: relative;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+#m9 .night-row .n-pos {
+  width: 38px; height: 36px; font-size: 18px;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.4), 0 0 12px rgba(200,169,81,0.08);
+}
+#m9 .night-row .n-name {
+  flex: 1; color: rgba(255,255,255,0.85); font-family: 'Oswald', sans-serif;
+  font-size: 15px; text-transform: uppercase; letter-spacing: 1px;
+}
+#m9 .night-row .n-scores {
+  display: flex; gap: 6px;
+}
+#m9 .night-row .n-tile {
+  width: 42px; height: 32px; font-size: 14px;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.4), 0 0 8px rgba(200,169,81,0.05);
+}
+
+/* ═══════════════════════════════════════════
+   MOCKUP 10: LIVING BOARD
+   ═══════════════════════════════════════════ */
+#m10 { background: #1a2e1a; }
+#m10 .living-header {
+  background: var(--green-dark); padding: 14px 28px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+#m10 .living-header h1 {
+  font-family: 'Playfair Display', serif; color: #fff; font-size: 18px;
+}
+#m10 .living-header .updating {
+  display: flex; align-items: center; gap: 6px;
+  color: var(--gold); font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 600;
+}
+#m10 .living-header .updating::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); animation: pulse 2s infinite;
+}
+
+#m10 .living-board-wrap {
+  max-width: 900px; margin: 40px auto; padding: 0 20px 60px;
+}
+#m10 .living-board {
+  background: var(--board-green); border-radius: 6px; padding: 24px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  position: relative; overflow: hidden;
+}
+#m10 .living-board::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+#m10 .living-title {
+  font-family: 'Oswald', sans-serif; color: #fff; font-size: 20px;
+  letter-spacing: 8px; text-transform: uppercase; text-align: center;
+  margin-bottom: 24px; position: relative;
+}
+
+#m10 .living-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 0; margin-bottom: 4px; position: relative;
+}
+/* Tile being removed (tilted) */
+#m10 .tile-removing {
+  transform: rotate(-18deg) translateY(-8px) !important;
+  opacity: 0.7;
+  box-shadow: 4px 6px 16px rgba(0,0,0,0.5) !important;
+  transition: all 0.3s;
+}
+/* Empty slot */
+#m10 .tile-empty {
+  background: rgba(0,0,0,0.25) !important;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.4) !important;
+  color: transparent !important;
+}
+#m10 .tile-empty::after {
+  border-color: rgba(0,0,0,0.15) !important;
+}
+/* Tile being placed (floating with big shadow) */
+#m10 .tile-floating {
+  transform: translateY(-14px) rotate(3deg) !important;
+  box-shadow: 6px 12px 24px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,0,0,0.1) !important;
+  z-index: 5;
+  animation: gentleFloat 2s ease-in-out infinite;
+}
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(-14px) rotate(3deg); }
+  50% { transform: translateY(-18px) rotate(2deg); }
+}
+
+#m10 .l-pos {
+  width: 38px; height: 36px; font-size: 18px;
+}
+#m10 .l-name {
+  flex: 1; color: #fff; font-family: 'Oswald', sans-serif;
+  font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+#m10 .l-scores { display: flex; gap: 4px; }
+#m10 .l-tile {
+  width: 38px; height: 32px; font-size: 14px;
+}
+#m10 .l-total {
+  width: 50px; height: 32px; font-size: 16px;
+}
+
+/* Hand indicator */
+#m10 .hand-hint {
+  position: absolute; right: -10px; top: -20px;
+  font-size: 10px; color: rgba(255,255,255,0.3);
+  font-style: italic; letter-spacing: 1px;
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+/* Description panel for all mockups */
+.desc-panel {
+  max-width: 900px; margin: 20px auto; padding: 0 20px;
+}
+.desc-panel .desc {
+  background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.15);
+  border-radius: 6px; padding: 16px; color: rgba(255,255,255,0.5);
+  font-size: 12px; line-height: 1.7;
+}
+.desc-panel .desc strong { color: rgba(255,255,255,0.8); }
+
+/* Light bg description override */
+#m2 .desc-panel .desc,
+#m3 .desc-panel .desc,
+#m4 .desc-panel .desc,
+#m6 .desc-panel .desc {
+  background: rgba(0,0,0,0.02); border-color: var(--border);
+  color: var(--text2);
+}
+#m2 .desc-panel .desc strong,
+#m3 .desc-panel .desc strong,
+#m4 .desc-panel .desc strong,
+#m6 .desc-panel .desc strong { color: var(--text); }
+
+</style>
+</head>
+<body>
+
+<!-- ═══ SELECTOR BAR ═══ -->
+<div class="selector-bar">
+  <span class="sel-label">Mockups</span>
+  <button class="sel-btn active" onclick="show(1)">1 — Full Scoreboard</button>
+  <button class="sel-btn" onclick="show(2)">2 — Tile Flip</button>
+  <button class="sel-btn" onclick="show(3)">3 — Slot Rows</button>
+  <button class="sel-btn" onclick="show(4)">4 — Hand-Painted</button>
+  <button class="sel-btn" onclick="show(5)">5 — Workshop</button>
+  <button class="sel-btn" onclick="show(6)">6 — Split Board</button>
+  <button class="sel-btn" onclick="show(7)">7 — Tile Grid</button>
+  <button class="sel-btn" onclick="show(8)">8 — Retro Broadcast</button>
+  <button class="sel-btn" onclick="show(9)">9 — Night Board</button>
+  <button class="sel-btn" onclick="show(10)">10 — Living Board</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 1: FULL SCOREBOARD HERO
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup active" id="m1">
+  <div class="board-wrap">
+    <div class="board">
+      <div class="board-title">LEADERS</div>
+      <div class="board-subtitle">AI Predicted Finish · Masters 2026</div>
+
+      <div class="board-grid">
+        <!-- Header -->
+        <div class="hdr">Prior</div>
+        <div class="hdr hdr-name">Player</div>
+        <div class="hdr">Win %</div>
+        <div class="hdr">Top 5</div>
+        <div class="hdr">Top 10</div>
+        <div class="hdr">Top 20</div>
+        <div class="hdr">Cut</div>
+        <div class="hdr">Predicted</div>
+
+        <!-- Row 1 -->
+        <div class="row-cell"><div class="tile pos-tile tile-red">1</div></div>
+        <div class="row-cell"><div class="name-plate">SCHEFFLER</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">18</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">42</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">61</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">78</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">94</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-14</div></div>
+
+        <!-- Row 2 -->
+        <div class="row-cell"><div class="tile pos-tile tile-red">2</div></div>
+        <div class="row-cell"><div class="name-plate">McILROY</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">12</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">38</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">55</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">72</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">91</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-12</div></div>
+
+        <!-- Row 3 -->
+        <div class="row-cell"><div class="tile pos-tile tile-red">3</div></div>
+        <div class="row-cell"><div class="name-plate">MORIKAWA</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">9</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">31</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">48</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">68</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">89</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-11</div></div>
+
+        <!-- Row 4 -->
+        <div class="row-cell"><div class="tile pos-tile tile-red">4</div></div>
+        <div class="row-cell"><div class="name-plate">RAHM</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">8</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">28</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">45</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">65</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">88</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-10</div></div>
+
+        <!-- Row 5 -->
+        <div class="row-cell"><div class="tile pos-tile tile-red">5</div></div>
+        <div class="row-cell"><div class="name-plate">KOEPKA</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">7</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">25</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">41</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">62</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">86</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-9</div></div>
+
+        <!-- Row 6 -->
+        <div class="row-cell"><div class="tile pos-tile tile-black">6</div></div>
+        <div class="row-cell"><div class="name-plate">HOVLAND</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">6</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">22</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">38</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">58</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">84</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-8</div></div>
+
+        <!-- Row 7 -->
+        <div class="row-cell"><div class="tile pos-tile tile-black">7</div></div>
+        <div class="row-cell"><div class="name-plate">ABERG</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">5</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">20</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">36</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">55</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">82</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-7</div></div>
+
+        <!-- Row 8 -->
+        <div class="row-cell"><div class="tile pos-tile tile-black">8</div></div>
+        <div class="row-cell"><div class="name-plate">SPIETH</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">4</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-black">18</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">33</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">52</div></div>
+        <div class="row-cell"><div class="tile score-tile tile-red">80</div></div>
+        <div class="row-cell"><div class="tile total-tile tile-red">-6</div></div>
+      </div>
+
+      <div class="board-footer">
+        <span>Augusta National · April 2026</span>
+        <div class="ai-badge">AI PREDICTED</div>
+        <span>Updated Daily</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <div class="nav-tile active">Predictions</div>
+    <div class="nav-tile">Betting Edge</div>
+    <div class="nav-tile">Players</div>
+    <div class="nav-tile">Methodology</div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 1 — Full Scoreboard Hero.</strong> The entire above-fold is a massive replica of the Augusta manual scoreboard, complete with curved top. Player names sit on cream nameplates, AI prediction percentages shown as removable tiles. The board IS the hero section — no separate hero needed.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 2: TILE-FLIP LEADERBOARD
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m2">
+  <div class="header">
+    <h1>Masters 2026</h1>
+    <span class="tag">AI Predictions</span>
+  </div>
+  <div class="hero">
+    <h2>Predicted Leaderboard</h2>
+    <p>Each tile flips into place — like a volunteer just posted it</p>
+  </div>
+  <div class="flip-grid">
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-red" style="transform:rotate(-1.5deg)">1</div>
+        <div class="flip-name">Scottie Scheffler</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">18%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+450</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-14</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-red" style="transform:rotate(1deg)">2</div>
+        <div class="flip-name">Rory McIlroy</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">12%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+700</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-12</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-red" style="transform:rotate(-0.5deg)">3</div>
+        <div class="flip-name">Collin Morikawa</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-black">9%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+900</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-11</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-red" style="transform:rotate(2deg)">4</div>
+        <div class="flip-name">Jon Rahm</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-black">8%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+1100</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-10</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-red" style="transform:rotate(-1deg)">5</div>
+        <div class="flip-name">Brooks Koepka</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-black">7%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+1400</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-9</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-rank">
+        <div class="tile flip-pos tile-black" style="transform:rotate(0.5deg)">6</div>
+        <div class="flip-name">Viktor Hovland</div>
+      </div>
+      <div class="flip-details">
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-black">6%</div>
+          <div class="flip-stat-label">Win</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">+1600</div>
+          <div class="flip-stat-label">Odds</div>
+        </div>
+        <div class="flip-stat">
+          <div class="tile flip-stat-tile tile-red">-8</div>
+          <div class="flip-stat-label">Pred.</div>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 2 — Tile-Flip Leaderboard.</strong> Cards on green backgrounds flip into view with a 3D rotation, simulating a volunteer posting each prediction. Each tile has beveled edges and realistic shadows. The staggered animation creates the feeling of scores being updated one by one.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 3: SCOREBOARD SLOTS
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m3">
+  <div class="header">
+    <h1>Masters 2026 · AI Predictions</h1>
+    <nav>
+      <a href="#" style="color:var(--gold)">Predictions</a>
+      <a href="#">Betting</a>
+      <a href="#">Players</a>
+      <a href="#">Method</a>
+    </nav>
+  </div>
+
+  <div class="slot-list">
+    <div class="slot-section-hdr">Predicted Top 10 Finish</div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-red" style="transform:rotate(-1deg)">1</div>
+      <div class="slot-nameplate">SCHEFFLER, SCOTTIE</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-14</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">18%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+450</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-red" style="transform:rotate(0.5deg)">2</div>
+      <div class="slot-nameplate">McILROY, RORY</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-12</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">12%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+700</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-red" style="transform:rotate(-0.8deg)">3</div>
+      <div class="slot-nameplate">MORIKAWA, COLLIN</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-11</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">9%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+900</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-red" style="transform:rotate(1deg)">4</div>
+      <div class="slot-nameplate">RAHM, JON</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-10</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">8%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+1100</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-red">5</div>
+      <div class="slot-nameplate">KOEPKA, BROOKS</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-9</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">7%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+1400</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-black">6</div>
+      <div class="slot-nameplate">HOVLAND, VIKTOR</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-8</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">6%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+1600</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-black">7</div>
+      <div class="slot-nameplate">ABERG, LUDVIG</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-7</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">5%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+1800</div></div>
+      </div>
+    </div>
+    <div class="slot-rail"></div>
+
+    <div class="slot-row">
+      <div class="tile slot-pos tile-black">8</div>
+      <div class="slot-nameplate">SPIETH, JORDAN</div>
+      <div class="slot-scores">
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:36px;height:34px;font-size:14px">-6</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-black" style="width:36px;height:34px;font-size:14px">4%</div></div>
+        <div class="slot slot-s"><div class="tile slot-s tile-red" style="width:44px;height:34px;font-size:13px">+2000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 3 — Scoreboard Slots.</strong> Each player is a horizontal scoreboard row with visible rail grooves between them. Metal-finish nameplates hold player names, and number tiles sit in recessed slots. The vertical stacking with rail separators mimics the physical scoreboard's construction.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 4: HAND-PAINTED HEADER
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m4">
+  <div class="painted-header">
+    <div class="painted-title">LEADERS</div>
+    <div class="painted-sub">Masters 2026 · AI Predictions & Betting Edge</div>
+    <div class="painted-nav">
+      <a href="#" class="active">Predictions</a>
+      <a href="#">Betting Edge</a>
+      <a href="#">Player Profiles</a>
+      <a href="#">Methodology</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section-bar">Predicted Finish</div>
+
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-red" style="transform:rotate(-1deg)">1</div>
+      <div class="pred-name">Scottie Scheffler</div>
+      <div class="pred-odds">+450 · 18% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(0.5deg)">-14</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-red" style="transform:rotate(0.5deg)">2</div>
+      <div class="pred-name">Rory McIlroy</div>
+      <div class="pred-odds">+700 · 12% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(-0.5deg)">-12</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-red">3</div>
+      <div class="pred-name">Collin Morikawa</div>
+      <div class="pred-odds">+900 · 9% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(1deg)">-11</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-red" style="transform:rotate(-0.5deg)">4</div>
+      <div class="pred-name">Jon Rahm</div>
+      <div class="pred-odds">+1100 · 8% Win</div>
+      <div class="tile pred-score-tile tile-red">-10</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-red" style="transform:rotate(1deg)">5</div>
+      <div class="pred-name">Brooks Koepka</div>
+      <div class="pred-odds">+1400 · 7% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(-1deg)">-9</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-black">6</div>
+      <div class="pred-name">Viktor Hovland</div>
+      <div class="pred-odds">+1600 · 6% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(0.5deg)">-8</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-black" style="transform:rotate(-1deg)">7</div>
+      <div class="pred-name">Ludvig Aberg</div>
+      <div class="pred-odds">+1800 · 5% Win</div>
+      <div class="tile pred-score-tile tile-red">-7</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-black" style="transform:rotate(0.5deg)">8</div>
+      <div class="pred-name">Jordan Spieth</div>
+      <div class="pred-odds">+2000 · 4% Win</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(-0.5deg)">-6</div>
+    </div>
+
+    <div class="section-bar" style="margin-top:40px">Betting Value Plays</div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-black" style="transform:rotate(1deg); background: var(--gold-light)">$</div>
+      <div class="pred-name">Xander Schauffele <span style="color:var(--red);font-size:12px;font-weight:800">HOT</span></div>
+      <div class="pred-odds">+2200 · Model says +1500</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(-1deg)">46%</div>
+    </div>
+    <div class="pred-row">
+      <div class="tile pred-pos-tile tile-black" style="background: var(--gold-light)">$</div>
+      <div class="pred-name">Tommy Fleetwood</div>
+      <div class="pred-odds">+4000 · Model says +2800</div>
+      <div class="tile pred-score-tile tile-red" style="transform:rotate(0.5deg)">43%</div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 4 — Hand-Painted Header.</strong> The header uses the "LEADERS" text with a brush-stroke gold underline, echoing the hand-painted lettering on the real scoreboard. Below it, a clean modern layout uses physical tiles only for key data points (positions and scores), creating a bridge between analog authenticity and digital clarity.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 5: WORKSHOP TABLE
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m5">
+  <div class="table-header">
+    <h1>Masters 2026</h1>
+    <p>AI Predictions · Workshop View</p>
+  </div>
+
+  <div class="loose-tiles">
+    <!-- Scattered background tiles -->
+    <div class="scattered tile" style="width:36px;height:34px;font-size:16px;color:#999">4</div>
+    <div class="scattered tile" style="width:36px;height:34px;font-size:16px;color:#999">E</div>
+    <div class="scattered tile" style="width:36px;height:34px;font-size:16px;color:var(--red)">7</div>
+    <div class="scattered tile" style="width:36px;height:34px;font-size:16px;color:#999">2</div>
+    <div class="scattered tile" style="width:36px;height:34px;font-size:16px;color:var(--red)">9</div>
+
+    <div class="stack">
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-red">1</div>
+          <div class="s-name">Scheffler</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-14</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-red">18%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+450</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-red" style="transform:rotate(1deg)">2</div>
+          <div class="s-name">McIlroy</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-12</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-red">12%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+700</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-red" style="transform:rotate(-1.5deg)">3</div>
+          <div class="s-name">Morikawa</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-11</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-black">9%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+900</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-red">4</div>
+          <div class="s-name">Rahm</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-10</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-black">8%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+1100</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-red" style="transform:rotate(0.8deg)">5</div>
+          <div class="s-name">Koepka</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-9</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-black">7%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+1400</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+      <div class="stack-card">
+        <div class="s-rank">
+          <div class="tile s-pos tile-black" style="transform:rotate(-1deg)">6</div>
+          <div class="s-name">Hovland</div>
+        </div>
+        <div class="s-details">
+          <div><div class="tile s-tile tile-red">-8</div><div class="s-label">Score</div></div>
+          <div><div class="tile s-tile tile-black">6%</div><div class="s-label">Win</div></div>
+          <div><div class="tile s-tile tile-black">+1600</div><div class="s-label">Odds</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 5 — Workshop Table.</strong> Looking down at the green felt workspace where volunteers arrange tiles. Loose, unused number tiles are scattered in the background at various angles. The main predictions are organized in card stacks on the surface. The whole page feels like behind-the-scenes at Augusta.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 6: SPLIT BOARD
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m6">
+  <div class="split-header">
+    <h1>Masters 2026</h1>
+    <div class="badge">AI PREDICTIONS</div>
+  </div>
+  <div class="split-body">
+    <div class="board-side">
+      <div class="board-side-title">LEADERS</div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-red" style="transform:rotate(-1deg)">1</div>
+        <div class="b-name">Scheffler</div>
+        <div class="tile b-score tile-red" style="transform:rotate(0.5deg)">-14</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-red">2</div>
+        <div class="b-name">McIlroy</div>
+        <div class="tile b-score tile-red" style="transform:rotate(-0.5deg)">-12</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-red" style="transform:rotate(0.5deg)">3</div>
+        <div class="b-name">Morikawa</div>
+        <div class="tile b-score tile-red">-11</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-red">4</div>
+        <div class="b-name">Rahm</div>
+        <div class="tile b-score tile-red" style="transform:rotate(1deg)">-10</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-red" style="transform:rotate(-0.5deg)">5</div>
+        <div class="b-name">Koepka</div>
+        <div class="tile b-score tile-red">-9</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-black">6</div>
+        <div class="b-name">Hovland</div>
+        <div class="tile b-score tile-red" style="transform:rotate(-1deg)">-8</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-black" style="transform:rotate(1deg)">7</div>
+        <div class="b-name">Aberg</div>
+        <div class="tile b-score tile-red">-7</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-black">8</div>
+        <div class="b-name">Spieth</div>
+        <div class="tile b-score tile-red" style="transform:rotate(0.5deg)">-6</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-black" style="transform:rotate(-0.5deg)">9</div>
+        <div class="b-name">Schauffele</div>
+        <div class="tile b-score tile-red">-5</div>
+      </div>
+      <div class="board-entry">
+        <div class="tile b-pos tile-black">10</div>
+        <div class="b-name">Fleetwood</div>
+        <div class="tile b-score tile-red" style="transform:rotate(-1deg)">-4</div>
+      </div>
+    </div>
+
+    <div class="cards-side">
+      <h2>AI Analysis</h2>
+      <p>Deep model insights for the 2026 Masters Tournament</p>
+
+      <div class="analysis-card">
+        <h3>Scottie Scheffler — Frontrunner</h3>
+        <p style="font-size:13px;color:var(--text2);margin-top:4px">
+          Dominant strokes-gained profile on Augusta's bermuda greens. Model gives 18% outright win probability — significantly above market implied 14%.
+        </p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="tile stat-tile tile-red" style="transform:rotate(-0.5deg)">18%</div>
+            <div class="stat-label">AI Win %</div>
+          </div>
+          <div class="stat-item">
+            <div class="tile stat-tile tile-black">14%</div>
+            <div class="stat-label">Market</div>
+          </div>
+          <div class="stat-item">
+            <div class="tile stat-tile tile-red" style="transform:rotate(1deg)">+4%</div>
+            <div class="stat-label">Edge</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="analysis-card">
+        <h3>Rory McIlroy — Career Grand Slam Bid</h3>
+        <p style="font-size:13px;color:var(--text2);margin-top:4px">
+          Historical Augusta performance improving. Approach play metrics rank top-3 in the field. Model sees value at current odds.
+        </p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="tile stat-tile tile-red">12%</div>
+            <div class="stat-label">AI Win %</div>
+          </div>
+          <div class="stat-item">
+            <div class="tile stat-tile tile-black" style="transform:rotate(0.5deg)">9%</div>
+            <div class="stat-label">Market</div>
+          </div>
+          <div class="stat-item">
+            <div class="tile stat-tile tile-red" style="transform:rotate(-1deg)">+3%</div>
+            <div class="stat-label">Edge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 6 — Split Board.</strong> Left panel is a literal scoreboard — dark green with physical tiles in slots. Right panel is clean white cards with detailed analysis. The tiles bridge both worlds: they appear on the board side and as data accents in the analysis cards. On mobile these stack vertically.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 7: TILE GRID DASHBOARD
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m7">
+  <div class="dash-header">
+    <h1>LEADERS</h1>
+    <div class="nav-tiles">
+      <div class="tile nav-t" style="background:var(--gold-light);font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px">PREDICTIONS</div>
+      <div class="tile nav-t" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px">BETTING</div>
+      <div class="tile nav-t" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px">PLAYERS</div>
+      <div class="tile nav-t" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px">METHOD</div>
+    </div>
+  </div>
+
+  <div class="dash-grid">
+    <!-- Row headers -->
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:2px;width:90px;height:36px">POS</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black">PLAYER</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px;width:80px;height:36px">WIN %</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px;width:80px;height:36px">TOP 5</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px;width:80px;height:36px">ODDS</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="font-size:10px;font-family:'Oswald',sans-serif;letter-spacing:1px;width:80px;height:36px">PRED.</div></div>
+
+    <div class="dash-divider"></div>
+
+    <!-- Player 1 -->
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-1deg)">1</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black" style="transform:rotate(0.3deg)">SCHEFFLER</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red">18</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-0.5deg)">42</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(0.8deg)">+450</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-1deg)">-14</div></div>
+
+    <!-- Player 2 -->
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(0.5deg)">2</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black">McILROY</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-0.8deg)">12</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red">38</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(-0.5deg)">+700</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(0.5deg)">-12</div></div>
+
+    <!-- Player 3 -->
+    <div class="dash-cell"><div class="tile d-tile tile-red">3</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black" style="transform:rotate(-0.3deg)">MORIKAWA</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(1deg)">9</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-0.5deg)">31</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black">+900</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-0.8deg)">-11</div></div>
+
+    <!-- Player 4 -->
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(-0.5deg)">4</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black" style="transform:rotate(0.5deg)">RAHM</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black">8</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(0.8deg)">28</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(-1deg)">+1100</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red">-10</div></div>
+
+    <!-- Player 5 -->
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(1deg)">5</div></div>
+    <div class="dash-cell name-cell"><div class="tile d-tile tile-black">KOEPKA</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(-0.5deg)">7</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red">25</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-black" style="transform:rotate(0.5deg)">+1400</div></div>
+    <div class="dash-cell"><div class="tile d-tile tile-red" style="transform:rotate(1deg)">-9</div></div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 7 — Tile Grid Dashboard.</strong> The entire page IS the scoreboard. Every single data point — positions, names, percentages, odds — is rendered as a physical tile sitting in a green slot. The navigation is tiles. The headers are tiles. Maximum commitment to the metaphor: you're looking at data through a scoreboard.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 8: RETRO BROADCAST
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m8">
+  <div class="broadcast-frame">
+    <div class="cbs-bar">
+      <div class="logo">Masters · Augusta National</div>
+      <div class="live-dot">AI PREDICTIONS</div>
+    </div>
+    <div class="broadcast-board">
+      <div class="broadcast-title">LEADERS</div>
+      <div class="broadcast-grid">
+        <!-- Headers -->
+        <div class="bc-hdr">Pos</div>
+        <div class="bc-hdr">Player</div>
+        <div class="bc-hdr">Win %</div>
+        <div class="bc-hdr">Top 5</div>
+        <div class="bc-hdr">Odds</div>
+        <div class="bc-hdr">Score</div>
+
+        <!-- Row 1 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-red" style="transform:rotate(-0.5deg)">1</div></div>
+        <div class="bc-cell name-c">SCHEFFLER</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">18</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(0.5deg)">42</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">+450</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(-1deg)">-14</div></div>
+
+        <!-- Row 2 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-red">2</div></div>
+        <div class="bc-cell name-c">McILROY</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(0.5deg)">12</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">38</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(-0.5deg)">+700</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">-12</div></div>
+
+        <!-- Row 3 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-red" style="transform:rotate(1deg)">3</div></div>
+        <div class="bc-cell name-c">MORIKAWA</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">9</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(-0.5deg)">31</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">+900</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(0.5deg)">-11</div></div>
+
+        <!-- Row 4 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-red">4</div></div>
+        <div class="bc-cell name-c">RAHM</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(-1deg)">8</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">28</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(1deg)">+1100</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">-10</div></div>
+
+        <!-- Row 5 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-red" style="transform:rotate(-0.5deg)">5</div></div>
+        <div class="bc-cell name-c">KOEPKA</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">7</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(0.5deg)">25</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">+1400</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(-1deg)">-9</div></div>
+
+        <!-- Row 6 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-black">6</div></div>
+        <div class="bc-cell name-c">HOVLAND</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(1deg)">6</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">22</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(-0.5deg)">+1600</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">-8</div></div>
+
+        <!-- Row 7 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-black" style="transform:rotate(0.5deg)">7</div></div>
+        <div class="bc-cell name-c">ABERG</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">5</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(-1deg)">20</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">+1800</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red" style="transform:rotate(0.5deg)">-7</div></div>
+
+        <!-- Row 8 -->
+        <div class="bc-cell"><div class="tile bc-pos tile-black">8</div></div>
+        <div class="bc-cell name-c">SPIETH</div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(-0.5deg)">4</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black">18</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-black" style="transform:rotate(1deg)">+2000</div></div>
+        <div class="bc-cell"><div class="tile bc-tile tile-red">-6</div></div>
+      </div>
+
+      <div class="broadcast-footer">
+        <span>Augusta National Golf Club</span>
+        <span style="color:var(--gold)">AI · Model v3.2</span>
+        <span>April 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 8 — Retro Broadcast.</strong> Inspired by 1980s CBS Masters coverage. Dark background with CRT scan-line overlay. The scoreboard uses the classic broadcast-graphic style with the physical tile aesthetic applied to every number. The pulsing "AI PREDICTIONS" indicator replaces the old "LIVE" badge. Cinematic and nostalgic.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 9: NIGHT BOARD
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m9">
+  <div class="night-header">
+    <div>
+      <h1>Masters 2026</h1>
+      <div class="sub">AI Predictions · Evening Update</div>
+    </div>
+  </div>
+
+  <div class="night-board-wrap">
+    <div class="spotlight"></div>
+    <div class="night-board">
+      <div class="night-title">LEADERS</div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-red" style="transform:rotate(-1deg)">1</div>
+        <div class="n-name">Scottie Scheffler</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-red" style="transform:rotate(0.5deg)">18%</div>
+          <div class="tile n-tile tile-red">+450</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(-0.5deg)">-14</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-red">2</div>
+        <div class="n-name">Rory McIlroy</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-red" style="transform:rotate(-1deg)">12%</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(0.5deg)">+700</div>
+          <div class="tile n-tile tile-red">-12</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-red" style="transform:rotate(0.5deg)">3</div>
+        <div class="n-name">Collin Morikawa</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black">9%</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(-0.5deg)">+900</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(1deg)">-11</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-red" style="transform:rotate(-0.5deg)">4</div>
+        <div class="n-name">Jon Rahm</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black" style="transform:rotate(0.5deg)">8%</div>
+          <div class="tile n-tile tile-red">+1100</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(-1deg)">-10</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-red" style="transform:rotate(1deg)">5</div>
+        <div class="n-name">Brooks Koepka</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black">7%</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(-0.5deg)">+1400</div>
+          <div class="tile n-tile tile-red">-9</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-black">6</div>
+        <div class="n-name">Viktor Hovland</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black" style="transform:rotate(1deg)">6%</div>
+          <div class="tile n-tile tile-red">+1600</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(0.5deg)">-8</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-black" style="transform:rotate(-0.5deg)">7</div>
+        <div class="n-name">Ludvig Aberg</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black">5%</div>
+          <div class="tile n-tile tile-black" style="transform:rotate(0.5deg)">+1800</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(-1deg)">-7</div>
+        </div>
+      </div>
+
+      <div class="night-row">
+        <div class="tile n-pos tile-black" style="transform:rotate(0.5deg)">8</div>
+        <div class="n-name">Jordan Spieth</div>
+        <div class="n-scores">
+          <div class="tile n-tile tile-black" style="transform:rotate(-0.5deg)">4%</div>
+          <div class="tile n-tile tile-black">+2000</div>
+          <div class="tile n-tile tile-red" style="transform:rotate(1deg)">-6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 9 — Night Board.</strong> The scoreboard under dramatic evening lighting. A near-black atmospheric background with warm gold spotlight radiance illuminating the board from above. Tiles catch the light with subtle glows. The effect is cinematic and premium — like seeing the leaderboard at dusk after the final round.
+  </div></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MOCKUP 10: LIVING BOARD
+     ═══════════════════════════════════════════════════════════ -->
+<div class="mockup" id="m10">
+  <div class="living-header">
+    <h1>Masters 2026</h1>
+    <div class="updating">Predictions Updating</div>
+  </div>
+
+  <div class="living-board-wrap">
+    <div class="living-board">
+      <div class="living-title">LEADERS</div>
+
+      <!-- Row 1: Normal -->
+      <div class="living-row">
+        <div class="tile l-pos tile-red" style="transform:rotate(-0.5deg)">1</div>
+        <div class="l-name">Scheffler</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-red">18%</div>
+          <div class="tile l-tile tile-red" style="transform:rotate(0.5deg)">+450</div>
+          <div class="tile l-total tile-red">-14</div>
+        </div>
+      </div>
+
+      <!-- Row 2: Tile being REMOVED (tilted up) -->
+      <div class="living-row" style="position:relative">
+        <div class="tile l-pos tile-red">2</div>
+        <div class="l-name">McIlroy</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-red">12%</div>
+          <div class="tile l-tile tile-red tile-removing">+700</div>
+          <div class="tile l-total tile-red">-12</div>
+        </div>
+        <div class="hand-hint">updating odds...</div>
+      </div>
+
+      <!-- Row 3: Normal -->
+      <div class="living-row">
+        <div class="tile l-pos tile-red" style="transform:rotate(0.5deg)">3</div>
+        <div class="l-name">Morikawa</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black">9%</div>
+          <div class="tile l-tile tile-red">+900</div>
+          <div class="tile l-total tile-red" style="transform:rotate(-0.5deg)">-11</div>
+        </div>
+      </div>
+
+      <!-- Row 4: EMPTY SLOT where tile was taken -->
+      <div class="living-row">
+        <div class="tile l-pos tile-red">4</div>
+        <div class="l-name">Rahm</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black">8%</div>
+          <div class="tile l-tile tile-empty" style="width:38px;height:32px">—</div>
+          <div class="tile l-total tile-red" style="transform:rotate(1deg)">-10</div>
+        </div>
+      </div>
+
+      <!-- Row 5: FLOATING tile being placed by unseen hand -->
+      <div class="living-row" style="position:relative">
+        <div class="tile l-pos tile-red" style="transform:rotate(-0.5deg)">5</div>
+        <div class="l-name">Koepka</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black">7%</div>
+          <div class="tile l-tile tile-red tile-floating">+1400</div>
+          <div class="tile l-total tile-red">-9</div>
+        </div>
+        <div class="hand-hint" style="top:-16px;right:40px;transform:rotate(-5deg)">placing...</div>
+      </div>
+
+      <!-- Row 6: Normal -->
+      <div class="living-row">
+        <div class="tile l-pos tile-black" style="transform:rotate(1deg)">6</div>
+        <div class="l-name">Hovland</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black">6%</div>
+          <div class="tile l-tile tile-red" style="transform:rotate(-0.5deg)">+1600</div>
+          <div class="tile l-total tile-red">-8</div>
+        </div>
+      </div>
+
+      <!-- Row 7: Another tile being removed -->
+      <div class="living-row">
+        <div class="tile l-pos tile-black">7</div>
+        <div class="l-name">Aberg</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black tile-removing" style="transform:rotate(15deg) translateY(-6px) !important">5%</div>
+          <div class="tile l-tile tile-black">+1800</div>
+          <div class="tile l-total tile-red" style="transform:rotate(0.5deg)">-7</div>
+        </div>
+      </div>
+
+      <!-- Row 8: Normal -->
+      <div class="living-row">
+        <div class="tile l-pos tile-black" style="transform:rotate(-1deg)">8</div>
+        <div class="l-name">Spieth</div>
+        <div class="l-scores">
+          <div class="tile l-tile tile-black" style="transform:rotate(0.5deg)">4%</div>
+          <div class="tile l-tile tile-black">+2000</div>
+          <div class="tile l-total tile-red" style="transform:rotate(-0.5deg)">-6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-panel"><div class="desc">
+    <strong>Mockup 10 — Living Board.</strong> Tiles are mid-swap. McIlroy's odds tile is tilted at -18° (being removed). Rahm has an empty slot where a tile was just taken. Koepka's odds tile floats with an exaggerated shadow (being placed by an unseen hand, gently bobbing). Aberg's win % is being pulled. This captures the *moment* of a score change — the board is alive.
+  </div></div>
+</div>
+
+<script>
+function show(n) {
+  document.querySelectorAll('.mockup').forEach(m => m.classList.remove('active'));
+  document.querySelectorAll('.sel-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('m' + n).classList.add('active');
+  document.querySelectorAll('.sel-btn')[n - 1].classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Re-trigger flip animations for mockup 2
+  if (n === 2) {
+    document.querySelectorAll('#m2 .flip-inner').forEach(el => {
+      el.style.animation = 'none';
+      el.offsetHeight; // trigger reflow
+      el.style.animation = '';
+    });
+  }
+}
+</script>
+</body>
+</html>
