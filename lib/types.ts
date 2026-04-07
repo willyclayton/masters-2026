@@ -357,3 +357,50 @@ export interface LiveEdge {
   reason: string;
   timeAgo: string;
 }
+
+// ── Live Data Types ─────────────────────────────────────────────
+
+export interface LivePlayerScore {
+  name: string;
+  position: string;        // "T1", "T4", "CUT", etc.
+  positionNum: number;     // numeric for sorting (T1 = 1)
+  today: number;           // strokes relative to par for current round
+  thru: string;            // "F", "12", "B9", etc.
+  totalScore: number;      // total strokes relative to par
+  round1: number | null;
+  round2: number | null;
+  round3: number | null;
+  round4: number | null;
+  status: "active" | "cut" | "withdrawn" | "finished";
+}
+
+export interface LiveLeaderboard {
+  tournamentName: string;
+  currentRound: number;
+  roundStatus: "not_started" | "in_progress" | "complete";
+  lastUpdated: string;
+  players: LivePlayerScore[];
+}
+
+export interface LiveOddsUpdate {
+  lastUpdated: string;
+  source: string;
+  players: {
+    name: string;
+    odds: Partial<Record<BetMarket, {
+      american: string;
+      decimal: number;
+      impliedProb: number;
+      previousImplied: number;
+      movement: "rising" | "falling" | "stable";
+    }>>;
+  }[];
+}
+
+export interface LiveData {
+  leaderboard: LiveLeaderboard | null;
+  odds: LiveOddsUpdate | null;
+  isLive: boolean;
+  lastFetch: string | null;
+  error: string | null;
+}

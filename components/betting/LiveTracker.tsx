@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import type { BettingEdgeResult, LiveEdge } from "@/lib/types";
 import { generateLiveEdges } from "@/lib/edge-calculations";
+import { useLiveDataContext } from "@/lib/live-data-context";
 import { InitialsAvatar } from "@/components/ui/InitialsAvatar";
 import { MarketBadge } from "@/components/ui/MarketBadge";
 import { Badge } from "@/components/ui/badge";
@@ -43,6 +44,7 @@ const STATUS_CONFIG: Record<
 };
 
 export function LiveTracker({ edges }: LiveTrackerProps) {
+  const { leaderboard, isLive } = useLiveDataContext();
   const liveEdges = useMemo(() => generateLiveEdges(edges), [edges]);
 
   const growing = liveEdges.filter((e) => e.status === "growing");
@@ -54,9 +56,9 @@ export function LiveTracker({ edges }: LiveTrackerProps) {
       {/* Live header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Badge variant="secondary" className="bg-masters-green-light text-masters-green">
-            <span className="mr-1 inline-block h-2 w-2 animate-pulse rounded-full bg-masters-green" />
-            PRE-TOURNAMENT
+          <Badge variant="secondary" className={isLive ? "bg-masters-green text-white" : "bg-masters-green-light text-masters-green"}>
+            <span className={`mr-1 inline-block h-2 w-2 rounded-full ${isLive ? "bg-white animate-pulse" : "bg-masters-green animate-pulse"}`} />
+            {isLive ? "LIVE" : "PRE-TOURNAMENT"}
           </Badge>
           <h3 className="font-heading text-lg font-bold text-[var(--text-primary)]">
             Live Edge Tracker
@@ -65,9 +67,60 @@ export function LiveTracker({ edges }: LiveTrackerProps) {
       </div>
 
       <p className="text-xs text-[var(--text-muted)]">
-        Monitoring edge movement in real-time. Edges shift as DraftKings adjusts
-        odds. During the tournament, this updates live as players perform.
+        {isLive
+          ? "Scores and odds updating every 30 seconds. Edge calculations refresh automatically."
+          : "Monitoring edge movement in real-time. Edges shift as DraftKings adjusts odds. During the tournament, this updates live as players perform."}
       </p>
+
+      {/* Live Leaderboard (only shown when tournament is active) */}
+      {isLive && leaderboard && leaderboard.players.length > 0 && (
+        <div className="overflow-hidden rounded-lg border border-green-200 bg-white">
+          <div className="border-b border-green-200 bg-masters-green-light px-4 py-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-masters-green">
+                Live Leaderboard — Round {leaderboard.currentRound}
+              </span>
+              <span className="text-[10px] text-masters-green/70">
+                {new Date(leaderboard.lastUpdated).toLocaleTimeString("en-US", {
+                  hour: "numeric",
+                  minute: "2-digit",
+                  timeZone: "America/New_York",
+                })}{" "}ET
+              </span>
+            </div>
+          </div>
+          <div className="divide-y divide-[var(--border-color)]">
+            {leaderboard.players.slice(0, 10).map((p) => (
+              <div
+                key={p.name}
+                className="flex items-center gap-3 px-4 py-2"
+              >
+                <span className="w-6 text-xs font-bold text-[var(--text-muted)]">
+                  {p.position}
+                </span>
+                <span className="flex-1 text-sm font-medium text-[var(--text-primary)]">
+                  {p.name}
+                </span>
+                <span className="text-xs text-[var(--text-muted)]">
+                  {p.thru !== "F" && p.thru !== "-" ? `Thru ${p.thru}` : p.thru}
+                </span>
+                <span
+                  className={`min-w-[40px] text-right text-sm font-bold tabular-nums ${
+                    p.totalScore < 0
+                      ? "text-masters-red"
+                      : p.totalScore === 0
+                        ? "text-[var(--text-primary)]"
+                        : "text-[var(--text-muted)]"
+                  }`}
+                >
+                  {p.totalScore > 0 ? "+" : ""}
+                  {p.totalScore === 0 ? "E" : p.totalScore}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-3">

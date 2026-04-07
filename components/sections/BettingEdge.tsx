@@ -19,6 +19,8 @@ import { ParlayBuilder } from "@/components/betting/ParlayBuilder";
 import { WeatherEdge } from "@/components/betting/WeatherEdge";
 import { LiveTracker } from "@/components/betting/LiveTracker";
 import { RoundPropsComponent } from "@/components/betting/RoundProps";
+import { LiveDataProvider } from "@/lib/live-data-context";
+import { LiveStatusBar } from "@/components/betting/LiveStatusBar";
 import {
   Search,
   TrendingUp,
@@ -292,112 +294,117 @@ export function BettingEdge() {
     .reduce((sum, e) => sum + e.ev100, 0);
 
   return (
-    <section>
-      {/* Hero */}
-      <div className="bg-gradient-to-b from-masters-green-dark to-masters-green px-4 py-10 text-white sm:py-14">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-3 flex items-center justify-center gap-2">
-            <TrendingUp className="h-5 w-5 text-masters-gold" />
-            <span className="text-xs font-medium uppercase tracking-widest text-masters-gold">
-              Betting Intelligence
-            </span>
-          </div>
-          <h1 className="font-heading text-3xl font-bold sm:text-4xl">
-            Betting Edge
-          </h1>
-          <p className="mx-auto mt-2 max-w-xl text-sm text-white/80">
-            AI-powered value detection across DraftKings markets. Find where our
-            models see odds the book has wrong.
-          </p>
-          <div className="mt-4 flex items-center justify-center gap-6 text-sm">
-            <div>
-              <span className="text-xl font-bold text-masters-gold">
-                {positiveEdges}
+    <LiveDataProvider>
+      <section>
+        {/* Hero */}
+        <div className="bg-gradient-to-b from-masters-green-dark to-masters-green px-4 py-10 text-white sm:py-14">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-3 flex items-center justify-center gap-2">
+              <TrendingUp className="h-5 w-5 text-masters-gold" />
+              <span className="text-xs font-medium uppercase tracking-widest text-masters-gold">
+                Betting Intelligence
               </span>
-              <span className="ml-1 text-white/70">value bets</span>
             </div>
-            <div className="h-6 w-px bg-white/20" />
-            <div>
-              <span className="text-xl font-bold text-masters-gold">
-                {allEdges.length}
-              </span>
-              <span className="ml-1 text-white/70">markets</span>
-            </div>
-            <div className="h-6 w-px bg-white/20" />
-            <div>
-              <span className="text-xl font-bold text-masters-gold">
-                +${totalEV.toFixed(0)}
-              </span>
-              <span className="ml-1 text-white/70">total EV</span>
+            <h1 className="font-heading text-3xl font-bold sm:text-4xl">
+              Betting Edge
+            </h1>
+            <p className="mx-auto mt-2 max-w-xl text-sm text-white/80">
+              AI-powered value detection across DraftKings markets. Find where
+              our models see odds the book has wrong.
+            </p>
+            <div className="mt-4 flex items-center justify-center gap-6 text-sm">
+              <div>
+                <span className="text-xl font-bold text-masters-gold">
+                  {positiveEdges}
+                </span>
+                <span className="ml-1 text-white/70">value bets</span>
+              </div>
+              <div className="h-6 w-px bg-white/20" />
+              <div>
+                <span className="text-xl font-bold text-masters-gold">
+                  {allEdges.length}
+                </span>
+                <span className="ml-1 text-white/70">markets</span>
+              </div>
+              <div className="h-6 w-px bg-white/20" />
+              <div>
+                <span className="text-xl font-bold text-masters-gold">
+                  +${totalEV.toFixed(0)}
+                </span>
+                <span className="ml-1 text-white/70">total EV</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Sub-tabs */}
-      <div className="border-b border-[var(--border-color)] bg-white">
-        <div className="mx-auto flex max-w-4xl items-center gap-1 overflow-x-auto px-4">
-          {SUB_TABS.map((tab) => {
-            const Icon = tab.icon;
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`relative flex shrink-0 items-center gap-1.5 px-4 py-3 text-xs font-medium transition-colors ${
-                  isActive
-                    ? "text-masters-green"
-                    : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
-                }`}
-              >
-                <Icon className="h-3.5 w-3.5" />
-                {tab.label}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-masters-green" />
-                )}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+        {/* Live Status Bar */}
+        <LiveStatusBar />
 
-      {/* Content */}
-      <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
-        {activeTab === "edge" && <EdgeFinder allEdges={allEdges} />}
-        {activeTab === "parlays" && <ParlayBuilder edges={allEdges} />}
-        {activeTab === "weather" && (
-          <WeatherEdge
-            edges={allEdges}
-            players={playersData as unknown as Player[]}
-          />
-        )}
-        {activeTab === "live" && <LiveTracker edges={allEdges} />}
-        {activeTab === "rounds" && (
-          <RoundPropsComponent
-            edges={allEdges}
-            players={playersData as unknown as Player[]}
-          />
-        )}
-
-        {/* Footer note */}
-        <div className="mt-6 rounded-lg bg-[var(--bg-primary)] p-3 text-center">
-          <p className="text-[10px] text-[var(--text-muted)]">
-            Odds sourced from DraftKings as of{" "}
-            {new Date(
-              (bettingData as unknown as BettingOddsData).lastUpdated
-            ).toLocaleDateString("en-US", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-              hour: "numeric",
-              minute: "2-digit",
+        {/* Sub-tabs */}
+        <div className="border-b border-[var(--border-color)] bg-white">
+          <div className="mx-auto flex max-w-4xl items-center gap-1 overflow-x-auto px-4">
+            {SUB_TABS.map((tab) => {
+              const Icon = tab.icon;
+              const isActive = activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`relative flex shrink-0 items-center gap-1.5 px-4 py-3 text-xs font-medium transition-colors ${
+                    isActive
+                      ? "text-masters-green"
+                      : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                  }`}
+                >
+                  <Icon className="h-3.5 w-3.5" />
+                  {tab.label}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-masters-green" />
+                  )}
+                </button>
+              );
             })}
-            . Edge = AI Probability - DK Implied Probability. EV = Expected
-            Value per $100 bet. Positive values indicate profitable bets over
-            time. Not financial advice.
-          </p>
+          </div>
         </div>
-      </div>
-    </section>
+
+        {/* Content */}
+        <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
+          {activeTab === "edge" && <EdgeFinder allEdges={allEdges} />}
+          {activeTab === "parlays" && <ParlayBuilder edges={allEdges} />}
+          {activeTab === "weather" && (
+            <WeatherEdge
+              edges={allEdges}
+              players={playersData as unknown as Player[]}
+            />
+          )}
+          {activeTab === "live" && <LiveTracker edges={allEdges} />}
+          {activeTab === "rounds" && (
+            <RoundPropsComponent
+              edges={allEdges}
+              players={playersData as unknown as Player[]}
+            />
+          )}
+
+          {/* Footer note */}
+          <div className="mt-6 rounded-lg bg-[var(--bg-primary)] p-3 text-center">
+            <p className="text-[10px] text-[var(--text-muted)]">
+              Odds sourced from DraftKings as of{" "}
+              {new Date(
+                (bettingData as unknown as BettingOddsData).lastUpdated
+              ).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+              })}
+              . Edge = AI Probability - DK Implied Probability. EV = Expected
+              Value per $100 bet. Positive values indicate profitable bets over
+              time. Not financial advice.
+            </p>
+          </div>
+        </div>
+      </section>
+    </LiveDataProvider>
   );
 }
