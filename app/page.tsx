@@ -11,6 +11,7 @@ import { Predictions } from "@/components/sections/Predictions";
 import { PlayerProfiles } from "@/components/sections/PlayerProfiles";
 import { Methodology } from "@/components/sections/Methodology";
 import { BettingEdge } from "@/components/sections/BettingEdge";
+import { ChampionProfile } from "@/components/sections/ChampionProfile";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<Section>("predictions");
@@ -41,6 +42,7 @@ export default function Home() {
           {activeSection === "betting" && <BettingEdge />}
           {activeSection === "players" && <PlayerProfiles />}
           {activeSection === "methodology" && <Methodology />}
+          {activeSection === "champion" && <ChampionProfile />}
         </main>
 
         <Footer />

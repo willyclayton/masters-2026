@@ -12,6 +12,7 @@ const tabs: { id: Section; label: string }[] = [
   { id: "betting", label: "Betting Edge" },
   { id: "players", label: "Player Profiles" },
   { id: "methodology", label: "Methodology & Live Data" },
+  { id: "champion", label: "Champion DNA" },
 ];
 
 export function DesktopTabs({
@@ -23,7 +24,7 @@ export function DesktopTabs({
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2">
         {tabs.map((tab, i) => {
           const isActive = activeSection === tab.id;
-          const rotation = [0.5, -0.3, 0.4, -0.5][i];
+          const rotation = [0.5, -0.3, 0.4, -0.5, 0.3][i];
           return (
             <button
               key={tab.id}

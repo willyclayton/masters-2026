@@ -1,0 +1,65 @@
+{
+  "title": "The Masters Winner Blueprint",
+  "subtitle": "Common profile of the last 10 Masters champions (2016–2025)",
+  "sampleSize": 10,
+  "categories": [
+    {
+      "id": "world-ranking",
+      "label": "World Ranking",
+      "emoji": "🏆",
+      "stats": [
+        { "fraction": "10/10", "label": "Top 25 in the world", "criteriaKey": "top25" },
+        { "fraction": "8/10", "label": "Top 15", "criteriaKey": "top15" },
+        { "fraction": "6/10", "label": "Top 10", "criteriaKey": "top10" }
+      ]
+    },
+    {
+      "id": "age-experience",
+      "label": "Age & Experience",
+      "emoji": "👤",
+      "stats": [
+        { "fraction": "9/10", "label": "Aged 27–36", "criteriaKey": "age27to36" },
+        { "fraction": "0/10", "label": "Debut winners", "criteriaKey": "notDebut", "inverted": true },
+        { "fraction": "10/10", "label": "Had 3+ prior starts", "criteriaKey": "priorStarts3" }
+      ]
+    },
+    {
+      "id": "recent-form",
+      "label": "Recent Form",
+      "emoji": "🔥",
+      "stats": [
+        { "fraction": "10/10", "label": "Made the cut in last start", "criteriaKey": "lastCutMade" },
+        { "fraction": "9/10", "label": "Had a recent Top 10", "criteriaKey": "recentTop10" },
+        { "fraction": "9/10", "label": "Multiple Top 10s in season", "criteriaKey": "multipleTop10s" }
+      ]
+    },
+    {
+      "id": "course-history",
+      "label": "Augusta History",
+      "emoji": "📍",
+      "stats": [
+        { "fraction": "9/10", "label": "Made the cut the year before", "criteriaKey": "madeCut2025" },
+        { "fraction": "8/10", "label": "Prior Top 10 at Augusta", "criteriaKey": "priorMastersTop10" },
+        { "fraction": "0/10", "label": "Defending champion", "criteriaKey": "notDefending", "inverted": true }
+      ]
+    },
+    {
+      "id": "ball-striking",
+      "label": "Ball Striking & Momentum",
+      "emoji": "📈",
+      "stats": [
+        { "fraction": "8/10", "label": "Already won that season", "criteriaKey": "seasonWin" },
+        { "fraction": "10/10", "label": "Top 30 Tee-to-Green", "criteriaKey": "top30T2G" }
+      ]
+    },
+    {
+      "id": "small-details",
+      "label": "Small Details",
+      "emoji": "🧠",
+      "stats": [
+        { "fraction": "10/10", "label": "Played in the USA that year", "criteriaKey": "playedUSA" },
+        { "fraction": "10/10", "label": "Didn't withdraw in last start", "criteriaKey": "noWithdrawal" }
+      ]
+    }
+  ]
+}

@@ -6,9 +6,9 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { BarChart3, Users, BookOpen, TrendingUp } from "lucide-react";
+import { BarChart3, Users, BookOpen, TrendingUp, Trophy } from "lucide-react";
 
-export type Section = "predictions" | "players" | "methodology" | "betting";
+export type Section = "predictions" | "players" | "methodology" | "betting" | "champion";
 
 interface MobileNavProps {
   open: boolean;
@@ -22,6 +22,7 @@ const navItems: { id: Section; label: string; icon: React.ElementType }[] = [
   { id: "betting", label: "Betting Edge", icon: TrendingUp },
   { id: "players", label: "Player Profiles", icon: Users },
   { id: "methodology", label: "Methodology & Live Data", icon: BookOpen },
+  { id: "champion", label: "Champion DNA", icon: Trophy },
 ];
 
 export function MobileNav({
