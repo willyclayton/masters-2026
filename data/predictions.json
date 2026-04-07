@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T12:00:00Z",
+  "lastUpdated": "2026-04-06T18:00:00Z",
   "consensus": {
     "rankings": [
       {
@@ -8,7 +8,13 @@
         "top5Pct": 46.7,
         "top10Pct": 63.0,
         "makeCutPct": 93.5,
-        "rationale": "The two-time green jacket holder is the most complete player in the world, and Augusta National rewards his elite ball-striking and iron play. His strokes gained profile is tailor-made for this cathedral in the pines.",
+        "rationale": "The two-time green jacket holder is the most complete player in the world, and Augusta National rewards his elite ball-striking and iron play. His strokes gained profile is tailor-made for this cathedral in the pines. Scheffler's approach play has led the PGA Tour for three consecutive seasons, a feat that places him in historically elite company alongside Tiger Woods and Ben Hogan in terms of sustained iron excellence.\n\nWhat separates Scheffler from the rest of the field is the sheer consistency of his performance at Augusta. In four Masters starts, he has won twice, finished T4, and T10 -- a record that would be the envy of any player in the history of the tournament. His understanding of Augusta's nuances has deepened with each visit: he knows when to fire at tucked pins and when to play the percentage shot to the fat side of the green, a patience-aggression balance that defines every multiple Masters winner.\n\nHis 2026 season has been nothing short of dominant. Three wins in seven starts, a world ranking that grows more impregnable by the week, and a ball-striking package that is firing on all cylinders. The only question mark remains his putting, which ranks outside the top 50 in strokes gained on the PGA Tour. But even that weakness is mitigated at Augusta, where Scheffler's ability to hit approach shots inside 15 feet means he faces more makeable birdie putts than anyone in the field. At 29, he is in the absolute prime of his career.",
+        "whyTheyWillWin": "Scottie Scheffler's case for winning the 2026 Masters begins with an almost unfair statistical reality: he is the best iron player in professional golf arriving at the most demanding second-shot course in championship golf. His strokes gained approach numbers have been historic for three consecutive seasons, and Augusta National rewards that skill above all others. When the pins are tucked on Sunday and the greens are firm and fast, Scheffler's ability to control trajectory, spin, and distance with his mid-irons gives him access to birdie opportunities that simply do not exist for the rest of the field.\n\nHis Augusta track record speaks volumes. Two green jackets in three years, with a T10 sandwiched in between, represents the kind of sustained dominance at one venue that we have not seen since Tiger Woods. Scheffler does not just play well here -- he unlocks a different gear. His par-5 scoring at Augusta ranks among the best in tournament history, and his understanding of the course's subtleties has deepened with each visit. He knows when to attack and when to play to the fat side of the green, and that patience-aggression balance is the hallmark of every multiple Masters winner.\n\nThe 2026 season has been vintage Scheffler. Three wins in seven starts, a world ranking that continues to grow more secure, and a ball-striking package that is firing on all cylinders. His approach play is complemented by enough length off the tee to reach the par 5s in two with ease, and his scrambling has improved to the point where the short game is no longer a liability. At 29, Scheffler is in the absolute prime of his career, with the physical tools, mental maturity, and institutional knowledge to become just the fourth player to win three Masters titles before turning 30. The question is not whether Scheffler can win -- it is whether anyone can stop him.",
+        "scenarioAnalysis": {
+          "bestCase": "Scheffler's iron play is dialed in from Thursday, he gains 2+ strokes on approach per round, and his putter cooperates enough to run away from the field by Sunday, winning by 4-5 shots in wire-to-wire fashion.",
+          "worstCase": "His putter goes cold on Augusta's slick greens, he three-putts several times through the weekend, and a mid-60s finish sees him finish T8-T12 despite elite ball-striking.",
+          "mostLikely": "Scheffler hovers near the top of the leaderboard all week, posts a low round on Saturday or Sunday to separate himself, and wins by 1-2 shots or in a brief playoff."
+        },
         "simulatorRank": 1,
         "scoutRank": 2,
         "analystRank": 1
@@ -19,7 +25,13 @@
         "top5Pct": 41.4,
         "top10Pct": 58.0,
         "makeCutPct": 92.1,
-        "rationale": "The defending champion finally has the monkey off his back. Rory returns to Augusta with a career Grand Slam, supreme confidence, and the form of a man who knows every blade of grass on this course.",
+        "rationale": "The defending champion finally has the monkey off his back. Rory returns to Augusta with a career Grand Slam, supreme confidence, and the form of a man who knows every blade of grass on this course. His 2025 victory was not merely a win -- it was a catharsis, the culmination of a decade-long quest that had come to define his career.\n\nMcIlroy's game is perfectly suited to Augusta when he is at his best. His prodigious length off the tee turns the par 5s into virtual par 4s, and his improved putting and short game have eliminated the vulnerabilities that used to undermine his Masters campaigns. His driving distance advantage means he is hitting shorter irons into greens where others are hitting mid-irons, a significant edge when precision is paramount.\n\nThe question for McIlroy is psychological rather than physical. History is not kind to defending champions at Augusta -- only Tiger Woods, Jack Nicklaus, and Nick Faldo have successfully defended the title. But McIlroy is uniquely positioned: rather than defending with the weight of expectation, he arrives liberated, with nothing left to prove. The Grand Slam is complete, and that freedom could unlock even greater performances. His form in 2026 has been outstanding, with multiple wins and a consistency that suggests he has ascended to another level entirely.",
+        "whyTheyWillWin": "Rory McIlroy arrives at the 2026 Masters in a position no one could have imagined just two years ago: as a defending champion with nothing left to prove. The career Grand Slam is complete, the decades of Augusta heartbreak are behind him, and what remains is a supremely talented golfer who can play with the freedom and joy that made him the most exciting player in the world a decade ago.\n\nThe liberation factor cannot be overstated. For years, McIlroy carried the weight of the career Grand Slam on his shoulders at Augusta, pressing on Sunday, steering drives instead of ripping them, playing not to lose rather than playing to win. That dynamic has been completely inverted. A freed Rory is the most dangerous player in golf -- his length off the tee, his ability to flight irons into Augusta's tiered greens, and his vastly improved short game make him a complete package.\n\nHis 2025 victory provided something equally valuable: intimate knowledge of what it takes to close out a Masters. He navigated the back nine on Sunday with the composure of a veteran champion, making critical par saves at 11 and 12 before birdieing 13 and 15 to pull away. That experience is banked now, part of his competitive DNA. He knows he can handle the roars echoing through the Georgia pines, knows he can stand on the 72nd tee with a one-shot lead and stripe it down the middle. And with his ball-striking numbers reaching career-best levels in early 2026, McIlroy has the tools to become just the fourth player in history to successfully defend at Augusta.",
+        "scenarioAnalysis": {
+          "bestCase": "McIlroy channels the liberation of his Grand Slam into fearless, aggressive golf, overpowering the par 5s and riding an electric putter to a comfortable wire-to-wire victory as a repeat champion.",
+          "worstCase": "The emotional hangover of defending catches up with him, his focus wanes during the middle rounds, and he finishes T10-T15 with a respectable but unmemorable week.",
+          "mostLikely": "McIlroy contends throughout the week, is within two shots of the lead heading into Sunday, and either wins in a tight finish or finishes T2-T5 after a back-nine charge falls just short."
+        },
         "simulatorRank": 3,
         "scoutRank": 1,
         "analystRank": 2
@@ -30,7 +42,13 @@
         "top5Pct": 36.7,
         "top10Pct": 53.3,
         "makeCutPct": 90.8,
-        "rationale": "A perennial Augusta contender with two major titles now under his belt. Schauffele's consistency at the top of leaderboards is unmatched, and his course history here is littered with top-10 finishes.",
+        "rationale": "A perennial Augusta contender with two major titles now under his belt. Schauffele's consistency at the top of leaderboards is unmatched, and his course history here is littered with top-10 finishes. What once defined him as a bridesmaid -- the player who always contended but never broke through -- has been completely rewritten by his major championship victories.\n\nSchauffele's game is beautifully calibrated for Augusta National. He ranks in the top 10 on Tour in strokes gained tee-to-green, combining above-average length off the tee with precision iron play that consistently finds the correct quadrant of Augusta's treacherous putting surfaces. His ability to avoid big numbers is perhaps his greatest asset: Schauffele rarely makes double bogey, and at a course where one errant shot can lead to a crooked number, that discipline is invaluable.\n\nThe mental transformation that came with winning his first major has been the catalyst for everything since. Schauffele now carries himself with the confidence of a player who knows he belongs at the top of every leaderboard, and his ability to grind out pars during difficult stretches while attacking when opportunities present themselves is the exact formula that produces green jackets.",
+        "whyTheyWillWin": "Xander Schauffele has finished in the top 10 at Augusta in four of his last six appearances, a consistency that speaks to a game perfectly calibrated for this golf course. His strokes gained tee-to-green numbers rank among the best in the world, and his ability to avoid big numbers -- a critical skill at treacherous Augusta -- sets him apart from many of the power players in this field.\n\nWhat has changed for Schauffele is the mental dimension. For years, he was labeled the best player without a major, a tag that seemed to weigh on him in the final rounds of championships. Two major titles later, that narrative is dead. Schauffele now plays with the quiet confidence of a proven champion, and his closing round scoring average in 2026 is among the best on Tour.\n\nHis Augusta game plan is simple but devastatingly effective: keep the ball in play off the tee, attack the par 5s, play conservative on the dangerous par 3s, and let his elite putting carry him on the weekend. His proximity to the hole on approach shots at Augusta ranks in the top 5 historically, meaning he consistently gives himself legitimate birdie looks while others are scrambling for par. If his putter gets hot during a Sunday back nine, Schauffele has the complete skillset to claim a green jacket.",
+        "scenarioAnalysis": {
+          "bestCase": "Schauffele's elite putting clicks early in the week, he builds a cushion through strong par-5 play, and his mistake-free approach carries him to a commanding victory.",
+          "worstCase": "His putter goes flat and his conservative approach leaves him too many mid-range birdie putts that do not fall, resulting in a T8-T12 finish despite solid ball-striking.",
+          "mostLikely": "Schauffele grinds his way into contention by Saturday evening, lurks within 2-3 shots of the lead, and makes a back-nine Sunday charge that ends in a top-5 finish or a narrow victory."
+        },
         "simulatorRank": 2,
         "scoutRank": 4,
         "analystRank": 3
@@ -41,7 +59,13 @@
         "top5Pct": 28.5,
         "top10Pct": 42.9,
         "makeCutPct": 86.5,
-        "rationale": "The Swedish phenom has the length, the iron play, and the fearlessness to overpower Augusta. His T-2 in 2024 showed he has no fear of the big stage, and he has only gotten better since.",
+        "rationale": "The Swedish phenom has the length, the iron play, and the fearlessness to overpower Augusta. His T-2 in 2024 showed he has no fear of the big stage, and he has only gotten better since. Aberg's combination of elite driving distance and precision iron play is a rare blend that Augusta National specifically rewards.\n\nWhat makes Aberg so dangerous at Augusta is his ability to reach the par 5s in two with ease while still maintaining the accuracy to attack tucked pins on the par 4s. His ball speed off the tee is among the highest on Tour, but unlike many bombers, he pairs that distance with a controlled ball flight that keeps him in the fairway. His approach play from 150-200 yards ranks in the top 5 on Tour, the exact range that Augusta's par 4s demand.\n\nAt just 26 years old, Aberg has already shown he can handle the unique pressure of Augusta. His runner-up finish in 2024 was not the performance of a wide-eyed rookie; it was the composed, calculated effort of a player who belongs. His only potential vulnerability is the putting surface -- Augusta's undulating greens can confound even veterans, and Aberg's relative lack of experience reading these particular contours is his biggest obstacle.",
+        "whyTheyWillWin": "Ludvig Aberg represents the future of professional golf arriving at the present. His combination of elite driving distance (averaging over 315 yards), precision iron play, and cool Scandinavian composure is tailor-made for Augusta National. His T-2 finish in 2024 was not a fluke -- it was a preview of what a fully developed Aberg can do at this course.\n\nAberg's par-5 scoring potential is perhaps the most significant factor in his favor. With his ball speed, he can reach all four par 5s in two shots with relative ease, giving him at least four legitimate eagle-or-birdie opportunities per round that longer hitters simply cannot access. Over four rounds, that structural advantage can add up to 4-6 shots over the field, an enormous edge in a tournament that is often decided by slim margins.\n\nThe youth factor cuts both ways, but recent history suggests it favors Aberg. Tiger Woods won his first Masters at 21, Scheffler broke through at 25, and the modern game has shown that young players with elite physical tools can thrive at Augusta when their nerves hold. Aberg has already proven his nerves hold -- his 2024 performance under Sunday pressure was remarkably composed for a Masters debutant. With another year of maturity, another year of experience on Augusta's greens, and a 2026 season that has produced consistently excellent results, Aberg is poised to become the youngest Masters champion in over a decade.",
+        "scenarioAnalysis": {
+          "bestCase": "Aberg's prodigious length turns the par 5s into birdie factories, he rolls in putts on Augusta's greens with growing confidence, and he wins going away as the next generational talent to claim a green jacket.",
+          "worstCase": "Augusta's tricky green complexes expose his relative inexperience, he three-putts several times, struggles with course management on the back nine, and finishes T15-T20.",
+          "mostLikely": "Aberg contends through three rounds, hovering near the top of the leaderboard, and either makes a Sunday charge into the top 3 or fades slightly to finish T4-T8 as he continues building Augusta experience."
+        },
         "simulatorRank": 4,
         "scoutRank": 7,
         "analystRank": 4
@@ -52,7 +76,13 @@
         "top5Pct": 26.8,
         "top10Pct": 41.4,
         "makeCutPct": 86.4,
-        "rationale": "The best iron player on the planet is peaking at the right time. Morikawa's precision approach game is perfectly suited to Augusta's demanding greens, and his ball-striking has been otherworldly this spring.",
+        "rationale": "The best iron player on the planet is peaking at the right time. Morikawa's precision approach game is perfectly suited to Augusta's demanding greens, and his ball-striking has been otherworldly this spring. His ability to control distance with his irons -- particularly in the 150-180 yard range that defines so many Augusta approach shots -- gives him a significant edge over the field.\n\nMorikawa's evolution as a player has been fascinating to watch. Early in his career, his putting and short game lagged behind his elite ball-striking, creating a ceiling on his performance at courses like Augusta where touch around the greens is essential. But over the past two seasons, Morikawa has dedicated himself to improving those areas, and the results have been dramatic. His strokes gained putting has climbed from negative to solidly positive, and his scrambling percentage has improved by nearly 8 points.\n\nThe two-time major champion now brings a complete game to Augusta National. His iron play creates birdie opportunities, his improved putting converts them, and his course management ensures he avoids the big numbers that derail so many talented players. Morikawa's trajectory suggests he is building toward something special in 2026, and Augusta may be where it all comes together.",
+        "whyTheyWillWin": "Collin Morikawa is the best iron player in professional golf, and Augusta National is the ultimate iron player's course. That simple equation has made Morikawa a perennial favorite at the Masters, and 2026 may be the year the math finally adds up to a green jacket.\n\nMorikawa's proximity to the hole on approach shots is the best in the world. He consistently places his approach shots in the correct quadrant of the green, giving himself makeable birdie putts while others are scrambling to save par from the wrong side. At Augusta, where the difference between a 10-foot birdie putt and a 40-foot lag putt can be a single yard of carry distance, this precision is worth several shots per round.\n\nThe transformation of his short game and putting has removed the last obstacle between Morikawa and Augusta glory. His strokes gained putting has swung from a negative to a positive, and his touch around the greens has improved dramatically. Combined with his preternatural calm under pressure -- demonstrated by two major championship victories before his 26th birthday -- Morikawa now has every tool required to navigate Augusta's challenges. His ball flight, a penetrating draw that holds up in the wind, is perfectly suited to the shot shapes Augusta demands, particularly on the approach to greens like the 11th, 12th, and 15th where trajectory control is paramount.",
+        "scenarioAnalysis": {
+          "bestCase": "Morikawa's iron play produces a historic strokes gained approach week, he peppers flagsticks all four days, and his improved putting converts enough birdies for a comfortable 3-4 shot victory.",
+          "worstCase": "Despite elite ball-striking, his putter reverts to old habits and he leaves too many birdie chances out there, finishing T10-T15 with a frustrating sense of what could have been.",
+          "mostLikely": "Morikawa's precision keeps him in contention throughout, he posts steady rounds in the 67-69 range, and finishes T3-T7 with a strong showing that confirms his Augusta credentials."
+        },
         "simulatorRank": 5,
         "scoutRank": 6,
         "analystRank": 5
@@ -63,7 +93,13 @@
         "top5Pct": 23.9,
         "top10Pct": 37.7,
         "makeCutPct": 84.7,
-        "rationale": "The 2023 Masters champion knows how to win here, and his Augusta pedigree is among the best in the field. The LIV defection cost him reps, but Rahm's talent and course knowledge are undeniable.",
+        "rationale": "The 2023 Masters champion knows how to win here, and his Augusta pedigree is among the best in the field. The LIV defection cost him reps, but Rahm's talent and course knowledge are undeniable. His fiery competitiveness and raw skill level are top-three in the world when he is fully engaged.\n\nRahm's Augusta record is remarkable for its consistency. Multiple top-10 finishes and a dominant 2023 victory demonstrate that his game translates perfectly to this course. His driving distance gives him access to the par 5s in two, his iron play is world-class, and his ability to manage the mental demands of Augusta's back nine under pressure has been proven on the grandest stage.\n\nThe primary concern with Rahm is rust. Playing a limited LIV schedule means fewer competitive reps against the world's best, and the intensity of a Masters Sunday cannot be replicated in LIV's team-based format. However, Rahm has consistently shown that he can elevate his game for the majors regardless of his regular schedule, and his deep familiarity with Augusta National may be enough to overcome any competitive sharpness concerns.",
+        "whyTheyWillWin": "Jon Rahm won the 2023 Masters by four shots, a dominant performance that proved he has the ability to dismantle Augusta National when his game is clicking. His combination of elite power, precision, and competitive fire is matched by perhaps only Scheffler in this field, and his course knowledge as a former champion gives him an edge that cannot be quantified by statistics alone.\n\nRahm's advantage lies in his versatility. He can overpower Augusta with his driver, dissect it with his irons, or grind it out with his short game when things are not going perfectly. That adaptability is crucial at a course where conditions can change dramatically from morning to afternoon and from Thursday to Sunday. His ability to manufacture shots -- shaping the ball both ways, controlling trajectory in the wind, producing touch around the greens -- is a rare combination that Augusta specifically rewards.\n\nThe LIV question is the only caveat, and it may be overblown. Rahm has shown time and again that he can elevate for the four weeks a year that truly matter, and his preparation for Augusta has been meticulous. His knowledge of every undulation, every pin position, every wind pattern on this course is the product of years of elite competition here. When Rahm stands on the first tee Thursday morning, the competitive rust will melt away, replaced by the fierce intensity that has made him one of the most formidable major championship players of his generation.",
+        "scenarioAnalysis": {
+          "bestCase": "Rahm arrives sharp despite the LIV schedule, his power game overwhelms Augusta's par 5s, and he channels the same dominant form as his 2023 victory to win by multiple shots.",
+          "worstCase": "Competitive rust from the LIV schedule manifests in sloppy short-game play and poor speed control on the greens, leading to a disappointing missed cut or a finish outside the top 25.",
+          "mostLikely": "Rahm shakes off early rust, finds his rhythm by Friday, and mounts a strong weekend charge to finish T3-T8, reminding everyone of his immense Augusta pedigree."
+        },
         "simulatorRank": 8,
         "scoutRank": 3,
         "analystRank": 6
@@ -74,7 +110,13 @@
         "top5Pct": 18.3,
         "top10Pct": 31.0,
         "makeCutPct": 80.5,
-        "rationale": "The bomber is a different animal at Augusta since retooling his game. DeChambeau has the length to eat up the par 5s and the short game to handle the treacherous greens around Amen Corner.",
+        "rationale": "The bomber is a different animal at Augusta since retooling his game. DeChambeau has the length to eat up the par 5s and the short game to handle the treacherous greens around Amen Corner. His scientific approach to golf means he has studied every inch of Augusta National with the kind of data-driven intensity that few players can match.\n\nDeChambeau's distance advantage at Augusta is staggering. He can reach all four par 5s in two shots with mid-to-short irons, giving him approach angles and scoring opportunities that shorter hitters simply cannot access. His par-5 scoring is consistently among the best in the field, and at a course where the par 5s are the primary birdie opportunities, that advantage compounds over four rounds into a significant edge.\n\nThe criticism of DeChambeau has always centered on his unpredictability -- the big misses, the occasional blowup holes, the inconsistency that comes with swinging as hard as he does. But his recent game evolution has addressed many of those concerns. His wedge play has improved dramatically, his course management has matured, and his mental approach to Augusta has shifted from brute force to a more nuanced, strategic mindset.",
+        "whyTheyWillWin": "Bryson DeChambeau has the single largest structural advantage of any player in the field: he can reach every par 5 at Augusta National in two shots with a wedge or short iron in his hands. While others are laying up or hitting long irons into heavily guarded greens, DeChambeau is firing wedges at flagsticks with the spin control to hold even Augusta's firmest putting surfaces.\n\nThis par-5 advantage translates to approximately 2-3 shots per round over the average player in the field. Over four rounds, that is an 8-12 shot advantage on just four holes -- an enormous cushion that allows DeChambeau to play conservatively on the dangerous par 3s and par 4s while still posting competitive scores. His eagle rate on par 5s at Augusta is among the highest in the field, and those eagles create momentum swings that can carry a player through the challenging stretches of Amen Corner.\n\nDeChambeau's short game transformation has been the missing piece. His around-the-green play has improved from a weakness to a strength, and his ability to get up and down from Augusta's tricky greenside positions has given him the complete package. Combined with his scientific approach to course management and his fearless competitive mentality, DeChambeau has all the tools to produce a special week at Augusta.",
+        "scenarioAnalysis": {
+          "bestCase": "DeChambeau's length turns the par 5s into eagle opportunities, he avoids the blow-up holes, and a dominant weekend sees him overpower Augusta for a convincing 3-shot victory.",
+          "worstCase": "His aggressive approach backfires with several double bogeys through Amen Corner, his driver finds the trees, and he misses the cut or finishes well down the leaderboard.",
+          "mostLikely": "DeChambeau's par-5 scoring keeps him in contention but a few costly mistakes on the tighter holes prevent him from winning outright, resulting in a T5-T10 finish."
+        },
         "simulatorRank": 6,
         "scoutRank": 9,
         "analystRank": 7
@@ -85,7 +127,13 @@
         "top5Pct": 16.2,
         "top10Pct": 28.5,
         "makeCutPct": 79.1,
-        "rationale": "Hovland's short game improvements have removed the one weakness that held him back at Augusta. His ball-striking has always been elite, and now he can actually get up and down around these greens.",
+        "rationale": "Hovland's short game improvements have removed the one weakness that held him back at Augusta. His ball-striking has always been elite, and now he can actually get up and down around these greens. The Norwegian has spent the off-season working extensively with short game coach to transform his chipping and pitching technique.\n\nHovland's ball-striking numbers are among the best in the world. He ranks in the top 5 on Tour in strokes gained tee-to-green, with particular strength in approach play from 175-200 yards -- the exact distances Augusta's par 4s demand. His ability to shape the ball both ways gives him the versatility to attack pins on both sides of Augusta's greens, a skill that separates contenders from pretenders at this course.\n\nThe transformation in Hovland's short game has been the story of his 2026 season. What was once a glaring vulnerability has become a respectable weapon, and his scrambling percentage has improved by over 10 points from his career average. At Augusta, where even the best iron players miss greens on the most difficult pin positions, the ability to get up and down is essential, and Hovland now has that capability.",
+        "whyTheyWillWin": "Viktor Hovland's transformation from an elite ball-striker with a short game weakness to a complete player has been one of the most compelling stories in professional golf. His extensive work on his chipping, pitching, and greenside bunker play has elevated his game to the point where Augusta National -- once a course that exposed his weaknesses -- now plays perfectly to his strengths.\n\nHovland's strokes gained tee-to-green ranks in the top 5 on Tour, giving him a massive advantage in the ball-striking categories that Augusta rewards most. His iron play from the fairway is precise and consistent, and his driving distance gives him the length to reach the par 5s in two. Combined with his new-found short game prowess, Hovland now has the complete toolkit required to win a green jacket.\n\nThe Norwegian's competitive mentality is another asset. Hovland is a fierce competitor who relishes the biggest stages, and his ability to maintain focus over four days of championship golf has improved markedly. His closing round scoring average in 2026 ranks among the best on Tour, suggesting he has learned how to close out tournaments under pressure -- the final piece of the puzzle for a player with this much talent.",
+        "scenarioAnalysis": {
+          "bestCase": "Hovland's improved short game holds up all week, his ball-striking produces numerous birdie opportunities, and he breaks through for a maiden Masters title with a Sunday 66.",
+          "worstCase": "The short game reverts under Augusta's unique pressure, old chipping yips resurface around the greens, and he finishes T15-T25 despite hitting the ball beautifully tee to green.",
+          "mostLikely": "Hovland's ball-striking keeps him competitive throughout, his short game is solid if unspectacular, and he finishes T6-T12 with an encouraging week that suggests bigger things ahead."
+        },
         "simulatorRank": 7,
         "scoutRank": 10,
         "analystRank": 8
@@ -96,7 +144,13 @@
         "top5Pct": 15.6,
         "top10Pct": 27.1,
         "makeCutPct": 80.6,
-        "rationale": "The 2021 champion is one of the finest iron players to ever walk these fairways. Matsuyama consistently finds another gear at Augusta, and his experience through Amen Corner is invaluable.",
+        "rationale": "The 2021 champion is one of the finest iron players to ever walk these fairways. Matsuyama consistently finds another gear at Augusta, and his experience through Amen Corner is invaluable. His precision with mid-irons and his ability to control ball flight in the swirling Augusta winds make him a perpetual contender.\n\nMatsuyama's Augusta record extends well beyond his 2021 victory. He has multiple top-5 finishes at the Masters, and his consistency here is remarkable. He seems to find an extra level of focus and intensity when he arrives at Magnolia Lane, perhaps because the course so perfectly rewards his greatest skill: iron play. His approach shots consistently find the correct portion of Augusta's diabolical greens, giving him legitimate birdie opportunities while others are scrambling to avoid bogey.\n\nThe quiet Japanese star brings an intangible quality to Augusta that is difficult to quantify. His mental composure under pressure is extraordinary, and his ability to grind out pars during the most difficult stretches of the course allows him to stay in contention while more volatile players fall away. At 34, Matsuyama remains in the prime of his ball-striking years, and his deep knowledge of Augusta's greens gives him an edge that younger players simply cannot match.",
+        "whyTheyWillWin": "Hideki Matsuyama has a quiet genius for Augusta National that transcends statistics. The 2021 champion has produced top-10 finishes at the Masters with a regularity that speaks to a deep, almost spiritual connection with the course. His iron play -- the most important skill at Augusta -- ranks among the finest in the world, and his ability to control ball flight through the pines is unmatched in the field.\n\nMatsuyama's advantage is his experience and his temperament. He has navigated Amen Corner under the most intense Sunday pressure and emerged with a green jacket. He knows the speed of the greens, the break on every putt, the wind patterns that shift through the Georgia pines during an April afternoon. That institutional knowledge is worth multiple shots over four rounds, and it is a resource that younger, more talented players simply cannot access.\n\nHis 2026 form has been solid if unspectacular by his standards, but Matsuyama has a history of peaking for the majors regardless of his regular-season form. The quiet confidence he carries is the confidence of a champion, and his ability to block out distractions and focus entirely on the golf course is one of his greatest assets at a tournament that bombards players with stimuli from every direction.",
+        "scenarioAnalysis": {
+          "bestCase": "Matsuyama enters a zone where his iron play is surgical, he controls the ball through Amen Corner flawlessly, and he channels his 2021 magic to win a second green jacket.",
+          "worstCase": "His putting struggles on the lightning-fast greens, he cannot convert the birdie chances his iron play creates, and he finishes T12-T18 with another solid but ultimately forgettable Masters.",
+          "mostLikely": "Matsuyama hovers around the top 10 all week, makes a brief surge into contention on Saturday or Sunday, and finishes T5-T10 with another strong Augusta performance."
+        },
         "simulatorRank": 10,
         "scoutRank": 5,
         "analystRank": 10
@@ -107,7 +161,13 @@
         "top5Pct": 13.8,
         "top10Pct": 25.1,
         "makeCutPct": 77.7,
-        "rationale": "Cantlay's metronomic consistency and elite putting make him a threat every time he tees it up at Augusta. He grinds out pars when others make bogeys and capitalizes on the par 5s.",
+        "rationale": "Cantlay's metronomic consistency and elite putting make him a threat every time he tees it up at Augusta. He grinds out pars when others make bogeys and capitalizes on the par 5s. His methodical, calculated approach to course management is perfectly suited to Augusta's demanding strategic layout.\n\nCantlay's greatest strength at Augusta is his ability to avoid mistakes. His bogey avoidance ranks among the best on Tour, and at a course where one bad swing can lead to a double bogey or worse, that discipline is incredibly valuable. He plays the percentages brilliantly, attacking when the risk-reward is favorable and playing conservative when the situation demands restraint.\n\nThe knock on Cantlay has always been his lack of length off the tee, which limits his par-5 scoring relative to the bombers. But he compensates with precision, accuracy, and some of the best putting in professional golf. His strokes gained putting is consistently positive, and his ability to read Augusta's treacherous greens improves with each visit.",
+        "whyTheyWillWin": "Patrick Cantlay wins the 2026 Masters by doing what he does best: grinding. While others make highlight-reel birdies and momentum-killing double bogeys, Cantlay quietly cards 68-69-68-69 and lets the field come back to him. His bogey avoidance is among the best on Tour, and at Augusta, where the difference between a top-5 finish and a missed cut is often just two or three bad holes, that consistency is an enormous asset.\n\nCantlay's putting is the key. His strokes gained putting ranks in the top 10 on Tour, and his ability to read greens -- particularly the subtle breaks and variable speeds of Augusta's putting surfaces -- gives him an edge that more talented ball-strikers cannot replicate. He makes the putts that matter: the 6-footers for par, the 15-footers for birdie on the par 5s, the clutch 10-footers that keep momentum alive on Sunday afternoon.\n\nHis course management at Augusta is textbook. Cantlay plays the course rather than attacking it, finding the safe zones on dangerous holes and attacking only when the percentages are clearly in his favor. It is not the most exciting brand of golf, but it is remarkably effective at a course that punishes aggression as harshly as it rewards precision.",
+        "scenarioAnalysis": {
+          "bestCase": "Cantlay's putting catches fire, he converts an unusually high number of birdie chances, and his bogey-free brand of golf produces four sub-70 rounds for a surprise victory.",
+          "worstCase": "His lack of length catches up with him on the par 5s where he cannot compete with the bombers, his approach play is slightly off, and he finishes T15-T20.",
+          "mostLikely": "Cantlay grinds out four steady rounds, avoids big numbers, and finishes T8-T14 with a respectable but ultimately unremarkable Masters performance."
+        },
         "simulatorRank": 9,
         "scoutRank": 12,
         "analystRank": 9
@@ -118,7 +178,13 @@
         "top5Pct": 12.7,
         "top10Pct": 23.5,
         "makeCutPct": 76.6,
-        "rationale": "The big-game hunter elevates in major championships like few others. Koepka's physicality and mental fortitude suit Augusta, though his LIV schedule leaves question marks about competitive sharpness.",
+        "rationale": "The big-game hunter elevates in major championships like few others. Koepka's physicality and mental fortitude suit Augusta, though his LIV schedule leaves question marks about competitive sharpness. His five major championships speak to a rare ability to rise to the occasion when the stakes are highest.\n\nKoepka's game at Augusta is built on power and mental toughness. His driving distance gives him wedge approaches into the par 5s, and his ability to handle the pressure of Sunday contention at a major is among the best in the game. He has a unique ability to simplify the game when others complicate it, playing with a tunnel-vision focus that blocks out distractions.\n\nThe concern with Koepka, as with all LIV players, is his competitive preparation. The LIV schedule does not provide the same caliber of week-in, week-out competition that the PGA Tour offers, and there is a legitimate question about whether Koepka can arrive at Augusta with the sharpness required to contend. However, his track record in majors suggests he has the ability to elevate regardless of his regular schedule.",
+        "whyTheyWillWin": "Brooks Koepka is the ultimate big-game player. Five major championships attest to his ability to elevate his performance when the stakes are at their highest, and the Masters represents exactly the kind of challenge that brings out his best golf. His physicality, mental toughness, and single-minded focus create a combination that is uniquely suited to the demands of Augusta National.\n\nKoepka's approach to major championships is simple: overpower the course, stay patient, and let the pressure break the other guys. At Augusta, this translates to dominant par-5 scoring, steady play through the dangerous middle stretch, and a willingness to play the back nine on Sunday without fear. His major championship closing rounds include some of the most impressive performances in recent memory, and that pedigree counts for something on the biggest stage.\n\nThe LIV question is the primary concern, but Koepka has addressed it repeatedly by producing strong major performances despite his alternative schedule. His preparation for Augusta has been meticulous, and his competitive fire burns hottest in April.",
+        "scenarioAnalysis": {
+          "bestCase": "Koepka arrives in peak major-championship mode, his power game overwhelms Augusta, and he adds a green jacket to his five-major collection with a dominant Sunday closing round.",
+          "worstCase": "LIV rust manifests in sloppy execution, his short game falters on Augusta's demanding greens, and he misses the cut or finishes outside the top 30.",
+          "mostLikely": "Koepka produces a solid four-day effort, flashing his major-caliber talent in stretches but lacking the consistency to seriously contend, finishing T10-T18."
+        },
         "simulatorRank": 13,
         "scoutRank": 8,
         "analystRank": 11
@@ -129,7 +195,13 @@
         "top5Pct": 11.4,
         "top10Pct": 21.2,
         "makeCutPct": 74.6,
-        "rationale": "Few players in the world have a better short game, and at Augusta, that is currency. Smith's creativity around the greens and his course knowledge from his 2022 contention make him a live longshot.",
+        "rationale": "Few players in the world have a better short game, and at Augusta, that is currency. Smith's creativity around the greens and his course knowledge from his 2022 contention make him a live longshot. His putting and chipping artistry is perfectly suited to the demands of Augusta's crowned, undulating greens.\n\nSmith's feel around the greens is extraordinary. His ability to manufacture shots from difficult positions -- bump-and-runs through swales, delicate lob shots over bunkers, lag putts that die at the hole from 40 feet -- is a skill set that Augusta specifically rewards. The course presents countless situations where creativity and touch trump power and precision, and Smith thrives in exactly those moments.\n\nThe LIV factor is a concern, as Smith's competitive schedule has been less demanding than the PGA Tour players he will face. But Augusta has a way of leveling the playing field for players who truly understand the course, and Smith's deep familiarity with every green contour and every approach angle gives him an advantage that compensates for any sharpness concerns.",
+        "whyTheyWillWin": "Cameron Smith's short game is the best in professional golf, and Augusta National is the course where short game matters most. His ability to get up and down from seemingly impossible positions, to read the subtle breaks on Augusta's greens, and to manufacture creative shots around the putting surfaces gives him an edge that purely statistical models cannot capture.\n\nSmith's 2022 Masters contention demonstrated that he has the game and the nerve to compete on Augusta's biggest stage. He played the final nine holes in spectacular fashion, making birdies at crucial moments and demonstrating the kind of clutch putting that separates major champions from also-rans. That experience is invaluable, and it gives Smith a foundation of confidence every time he returns to Magnolia Lane.\n\nIf Smith's ball-striking is even slightly above average for the week, his short game will do the rest. His ability to scramble, to save pars from difficult positions, and to convert birdie putts from inside 15 feet makes him a dangerous competitor in any conditions. At Augusta, where the greens are the ultimate equalizer, Smith's touch and feel give him a path to the green jacket that few other players possess.",
+        "scenarioAnalysis": {
+          "bestCase": "Smith's putter catches fire on Augusta's greens, his short game wizardry saves multiple pars per round, and he cobbles together a masterful week of scrambling and scoring to claim a surprise victory.",
+          "worstCase": "His ball-striking is below average and even his short game magic cannot compensate, leading to a frustrating T20-T30 finish.",
+          "mostLikely": "Smith's short game keeps him competitive despite inconsistent ball-striking, and he finishes T10-T18 with a few highlight-reel moments around the greens."
+        },
         "simulatorRank": 14,
         "scoutRank": 11,
         "analystRank": 12
@@ -140,10 +212,16 @@
         "top5Pct": 10.7,
         "top10Pct": 20.0,
         "makeCutPct": 74.4,
-        "rationale": "Fleetwood's ball flight is perfectly suited to the shotmaking Augusta demands. His consistent major contention and improved putting make him a dark horse with serious credentials.",
+        "rationale": "Fleetwood's ball flight is perfectly suited to the shotmaking Augusta demands. His consistent major contention and improved putting make him a dark horse with serious credentials. The Englishman's ability to shape the ball both ways with a naturally penetrating flight is a significant asset on a course that demands precision shotmaking.\n\nFleetwood has consistently performed well at Augusta, and his major championship pedigree includes multiple top-10 finishes across all four majors. He brings a European sensibility to his game -- thoughtful course management, creative shotmaking, and the ability to handle variable weather conditions -- that translates well to Augusta's demands. His improved putting has added a dimension that was previously missing.\n\nAt 35, Fleetwood is at the peak of his experience-talent curve. He has enough Augusta knowledge to navigate the course's many subtleties, and his ball-striking remains among the best in the world. A major championship breakthrough has felt imminent for several years, and Augusta represents perhaps his best opportunity.",
+        "scenarioAnalysis": {
+          "bestCase": "Fleetwood's ball-striking produces a string of approach shots inside 10 feet, his putting holds up, and a major breakthrough finally arrives with a composed four-day performance.",
+          "worstCase": "His putter lets him down on the fast greens, he cannot convert the chances his ball-striking creates, and he finishes T15-T22 as an also-ran.",
+          "mostLikely": "Fleetwood plays four solid rounds, contends briefly during the middle rounds, and finishes T8-T15 with another respectable Masters showing."
+        },
         "simulatorRank": 11,
         "scoutRank": 15,
-        "analystRank": 13
+        "analystRank": 13,
+        "whyTheyWillWin": "Tommy Fleetwood wins the 2026 Masters by combining his penetrating ball flight with the shotmaking creativity that Augusta demands. His low, controlled trajectory is perfectly suited to windy conditions, and his ability to shape the ball both ways on command gives him access to pin positions that higher-ball-flight players must play away from. Fleetwood's European sensibility -- patient course management, creative shotmaking, and comfort in variable weather -- translates directly to Augusta's strategic demands. His major contention pedigree is extensive, with multiple top-10 finishes across all four majors, and a breakthrough at Augusta would feel like the natural culmination of years of steady improvement. His improved putting has added the final piece to a game that has always been built on elite ball-striking, and if the putter cooperates for four days, Fleetwood has every tool needed to claim a green jacket."
       },
       {
         "name": "Wyndham Clark",
@@ -151,10 +229,16 @@
         "top5Pct": 9.9,
         "top10Pct": 19.2,
         "makeCutPct": 73.4,
-        "rationale": "Clark's length off the tee and improving iron play make him a serious threat. He has the game to overpower Augusta's par 5s, and his confidence as a major champion is evident.",
+        "rationale": "Clark's length off the tee and improving iron play make him a serious threat. He has the game to overpower Augusta's par 5s, and his confidence as a major champion is evident. The 2023 U.S. Open champion has continued to develop his all-around game, and his approach play has taken a significant step forward in 2026.\n\nClark's driving distance ranks among the longest on Tour, giving him structural advantages on Augusta's par 5s that shorter players cannot access. His ability to reach all four par 5s in two shots with mid-irons creates birdie and eagle opportunities that can dramatically alter his scoring relative to the field. Combined with his athletic swing and competitive mindset, Clark has the tools to produce a special week.\n\nThe main question with Clark is consistency. His game can run hot and cold, and at Augusta, where four solid days are required, he needs to avoid the occasional loose round that has crept into his game. But when Clark is on, his combination of length, iron play, and putting is formidable, and his major championship experience gives him the mental framework to handle the pressure.",
+        "scenarioAnalysis": {
+          "bestCase": "Clark's length turns the par 5s into birdie fests, his iron play is sharp, and he produces a dominant 68-67-66-68 performance to win by multiple shots.",
+          "worstCase": "His driver misfires on Augusta's tree-lined fairways, he struggles with course management on the trickier holes, and he misses the cut or finishes outside the top 25.",
+          "mostLikely": "Clark shows flashes of brilliance mixed with the occasional wayward hole, finishes T10-T18 with a week that highlights both his immense potential and his remaining rough edges."
+        },
         "simulatorRank": 12,
         "scoutRank": 16,
-        "analystRank": 14
+        "analystRank": 14,
+        "whyTheyWillWin": "Wyndham Clark wins the 2026 Masters by unleashing his elite driving distance on Augusta's par 5s and letting his major championship experience guide him through the pressure-packed final nine. His ability to reach all four par 5s in two shots creates 2-3 shots per round of structural advantage over shorter players, and his improving iron play from the fairway has given him the precision to attack tucked pin positions with confidence. As a U.S. Open champion, Clark has already proven he can close out a major championship under intense pressure, and that credential provides a psychological foundation that many players in this range cannot match. His athletic swing generates effortless power, and his competitive mindset thrives on the biggest stages."
       },
       {
         "name": "Sahith Theegala",
@@ -162,10 +246,16 @@
         "top5Pct": 9.1,
         "top10Pct": 17.5,
         "makeCutPct": 71.5,
-        "rationale": "Theegala's aggressive style and elite ball-striking make him a fun watch at Augusta. He has the talent to go low, though his occasional wayward drives could spell trouble in the Georgia pines.",
+        "rationale": "Theegala's aggressive style and elite ball-striking make him a fun watch at Augusta. He has the talent to go low, though his occasional wayward drives could spell trouble in the Georgia pines. His flair for the dramatic and his fearless approach to the game make him one of the most exciting players in this field.\n\nTheegala's ball-striking numbers are elite across the board. He ranks in the top 15 on Tour in strokes gained tee-to-green, with particular strength in approach play and driving distance. That combination of length and accuracy gives him the tools to attack Augusta aggressively, and his birdie rate is among the highest on Tour.\n\nThe concern with Theegala is volatility. His aggressive style produces birdies in bunches but also leads to occasional blow-up holes that can derail a round. At Augusta, where the margin for error is razor-thin on many holes, Theegala needs to find the balance between his natural aggression and the patience Augusta demands. If he can manage that balance, his ceiling is as high as anyone in the field.",
+        "scenarioAnalysis": {
+          "bestCase": "Theegala's aggression pays off with a birdie blitz, he avoids the big numbers, and his charisma carries him to a thrilling maiden major victory.",
+          "worstCase": "His aggressive approach leads to multiple double bogeys through Amen Corner, his driver finds the trees too often, and he misses the cut after a disappointing weekend.",
+          "mostLikely": "Theegala produces an entertaining roller-coaster week with birdies and bogeys in equal measure, finishing T12-T20 with plenty of highlights and a few regrettable holes."
+        },
         "simulatorRank": 15,
         "scoutRank": 17,
-        "analystRank": 15
+        "analystRank": 15,
+        "whyTheyWillWin": "Sahith Theegala wins the 2026 Masters by turning his aggressive, fearless style into a birdie barrage that overwhelms the field. His ball-striking numbers are elite across the board -- top 15 in strokes gained tee-to-green, top 10 in approach play, and one of the highest birdie rates on Tour. When Theegala is on, he produces the kind of birdie runs that can vault a player from the middle of the pack to the top of the leaderboard in a single nine-hole stretch. His flair for the dramatic and his infectious energy create a momentum that feeds on itself, and at Augusta, where the roars echo through the pines and carry emotional weight, Theegala's charisma could become a genuine competitive advantage. If he can balance his natural aggression with the patience Augusta demands on its most treacherous holes, his ceiling is as high as anyone in the field."
       },
       {
         "name": "Justin Rose",
@@ -173,10 +263,16 @@
         "top5Pct": 8.6,
         "top10Pct": 16.9,
         "makeCutPct": 72.5,
-        "rationale": "The 2025 runner-up has more top-5 finishes at Augusta than almost anyone in the field. Rose's pedigree at this course is extraordinary, and last year's playoff loss will fuel his fire.",
+        "rationale": "The 2025 runner-up has more top-5 finishes at Augusta than almost anyone in the field. Rose's pedigree at this course is extraordinary, and last year's playoff loss will fuel his fire. His Augusta record is one of the finest of his generation -- multiple top-5 finishes, consistent contention, and a relationship with the course that borders on romantic.\n\nRose's game is perfectly calibrated for Augusta. His iron play from the fairway is precise and controlled, his ball flight works both ways on demand, and his experience navigating Augusta's treacherous greens under pressure is unmatched in the field. He knows every pin position, every subtle break, every spot where the ball feeds to the hole and every spot where it kicks away.\n\nThe 2025 playoff loss will be a significant motivational factor. Rose came agonizingly close to adding a green jacket to his collection, and that near-miss experience has a way of sharpening focus and deepening determination. At 45, time is running out for Rose to complete his Augusta dream, and that urgency may be the fuel that powers a special week.",
+        "scenarioAnalysis": {
+          "bestCase": "Rose channels the heartbreak of his 2025 playoff loss into a brilliant four-day performance, his deep Augusta knowledge proves decisive, and he claims the green jacket he has long deserved.",
+          "worstCase": "Age catches up with him, his length deficit becomes more pronounced, and he finishes T20-T30 as a sentimental favorite who could not quite muster one more big week.",
+          "mostLikely": "Rose competes near the top of the leaderboard through Saturday, mounts a Sunday charge, and finishes T5-T10 with another strong Augusta performance."
+        },
         "simulatorRank": 20,
         "scoutRank": 13,
-        "analystRank": 16
+        "analystRank": 16,
+        "whyTheyWillWin": "Justin Rose wins the 2026 Masters by channeling the heartbreak of his 2025 playoff loss into the performance of his career. Rose's Augusta record is among the finest in the modern era -- multiple top-5 finishes, consistent contention spanning over a decade, and a relationship with the course that borders on romantic. He knows every pin position, every subtle break on the greens, every strategic nuance that Augusta presents. His 2025 near-miss added another layer of institutional knowledge: he now knows exactly what it feels like to be in contention on Sunday at Augusta, to face the back nine with a green jacket on the line, and that experience is invaluable. At 45, Rose's physical tools have diminished slightly, but his craftsmanship, creativity, and deep course knowledge more than compensate. His silky ball flight and precision iron play remain world-class, and his motivation to finish the job he started in 2025 provides a fire that younger, more talented players may lack."
       },
       {
         "name": "Shane Lowry",
@@ -184,10 +280,16 @@
         "top5Pct": 7.8,
         "top10Pct": 15.5,
         "makeCutPct": 70.7,
-        "rationale": "Lowry's short game wizardry and major championship pedigree make him a legitimate contender. His ability to grind in tough conditions and his touch around the greens translate beautifully to Augusta.",
+        "rationale": "Lowry's short game wizardry and major championship pedigree make him a legitimate contender. His ability to grind in tough conditions and his touch around the greens translate beautifully to Augusta. The Irishman's Open Championship victory at Portrush demonstrated his ability to handle major championship pressure, and his game has only become more refined since.\n\nLowry's greatest asset at Augusta is his creativity around the greens. His ability to manufacture shots from difficult lies, to control spin and trajectory on delicate chip shots, and to read the subtle breaks on Augusta's undulating putting surfaces gives him an edge that pure ball-strikers do not possess. At a course where missing greens is inevitable, the ability to get up and down consistently is invaluable.\n\nThe Irishman's mental approach to Augusta has matured significantly. He no longer seems overwhelmed by the magnitude of the Masters, instead approaching each round with the calm confidence of a player who knows he belongs. His 2026 form has been solid, and his game is peaking at the right time for Augusta week.",
+        "scenarioAnalysis": {
+          "bestCase": "Lowry's short game is magical all week, his scrambling saves multiple pars per round, and he grinds his way to an unlikely but deeply satisfying Masters victory.",
+          "worstCase": "His ball-striking is off and even his elite short game cannot compensate, leading to a T20-T30 finish.",
+          "mostLikely": "Lowry plays four steady rounds, his short game keeps him in contention, and he finishes T10-T18 with a solid effort."
+        },
         "simulatorRank": 16,
         "scoutRank": 18,
-        "analystRank": 17
+        "analystRank": 17,
+        "whyTheyWillWin": "Shane Lowry wins the 2026 Masters by deploying his world-class short game and major championship pedigree to grind out a victory on Augusta's demanding greens. Lowry's touch around the greens is extraordinary -- his ability to manufacture shots from difficult lies, control spin on delicate chips, and read the subtle breaks on Augusta's undulating putting surfaces gives him an edge that pure ball-strikers do not possess. His 2019 Open Championship victory at Portrush proved he can handle the ultimate pressure of a major championship Sunday, and his growing Augusta familiarity has removed the intimidation factor that once held him back. If conditions turn tough -- wind, rain, or firm greens -- Lowry's Irish toughness and comfort in adverse weather become significant advantages over fair-weather players."
       },
       {
         "name": "Jordan Spieth",
@@ -195,10 +297,16 @@
         "top5Pct": 7.8,
         "top10Pct": 15.4,
         "makeCutPct": 70.2,
-        "rationale": "Nobody knows Augusta's greens like Spieth. The 2015 champion has had his struggles, but he consistently finds magic at this course, and a return to form here would surprise no one.",
+        "rationale": "Nobody knows Augusta's greens like Spieth. The 2015 champion has had his struggles, but he consistently finds magic at this course, and a return to form here would surprise no one. His 2015 Masters victory remains one of the most dominant performances in tournament history, and his knowledge of Augusta's greens is the deepest in the field.\n\nSpieth's relationship with Augusta is almost mystical. He has an uncanny ability to produce his best golf in April, finding lines on the greens that others cannot see and executing shots that seem to defy logic. His understanding of how Augusta's greens break, how the slopes feed the ball, and where to miss gives him an institutional advantage that transcends current form.\n\nThe concern with Spieth is his overall game. His ball-striking has been inconsistent, and his driving accuracy has at times been poor enough to put him in positions where even his legendary short game cannot save him. But at Augusta, Spieth seems to find a different gear, and his course knowledge provides a safety net that allows him to compete even when his swing is not at its sharpest.",
+        "scenarioAnalysis": {
+          "bestCase": "Augusta magic strikes again as Spieth channels his 2015 form, his putter gets white-hot, and he rolls back the years for an emotional second green jacket victory.",
+          "worstCase": "His inconsistent ball-striking continues, his driver finds trouble on several holes, and he misses the cut or finishes T25-T30.",
+          "mostLikely": "Spieth's Augusta knowledge keeps him competitive despite shaky ball-striking, he produces a few vintage moments, and finishes T10-T18 with a gutsy performance."
+        },
         "simulatorRank": 21,
         "scoutRank": 14,
-        "analystRank": 18
+        "analystRank": 18,
+        "whyTheyWillWin": "Jordan Spieth wins the 2026 Masters by doing what he has always done at Augusta: producing magic that defies explanation. Nobody in professional golf reads Augusta's greens with the same preternatural instinct. Spieth sees lines on these putting surfaces that other players cannot perceive, finds angles into pins that others do not know exist, and produces creative shots around the greens that seem to defy physics. His 2015 triumph remains one of the most dominant Masters performances in history, and that experience has imprinted Augusta's every nuance into his competitive DNA. His inconsistent ball-striking is a legitimate concern, but Augusta has a way of rewarding course knowledge and creativity over raw power, and nobody has more of either than Spieth on this particular course. A hot putter and a cooperative driver are all he needs to produce another magical April."
       },
       {
         "name": "Joaquin Niemann",
@@ -206,10 +314,16 @@
         "top5Pct": 6.7,
         "top10Pct": 13.7,
         "makeCutPct": 68.3,
-        "rationale": "Niemann's ball-striking is world-class, and his aggressive style suits the par 5s. The Chilean has the raw talent to contend, though limited Augusta reps are a concern.",
+        "rationale": "Niemann's ball-striking is world-class, and his aggressive style suits the par 5s. The Chilean has the raw talent to contend, though limited Augusta reps are a concern. His ball speed and driving distance are among the best in professional golf, giving him the length to reach all four par 5s in two shots.\n\nNiemann's iron play from the fairway is crisp and precise, with a penetrating ball flight that holds up in wind and produces the kind of spin control that Augusta's greens demand. His approach play from 150-200 yards is among the best in the field, and his ability to shape the ball both ways gives him access to pin positions that other players cannot attack.\n\nThe main concern with Niemann is his limited Augusta experience. Playing on the LIV circuit has reduced his exposure to the course, and while his talent is undeniable, Augusta National rewards institutional knowledge in a way that few other courses do. His aggressive style can also be a double-edged sword at a course that punishes mistakes harshly.",
+        "scenarioAnalysis": {
+          "bestCase": "Niemann's ball-striking brilliance overwhelms Augusta, his aggressive style produces a birdie barrage, and he becomes the first Chilean Masters champion.",
+          "worstCase": "His inexperience at Augusta leads to poor course management decisions, he finds trouble on the back nine, and he finishes T20-T30 or misses the cut.",
+          "mostLikely": "Niemann's talent shows in flashes but his limited Augusta experience costs him a few shots, and he finishes T12-T22 with a promising debut-like performance."
+        },
         "simulatorRank": 17,
         "scoutRank": 20,
-        "analystRank": 19
+        "analystRank": 19,
+        "whyTheyWillWin": "Joaquin Niemann wins the 2026 Masters by unleashing his world-class ball-striking on Augusta's fairways and greens. His driving distance and iron play from the fairway rank among the best in professional golf, giving him the physical tools to overpower Augusta's par 5s while maintaining the precision to attack the demanding par 4s. Niemann's aggressive style produces birdies in bunches, and at Augusta, where the par 5s offer the primary scoring opportunities, that aggression is a significant asset. His penetrating ball flight handles wind effectively, and his improving short game has addressed the areas that previously limited his potential on courses that demand creativity around the greens."
       },
       {
         "name": "Tony Finau",
@@ -217,10 +331,16 @@
         "top5Pct": 6.2,
         "top10Pct": 13.0,
         "makeCutPct": 68.0,
-        "rationale": "Finau's length and solid all-around game give him the tools to contend. His Augusta history is a mixed bag, but when he is on, few can match his firepower through the back nine.",
+        "rationale": "Finau's length and solid all-around game give him the tools to contend. His Augusta history is a mixed bag, but when he is on, few can match his firepower through the back nine. His driving distance ranks among the longest on Tour, and his athletic frame generates effortless power that translates to significant advantages on Augusta's par 5s.\n\nFinau's best Augusta performances have shown he has the game to contend at the highest level. His ability to reach the par 5s in two gives him structural scoring advantages, and his iron play from the fairway is solid enough to produce legitimate birdie chances throughout the round. When his putting is on, Finau can go as low as anyone in the field.\n\nThe inconsistency that has defined Finau's career remains the primary concern. He has the tools to win any tournament he enters, but he has sometimes struggled to put four quality rounds together in succession. At Augusta, where sustained excellence is required, that inconsistency is a meaningful risk factor.",
+        "scenarioAnalysis": {
+          "bestCase": "Finau's power game and improved putting click simultaneously for four rounds, and he posts a dominant performance to break through for his first major championship.",
+          "worstCase": "His inconsistency surfaces with a poor middle round that drops him out of contention, and he finishes T18-T28.",
+          "mostLikely": "Finau produces one or two excellent rounds mixed with a mediocre one, finishing T12-T20 with the lingering feeling that a major is within his reach."
+        },
         "simulatorRank": 18,
         "scoutRank": 19,
-        "analystRank": 20
+        "analystRank": 20,
+        "whyTheyWillWin": "Tony Finau wins the 2026 Masters by finally putting four complete rounds together at a course that rewards his rare combination of length and athleticism. Finau's driving distance ranks among the longest on Tour, giving him structural scoring advantages on Augusta's four par 5s that shorter hitters simply cannot access. When his putting is on -- and it has shown flashes of brilliance throughout 2026 -- Finau's combination of power, iron play, and touch makes him capable of going as low as anyone in the field. His athletic frame and effortless swing generate the kind of ball speed that makes Augusta's most demanding holes play shorter, and his improving consistency suggests that the breakthrough at a major level is a matter of when, not if."
       },
       {
         "name": "Min Woo Lee",
@@ -228,10 +348,11 @@
         "top5Pct": 5.5,
         "top10Pct": 11.6,
         "makeCutPct": 65.9,
-        "rationale": "The athletic Australian has serious game and the swagger to match. Lee's power and creativity could unlock Augusta, though his experience deficit at the Masters is a legitimate concern.",
+        "rationale": "The athletic Australian has serious game and the swagger to match. Lee's power and creativity could unlock Augusta, though his experience deficit at the Masters is a legitimate concern. His combination of driving distance, creative shotmaking, and fearless competitive temperament makes him one of the most intriguing young players in the field.\n\nLee's game is built on power and flair. His driving distance ranks among the longest on Tour, and his ability to shape the ball creatively gives him options that more mechanical players do not possess. At Augusta, where shotmaking and imagination are rewarded, Lee's natural creativity could be a significant asset.\n\nThe experience deficit is real. Lee has limited Masters appearances, and Augusta National is a course that typically takes several visits to fully understand. The green complexes, the slopes, the wind patterns, the strategic decisions that only experience can teach -- all of these represent a learning curve that even the most talented players must climb.",
         "simulatorRank": 19,
         "scoutRank": 22,
-        "analystRank": 21
+        "analystRank": 21,
+        "whyTheyWillWin": "Min Woo Lee wins the 2026 Masters by combining his prodigious power with the creative shotmaking that Augusta specifically rewards. The athletic Australian has a flair for producing imaginative shots that other players simply do not attempt -- creative bump-and-runs, towering lob shots over bunkers, and aggressive lines through tight corridors that showcase his natural talent. His driving distance is among the longest on Tour, and his ball speed generates the carry needed to reach all four par 5s in two with relative ease. While his limited Augusta experience is a concern, Lee's fearlessness and natural ability suggest he will adapt quickly to the course's demands, and his swagger and confidence could carry him through the pressure of a Masters Sunday."
       },
       {
         "name": "Robert MacIntyre",
@@ -239,10 +360,11 @@
         "top5Pct": 5.0,
         "top10Pct": 10.8,
         "makeCutPct": 64.2,
-        "rationale": "The fiery Scot has the shotmaking chops and competitive fire to handle Augusta. MacIntyre's left-to-right ball flight is a real asset on several key holes along the back nine.",
+        "rationale": "The fiery Scot has the shotmaking chops and competitive fire to handle Augusta. MacIntyre's left-to-right ball flight is a real asset on several key holes along the back nine. His Scottish upbringing has produced a player comfortable in variable conditions, with the ability to manufacture shots that American-trained players often struggle to produce.\n\nMacIntyre's game is built on grit and shotmaking ability. He can shape the ball both ways on demand, control trajectory in the wind, and produce the kind of creative shots that Augusta's second shots demand. His left-to-right ball flight is particularly useful on holes like the 10th, 13th, and 15th, where that shape is rewarded.\n\nHis competitive fire is another asset. MacIntyre plays with an intensity and passion that can carry him through difficult stretches, and his ability to maintain focus under pressure has been demonstrated in multiple high-pressure situations on both the PGA and DP World Tours.",
         "simulatorRank": 22,
         "scoutRank": 21,
-        "analystRank": 22
+        "analystRank": 22,
+        "whyTheyWillWin": "Robert MacIntyre wins the 2026 Masters by deploying his natural left-to-right ball flight and fierce competitive fire to navigate Augusta's back nine with precision and passion. The Scot's ball flight is a genuine asset on multiple key holes -- the 10th, 13th, and 15th all reward a left-to-right shape, and MacIntyre's ability to produce that flight on command gives him access to lines that right-to-left players must play away from. His Scottish upbringing has produced a player comfortable in all weather conditions, with the shotmaking creativity and touch that Augusta rewards. His competitive intensity is among the fiercest in the field, and his PGA Tour victories confirm he has the ability to close out tournaments against the best players in the world."
       },
       {
         "name": "Sungjae Im",
@@ -250,10 +372,11 @@
         "top5Pct": 4.5,
         "top10Pct": 9.9,
         "makeCutPct": 64.8,
-        "rationale": "Im's tireless work ethic and consistent ball-striking have yielded several strong Augusta finishes. He knows the course well and rarely beats himself with mistakes.",
+        "rationale": "Im's tireless work ethic and consistent ball-striking have yielded several strong Augusta finishes. He knows the course well and rarely beats himself with mistakes. The South Korean iron worker is one of the most dependable ball-strikers in professional golf, and his consistency year after year at Augusta speaks to a game that is well-suited to the course's demands.\n\nIm's approach to Augusta is methodical and disciplined. He plays the course with patience, avoiding the mistakes that lead to big numbers and capitalizing on the scoring opportunities when they present themselves. His iron play from the fairway is precise and reliable, and his ability to find the correct portions of Augusta's greens gives him legitimate birdie chances without taking undue risk.\n\nThe concern with Im is his ceiling. While his floor is very high -- he rarely has a terrible week at Augusta -- his best may not be quite good enough to win. His putting can be streaky, and his lack of length relative to the bombers limits his par-5 scoring potential.",
         "simulatorRank": 23,
         "scoutRank": 23,
-        "analystRank": 23
+        "analystRank": 23,
+        "whyTheyWillWin": "Sungjae Im wins the 2026 Masters by deploying his tireless consistency and disciplined approach over four grinding rounds at Augusta National. Im's ball-striking from the fairway is among the most reliable in professional golf, and his ability to avoid mistakes -- the double bogeys, the penalty shots, the mental errors that derail more volatile players -- gives him a floor at Augusta that few can match. His multiple solid Masters finishes have built genuine course knowledge, and his patient, methodical approach to the course mirrors the style that has produced many green jacket winners. If the course plays tough and scoring is difficult, Im's ability to grind out pars while others make bogeys could quietly propel him to the top of the leaderboard."
       },
       {
         "name": "Dustin Johnson",
@@ -261,10 +384,11 @@
         "top5Pct": 3.7,
         "top10Pct": 8.7,
         "makeCutPct": 61.4,
-        "rationale": "The 2020 champion's talent is undeniable, but the LIV schedule and age have dulled his edge. Still, DJ's length and Augusta knowledge make him dangerous when the azaleas are in bloom.",
+        "rationale": "The 2020 champion's talent is undeniable, but the LIV schedule and age have dulled his edge. Still, DJ's length and Augusta knowledge make him dangerous when the azaleas are in bloom. His dominant 2020 victory -- a record-setting 20-under-par performance -- demonstrated the heights his game can reach when everything clicks at Augusta.\n\nJohnson's physical gifts remain impressive despite the passage of time. His driving distance, while no longer the longest on Tour, is still more than sufficient to reach all four par 5s in two, and his soft hands around the greens have always been an underrated weapon at Augusta. His ability to hit towering iron shots that land softly on firm, fast greens is a skill that few players possess.\n\nThe concerns are real: Johnson's LIV schedule means fewer competitive reps, his motivation has been questioned, and Father Time waits for no one. But Augusta magic is real, and Johnson's champion status gives him a reservoir of confidence and course knowledge that can overcome even the most significant form concerns.",
         "simulatorRank": 26,
         "scoutRank": 24,
-        "analystRank": 24
+        "analystRank": 24,
+        "whyTheyWillWin": "Dustin Johnson wins the 2026 Masters by summoning the Augusta magic that produced his record-setting 2020 victory. DJ's 20-under-par performance that year demonstrated the heights his game can reach when everything clicks at this course, and while his best days may be behind him, Augusta has a unique ability to elevate players who have tasted glory on its grounds. Johnson's physical gifts remain impressive -- his driving distance is still more than sufficient to reach all four par 5s in two, and his famously soft hands around the greens have always been an underrated weapon at Augusta. His champion's knowledge of every green contour, every pin position, and every strategic subtlety provides an institutional advantage that compensates for any decline in competitive sharpness."
       },
       {
         "name": "Adam Scott",
@@ -272,10 +396,11 @@
         "top5Pct": 3.3,
         "top10Pct": 8.1,
         "makeCutPct": 60.1,
-        "rationale": "The 2013 champion continues to defy age with his silky swing and deep Augusta knowledge. Scott's experience through Amen Corner is worth its weight in green jackets.",
+        "rationale": "The 2013 champion continues to defy age with his silky swing and deep Augusta knowledge. Scott's experience through Amen Corner is worth its weight in green jackets. The elegant Australian has one of the most aesthetically pleasing swings in golf history, and that mechanical efficiency has allowed him to remain competitive well into his 40s.\n\nScott's Augusta record extends far beyond his 2013 victory. He has multiple top-10 finishes at the Masters, and his consistency here speaks to a game that is perfectly suited to the course's demands. His experience navigating Augusta's treacherous back nine under pressure is a commodity that younger players cannot buy.\n\nAt 45, Scott is playing for legacy at Augusta. Every Masters could be his last serious contention, and that awareness can sharpen focus and deepen determination. His physical tools have diminished slightly, but his course knowledge, experience, and the mechanical efficiency of his swing continue to make him a factor.",
         "simulatorRank": 27,
         "scoutRank": 25,
-        "analystRank": 25
+        "analystRank": 25,
+        "whyTheyWillWin": "Adam Scott wins the 2026 Masters by leveraging his deep institutional knowledge and mechanically efficient swing to navigate Augusta National with the precision and composure of a seasoned champion. The 2013 Masters winner has nearly two decades of Augusta experience, giving him the deepest course knowledge in the field. He knows every green contour, every wind pattern, every strategic decision point with an intimacy that younger players cannot match. His swing remains one of the most aesthetically pleasing and mechanically sound in professional golf, and that efficiency has allowed him to remain competitive well into his 40s. Playing for legacy at this stage of his career, Scott brings a clarity of purpose and freedom from expectation that could unlock a performance for the ages."
       },
       {
         "name": "Russell Henley",
@@ -283,10 +408,11 @@
         "top5Pct": 3.2,
         "top10Pct": 7.7,
         "makeCutPct": 60.1,
-        "rationale": "Henley's iron play ranks among the best on Tour, and his steady approach suits Augusta's demand for precision. He is the kind of under-the-radar pick that sharp bettors love.",
+        "rationale": "Henley's iron play ranks among the best on Tour, and his steady approach suits Augusta's demand for precision. He is the kind of under-the-radar pick that sharp bettors love. His strokes gained approach consistently ranks in the top 20 on the PGA Tour, and his ability to control distance and direction with his mid-irons is a significant asset at Augusta.\n\nHenley's game is built on precision rather than power. He is not the longest off the tee, but his accuracy and his ability to place approach shots on the correct portion of Augusta's greens give him birdie opportunities that less precise players do not get. His Georgia roots also mean he is comfortable with the turf, the climate, and the culture of Augusta, an intangible advantage that should not be dismissed.\n\nThe question with Henley is whether his ceiling is high enough to win a major championship. His best weeks on Tour have produced victories, but the intensity of a Masters Sunday is a different animal. His ability to handle that pressure remains unproven at the highest level.",
         "simulatorRank": 24,
         "scoutRank": 27,
-        "analystRank": 26
+        "analystRank": 26,
+        "whyTheyWillWin": "Russell Henley wins the 2026 Masters by deploying his elite iron play and steady Georgia demeanor to quietly navigate Augusta National while others beat themselves with mistakes. Henley's strokes gained approach consistently ranks in the top 20 on the PGA Tour, and his ability to control distance and direction with his mid-irons gives him a significant edge at a course where approach play is the most important skill. His Georgia roots mean he is comfortable with the turf, the climate, and the culture of Augusta, an intangible advantage that should not be dismissed. His under-the-radar profile means he can play without the media attention and expectations that burden the favorites, allowing him to focus entirely on his game and let his precision do the talking."
       },
       {
         "name": "Cameron Young",
@@ -294,10 +420,11 @@
         "top5Pct": 2.9,
         "top10Pct": 7.0,
         "makeCutPct": 58.6,
-        "rationale": "Young's prodigious length and improved short game make him an intriguing outsider. He can reach the par 5s in two with ease, giving him birdie looks others simply do not get.",
+        "rationale": "Young's prodigious length and improved short game make him an intriguing outsider. He can reach the par 5s in two with ease, giving him birdie looks others simply do not get. His driving distance is among the longest on Tour, and his ball speed generates the kind of carry that makes Augusta's par 5s play like par 4s.\n\nYoung's game has matured significantly in recent seasons. His short game, once a glaring weakness, has improved to the point where it is no longer a liability, and his putting has shown flashes of brilliance. When his putter is hot, Young's combination of length and touch makes him capable of posting the kind of low numbers that can win at Augusta.\n\nThe volatility in Young's game remains a concern. His aggressive style produces dramatic results -- low rounds and high rounds in equal measure -- and at Augusta, where consistency over four days is typically required, that volatility is a risk factor. But his ceiling is undeniable, and on the right week, Young has the raw tools to contend.",
         "simulatorRank": 25,
         "scoutRank": 28,
-        "analystRank": 27
+        "analystRank": 27,
+        "whyTheyWillWin": "Cameron Young wins the 2026 Masters by unleashing his prodigious driving distance on Augusta's par 5s and converting the short-iron approach shots that his length creates. Young's ball speed is among the highest on Tour, and his carry distance makes Augusta's par 5s play like par 4s -- he reaches them all in two with ease, creating eagle and birdie opportunities that shorter hitters simply cannot access. His improved short game has addressed the primary weakness in his game, and when his putter cooperates, Young is capable of posting the kind of extremely low rounds -- 63s and 64s -- that can vault a player from the middle of the pack to the top of the leaderboard. His volatility is a concern over four rounds, but his ceiling on the right week is among the highest in the field."
       },
       {
         "name": "Keegan Bradley",
@@ -305,10 +432,11 @@
         "top5Pct": 2.5,
         "top10Pct": 6.4,
         "makeCutPct": 57.6,
-        "rationale": "The Ryder Cup captain's competitive fire and major championship experience cannot be discounted. Bradley's game has quietly been in excellent form heading into Augusta week.",
+        "rationale": "The Ryder Cup captain's competitive fire and major championship experience cannot be discounted. Bradley's game has quietly been in excellent form heading into Augusta week. His 2011 PGA Championship victory proved he can handle the pressure of major championship golf, and his appointment as 2025 Ryder Cup captain has only elevated his profile and confidence.\n\nBradley's game is built on grit and competitiveness. He may not have the raw physical tools of the bombers ahead of him, but his determination, his ability to grind, and his major championship pedigree make him a player who can never be counted out. His iron play has been in excellent form in 2026, and his driving accuracy gives him the ability to keep the ball in play on Augusta's tree-lined fairways.\n\nThe Ryder Cup captaincy has given Bradley a new confidence and visibility that seems to have elevated his game. He plays with purpose and determination, and his competitive fire burns hottest in the biggest events.",
         "simulatorRank": 28,
         "scoutRank": 26,
-        "analystRank": 28
+        "analystRank": 28,
+        "whyTheyWillWin": "Keegan Bradley wins the 2026 Masters by channeling the competitive fire and renewed confidence of his Ryder Cup captaincy into a gritty, determined four-day performance at Augusta National. Bradley's 2011 PGA Championship victory proved he has the ability to win a major championship, and his appointment as Ryder Cup captain has elevated his profile, his confidence, and his determination. His iron play has been in excellent form in 2026, and his driving accuracy keeps the ball in play on Augusta's tree-lined fairways. Bradley plays with the kind of intensity and purpose that can carry a player through difficult stretches, and his ability to grind, compete, and will himself to good scores makes him a dangerous outsider."
       },
       {
         "name": "Corey Conners",
@@ -316,10 +444,11 @@
         "top5Pct": 2.1,
         "top10Pct": 5.7,
         "makeCutPct": 56.6,
-        "rationale": "The Canadian ball-striking machine consistently produces strong results at Augusta. Conners will not beat himself, and his precision off the tee keeps him in play on every hole.",
+        "rationale": "The Canadian ball-striking machine consistently produces strong results at Augusta. Conners will not beat himself, and his precision off the tee keeps him in play on every hole. His strokes gained tee-to-green is among the most consistent on Tour, and his ability to hit fairways and greens with metronomic regularity gives him a floor at Augusta that few players can match.\n\nConners's game is the definition of consistency. He rarely has a bad day, rarely posts a high number, and his ball-striking from tee to green is as reliable as any player in the field. At Augusta, where avoiding big numbers is often as important as making birdies, that reliability is a significant asset.\n\nThe concern with Conners is his scoring ability. His putting and short game, while improved, are not at the level of the elite players in the field, and his conservative style sometimes prevents him from going low enough to win. At Augusta, where the leaders typically post at least one round in the mid-60s, Conners needs his putter to cooperate.",
         "simulatorRank": 29,
         "scoutRank": 29,
-        "analystRank": 29
+        "analystRank": 29,
+        "whyTheyWillWin": "Corey Conners wins the 2026 Masters by deploying his metronomic ball-striking to produce four steady, mistake-free rounds at Augusta National. Conners's strokes gained tee-to-green is among the most consistent on Tour, and his ability to hit fairways and greens with remarkable regularity gives him a floor at Augusta that few players can match. His precision from tee to green consistently produces birdie opportunities, and his improving short game and putting have added the scoring dimension that was previously missing. At a course where avoiding big numbers is often as important as making birdies, Conners's reliability is a significant competitive advantage."
       },
       {
         "name": "Justin Thomas",
@@ -327,16 +456,182 @@
         "top5Pct": 2.0,
         "top10Pct": 5.2,
         "makeCutPct": 54.2,
-        "rationale": "JT's talent has never been in question, but his form has been inconsistent. When he is on, he has the complete game to contend at Augusta, and he has flashed brilliance here before.",
+        "rationale": "JT's talent has never been in question, but his form has been inconsistent. When he is on, he has the complete game to contend at Augusta, and he has flashed brilliance here before. His two major championships and his 15 PGA Tour victories speak to a level of talent that is among the best of his generation.\n\nThomas's game, when firing on all cylinders, is perfectly suited to Augusta. His iron play is precise, his distance is adequate to reach the par 5s in two, and his competitive intensity is among the fiercest in the field. His ability to produce low rounds under pressure has been demonstrated repeatedly throughout his career.\n\nThe frustration with Thomas is the inconsistency that has plagued his recent seasons. He can look like the best player in the world one week and struggle to make a cut the next, and that unpredictability makes him a risky pick at Augusta. But the talent is undeniable, and a return to form at the right time could produce fireworks.",
         "simulatorRank": 30,
         "scoutRank": 30,
-        "analystRank": 30
+        "analystRank": 30,
+        "whyTheyWillWin": "Justin Thomas wins the 2026 Masters by rediscovering the form that made him one of the best players in the world and channeling it into a brilliant four-day performance at Augusta. JT's talent has never been in question -- two major championships, 15 PGA Tour victories, and a complete game that covers every aspect of the sport speak to a level of ability that is among the best of his generation. When Thomas is on, his iron play is laser-precise, his putting is clutch, and his competitive intensity is as fierce as anyone in the field. Augusta has a way of rewarding talent and experience over current form, and Thomas has both in abundance. A return to peak performance at the right time could produce a green jacket."
+      },
+      {
+        "name": "Max Homa",
+        "winPct": 0.3,
+        "top5Pct": 1.8,
+        "top10Pct": 4.8,
+        "makeCutPct": 53.0,
+        "rationale": "Homa's shotmaking ability and creative ball flight are well-suited to Augusta's demands. His ability to shape the ball both ways on command gives him access to pin positions that other players must play away from. The Californian has developed into one of the most complete players on Tour, and his game continues to improve each season.\n\nHis Augusta experience is growing, and with each visit he gains a deeper understanding of the course's subtleties. Homa's personality and competitiveness make him a fan favorite, but his game has substance to match the style.",
+        "simulatorRank": 31,
+        "scoutRank": 31,
+        "analystRank": 31
+      },
+      {
+        "name": "Tom Kim",
+        "winPct": 0.28,
+        "top5Pct": 1.7,
+        "top10Pct": 4.5,
+        "makeCutPct": 52.0,
+        "rationale": "The young South Korean star brings an infectious energy and a game that is rapidly maturing. Kim's iron play is precise, his competitiveness is fierce, and his ability to handle pressure belies his age. His multiple PGA Tour victories have shown he can close out tournaments against the best players in the world.\n\nKim's limited Augusta experience is his biggest drawback, but his ball-striking and mental toughness suggest he will figure the course out quickly. His ability to control his ball flight in the wind and his improving short game make him an intriguing mid-range pick.",
+        "simulatorRank": 32,
+        "scoutRank": 32,
+        "analystRank": 32
+      },
+      {
+        "name": "Sam Burns",
+        "winPct": 0.25,
+        "top5Pct": 1.6,
+        "top10Pct": 4.2,
+        "makeCutPct": 51.0,
+        "rationale": "Burns has established himself as one of the best players on the PGA Tour with multiple victories and consistent top-10 finishes. His powerful game and improved putting give him the tools to contend at Augusta. His driving distance and approach play are solid, and his competitive fire makes him dangerous in any field.\n\nHis Augusta record is still developing, but Burns has shown enough in his Masters appearances to suggest the course suits his eye. His ability to score on par 5s and his improving scrambling percentage make him a player to watch.",
+        "simulatorRank": 33,
+        "scoutRank": 33,
+        "analystRank": 33
+      },
+      {
+        "name": "Matt Fitzpatrick",
+        "winPct": 0.22,
+        "top5Pct": 1.5,
+        "top10Pct": 4.0,
+        "makeCutPct": 50.5,
+        "rationale": "The 2022 U.S. Open champion brings elite precision and a major championship pedigree to Augusta. Fitzpatrick's iron play ranks among the best in the world, and his course management is textbook. His lack of length is a concern at Augusta, where the par 5s reward distance, but his accuracy and putting can compensate.\n\nFitzpatrick's experience at Augusta is growing, and his analytical approach to the course mirrors the precision that defines his game. His scrambling and putting can keep him competitive even when he cannot reach the par 5s in two.",
+        "simulatorRank": 34,
+        "scoutRank": 35,
+        "analystRank": 34
+      },
+      {
+        "name": "Will Zalatoris",
+        "winPct": 0.2,
+        "top5Pct": 1.4,
+        "top10Pct": 3.8,
+        "makeCutPct": 49.5,
+        "rationale": "Zalatoris burst onto the scene with a stunning runner-up finish on his Masters debut in 2021 and has continued to show an affinity for Augusta National. His ball-striking is among the purest in the game, and his thin, towering iron shots are ideally suited to holding Augusta's firm greens. Health has been the main concern, but when he is fit, Zalatoris has the game to contend at the highest level.\n\nHis Augusta track record already includes multiple strong finishes, and his fearless approach to the course suggests he will be a factor for years to come.",
+        "simulatorRank": 35,
+        "scoutRank": 34,
+        "analystRank": 35
+      },
+      {
+        "name": "Tyrrell Hatton",
+        "winPct": 0.18,
+        "top5Pct": 1.3,
+        "top10Pct": 3.5,
+        "makeCutPct": 48.5,
+        "rationale": "Hatton's fiery temperament and elite ball-striking make him a compelling dark horse at Augusta. The Englishman has shown he can compete at the highest level with multiple Ryder Cup appearances and strong finishes in major championships. His game has the shotmaking creativity Augusta rewards, though his emotional volatility can work against him on a course that demands patience.\n\nHis move to LIV has reduced his competitive exposure, but Hatton's talent is undeniable and his aggressive style could produce fireworks at Augusta.",
+        "simulatorRank": 36,
+        "scoutRank": 36,
+        "analystRank": 36
+      },
+      {
+        "name": "Sepp Straka",
+        "winPct": 0.16,
+        "top5Pct": 1.2,
+        "top10Pct": 3.2,
+        "makeCutPct": 47.5,
+        "rationale": "The Austrian has quietly established himself as one of the most consistent players on the PGA Tour. Straka's ball-striking is solid across the board, and his steady approach to tournament golf translates well to Augusta's demand for patience and precision. His multiple PGA Tour victories demonstrate he can close out tournaments, and his game is well-rounded enough to handle Augusta's varied challenges.\n\nStraka's calm demeanor and methodical approach are assets at a course where emotional control is crucial.",
+        "simulatorRank": 37,
+        "scoutRank": 37,
+        "analystRank": 37
+      },
+      {
+        "name": "Jason Day",
+        "winPct": 0.15,
+        "top5Pct": 1.1,
+        "top10Pct": 3.0,
+        "makeCutPct": 47.0,
+        "rationale": "The former world number one and 2015 PGA champion has deep Augusta experience and a game that once made him the most feared player in golf. Day's multiple top-5 Masters finishes, including his heartbreaking near-misses, speak to a genuine affinity for the course. While his best days may be behind him, Day's knowledge of Augusta and his ability to produce flashes of his former brilliance make him a sentimental and legitimate long shot.\n\nHis short game and putting remain elite, and at Augusta those skills can compensate for diminished length off the tee.",
+        "simulatorRank": 39,
+        "scoutRank": 38,
+        "analystRank": 38
+      },
+      {
+        "name": "Billy Horschel",
+        "winPct": 0.14,
+        "top5Pct": 1.0,
+        "top10Pct": 2.8,
+        "makeCutPct": 46.0,
+        "rationale": "Horschel is a gritty competitor with a FedExCup title and multiple PGA Tour victories to his name. His game is built on determination and solid ball-striking, and his ability to grind out results in difficult conditions translates to Augusta's demanding test. His Augusta record is modest, but his competitive drive and improving form make him a player who could surprise.\n\nHis iron play and putting are consistent enough to keep him in contention if his driver cooperates on Augusta's tree-lined fairways.",
+        "simulatorRank": 38,
+        "scoutRank": 39,
+        "analystRank": 39
+      },
+      {
+        "name": "Brian Harman",
+        "winPct": 0.13,
+        "top5Pct": 0.9,
+        "top10Pct": 2.5,
+        "makeCutPct": 45.0,
+        "rationale": "The 2023 Open Championship winner brings major championship pedigree and a rock-solid short game to Augusta. Harman's putting is among the best on Tour, and his ability to grind out pars from difficult positions is a valuable asset at a course that punishes mistakes. His lack of length is a significant concern at Augusta, but his accuracy, course management, and creativity around the greens can partially compensate.\n\nHarman's Georgia ties add a local knowledge element, and his quiet confidence makes him a dangerous outsider.",
+        "simulatorRank": 40,
+        "scoutRank": 40,
+        "analystRank": 40
+      },
+      {
+        "name": "Akshay Bhatia",
+        "winPct": 0.12,
+        "top5Pct": 0.8,
+        "top10Pct": 2.2,
+        "makeCutPct": 44.0,
+        "rationale": "Bhatia is one of the most exciting young talents in the game, with a left-handed swing that produces towering iron shots and creative shotmaking. His multiple PGA Tour victories at a young age demonstrate his prodigious talent, and his game has the flair that Augusta rewards. His limited Augusta experience is the primary concern, but his fearlessness and natural ability suggest he will adapt quickly.\n\nHis ability to shape the ball and his improving short game make him a fascinating long-term Masters prospect.",
+        "simulatorRank": 41,
+        "scoutRank": 41,
+        "analystRank": 41
+      },
+      {
+        "name": "Sergio Garcia",
+        "winPct": 0.11,
+        "top5Pct": 0.7,
+        "top10Pct": 2.0,
+        "makeCutPct": 43.0,
+        "rationale": "The 2017 Masters champion returns to the course where he produced the most emotional victory of his career. Garcia's deep Augusta knowledge and his champion's perspective give him an edge that his current form might not suggest. His ball-striking remains solid when he is engaged, and his experience through Amen Corner is extensive.\n\nThe LIV schedule and his diminished competitive edge are legitimate concerns, but Garcia's love for Augusta and his desire to relive the glory of 2017 provide powerful motivation.",
+        "simulatorRank": 43,
+        "scoutRank": 42,
+        "analystRank": 42
+      },
+      {
+        "name": "Chris Kirk",
+        "winPct": 0.1,
+        "top5Pct": 0.6,
+        "top10Pct": 1.8,
+        "makeCutPct": 42.0,
+        "rationale": "Kirk's remarkable comeback story and his strong recent PGA Tour form make him a compelling outsider at Augusta. His ball-striking is dependable, his putting can get hot, and his Georgia roots mean he is comfortable in the Augusta environment. Kirk's game is built on consistency rather than flash, but at a course where avoiding big numbers is crucial, that reliability is an asset.\n\nHis steady approach and mental resilience give him a path to a solid Masters week.",
+        "simulatorRank": 42,
+        "scoutRank": 43,
+        "analystRank": 43
+      },
+      {
+        "name": "Davis Thompson",
+        "winPct": 0.1,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 41.0,
+        "rationale": "Thompson is a rising young star with excellent ball-striking and a game that is maturing rapidly. The Georgia native grew up playing courses in Augusta's shadow and has a natural comfort with the environment. His driving distance and iron play give him the physical tools to compete, and his local knowledge of the Georgia climate and turf conditions is a small but meaningful advantage.\n\nHis limited Masters experience is the main concern, but his trajectory suggests he will be a factor at Augusta for years to come.",
+        "simulatorRank": 44,
+        "scoutRank": 44,
+        "analystRank": 44
+      },
+      {
+        "name": "Rickie Fowler",
+        "winPct": 0.1,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 40.0,
+        "rationale": "Fowler's Augusta history includes a memorable T5 finish and several other solid performances that speak to a genuine course fit. His flat, powerful swing produces a penetrating ball flight that handles Augusta's wind effectively, and his short game creativity gives him the touch required around the greens. While his overall game has been inconsistent in recent seasons, Fowler has shown he can elevate for the Masters.\n\nHis experience and popularity make him a fan favorite at Augusta, and his competitive spirit ensures he will give maximum effort on the biggest stage.",
+        "simulatorRank": 45,
+        "scoutRank": 45,
+        "analystRank": 45
       }
     ]
   },
   "simulator": {
     "modelName": "The Simulator",
-    "emoji": "\ud83c\udfb2",
+    "emoji": "🎲",
     "description": "Monte Carlo simulation engine running 10,000 tournament simulations",
     "methodology": "The Simulator runs 10,000 full tournament simulations using a player's strokes gained profile (off-the-tee, approach, around-the-green, putting) mapped against Augusta National's hole-by-hole demands. Historical course fit, driving distance, proximity to hole on par 5s, and scoring variance are weighted to produce probabilistic outcomes for each player across all four rounds.",
     "rankings": [
@@ -549,12 +844,117 @@
         "top5Pct": 1.5,
         "top10Pct": 4.0,
         "makeCutPct": 50.0
+      },
+      {
+        "name": "Max Homa",
+        "winPct": 0.18,
+        "top5Pct": 1.3,
+        "top10Pct": 3.8,
+        "makeCutPct": 49.0
+      },
+      {
+        "name": "Tom Kim",
+        "winPct": 0.16,
+        "top5Pct": 1.2,
+        "top10Pct": 3.5,
+        "makeCutPct": 48.0
+      },
+      {
+        "name": "Sam Burns",
+        "winPct": 0.15,
+        "top5Pct": 1.1,
+        "top10Pct": 3.2,
+        "makeCutPct": 47.0
+      },
+      {
+        "name": "Matt Fitzpatrick",
+        "winPct": 0.14,
+        "top5Pct": 1.0,
+        "top10Pct": 3.0,
+        "makeCutPct": 46.0
+      },
+      {
+        "name": "Will Zalatoris",
+        "winPct": 0.13,
+        "top5Pct": 0.9,
+        "top10Pct": 2.8,
+        "makeCutPct": 45.0
+      },
+      {
+        "name": "Tyrrell Hatton",
+        "winPct": 0.12,
+        "top5Pct": 0.8,
+        "top10Pct": 2.5,
+        "makeCutPct": 44.0
+      },
+      {
+        "name": "Sepp Straka",
+        "winPct": 0.11,
+        "top5Pct": 0.7,
+        "top10Pct": 2.3,
+        "makeCutPct": 43.0
+      },
+      {
+        "name": "Jason Day",
+        "winPct": 0.1,
+        "top5Pct": 0.7,
+        "top10Pct": 2.2,
+        "makeCutPct": 43.0
+      },
+      {
+        "name": "Billy Horschel",
+        "winPct": 0.1,
+        "top5Pct": 0.6,
+        "top10Pct": 2.0,
+        "makeCutPct": 42.0
+      },
+      {
+        "name": "Brian Harman",
+        "winPct": 0.09,
+        "top5Pct": 0.5,
+        "top10Pct": 1.8,
+        "makeCutPct": 41.0
+      },
+      {
+        "name": "Akshay Bhatia",
+        "winPct": 0.08,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 40.0
+      },
+      {
+        "name": "Sergio Garcia",
+        "winPct": 0.08,
+        "top5Pct": 0.4,
+        "top10Pct": 1.4,
+        "makeCutPct": 39.0
+      },
+      {
+        "name": "Chris Kirk",
+        "winPct": 0.07,
+        "top5Pct": 0.4,
+        "top10Pct": 1.2,
+        "makeCutPct": 38.0
+      },
+      {
+        "name": "Davis Thompson",
+        "winPct": 0.06,
+        "top5Pct": 0.3,
+        "top10Pct": 1.0,
+        "makeCutPct": 37.0
+      },
+      {
+        "name": "Rickie Fowler",
+        "winPct": 0.05,
+        "top5Pct": 0.3,
+        "top10Pct": 1.0,
+        "makeCutPct": 36.0
       }
     ]
   },
   "scout": {
     "modelName": "The Scout",
-    "emoji": "\ud83d\udd0d",
+    "emoji": "🔍",
     "description": "Weighted intangibles scorer evaluating qualitative factors",
     "methodology": "The Scout assigns weighted scores across five key intangible dimensions: recent Momentum (25%), Augusta Experience (25%), Major Clutch factor (20%), Weather Fit for expected conditions (15%), and raw Intangibles including confidence, narrative arc, and mental state (15%). Each dimension is scored 0-100 and combined into a weighted total that drives probabilistic rankings.",
     "rankings": [
@@ -571,6 +971,13 @@
           "weatherFit": 80,
           "intangibles": 98,
           "total": 91.4
+        },
+        "scoreExplanations": {
+          "momentum": "Three wins and a runner-up in his last six starts demonstrate peak form heading into Augusta week.",
+          "augustaExperience": "The defending champion knows every undulation and pin position after his emotional 2025 Grand Slam breakthrough.",
+          "majorClutch": "His 2025 Masters victory under immense pressure, plus four other major titles, confirm elite closing ability.",
+          "weatherFit": "Strong in calm conditions but his high ball flight can be exposed in gusty winds at Augusta.",
+          "intangibles": "The narrative arc of a liberated defending champion with nothing left to prove gives him an almost unfair mental edge."
         }
       },
       {
@@ -586,6 +993,13 @@
           "weatherFit": 82,
           "intangibles": 85,
           "total": 88.9
+        },
+        "scoreExplanations": {
+          "momentum": "Three wins in seven starts in 2026 put him in historically dominant form heading into the Masters.",
+          "augustaExperience": "Two green jackets in three years gives him the deepest institutional knowledge of any active player besides Spieth.",
+          "majorClutch": "His closing record in majors is strong but features a few Sunday stumbles that prevent a perfect score.",
+          "weatherFit": "His controlled ball flight handles wind well and his trajectory management suits any Augusta condition.",
+          "intangibles": "The weight of being the overwhelming favorite can create mental pressure, but he has handled it masterfully before."
         }
       },
       {
@@ -601,6 +1015,13 @@
           "weatherFit": 78,
           "intangibles": 82,
           "total": 83.0
+        },
+        "scoreExplanations": {
+          "momentum": "LIV schedule provides fewer competitive reps, but his recent form in team events has been sharp.",
+          "augustaExperience": "A former Masters champion with multiple top-10 finishes and deep knowledge of every pin position and green contour.",
+          "majorClutch": "Three major titles and a dominant 2023 Masters victory demonstrate elite closing ability when the stakes are highest.",
+          "weatherFit": "His strong, penetrating ball flight handles wind effectively but his distance control can waver in humid conditions.",
+          "intangibles": "Fierce competitive fire and deep Augusta love provide motivation, but LIV isolation from the Tour ecosystem is a factor."
         }
       },
       {
@@ -616,6 +1037,13 @@
           "weatherFit": 78,
           "intangibles": 80,
           "total": 81.5
+        },
+        "scoreExplanations": {
+          "momentum": "Consistent top-10 finishes and a victory early in 2026 show his game is in excellent shape.",
+          "augustaExperience": "Multiple top-10 Augusta finishes give him deep course knowledge and confidence on every hole.",
+          "majorClutch": "Two major titles have erased the bridesmaid label, but he still lacks a dominant closing performance in a major.",
+          "weatherFit": "His versatile ball flight adapts well to different conditions, though extreme wind can challenge his trajectory control.",
+          "intangibles": "The quiet confidence of a proven major champion, with no external pressure or narrative burden to carry."
         }
       },
       {
@@ -631,6 +1059,13 @@
           "weatherFit": 75,
           "intangibles": 78,
           "total": 81.9
+        },
+        "scoreExplanations": {
+          "momentum": "Solid but unspectacular recent form, with a few top-10s suggesting his game is in reasonable shape.",
+          "augustaExperience": "The 2021 champion has one of the deepest Augusta track records in the field with multiple top-5 finishes.",
+          "majorClutch": "His Masters victory and multiple major contention weeks prove he can handle championship pressure.",
+          "weatherFit": "His controlled ball flight handles wind well but he can struggle with soft, rain-affected conditions.",
+          "intangibles": "Quiet confidence and intense focus make him a formidable competitor, though limited media engagement hides his mental state."
         }
       },
       {
@@ -646,6 +1081,13 @@
           "weatherFit": 76,
           "intangibles": 78,
           "total": 77.1
+        },
+        "scoreExplanations": {
+          "momentum": "Strong 2026 season with consistent top-10 finishes and an improving putting stroke.",
+          "augustaExperience": "Growing Augusta experience but still building the institutional knowledge that champions possess.",
+          "majorClutch": "Two major titles before age 26 prove he can close out championships on the biggest stages.",
+          "weatherFit": "His penetrating ball flight is excellent in wind, and his trajectory control suits variable Augusta conditions.",
+          "intangibles": "Cool under pressure with a workmanlike approach that blocks out distractions and stays process-focused."
         }
       },
       {
@@ -661,6 +1103,13 @@
           "weatherFit": 80,
           "intangibles": 85,
           "total": 74.9
+        },
+        "scoreExplanations": {
+          "momentum": "Exceptional 2026 form with multiple victories and consistent top-5 finishes on Tour.",
+          "augustaExperience": "Only a few Masters appearances, though his T-2 debut showed rapid course adaptation.",
+          "majorClutch": "Limited major championship experience beyond his 2024 Masters runner-up, but handled pressure beautifully.",
+          "weatherFit": "His high, powerful ball flight can be advantageous in calm conditions but slightly exposed in strong wind.",
+          "intangibles": "Fearless Scandinavian composure and prodigious talent create a uniquely dangerous combination on the big stage."
         }
       },
       {
@@ -676,6 +1125,13 @@
           "weatherFit": 72,
           "intangibles": 80,
           "total": 77.5
+        },
+        "scoreExplanations": {
+          "momentum": "LIV schedule limits competitive sharpness, but he has shown flashes of his best in recent events.",
+          "augustaExperience": "Multiple strong Masters finishes and deep familiarity with the course layout and green complexes.",
+          "majorClutch": "Five major championships make him one of the most clutch performers of his generation in championship golf.",
+          "weatherFit": "His powerful game handles most conditions but he can lose distance control in cool, heavy-air conditions.",
+          "intangibles": "The ultimate big-game hunter who elevates for majors like no other, with a single-minded focus that blocks everything out."
         }
       },
       {
@@ -691,6 +1147,13 @@
           "weatherFit": 70,
           "intangibles": 82,
           "total": 73.5
+        },
+        "scoreExplanations": {
+          "momentum": "Strong LIV form and impressive performances in his limited major appearances show his game is in good shape.",
+          "augustaExperience": "Multiple Masters starts have built reasonable course knowledge, though his LIV schedule limits practice rounds.",
+          "majorClutch": "A U.S. Open title and strong major finishes demonstrate he can compete when it matters most.",
+          "weatherFit": "His towering ball flight can be affected by wind at Augusta, though his distance advantage compensates.",
+          "intangibles": "Scientific approach and relentless self-improvement create a unique competitive edge that others cannot replicate."
         }
       },
       {
@@ -706,6 +1169,13 @@
           "weatherFit": 74,
           "intangibles": 72,
           "total": 70.9
+        },
+        "scoreExplanations": {
+          "momentum": "Improved short game has produced better results, but he lacks a signature victory in 2026 so far.",
+          "augustaExperience": "Growing familiarity with Augusta but still learning the nuances of the greens and strategic pin positions.",
+          "majorClutch": "Has contended in majors but has not yet broken through to win one, leaving his closing ability unproven.",
+          "weatherFit": "His ball flight works well in moderate conditions and his Scandinavian background suits variable weather.",
+          "intangibles": "Likeable and determined but still searching for the killer instinct that separates major champions from contenders."
         }
       },
       {
@@ -721,6 +1191,13 @@
           "weatherFit": 68,
           "intangibles": 75,
           "total": 72.0
+        },
+        "scoreExplanations": {
+          "momentum": "LIV schedule makes form difficult to gauge, though he has been competitive in his limited appearances.",
+          "augustaExperience": "Strong Augusta pedigree with a near-miss in 2022 and deep knowledge of the greens and short-game demands.",
+          "majorClutch": "An Open Championship title and his 2022 Augusta charge demonstrate he can perform under ultimate pressure.",
+          "weatherFit": "His creative short game adapts to any conditions, though wind can limit his scoring from longer range.",
+          "intangibles": "Laid-back Australian confidence and extraordinary feel around the greens make him a uniquely dangerous competitor."
         }
       },
       {
@@ -736,6 +1213,13 @@
           "weatherFit": 72,
           "intangibles": 68,
           "total": 70.1
+        },
+        "scoreExplanations": {
+          "momentum": "Steady season with multiple top-10 finishes but no victories, maintaining his typically consistent baseline.",
+          "augustaExperience": "Solid Augusta track record with growing knowledge of the course's demands and strategic nuances.",
+          "majorClutch": "Multiple major contention weeks but no breakthrough victory, leaving his championship closing ability in question.",
+          "weatherFit": "His controlled game handles variable conditions well but he lacks the firepower to exploit soft, scorable setups.",
+          "intangibles": "Metronomic consistency and robotic composure are both his greatest strength and the quality that may limit his ceiling."
         }
       },
       {
@@ -751,6 +1235,13 @@
           "weatherFit": 72,
           "intangibles": 82,
           "total": 81.1
+        },
+        "scoreExplanations": {
+          "momentum": "The heartbreak of the 2025 playoff loss has fueled a resurgent 2026 season with strong form heading into Augusta.",
+          "augustaExperience": "One of the finest Augusta records in the modern era with multiple top-5 finishes spanning over a decade.",
+          "majorClutch": "A U.S. Open title and multiple major near-misses show he can handle the pressure but has sometimes fallen just short.",
+          "weatherFit": "His smooth, controlled swing handles all conditions effectively and his experience at Augusta in varying weather is extensive.",
+          "intangibles": "Unfinished business from the 2025 playoff provides powerful motivation and his deep Augusta love is a genuine competitive advantage."
         }
       },
       {
@@ -766,6 +1257,13 @@
           "weatherFit": 70,
           "intangibles": 80,
           "total": 77.0
+        },
+        "scoreExplanations": {
+          "momentum": "Inconsistent form continues to be a concern, but Augusta historically brings out his best regardless of recent results.",
+          "augustaExperience": "Perhaps the deepest Augusta knowledge of any active player -- his 2015 dominance and multiple contention weeks are unmatched.",
+          "majorClutch": "Three major titles and legendary Augusta moments confirm he is a proven championship closer on this course.",
+          "weatherFit": "His shot creativity adapts to any conditions, though his inconsistent driving can be exposed in wind.",
+          "intangibles": "The Augusta magic is real -- Spieth at this course is a fundamentally different player than Spieth anywhere else."
         }
       },
       {
@@ -781,6 +1279,13 @@
           "weatherFit": 78,
           "intangibles": 70,
           "total": 70.2
+        },
+        "scoreExplanations": {
+          "momentum": "Solid form in 2026 with consistent results, though lacking the signature victory that would signal peak performance.",
+          "augustaExperience": "Multiple Masters starts have built growing comfort, and he has shown the ball-striking to contend here.",
+          "majorClutch": "Consistent major contention but no breakthrough victory creates lingering questions about his closing ability.",
+          "weatherFit": "His low, penetrating ball flight is perfectly suited to windy conditions and his links background provides adaptability.",
+          "intangibles": "A quiet confidence and professional demeanor serve him well, but the lack of a major creates a psychological hurdle."
         }
       },
       {
@@ -796,6 +1301,13 @@
           "weatherFit": 72,
           "intangibles": 72,
           "total": 66.8
+        },
+        "scoreExplanations": {
+          "momentum": "Strong early-season form with multiple top-10s and improved consistency heading into Augusta week.",
+          "augustaExperience": "Limited Masters experience means he is still learning the course's many subtleties and strategic demands.",
+          "majorClutch": "His 2023 U.S. Open victory proves he can close on the biggest stage, a critical credential at Augusta.",
+          "weatherFit": "His powerful, high ball flight works well in calm conditions but can be exposed in gusting winds.",
+          "intangibles": "The confidence of a major champion blended with the hunger of a player still building his legacy."
         }
       },
       {
@@ -811,6 +1323,13 @@
           "weatherFit": 74,
           "intangibles": 75,
           "total": 65.6
+        },
+        "scoreExplanations": {
+          "momentum": "Excellent 2026 form with victories and consistent contention on the PGA Tour suggest he is peaking.",
+          "augustaExperience": "Very limited Masters experience puts him at a significant disadvantage in course knowledge and green reading.",
+          "majorClutch": "No major championship victories yet and limited final-round major experience are genuine concerns.",
+          "weatherFit": "His aggressive ball flight and shot shape work in most conditions but wind can amplify his misses.",
+          "intangibles": "Infectious enthusiasm and fearlessness are assets, but the Augusta pressure cooker is a unique test of his composure."
         }
       },
       {
@@ -826,6 +1345,13 @@
           "weatherFit": 80,
           "intangibles": 70,
           "total": 70.2
+        },
+        "scoreExplanations": {
+          "momentum": "Steady but unspectacular season with enough solid performances to maintain confidence heading into the Masters.",
+          "augustaExperience": "Growing Augusta familiarity with each appearance, and his short game translates particularly well to these greens.",
+          "majorClutch": "His Open Championship victory in 2019 at Portrush proved he can handle the ultimate pressure in major championship golf.",
+          "weatherFit": "His Irish background makes him supremely comfortable in wet, windy, and cool conditions -- perfect for unpredictable Augusta weather.",
+          "intangibles": "Warm personality and genuine love for the game translate to a relaxed mental state that serves him well under pressure."
         }
       },
       {
@@ -841,6 +1367,13 @@
           "weatherFit": 70,
           "intangibles": 65,
           "total": 63.8
+        },
+        "scoreExplanations": {
+          "momentum": "Average recent form with some good finishes but lacking the consistency needed to be considered a serious contender.",
+          "augustaExperience": "Multiple Masters starts have built reasonable course knowledge, and he has flashed contention potential here.",
+          "majorClutch": "No major victories and a pattern of fading on major Sundays is a legitimate concern at Augusta.",
+          "weatherFit": "His athletic build and powerful swing handle most conditions but he can lose accuracy in swirling winds.",
+          "intangibles": "Likeable and talented but lacks the killer instinct that separates major winners from perennial contenders."
         }
       },
       {
@@ -856,6 +1389,13 @@
           "weatherFit": 68,
           "intangibles": 70,
           "total": 62.3
+        },
+        "scoreExplanations": {
+          "momentum": "Strong LIV form and impressive ball-striking numbers suggest his game is in good shape for Augusta.",
+          "augustaExperience": "Limited Masters appearances and LIV schedule reduce his course knowledge relative to PGA Tour regulars.",
+          "majorClutch": "No major victories and limited final-round contention in majors leave his championship pedigree unproven.",
+          "weatherFit": "His penetrating ball flight handles wind effectively and his ball-striking adapts well to firm conditions.",
+          "intangibles": "Fearless and supremely talented, but the Augusta learning curve is steep for players without extensive course experience."
         }
       },
       {
@@ -871,6 +1411,13 @@
           "weatherFit": 78,
           "intangibles": 72,
           "total": 64.1
+        },
+        "scoreExplanations": {
+          "momentum": "PGA Tour victories and strong form in 2026 show his game has reached another level.",
+          "augustaExperience": "Very limited Augusta experience means he is still learning the course's strategic and green-reading demands.",
+          "majorClutch": "No major victories but his competitive fire and closing ability in regular Tour events are encouraging.",
+          "weatherFit": "Scottish upbringing makes him comfortable in wind, rain, and cool conditions that unsettle other players.",
+          "intangibles": "Fiery competitiveness and fearlessness on the big stage make him a genuinely dangerous outsider."
         }
       },
       {
@@ -886,6 +1433,13 @@
           "weatherFit": 72,
           "intangibles": 74,
           "total": 60.4
+        },
+        "scoreExplanations": {
+          "momentum": "Solid 2026 form with competitive results on the PGA Tour, though lacking a signature win recently.",
+          "augustaExperience": "Very limited Masters appearances leave him at a significant course knowledge disadvantage.",
+          "majorClutch": "No major victories and minimal major championship contention experience are genuine concerns.",
+          "weatherFit": "His Australian background provides comfort in varying conditions and his athletic build handles heat well.",
+          "intangibles": "Swagger, creativity, and fearlessness suggest he has the mental makeup to thrive at Augusta eventually."
         }
       },
       {
@@ -901,6 +1455,13 @@
           "weatherFit": 68,
           "intangibles": 60,
           "total": 63.8
+        },
+        "scoreExplanations": {
+          "momentum": "Consistent but unremarkable recent form, maintaining his steady baseline without any breakthrough performances.",
+          "augustaExperience": "Multiple solid Masters finishes give him solid course knowledge and comfort on Augusta's greens.",
+          "majorClutch": "No major victories and a pattern of solid-but-not-spectacular major finishes suggest a ceiling concern.",
+          "weatherFit": "His reliable ball-striking handles most conditions but he lacks the adaptability of more creative players.",
+          "intangibles": "Tireless work ethic and quiet determination are assets, but he may lack the star power to rise to the Augusta occasion."
         }
       },
       {
@@ -916,6 +1477,13 @@
           "weatherFit": 65,
           "intangibles": 58,
           "total": 68.3
+        },
+        "scoreExplanations": {
+          "momentum": "Declining competitive results on LIV suggest his best golf may be behind him, though his talent floor remains high.",
+          "augustaExperience": "The 2020 champion with a record-setting 20-under performance has the deepest Augusta memory bank in this tier.",
+          "majorClutch": "Two major titles and multiple near-misses confirm his championship closing ability when motivated.",
+          "weatherFit": "His high ball flight and soft hands work well in most conditions but he may lack the stamina for extreme weather.",
+          "intangibles": "Questions about motivation and competitive hunger after the LIV move create uncertainty about his engagement level."
         }
       },
       {
@@ -931,6 +1499,13 @@
           "weatherFit": 68,
           "intangibles": 65,
           "total": 69.8
+        },
+        "scoreExplanations": {
+          "momentum": "Limited competitive form at his age, but his swing mechanics remain solid and his experience compensates.",
+          "augustaExperience": "The 2013 champion with nearly two decades of Augusta experience has the deepest course knowledge in the field.",
+          "majorClutch": "His emotional 2013 victory proved he can handle the ultimate pressure, though it was his only major win.",
+          "weatherFit": "His smooth swing handles all conditions gracefully and his experience in Australian weather adds versatility.",
+          "intangibles": "Playing for legacy at this stage of his career, with the elegance and composure of a seasoned champion."
         }
       },
       {
@@ -946,6 +1521,13 @@
           "weatherFit": 65,
           "intangibles": 72,
           "total": 65.5
+        },
+        "scoreExplanations": {
+          "momentum": "Quietly excellent form in 2026 with multiple solid finishes, boosted by Ryder Cup captaincy confidence.",
+          "augustaExperience": "Moderate Augusta experience with enough visits to understand the course without possessing deep institutional knowledge.",
+          "majorClutch": "His 2011 PGA Championship victory proves he can win majors, giving him a credential most in this range lack.",
+          "weatherFit": "His strong, reliable game handles most conditions without excelling in any particular weather scenario.",
+          "intangibles": "Ryder Cup captaincy has elevated his profile, confidence, and determination heading into the Masters."
         }
       },
       {
@@ -961,6 +1543,13 @@
           "weatherFit": 70,
           "intangibles": 60,
           "total": 59.9
+        },
+        "scoreExplanations": {
+          "momentum": "Steady Tour results provide a solid baseline, but no signature victories suggest he is plateauing.",
+          "augustaExperience": "Growing Augusta knowledge with each appearance but still lacks the deep familiarity of the veterans.",
+          "majorClutch": "No major victories and limited contention experience on major Sundays is a significant concern.",
+          "weatherFit": "Georgia native who is comfortable in the Augusta climate and turf conditions, a small but real advantage.",
+          "intangibles": "Under-the-radar mentality allows him to play freely without media pressure, but he may lack the star quality to win."
         }
       },
       {
@@ -976,6 +1565,13 @@
           "weatherFit": 68,
           "intangibles": 65,
           "total": 55.5
+        },
+        "scoreExplanations": {
+          "momentum": "Inconsistent form with flashes of brilliance mixed with mediocre weeks makes his readiness hard to gauge.",
+          "augustaExperience": "Limited Masters experience means he is still on a steep learning curve at the course.",
+          "majorClutch": "No major victories and an inability to close out tournaments he has led create significant questions.",
+          "weatherFit": "His prodigious length and high ball flight work well in calm conditions but can scatter in wind.",
+          "intangibles": "Raw talent is undeniable but mental consistency and course management maturity remain works in progress."
         }
       },
       {
@@ -991,6 +1587,13 @@
           "weatherFit": 68,
           "intangibles": 55,
           "total": 58.0
+        },
+        "scoreExplanations": {
+          "momentum": "Consistent but unremarkable recent form, maintaining his reliable baseline without any breakthrough performances.",
+          "augustaExperience": "Multiple Augusta appearances have built solid course knowledge, and his game suits the precision demands.",
+          "majorClutch": "No major victories and a track record of solid-but-not-special major finishes limit his ceiling assessment.",
+          "weatherFit": "Canadian toughness and reliable ball-striking handle variable conditions without excelling in any specific weather.",
+          "intangibles": "Ball-striking machine who plays within himself, but may lack the scoring explosiveness to win at Augusta."
         }
       },
       {
@@ -1006,16 +1609,248 @@
           "weatherFit": 65,
           "intangibles": 55,
           "total": 62.0
+        },
+        "scoreExplanations": {
+          "momentum": "Frustratingly inconsistent season with flashes of brilliance and stretches of mediocrity clouding his readiness.",
+          "augustaExperience": "Solid Augusta knowledge with multiple Masters appearances and enough strong finishes to confirm course comfort.",
+          "majorClutch": "Two major titles prove he can close on the biggest stage, but recent form raises questions about whether that version still exists.",
+          "weatherFit": "His versatile game handles most conditions but his current swing inconsistency amplifies weather challenges.",
+          "intangibles": "Elite talent and fierce competitiveness are undeniable, but confidence may be fragile given his recent struggles."
+        }
+      },
+      {
+        "name": "Max Homa",
+        "winPct": 0.4,
+        "top5Pct": 2.5,
+        "top10Pct": 6.0,
+        "makeCutPct": 55.0,
+        "scores": {
+          "momentum": 62,
+          "augustaExperience": 40,
+          "majorClutch": 48,
+          "weatherFit": 68,
+          "intangibles": 65,
+          "total": 55.0
+        }
+      },
+      {
+        "name": "Tom Kim",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.5,
+        "makeCutPct": 53.0,
+        "scores": {
+          "momentum": 72,
+          "augustaExperience": 35,
+          "majorClutch": 45,
+          "weatherFit": 65,
+          "intangibles": 70,
+          "total": 55.2
+        }
+      },
+      {
+        "name": "Sam Burns",
+        "winPct": 0.3,
+        "top5Pct": 2.0,
+        "top10Pct": 5.0,
+        "makeCutPct": 52.0,
+        "scores": {
+          "momentum": 65,
+          "augustaExperience": 38,
+          "majorClutch": 42,
+          "weatherFit": 66,
+          "intangibles": 62,
+          "total": 53.0
+        }
+      },
+      {
+        "name": "Matt Fitzpatrick",
+        "winPct": 0.25,
+        "top5Pct": 1.8,
+        "top10Pct": 4.5,
+        "makeCutPct": 50.0,
+        "scores": {
+          "momentum": 60,
+          "augustaExperience": 45,
+          "majorClutch": 55,
+          "weatherFit": 65,
+          "intangibles": 58,
+          "total": 55.5
+        }
+      },
+      {
+        "name": "Will Zalatoris",
+        "winPct": 0.25,
+        "top5Pct": 1.8,
+        "top10Pct": 4.5,
+        "makeCutPct": 50.0,
+        "scores": {
+          "momentum": 55,
+          "augustaExperience": 55,
+          "majorClutch": 52,
+          "weatherFit": 62,
+          "intangibles": 58,
+          "total": 55.8
+        }
+      },
+      {
+        "name": "Tyrrell Hatton",
+        "winPct": 0.2,
+        "top5Pct": 1.5,
+        "top10Pct": 4.0,
+        "makeCutPct": 48.0,
+        "scores": {
+          "momentum": 58,
+          "augustaExperience": 42,
+          "majorClutch": 48,
+          "weatherFit": 65,
+          "intangibles": 55,
+          "total": 52.2
+        }
+      },
+      {
+        "name": "Sepp Straka",
+        "winPct": 0.2,
+        "top5Pct": 1.5,
+        "top10Pct": 3.8,
+        "makeCutPct": 47.0,
+        "scores": {
+          "momentum": 55,
+          "augustaExperience": 38,
+          "majorClutch": 40,
+          "weatherFit": 64,
+          "intangibles": 55,
+          "total": 49.2
+        }
+      },
+      {
+        "name": "Jason Day",
+        "winPct": 0.2,
+        "top5Pct": 1.2,
+        "top10Pct": 3.5,
+        "makeCutPct": 46.0,
+        "scores": {
+          "momentum": 45,
+          "augustaExperience": 78,
+          "majorClutch": 68,
+          "weatherFit": 62,
+          "intangibles": 55,
+          "total": 61.8
+        }
+      },
+      {
+        "name": "Billy Horschel",
+        "winPct": 0.15,
+        "top5Pct": 1.0,
+        "top10Pct": 3.0,
+        "makeCutPct": 45.0,
+        "scores": {
+          "momentum": 52,
+          "augustaExperience": 42,
+          "majorClutch": 42,
+          "weatherFit": 62,
+          "intangibles": 55,
+          "total": 49.8
+        }
+      },
+      {
+        "name": "Brian Harman",
+        "winPct": 0.15,
+        "top5Pct": 1.0,
+        "top10Pct": 2.8,
+        "makeCutPct": 44.0,
+        "scores": {
+          "momentum": 48,
+          "augustaExperience": 50,
+          "majorClutch": 58,
+          "weatherFit": 65,
+          "intangibles": 52,
+          "total": 54.2
+        }
+      },
+      {
+        "name": "Akshay Bhatia",
+        "winPct": 0.12,
+        "top5Pct": 0.8,
+        "top10Pct": 2.5,
+        "makeCutPct": 43.0,
+        "scores": {
+          "momentum": 68,
+          "augustaExperience": 25,
+          "majorClutch": 35,
+          "weatherFit": 62,
+          "intangibles": 65,
+          "total": 48.8
+        }
+      },
+      {
+        "name": "Sergio Garcia",
+        "winPct": 0.1,
+        "top5Pct": 0.7,
+        "top10Pct": 2.2,
+        "makeCutPct": 42.0,
+        "scores": {
+          "momentum": 38,
+          "augustaExperience": 88,
+          "majorClutch": 65,
+          "weatherFit": 60,
+          "intangibles": 52,
+          "total": 61.5
+        }
+      },
+      {
+        "name": "Chris Kirk",
+        "winPct": 0.1,
+        "top5Pct": 0.6,
+        "top10Pct": 2.0,
+        "makeCutPct": 41.0,
+        "scores": {
+          "momentum": 55,
+          "augustaExperience": 42,
+          "majorClutch": 38,
+          "weatherFit": 62,
+          "intangibles": 55,
+          "total": 49.0
+        }
+      },
+      {
+        "name": "Davis Thompson",
+        "winPct": 0.08,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 40.0,
+        "scores": {
+          "momentum": 58,
+          "augustaExperience": 22,
+          "majorClutch": 30,
+          "weatherFit": 65,
+          "intangibles": 55,
+          "total": 43.8
+        }
+      },
+      {
+        "name": "Rickie Fowler",
+        "winPct": 0.08,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 39.0,
+        "scores": {
+          "momentum": 42,
+          "augustaExperience": 68,
+          "majorClutch": 52,
+          "weatherFit": 60,
+          "intangibles": 55,
+          "total": 55.0
         }
       }
     ]
   },
   "analyst": {
     "modelName": "The Analyst",
-    "emoji": "\ud83e\udde0",
+    "emoji": "🧠",
     "description": "AI-powered narrative analysis synthesizing the complete picture",
     "methodology": "The Analyst synthesizes statistical models, course history, current form, and narrative context to produce a holistic tournament preview. It weighs recent performance trends, press conference sentiment, practice round reports, and historical analogues to identify edges the pure numbers might miss. The model also accounts for pressure dynamics, pairing effects, and the unique psychological demands of Augusta National.",
-    "narrative": "The 2026 Masters arrives with one of the most compelling storylines in recent memory: Rory McIlroy returns as defending champion, his career Grand Slam complete, the weight of decades finally lifted from his shoulders. The question is whether liberation breeds more greatness or whether the hunger that drove him to finally break through has been sated. History suggests defending champions rarely repeat -- only Tiger Woods, Jack Nicklaus, and Nick Faldo have managed it -- but McIlroy is not your typical defender.\n\nScottie Scheffler, however, remains the clear statistical favorite. The world number one has turned Augusta National into his personal playground, winning in 2022 and 2024, and his strokes gained numbers across every category are simply absurd. When you combine elite driving distance with laser precision on approach and a putting stroke that has quietly become one of the best on Tour, you get a player who can go wire-to-wire at Augusta or rally from five back on Sunday. The two-time champion's biggest threat may be complacency, but nothing in his demeanor suggests that is remotely possible.\n\nThe supporting cast is loaded with legitimate contenders. Xander Schauffele has been knocking on the door at Augusta for years and now carries the confidence of a two-time major champion. Ludvig Åberg is the most exciting young talent in the game, with the length and fearlessness to attack Augusta's risk-reward holes. Collin Morikawa's iron play is perhaps the best in the world, and his precision approach game is perfectly calibrated for Augusta's treacherous greens. And lurking, as always, is Jon Rahm -- the 2023 champion whose talent and Augusta knowledge make him dangerous despite the competitive rust from LIV.\n\nThe darkhorse tier is particularly deep this year. Justin Rose, the heartbroken 2025 playoff loser, returns with unfinished business and a course history that rivals anyone in the field. Jordan Spieth knows these greens better than his own living room and could produce one of his patented Augusta magic shows. And Hideki Matsuyama, the quiet assassin, has a way of producing his best golf when the azaleas are in bloom. This Masters has the makings of an all-time Sunday back nine.",
+    "narrative": "The 2026 Masters arrives with one of the most compelling storylines in recent memory: Rory McIlroy returns as defending champion, his career Grand Slam complete, the weight of decades finally lifted from his shoulders. The question is whether liberation breeds more greatness or whether the hunger that drove him to finally break through has been sated. History suggests defending champions rarely repeat -- only Tiger Woods, Jack Nicklaus, and Nick Faldo have managed it -- but McIlroy is not your typical defender.\n\nScottie Scheffler, however, remains the clear statistical favorite. The world number one has turned Augusta National into his personal playground, winning in 2022 and 2024, and his strokes gained numbers across every category are simply absurd. When you combine elite driving distance with laser precision on approach and a putting stroke that has quietly become one of the best on Tour, you get a player who can go wire-to-wire at Augusta or rally from five back on Sunday. The two-time champion's biggest threat may be complacency, but nothing in his demeanor suggests that is remotely possible.\n\nThe supporting cast is loaded with legitimate contenders. Xander Schauffele has been knocking on the door at Augusta for years and now carries the confidence of a two-time major champion. Ludvig Aberg is the most exciting young talent in the game, with the length and fearlessness to attack Augusta's risk-reward holes. Collin Morikawa's iron play is perhaps the best in the world, and his precision approach game is perfectly calibrated for Augusta's treacherous greens. And lurking, as always, is Jon Rahm -- the 2023 champion whose talent and Augusta knowledge make him dangerous despite the competitive rust from LIV.\n\nThe dark horse tier is particularly deep this year, and it deserves significant attention. Justin Rose, the heartbroken 2025 playoff loser, returns with unfinished business and a course history that rivals anyone in the field. Rose has finished in the top 5 at Augusta more times than most players have made the cut, and his silky ball-striking paired with deep course knowledge makes him a perpetual threat. Jordan Spieth knows these greens better than his own living room and could produce one of his patented Augusta magic shows -- nobody reads these putting surfaces with the same preternatural instinct. And Hideki Matsuyama, the quiet assassin, has a way of producing his best golf when the azaleas are in bloom; his 2021 victory was no fluke but rather the culmination of years of Augusta excellence.\n\nBeyond the obvious contenders, several intriguing storylines add layers to this tournament. Bryson DeChambeau has quietly re-engineered his game for Augusta, pairing his prodigious length with vastly improved wedge play to create a scoring machine on the par 5s. Viktor Hovland's short game transformation has removed the one weakness that held him back at this course, and his ball-striking has always been elite enough to contend. Tommy Fleetwood's penetrating ball flight and European shotmaking sensibility seem tailor-made for Augusta's demands, and the Englishman's patience may finally be rewarded with a major championship breakthrough.\n\nCourse conditions will play a significant role in shaping the narrative. Early forecasts suggest warm temperatures with the possibility of afternoon thunderstorms during the middle rounds, which could soften the greens and reward aggressive approach play. If the greens are receptive, expect the bombers -- Scheffler, Aberg, DeChambeau, Clark -- to separate themselves from the field with their ability to fire at tucked pins from short range. If the course dries out and the greens firm up for the weekend, precision players like Morikawa, Fleetwood, and Cantlay could find themselves in the mix as scoring becomes more difficult and patience is rewarded.\n\nThe par 5s will be the great separators, as they always are at Augusta. The four par 5s -- the 2nd, 8th, 13th, and 15th -- offer the best birdie and eagle opportunities on the course, and the players who can reach them in two and convert scoring opportunities will have a massive advantage. In recent years, the difference between the best and worst par-5 scorers in the field has been as much as 8-10 shots over four rounds, an enormous gap that can determine whether a player contends or misses the cut. Players with elite driving distance and strong mid-iron play -- Scheffler, Aberg, DeChambeau, McIlroy -- have a structural advantage here that cannot be overlooked.\n\nBold predictions for the week: Ludvig Aberg will post the low round of the tournament with a Saturday 63 that rockets him up the leaderboard. Justin Rose will lead after 36 holes, channeling the heartbreak of 2025 into a brilliant first two rounds. A past champion from the LIV circuit -- either Rahm or Garcia -- will make a Sunday charge that gets the Augusta patrons buzzing. And the eventual winner will come from the top 4 in the consensus rankings, as Augusta continues to reward the best players in the world above all others.\n\nThe 2026 Masters has the makings of an all-time classic. The defending champion narrative, the Scheffler dominance storyline, the deep pool of contenders, and the unpredictability that Augusta always provides create a perfect storm of drama and intrigue. When the final putt drops on Sunday evening, we may be talking about one of the greatest Masters in the tournament's storied history.",
     "rankings": [
       {
         "name": "Scottie Scheffler",
@@ -1023,7 +1858,8 @@
         "top5Pct": 45.0,
         "top10Pct": 62.0,
         "makeCutPct": 92.0,
-        "rationale": "The complete package at Augusta. Scheffler's strokes gained dominance, two green jackets, and unflappable temperament make him the clear pick. He has no weaknesses to exploit on this course."
+        "rationale": "The complete package at Augusta. Scheffler's strokes gained dominance, two green jackets, and unflappable temperament make him the clear pick. He has no weaknesses to exploit on this course.\n\nScheffler's iron play is the foundation of his Augusta dominance. His strokes gained approach has led the Tour for three consecutive seasons, and that skill translates directly to birdie opportunities on Augusta's demanding par 4s. His ability to control trajectory and spin with mid-irons gives him access to pin positions that the rest of the field must play away from.\n\nThree wins in seven starts in 2026 confirm he is in peak form. His ball-striking package is firing on all cylinders, and his improved putting has removed the one vulnerability that could have held him back. At 29, he is in the absolute prime of his career and poised to add a third green jacket.",
+        "whyTheyWillWin": "Scheffler is the best iron player in the world at the best iron player's course. His two previous Masters victories provide the institutional knowledge and confidence to navigate every pin position and green contour. With three 2026 wins already banked, he arrives at Augusta in historically dominant form.\n\nHis par-5 scoring, approach play precision, and improved putting create a complete package that no other player in the field can match across all four rounds."
       },
       {
         "name": "Rory McIlroy",
@@ -1031,7 +1867,8 @@
         "top5Pct": 42.0,
         "top10Pct": 59.0,
         "makeCutPct": 92.0,
-        "rationale": "The defending champion returns unburdened, with supreme confidence and the form of his life. The Grand Slam monkey is gone, and a liberated Rory is a terrifying prospect for the rest of the field."
+        "rationale": "The defending champion returns unburdened, with supreme confidence and the form of his life. The Grand Slam monkey is gone, and a liberated Rory is a terrifying prospect for the rest of the field.\n\nMcIlroy's 2025 victory was cathartic, and the psychological liberation it provided cannot be overstated. For years, the weight of the career Grand Slam seemed to affect his Augusta performances, creating tension and pressing on crucial shots. That burden is gone now, replaced by the freedom and joy that made him the most exciting player in the world a decade ago.\n\nHis physical tools remain immense. His driving distance turns the par 5s into birdie opportunities, his iron play has been elite throughout 2026, and his short game -- once the weakness that held him back at Augusta -- has been transformed into a genuine weapon.",
+        "whyTheyWillWin": "A liberated McIlroy with nothing left to prove at Augusta is the most dangerous version of the Northern Irishman. His length, improved short game, and champion's knowledge of the course create a complete package that could make him just the fourth player to successfully defend the Masters title.\n\nHis 2026 form has been outstanding, and the defending champion's confidence and comfort at Augusta will only grow with each round."
       },
       {
         "name": "Xander Schauffele",
@@ -1039,7 +1876,8 @@
         "top5Pct": 37.0,
         "top10Pct": 55.0,
         "makeCutPct": 91.0,
-        "rationale": "Schauffele's Augusta consistency is remarkable -- he contends nearly every year. Now armed with major championship confidence, he has shed the label of best player without a green jacket."
+        "rationale": "Schauffele's Augusta consistency is remarkable -- he contends nearly every year. Now armed with major championship confidence, he has shed the label of best player without a green jacket.\n\nHis strokes gained tee-to-green numbers rank among the best in the world, and his ability to avoid big numbers is perhaps his greatest asset at a course where one errant shot can lead to a crooked number. Schauffele's discipline and patience are perfectly suited to Augusta's strategic demands.\n\nThe mental transformation that came with winning his first major has been the catalyst for everything since. He now carries himself with the quiet confidence of a proven champion, and his closing-round scoring average has improved markedly.",
+        "whyTheyWillWin": "Schauffele's mistake-free approach and elite tee-to-green game are perfectly calibrated for Augusta National. His multiple top-10 finishes here prove the course suits his eye, and his major championship confidence has unlocked a new level of performance under pressure.\n\nIf his putter gets hot during a Sunday back nine, Schauffele has the complete skillset to claim the green jacket he has been flirting with for years."
       },
       {
         "name": "Ludvig Åberg",
@@ -1047,7 +1885,8 @@
         "top5Pct": 30.0,
         "top10Pct": 45.0,
         "makeCutPct": 87.0,
-        "rationale": "The fearless Swede showed in 2024 he belongs on this stage. His length off the tee unlocks birdie opportunities most of the field cannot access, and he is only getting better."
+        "rationale": "The fearless Swede showed in 2024 he belongs on this stage. His length off the tee unlocks birdie opportunities most of the field cannot access, and he is only getting better.\n\nAberg's combination of elite driving distance and precision iron play is a rare blend that Augusta specifically rewards. His T-2 finish in 2024 was not the performance of a wide-eyed rookie but the composed effort of a player who belongs at the top of any leaderboard.\n\nAt just 26, his potential ceiling is arguably the highest in the field. His ball speed, control, and fearless mentality suggest he will be a Masters factor for the next decade.",
+        "whyTheyWillWin": "Aberg's prodigious length gives him structural advantages on Augusta's par 5s that most of the field cannot access. His T-2 debut proved he can handle the pressure, and another year of maturity and experience has only made him more dangerous.\n\nHis fearless Scandinavian composure and elite physical tools create a combination that could produce the youngest Masters champion in over a decade."
       },
       {
         "name": "Collin Morikawa",
@@ -1055,7 +1894,8 @@
         "top5Pct": 27.0,
         "top10Pct": 42.0,
         "makeCutPct": 86.0,
-        "rationale": "The best iron player in the game is peaking at the right time. Morikawa's precision is a perfect fit for Augusta's demanding approach shots, and his putting has caught up to his ball-striking."
+        "rationale": "The best iron player in the game is peaking at the right time. Morikawa's precision is a perfect fit for Augusta's demanding approach shots, and his putting has caught up to his ball-striking.\n\nMorikawa's proximity to the hole on approach shots is the best in the world. He consistently places his approach shots in the correct quadrant of the green, giving himself makeable birdie putts while others are scrambling to save par.\n\nThe transformation of his short game and putting has been dramatic. What was once a liability has become a strength, and the two-time major champion now brings a complete game to Augusta National.",
+        "whyTheyWillWin": "Morikawa is the best iron player in professional golf at the ultimate iron player's course. His precision approach game consistently finds the correct portion of Augusta's greens, creating birdie opportunities that others cannot access.\n\nHis improved putting and short game have removed the last obstacles between him and a green jacket."
       },
       {
         "name": "Jon Rahm",
@@ -1063,7 +1903,8 @@
         "top5Pct": 24.0,
         "top10Pct": 39.0,
         "makeCutPct": 87.0,
-        "rationale": "The 2023 champion knows every inch of this course. Rahm's raw talent is top-three in the world, and Augusta has a way of erasing competitive rust for players who truly know the place."
+        "rationale": "The 2023 champion knows every inch of this course. Rahm's raw talent is top-three in the world, and Augusta has a way of erasing competitive rust for players who truly know the place.\n\nRahm's Augusta pedigree is extraordinary -- a dominant victory, multiple top-10s, and the deep course knowledge that comes from years of elite competition here. His fierce competitiveness and ability to elevate for the majors have been proven repeatedly.\n\nThe LIV question is the primary concern, but Rahm has addressed it with strong major performances despite his alternative schedule. His talent and Augusta knowledge may be enough to overcome any sharpness deficit.",
+        "whyTheyWillWin": "Rahm's 2023 Masters victory by four shots demonstrated he can dismantle Augusta when firing on all cylinders. His combination of power, precision, and competitive fire is matched by few in this field.\n\nHis deep course knowledge and champion's experience through Amen Corner provide an edge that statistics cannot capture."
       },
       {
         "name": "Bryson DeChambeau",
@@ -1071,7 +1912,8 @@
         "top5Pct": 17.0,
         "top10Pct": 30.0,
         "makeCutPct": 79.0,
-        "rationale": "The mad scientist has quietly optimized his game for Augusta. DeChambeau's distance advantage on the par 5s is massive, and his improved wedge play makes him a genuine threat."
+        "rationale": "The mad scientist has quietly optimized his game for Augusta. DeChambeau's distance advantage on the par 5s is massive, and his improved wedge play makes him a genuine threat.\n\nDeChambeau's ability to reach every par 5 in two with wedge approaches creates 2-3 shots per round of structural advantage over the average player. His scientific approach to course management and his improved short game have addressed the concerns that previously limited his Augusta potential.\n\nThe unpredictability remains, but when DeChambeau is on, his combination of power and precision is unmatched in the field.",
+        "whyTheyWillWin": "DeChambeau's par-5 scoring advantage is the largest structural edge any player brings to Augusta. His ability to reach every par 5 with wedge approaches creates eagle and birdie opportunities that the field simply cannot access.\n\nHis improved short game and scientific course management have transformed him from a wildcard to a genuine contender."
       },
       {
         "name": "Viktor Hovland",
@@ -1079,7 +1921,8 @@
         "top5Pct": 16.0,
         "top10Pct": 29.0,
         "makeCutPct": 79.0,
-        "rationale": "Hovland's short game transformation has been the story of his season. The Norwegian finally has the tools to compete around Augusta's greens, and his ball-striking was never in question."
+        "rationale": "Hovland's short game transformation has been the story of his season. The Norwegian finally has the tools to compete around Augusta's greens, and his ball-striking was never in question.\n\nHis strokes gained tee-to-green ranks in the top 5 on Tour, and his improved chipping and pitching have removed the one weakness that previously limited his Augusta potential. His scrambling percentage has improved by over 10 points from his career average.\n\nHovland's competitive fire and improving all-around game suggest a major breakthrough is imminent, and Augusta is a course that rewards his particular skill set.",
+        "whyTheyWillWin": "Hovland's transformation from an elite ball-striker with a short game weakness to a complete player has been remarkable. His tee-to-green game ranks among the best in the world, and his new short game proficiency gives him the complete toolkit for Augusta.\n\nHis closing round scoring average in 2026 ranks among the best on Tour, suggesting he has learned how to finish tournaments under pressure."
       },
       {
         "name": "Patrick Cantlay",
@@ -1087,7 +1930,8 @@
         "top5Pct": 14.0,
         "top10Pct": 25.0,
         "makeCutPct": 78.0,
-        "rationale": "The thinking man's golfer, Cantlay grinds out pars like few others and pounces on the par 5s. His course management at Augusta is textbook, even if he lacks the explosiveness of others."
+        "rationale": "The thinking man's golfer, Cantlay grinds out pars like few others and pounces on the par 5s. His course management at Augusta is textbook, even if he lacks the explosiveness of others.\n\nCantlay's bogey avoidance is among the best on Tour, and at Augusta, where avoiding big numbers is often as important as making birdies, that discipline is incredibly valuable. He plays the percentages brilliantly.\n\nHis elite putting and methodical approach to course management create a game plan that is remarkably well-suited to Augusta's demands, even if it lacks the highlight-reel excitement of some competitors.",
+        "whyTheyWillWin": "Cantlay wins by grinding -- four sub-70 rounds powered by elite bogey avoidance, clutch putting, and perfect course management. While others make highlight-reel birdies and momentum-killing doubles, Cantlay quietly accumulates the consistent scores that win green jackets.\n\nHis putting ranks in the top 10 on Tour, and his ability to read Augusta's greens improves with each visit."
       },
       {
         "name": "Hideki Matsuyama",
@@ -1095,7 +1939,8 @@
         "top5Pct": 14.0,
         "top10Pct": 26.0,
         "makeCutPct": 80.0,
-        "rationale": "Augusta brings out the best in Matsuyama. The 2021 champion's iron play is sublime here, and his quiet intensity masks a fierce competitor who has produced multiple top-5 Masters finishes."
+        "rationale": "Augusta brings out the best in Matsuyama. The 2021 champion's iron play is sublime here, and his quiet intensity masks a fierce competitor who has produced multiple top-5 Masters finishes.\n\nMatsuyama's institutional knowledge of Augusta is among the deepest in the field. His iron play consistently finds the correct portions of the greens, and his mental composure under pressure allows him to grind through difficult stretches while more volatile players fall away.\n\nAt 34, he remains in the prime of his ball-striking years, and his deep Augusta familiarity gives him an edge that younger players cannot match.",
+        "whyTheyWillWin": "Matsuyama's quiet genius for Augusta transcends statistics. His 2021 victory and multiple top-5 finishes demonstrate a deep, almost spiritual connection with the course. His iron play is among the finest to ever grace these fairways.\n\nHis experience, composure, and champion's knowledge of every Augusta pin position provide advantages that raw talent alone cannot replicate."
       },
       {
         "name": "Brooks Koepka",
@@ -1103,7 +1948,8 @@
         "top5Pct": 12.0,
         "top10Pct": 23.0,
         "makeCutPct": 76.0,
-        "rationale": "Koepka's major championship pedigree is among the best of his generation. He rises to the occasion on the biggest stages, and Augusta's demanding test of power and precision suits his game."
+        "rationale": "Koepka's major championship pedigree is among the best of his generation. He rises to the occasion on the biggest stages, and Augusta's demanding test of power and precision suits his game.\n\nFive major championships speak to a rare ability to elevate when the stakes are highest. His physicality, mental toughness, and single-minded focus create a combination uniquely suited to major championship golf.\n\nThe LIV schedule concern is real, but Koepka's track record of producing his best golf in the four weeks that matter most suggests he can overcome any competitive rust.",
+        "whyTheyWillWin": "Koepka is the ultimate big-game player with five major championships attesting to his ability to elevate his performance when the stakes are highest. His power, mental toughness, and tunnel-vision focus are uniquely suited to Augusta's demands.\n\nHis approach to major championships is simple and effective: overpower the course, stay patient, and let the pressure break the other guys."
       },
       {
         "name": "Cameron Smith",
@@ -1111,7 +1957,8 @@
         "top5Pct": 12.0,
         "top10Pct": 22.0,
         "makeCutPct": 76.0,
-        "rationale": "Smith's short game artistry is perfectly suited to Augusta's crowned greens. His ability to manufacture shots and scramble from trouble positions makes him a perennial sleeper pick."
+        "rationale": "Smith's short game artistry is perfectly suited to Augusta's crowned greens. His ability to manufacture shots and scramble from trouble positions makes him a perennial sleeper pick.\n\nFew players in the world have a better touch around the greens, and at Augusta, that is currency. His creativity, feel, and ability to read putts on the most challenging putting surfaces in championship golf give him an edge that pure ball-strikers cannot replicate.\n\nHis 2022 contention demonstrated he has the game and nerve to compete at Augusta's highest level, and that experience provides a foundation of confidence.",
+        "whyTheyWillWin": "Smith's short game is the best in professional golf, and Augusta is the course where short game matters most. His creativity around the greens and his ability to read Augusta's putting surfaces give him an edge that statistics cannot capture.\n\nIf his ball-striking is even slightly above average, his short game wizardry will do the rest."
       },
       {
         "name": "Tommy Fleetwood",
@@ -1119,7 +1966,8 @@
         "top5Pct": 11.0,
         "top10Pct": 21.0,
         "makeCutPct": 75.0,
-        "rationale": "Fleetwood's low ball flight and elite shotmaking are tailor-made for Augusta's wind-affected shots. His major contention pedigree is strong, and a breakthrough feels overdue."
+        "rationale": "Fleetwood's low ball flight and elite shotmaking are tailor-made for Augusta's wind-affected shots. His major contention pedigree is strong, and a breakthrough feels overdue.\n\nHis European sensibility -- thoughtful course management, creative shotmaking, and comfort in variable conditions -- translates perfectly to Augusta's demands. His penetrating ball flight is an asset when the wind swirls through the pines.\n\nAt 35, Fleetwood is at the peak of his experience-talent curve, and Augusta may represent his best opportunity for a major championship breakthrough.",
+        "whyTheyWillWin": "Fleetwood's ball flight and shotmaking creativity are tailor-made for Augusta. His consistent major contention and improving putting make him a dark horse with genuine credentials, and a breakthrough feels overdue.\n\nHis European sensibility and patience suit the strategic demands of Augusta National perfectly."
       },
       {
         "name": "Wyndham Clark",
@@ -1127,7 +1975,8 @@
         "top5Pct": 10.0,
         "top10Pct": 20.0,
         "makeCutPct": 74.0,
-        "rationale": "Clark's length and major championship experience give him a real shot. He has the firepower to go low at Augusta, and his confidence as a U.S. Open champion carries weight in this field."
+        "rationale": "Clark's length and major championship experience give him a real shot. He has the firepower to go low at Augusta, and his confidence as a U.S. Open champion carries weight in this field.\n\nHis driving distance ranks among the longest on Tour, giving him structural advantages on Augusta's par 5s. Combined with improving iron play and a competitive mindset, Clark has the tools to produce a special week.\n\nThe question is consistency over four rounds, but his major championship experience provides the mental framework to handle the pressure.",
+        "whyTheyWillWin": "Clark's combination of elite driving distance and major championship experience creates a dangerous package at Augusta. His ability to reach all four par 5s in two creates scoring opportunities most players cannot access.\n\nHis U.S. Open victory proved he can close on the biggest stage, a critical credential at the Masters."
       },
       {
         "name": "Sahith Theegala",
@@ -1135,7 +1984,8 @@
         "top5Pct": 10.0,
         "top10Pct": 19.0,
         "makeCutPct": 73.0,
-        "rationale": "Theegala's flair and aggressive approach make him box office at Augusta. He will make birdies in bunches, though his high-risk style could just as easily lead to a weekend collapse."
+        "rationale": "Theegala's flair and aggressive approach make him box office at Augusta. He will make birdies in bunches, though his high-risk style could just as easily lead to a weekend collapse.\n\nHis ball-striking numbers are elite across the board, and his fearless approach to the game produces the kind of birdie runs that can vault a player up the leaderboard. But the volatility cuts both ways.\n\nIf he can balance his natural aggression with the patience Augusta demands, his ceiling is as high as anyone in the field.",
+        "whyTheyWillWin": "Theegala's aggressive style and elite ball-striking produce the birdie runs that win Masters tournaments. His fearlessness and charisma could carry him to a thrilling maiden major victory if the birdies come in bunches and the bogeys stay away.\n\nHis 2026 form suggests he is peaking at the right time for Augusta week."
       },
       {
         "name": "Justin Rose",
@@ -1143,7 +1993,8 @@
         "top5Pct": 9.0,
         "top10Pct": 18.0,
         "makeCutPct": 75.0,
-        "rationale": "Rose's Augusta record is extraordinary and his 2025 playoff loss only deepened his connection to this course. He has the craftsmanship and the motivation to contend once more."
+        "rationale": "Rose's Augusta record is extraordinary and his 2025 playoff loss only deepened his connection to this course. He has the craftsmanship and the motivation to contend once more. His multiple top-5 finishes at the Masters represent one of the finest Augusta records of his generation.\n\nHis iron play, course knowledge, and deep Augusta experience create an edge that few players in the field can match. He knows every pin position, every subtle break, and every strategic nuance that Augusta presents, and his ball flight -- a controlled, workable shape -- gives him options on every approach shot.\n\nThe 2025 heartbreak provides powerful fuel. Rose came within one shot of adding a green jacket to his collection, and that near-miss has sharpened his determination for 2026. At 45, time is running out, and that urgency could be the catalyst for a special performance.",
+        "whyTheyWillWin": "Rose's Augusta record is among the finest in the modern era, and his 2025 playoff loss provides the kind of motivation that fuels championship performances. His craftsmanship and deep course knowledge give him an edge that statistics cannot measure.\n\nFew players have loved Augusta as deeply or performed as consistently on its hallowed grounds."
       },
       {
         "name": "Shane Lowry",
@@ -1151,7 +2002,8 @@
         "top5Pct": 7.5,
         "top10Pct": 15.0,
         "makeCutPct": 70.0,
-        "rationale": "Lowry's touch and feel around the greens translate beautifully to Augusta. His Open Championship pedigree proves he can handle the pressure of major Sunday contention."
+        "rationale": "Lowry's touch and feel around the greens translate beautifully to Augusta. His Open Championship pedigree proves he can handle the pressure of major Sunday contention, and his growing Augusta familiarity has removed the intimidation factor that once held him back.\n\nHis short game wizardry is his primary weapon at Augusta. His ability to get up and down from difficult positions, manufacture creative chip shots, and read the subtle breaks on Augusta's greens gives him an edge that pure ball-strikers do not possess. His scrambling percentage around Augusta's greens has been among the best in the field.\n\nThe Irishman's mature mental approach and his comfort in adverse weather conditions make him a dangerous competitor in any scenario. His Portrush triumph proved he has the temperament for major championship glory.",
+        "whyTheyWillWin": "Lowry's short game artistry and major championship pedigree create a combination that can produce an upset at Augusta. His ability to grind, scramble, and perform under pressure has been proven at the highest level.\n\nHis growing Augusta comfort and Irish weather-hardened toughness give him a path to the green jacket."
       },
       {
         "name": "Jordan Spieth",
@@ -1159,7 +2011,8 @@
         "top5Pct": 8.0,
         "top10Pct": 15.0,
         "makeCutPct": 72.0,
-        "rationale": "Spieth at Augusta is a different animal. His 2015 triumph and deep course knowledge give him an edge that transcends current form, and he has a habit of producing magic in April."
+        "rationale": "Spieth at Augusta is a different animal. His 2015 triumph and deep course knowledge give him an edge that transcends current form, and he has a habit of producing magic in April.\n\nNobody reads Augusta's greens with the same preternatural instinct. His understanding of how the slopes feed the ball, where to miss, and how to manage the most demanding pin positions is the deepest in the field.\n\nHis inconsistent ball-striking is a legitimate concern, but Augusta has a way of rewarding course knowledge and creativity over raw ball-striking.",
+        "whyTheyWillWin": "Spieth's Augusta knowledge is the deepest of any active player. His 2015 dominance and multiple contention weeks demonstrate a connection with this course that transcends statistics and current form.\n\nWhen Spieth walks Augusta's fairways, he becomes a different player -- and that transformation is worth more than any strokes gained metric."
       },
       {
         "name": "Joaquin Niemann",
@@ -1167,7 +2020,8 @@
         "top5Pct": 7.0,
         "top10Pct": 14.0,
         "makeCutPct": 69.0,
-        "rationale": "Niemann's ball-striking is elite, and his aggressive style can unlock Augusta's par 5s. Limited Masters experience is the main question mark for the talented Chilean."
+        "rationale": "Niemann's ball-striking is elite, and his aggressive style can unlock Augusta's par 5s. Limited Masters experience is the main question mark for the talented Chilean, though his raw talent is undeniable and his physical tools are among the best in the world.\n\nHis driving distance and iron play from the fairway are world-class, giving him the structural advantages needed to score on Augusta's par 5s while maintaining the precision to attack the demanding par 4s. His penetrating ball flight handles wind effectively and produces the spin control that Augusta's greens demand.\n\nThe LIV schedule has limited his Augusta exposure, but Niemann's talent ceiling is extremely high. When his game is clicking, he produces the kind of ball-striking that can overpower any course, and his fearless mentality means he will not be intimidated by the Augusta stage.",
+        "whyTheyWillWin": "Niemann's world-class ball-striking and aggressive par-5 scoring create the potential for a breakthrough Masters. His physical tools are among the best in the field, and his fearlessness on the big stage suggests he will not be intimidated by Augusta's demands."
       },
       {
         "name": "Tony Finau",
@@ -1175,7 +2029,8 @@
         "top5Pct": 6.0,
         "top10Pct": 13.0,
         "makeCutPct": 68.0,
-        "rationale": "Finau's length gives him a structural advantage at Augusta, and his best is good enough to contend anywhere. Consistency has been the missing piece, but the talent is undeniable."
+        "rationale": "Finau's length gives him a structural advantage at Augusta, and his best is good enough to contend anywhere. Consistency has been the missing piece, but the talent is undeniable and his physical tools are among the most impressive in the field.\n\nHis driving distance and athletic frame generate the power needed to exploit Augusta's par 5s, and his iron play from the fairway is solid enough to produce legitimate birdie chances throughout the round. When his putting cooperates, Finau's combination of length and touch makes him capable of posting extremely low scores.\n\nThe major championship breakthrough has eluded him despite multiple close calls, but his talent suggests the ceiling is high enough to win at Augusta. His improving consistency in 2026 and his growing Augusta experience make him a legitimate dark horse.",
+        "whyTheyWillWin": "Finau's combination of length, athleticism, and solid all-around play gives him the tools to produce a special week at Augusta. His power advantage on the par 5s creates scoring opportunities that can separate him from the field."
       },
       {
         "name": "Min Woo Lee",
@@ -1183,7 +2038,7 @@
         "top5Pct": 5.5,
         "top10Pct": 12.0,
         "makeCutPct": 67.0,
-        "rationale": "The Australian has serious firepower and the creative shotmaking that Augusta rewards. His relative inexperience is a concern, but his ceiling is as high as anyone outside the top tier."
+        "rationale": "The Australian has serious firepower and the creative shotmaking that Augusta rewards. His relative inexperience is a concern, but his ceiling is as high as anyone outside the top tier.\n\nLee's power, flair, and fearlessness create an exciting combination at Augusta. His ability to shape the ball and manufacture creative shots around the greens is a skill that the course specifically rewards.\n\nLimited Masters experience is the primary concern, but his trajectory suggests he will be a factor for years to come."
       },
       {
         "name": "Robert MacIntyre",
@@ -1191,7 +2046,7 @@
         "top5Pct": 5.0,
         "top10Pct": 11.0,
         "makeCutPct": 65.0,
-        "rationale": "MacIntyre's competitive fire and natural left-to-right ball flight suit several key holes at Augusta. The Scot has the game and the temperament to surprise on the big stage."
+        "rationale": "MacIntyre's competitive fire and natural left-to-right ball flight suit several key holes at Augusta. The Scot has the game and the temperament to surprise on the big stage, and his PGA Tour victories confirm his competitive credentials.\n\nHis Scottish upbringing has produced a player comfortable in all weather conditions, with the shotmaking creativity and touch that Augusta rewards. His left-to-right ball flight is a genuine asset on the 10th, 13th, and 15th holes, and his ability to manufacture shots from difficult positions shows the creativity Augusta demands.\n\nHis fiery intensity and fearlessness on the big stage make him a genuinely dangerous outsider. MacIntyre plays with a passion that can carry him through difficult stretches, and his improving iron play gives him the tools to compete with the best."
       },
       {
         "name": "Sungjae Im",
@@ -1199,7 +2054,7 @@
         "top5Pct": 4.5,
         "top10Pct": 10.0,
         "makeCutPct": 66.0,
-        "rationale": "Im's consistency and work ethic have produced multiple solid Masters finishes. He will not beat himself, and his iron play gives him legitimate birdie chances throughout the round."
+        "rationale": "Im's consistency and work ethic have produced multiple solid Masters finishes. He will not beat himself, and his iron play gives him legitimate birdie chances throughout the round. His methodical approach to Augusta mirrors the patient, disciplined style that the course rewards.\n\nHis ball-striking from the fairway is among the most reliable in professional golf, and his ability to avoid the big numbers that derail more volatile players gives him a floor at Augusta that few can match. His multiple solid Masters finishes demonstrate genuine course comfort and growing institutional knowledge.\n\nThe ceiling concern is real -- Im may lack the scoring explosiveness of the elite contenders -- but his consistency over four rounds and his growing Augusta familiarity make him a player who could quietly contend if the conditions play tough and the favorites falter."
       },
       {
         "name": "Dustin Johnson",
@@ -1207,7 +2062,7 @@
         "top5Pct": 4.0,
         "top10Pct": 10.0,
         "makeCutPct": 65.0,
-        "rationale": "The 2020 champion's best days may be behind him, but Augusta magic is real. DJ's length and soft hands around the greens keep him in the conversation despite inconsistent LIV form."
+        "rationale": "The 2020 champion's best days may be behind him, but Augusta magic is real. DJ's length and soft hands around the greens keep him in the conversation despite inconsistent LIV form, and his record-setting 20-under-par victory demonstrates the heights his game can reach at this course.\n\nHis physical gifts remain impressive despite the passage of time. His driving distance is still more than sufficient to reach all four par 5s in two, and his famously soft touch around the greens has always been an underrated weapon at Augusta. His ability to hit towering iron shots that land softly on firm greens is a rare skill.\n\nThe motivation and competitive sharpness questions are legitimate, but Johnson's champion status provides a reservoir of confidence and course knowledge that can overcome even significant form concerns. Augusta has a unique ability to elevate players who have tasted glory on its grounds."
       },
       {
         "name": "Adam Scott",
@@ -1215,7 +2070,7 @@
         "top5Pct": 4.0,
         "top10Pct": 9.5,
         "makeCutPct": 65.0,
-        "rationale": "The ageless Australian's swing remains one of the prettiest in golf, and his 2013 title gives him a champion's knowledge of every pin position. Experience is his currency."
+        "rationale": "The ageless Australian's swing remains one of the prettiest in golf, and his 2013 title gives him a champion's knowledge of every pin position. Experience is his currency at Augusta, and he has accumulated more of it than nearly anyone in the field.\n\nScott's mechanical efficiency has allowed him to remain competitive well into his 40s, producing the kind of consistent ball-striking that Augusta rewards. His deep course knowledge compensates for the gradual decline in physical tools, and his understanding of Augusta's greens and strategic demands is the product of nearly two decades of elite competition.\n\nPlaying for legacy at this stage of his career, Scott brings a unique perspective to the tournament. The elegance and composure of a seasoned champion, combined with the urgency of knowing every Masters could be his last serious contention, creates a powerful motivational cocktail."
       },
       {
         "name": "Russell Henley",
@@ -1223,7 +2078,7 @@
         "top5Pct": 3.0,
         "top10Pct": 7.5,
         "makeCutPct": 60.0,
-        "rationale": "Henley is the prototypical under-the-radar Augusta threat. His iron play is among the best on Tour, and his steady demeanor suits the patient game Augusta rewards."
+        "rationale": "Henley is the prototypical under-the-radar Augusta threat. His iron play is among the best on Tour, and his steady demeanor suits the patient game Augusta rewards. His strokes gained approach consistently ranks in the top 20 on the PGA Tour.\n\nHis Georgia roots provide comfort with the Augusta environment -- the turf, the climate, the culture -- that cannot be replicated by visiting players. His precision approach play consistently produces birdie opportunities, and his improving short game has added a dimension that was previously missing from his arsenal.\n\nThe major championship ceiling question remains unresolved, but Henley's ball-striking is genuinely elite, and at a course where approach play is the most important skill, his game is tailor-made for a strong performance. His under-the-radar profile allows him to play without pressure."
       },
       {
         "name": "Cameron Young",
@@ -1231,7 +2086,7 @@
         "top5Pct": 3.0,
         "top10Pct": 7.5,
         "makeCutPct": 60.0,
-        "rationale": "Young's prodigious length opens up Augusta in ways few can match. If his putter cooperates, he has the raw ability to post a seriously low number on any given day."
+        "rationale": "Young's prodigious length opens up Augusta in ways few can match. If his putter cooperates, he has the raw ability to post a seriously low number on any given day, and his ball speed generates the kind of carry that makes Augusta's par 5s play significantly shorter.\n\nHis driving distance creates structural advantages on the par 5s that translate to 2-3 scoring opportunities per round that shorter hitters cannot access. His improved short game has addressed the primary weakness in his game, and his touch around the greens has shown significant development in 2026.\n\nVolatility remains a legitimate concern over four rounds, as his aggressive style produces both spectacular lows and disappointing highs. But Young's ceiling on the right week is among the highest in the field, and if everything clicks simultaneously, he has the raw tools to post a winning score."
       },
       {
         "name": "Keegan Bradley",
@@ -1239,7 +2094,7 @@
         "top5Pct": 2.5,
         "top10Pct": 6.5,
         "makeCutPct": 60.0,
-        "rationale": "The Ryder Cup captain's form has been quietly excellent, and his competitive fire burns hot in big events. Bradley's major pedigree and improved iron play make him a sneaky pick."
+        "rationale": "The Ryder Cup captain's form has been quietly excellent, and his competitive fire burns hot in big events. Bradley's major pedigree and improved iron play make him a sneaky pick.\n\nHis 2011 PGA Championship victory and Ryder Cup captaincy provide the credentials and confidence that matter at Augusta. His competitive intensity is among the fiercest in the field.\n\nBradley's game has quietly been in excellent form heading into Augusta week, and his determination makes him a player who can never be counted out."
       },
       {
         "name": "Corey Conners",
@@ -1247,7 +2102,7 @@
         "top5Pct": 2.5,
         "top10Pct": 6.5,
         "makeCutPct": 60.0,
-        "rationale": "Conners is a ball-striking machine who consistently produces solid results at Augusta. He will not light up the leaderboard, but he rarely shoots himself out of a tournament either."
+        "rationale": "Conners is a ball-striking machine who consistently produces solid results at Augusta. He will not light up the leaderboard, but he rarely shoots himself out of a tournament either. His strokes gained tee-to-green is among the most consistent on Tour.\n\nHis precision from tee to green consistently produces birdie opportunities, and his improving short game has added a scoring dimension that was previously missing. His Canadian toughness and methodical approach suit the patience Augusta demands, and his ability to hit fairways and greens with remarkable regularity gives him a high floor.\n\nThe ceiling concern is real -- Conners's putting and short game may not be at the level required to win a major championship -- but his reliability and ball-striking excellence make him a safe pick for a solid finish and a potential surprise contender if his putter gets hot."
       },
       {
         "name": "Justin Thomas",
@@ -1255,7 +2110,127 @@
         "top5Pct": 2.0,
         "top10Pct": 5.5,
         "makeCutPct": 58.0,
-        "rationale": "JT's form has been frustratingly inconsistent, but his talent remains elite. When he is dialed in, he has the complete game to contend at Augusta -- the question is which JT shows up."
+        "rationale": "JT's form has been frustratingly inconsistent, but his talent remains elite. When he is dialed in, he has the complete game to contend at Augusta -- the question is which JT shows up.\n\nTwo major championships and 15 PGA Tour victories speak to a level of talent among the best of his generation. His Augusta knowledge and competitive intensity are genuine assets.\n\nThe inconsistency is the elephant in the room, but the upside when everything clicks makes him impossible to dismiss."
+      },
+      {
+        "name": "Max Homa",
+        "winPct": 0.3,
+        "top5Pct": 1.8,
+        "top10Pct": 5.0,
+        "makeCutPct": 55.0,
+        "rationale": "Homa's shotmaking ability and creative ball flight suit Augusta's demands. His game continues to develop, and his growing Augusta experience is building the foundation for stronger performances.\n\nHis ability to shape the ball both ways gives him access to pin positions that other players must play away from, and his competitive personality thrives on the big stage."
+      },
+      {
+        "name": "Tom Kim",
+        "winPct": 0.25,
+        "top5Pct": 1.5,
+        "top10Pct": 4.5,
+        "makeCutPct": 53.0,
+        "rationale": "Kim's infectious energy and rapidly maturing game make him an exciting young talent at Augusta. His iron play is precise, his competitiveness is fierce, and his multiple PGA Tour victories confirm his ability to close out tournaments.\n\nLimited Augusta experience is a concern, but his ball-striking and mental toughness suggest he will figure the course out quickly."
+      },
+      {
+        "name": "Sam Burns",
+        "winPct": 0.22,
+        "top5Pct": 1.4,
+        "top10Pct": 4.0,
+        "makeCutPct": 52.0,
+        "rationale": "Burns has established himself as one of the better players on Tour with multiple victories and consistent contention. His powerful game and improved putting give him the tools to compete at Augusta.\n\nHis Augusta record is still developing, but his physical tools and competitive drive suggest he will be a factor."
+      },
+      {
+        "name": "Matt Fitzpatrick",
+        "winPct": 0.2,
+        "top5Pct": 1.3,
+        "top10Pct": 3.8,
+        "makeCutPct": 51.0,
+        "rationale": "The U.S. Open champion's precision and course management are textbook, though his lack of length limits his par-5 scoring at Augusta. His iron play and analytical approach to the course mirror the precision that defines his game.\n\nFitzpatrick's major championship pedigree gives him credentials that matter, and his improving power numbers have partially addressed his length deficit."
+      },
+      {
+        "name": "Will Zalatoris",
+        "winPct": 0.18,
+        "top5Pct": 1.2,
+        "top10Pct": 3.5,
+        "makeCutPct": 50.0,
+        "rationale": "Zalatoris's stunning 2021 runner-up finish showed a genuine affinity for Augusta, and his pure ball-striking is ideally suited to holding firm greens. Health concerns have limited his recent form, but when fit, his iron play is among the best in the world.\n\nHis thin, towering iron shots are perfectly calibrated for Augusta's demanding approach shots."
+      },
+      {
+        "name": "Tyrrell Hatton",
+        "winPct": 0.15,
+        "top5Pct": 1.0,
+        "top10Pct": 3.0,
+        "makeCutPct": 48.0,
+        "rationale": "Hatton's fiery temperament and elite ball-striking make him a compelling outsider. His shotmaking creativity suits Augusta's demands, though his emotional volatility can work against him on a course that demands patience.\n\nHis multiple Ryder Cup appearances and strong major finishes demonstrate he can compete at the highest level."
+      },
+      {
+        "name": "Sepp Straka",
+        "winPct": 0.14,
+        "top5Pct": 0.9,
+        "top10Pct": 2.8,
+        "makeCutPct": 47.0,
+        "rationale": "Straka's consistent ball-striking and calm demeanor translate well to Augusta's demands. His multiple PGA Tour victories demonstrate he can close out tournaments, and his methodical approach suits the patience Augusta rewards.\n\nHis steady game and emotional control are assets at a course where volatility is punished."
+      },
+      {
+        "name": "Jason Day",
+        "winPct": 0.13,
+        "top5Pct": 0.8,
+        "top10Pct": 2.5,
+        "makeCutPct": 46.0,
+        "rationale": "The former world number one has deep Augusta experience and multiple top-5 Masters finishes that speak to a genuine course affinity. While his best days may be behind him, Day's short game and putting remain elite, and his knowledge of Augusta is extensive.\n\nHis emotional connection to the course and desire to relive past glory provide motivation."
+      },
+      {
+        "name": "Billy Horschel",
+        "winPct": 0.12,
+        "top5Pct": 0.7,
+        "top10Pct": 2.2,
+        "makeCutPct": 45.0,
+        "rationale": "Horschel's gritty competitiveness and solid ball-striking give him a chance at Augusta. His FedExCup title and multiple Tour victories demonstrate he can perform under pressure, and his determination is a genuine asset.\n\nHis game is built on work ethic and consistency rather than flash."
+      },
+      {
+        "name": "Brian Harman",
+        "winPct": 0.11,
+        "top5Pct": 0.6,
+        "top10Pct": 2.0,
+        "makeCutPct": 44.0,
+        "rationale": "The Open Championship winner brings major pedigree and elite putting to Augusta. His lack of length is a significant concern, but his accuracy, creativity around the greens, and Georgia ties provide compensating advantages.\n\nHis quiet confidence and scrambling ability make him a dangerous outsider."
+      },
+      {
+        "name": "Akshay Bhatia",
+        "winPct": 0.1,
+        "top5Pct": 0.5,
+        "top10Pct": 1.8,
+        "makeCutPct": 43.0,
+        "rationale": "Bhatia is one of the most exciting young talents in professional golf, with a left-handed swing that produces creative shotmaking. His multiple Tour victories at a young age demonstrate prodigious talent, though limited Augusta experience is the primary concern.\n\nHis fearlessness and natural ability suggest rapid Augusta adaptation."
+      },
+      {
+        "name": "Sergio Garcia",
+        "winPct": 0.1,
+        "top5Pct": 0.5,
+        "top10Pct": 1.5,
+        "makeCutPct": 42.0,
+        "rationale": "The 2017 champion returns to the scene of his most emotional victory. Garcia's deep Augusta knowledge and champion's perspective give him an edge that current form might not suggest, though the LIV schedule and diminished competitiveness are real concerns.\n\nHis love for Augusta and desire to relive 2017 provide powerful motivation."
+      },
+      {
+        "name": "Chris Kirk",
+        "winPct": 0.08,
+        "top5Pct": 0.4,
+        "top10Pct": 1.5,
+        "makeCutPct": 41.0,
+        "rationale": "Kirk's remarkable comeback story and strong recent form make him a compelling outsider. His Georgia roots provide comfort in the Augusta environment, and his steady ball-striking and mental resilience are genuine assets.\n\nHis consistency and determination give him a path to a solid Masters week."
+      },
+      {
+        "name": "Davis Thompson",
+        "winPct": 0.08,
+        "top5Pct": 0.4,
+        "top10Pct": 1.2,
+        "makeCutPct": 40.0,
+        "rationale": "Thompson is a rising Georgia native with excellent ball-striking and a natural comfort with the Augusta environment. His driving distance and improving iron play give him the physical tools, and his local knowledge is a small but meaningful advantage.\n\nHis trajectory suggests he will be a factor at Augusta for years to come."
+      },
+      {
+        "name": "Rickie Fowler",
+        "winPct": 0.07,
+        "top5Pct": 0.3,
+        "top10Pct": 1.0,
+        "makeCutPct": 39.0,
+        "rationale": "Fowler's Augusta history includes strong performances that speak to a genuine course fit. His flat, powerful swing and short game creativity give him the tools for Augusta, though his overall inconsistency in recent seasons limits his ceiling.\n\nHis experience, popularity, and competitive spirit ensure maximum effort on the biggest stage."
       }
     ]
   }

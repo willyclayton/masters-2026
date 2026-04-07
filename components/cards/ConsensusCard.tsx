@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import type { ConsensusPrediction } from "@/lib/types";
 import { InitialsAvatar } from "@/components/ui/InitialsAvatar";
 import { CountUpNumber } from "@/components/ui/CountUpNumber";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { Badge } from "@/components/ui/badge";
+import { ChevronDown } from "lucide-react";
 
 interface ConsensusCardProps {
   prediction: ConsensusPrediction;
@@ -12,6 +14,8 @@ interface ConsensusCardProps {
 }
 
 export function ConsensusCard({ prediction, initials }: ConsensusCardProps) {
+  const [showAnalysis, setShowAnalysis] = useState(false);
+
   return (
     <div className="relative overflow-hidden rounded-lg border-l-4 border-masters-gold bg-white p-6 shadow-sm">
       <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-masters-gold-light opacity-50" />
@@ -60,9 +64,45 @@ export function ConsensusCard({ prediction, initials }: ConsensusCardProps) {
               </div>
             </div>
 
-            <p className="mt-3 text-sm italic text-[var(--text-secondary)]">
+            <p className="mt-3 text-sm italic text-[var(--text-secondary)] line-clamp-3">
               &ldquo;{prediction.rationale}&rdquo;
             </p>
+
+            {/* Scenario Analysis */}
+            {prediction.scenarioAnalysis && (
+              <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-3">
+                <div className="rounded-md bg-masters-green-light p-2">
+                  <p className="text-[10px] font-medium uppercase text-masters-green">Best Case</p>
+                  <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{prediction.scenarioAnalysis.bestCase}</p>
+                </div>
+                <div className="rounded-md bg-gray-50 p-2">
+                  <p className="text-[10px] font-medium uppercase text-[var(--text-muted)]">Most Likely</p>
+                  <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{prediction.scenarioAnalysis.mostLikely}</p>
+                </div>
+                <div className="rounded-md bg-red-50 p-2">
+                  <p className="text-[10px] font-medium uppercase text-masters-red">Worst Case</p>
+                  <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{prediction.scenarioAnalysis.worstCase}</p>
+                </div>
+              </div>
+            )}
+
+            {/* Why They Will Win - Collapsible */}
+            {prediction.whyTheyWillWin && (
+              <div className="mt-4">
+                <button
+                  onClick={() => setShowAnalysis(!showAnalysis)}
+                  className="flex items-center gap-1 text-xs font-medium text-masters-green hover:underline"
+                >
+                  {showAnalysis ? "Hide" : "Read"} Full Analysis
+                  <ChevronDown className={`h-3 w-3 transition-transform ${showAnalysis ? "rotate-180" : ""}`} />
+                </button>
+                {showAnalysis && (
+                  <div className="mt-2 rounded-md bg-[var(--bg-primary)] p-3 text-sm text-[var(--text-secondary)] leading-relaxed whitespace-pre-line">
+                    {prediction.whyTheyWillWin}
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="mt-4">
               <ShareButton

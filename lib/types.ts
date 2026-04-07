@@ -1,3 +1,49 @@
+export interface AugustaCourseFit {
+  par5Scoring: number;
+  amenCornerAvg: number;
+  drivingDistanceRank: number;
+  greensInRegulation: number;
+  scramblingPct: number;
+}
+
+export interface MajorResult {
+  championship: "Masters" | "PGA" | "US Open" | "The Open";
+  year: number;
+  finish: string;
+}
+
+export interface BettingOdds {
+  currentOdds: string;
+  impliedProbability: number;
+  movement: "rising" | "falling" | "stable";
+}
+
+export interface HeadToHeadRecord {
+  opponent: string;
+  wins: number;
+  losses: number;
+  lastMeetingResult: string;
+}
+
+export interface AugustaKeyHole {
+  hole: number;
+  name: string;
+  advantage: string;
+}
+
+export interface HistoricalComparison {
+  playerName: string;
+  year: number;
+  comparison: string;
+}
+
+export interface WeatherImpact {
+  wind: "advantage" | "neutral" | "disadvantage";
+  rain: "advantage" | "neutral" | "disadvantage";
+  cold: "advantage" | "neutral" | "disadvantage";
+  explanation: string;
+}
+
 export interface Player {
   name: string;
   initials: string;
@@ -16,6 +62,18 @@ export interface Player {
   injuryStatus: string | null;
   narrative: string;
   tags: PlayerTag[];
+  augustaCourseFit?: AugustaCourseFit;
+  majorHistory?: MajorResult[];
+  bettingOdds?: BettingOdds;
+  headToHead?: HeadToHeadRecord[];
+  keyStrengths?: string[];
+  keyWeaknesses?: string[];
+  whyTheyWillWin?: string;
+  whyTheyWontWin?: string;
+  augustaKeyHoles?: AugustaKeyHole[];
+  comparisons?: HistoricalComparison[];
+  pressureRating?: number;
+  weatherImpact?: WeatherImpact;
 }
 
 export type PlayerTag =
@@ -60,6 +118,20 @@ export interface ModelPrediction {
   makeCutPct: number;
 }
 
+export interface ScenarioAnalysis {
+  bestCase: string;
+  worstCase: string;
+  mostLikely: string;
+}
+
+export interface ScoreExplanations {
+  momentum: string;
+  augustaExperience: string;
+  majorClutch: string;
+  weatherFit: string;
+  intangibles: string;
+}
+
 export interface SimulatorOutput {
   modelName: "The Simulator";
   emoji: string;
@@ -82,6 +154,7 @@ export interface ScoutOutput {
       intangibles: number;
       total: number;
     };
+    scoreExplanations?: ScoreExplanations;
   })[];
 }
 
@@ -93,6 +166,7 @@ export interface AnalystOutput {
   narrative: string;
   rankings: (ModelPrediction & {
     rationale: string;
+    whyTheyWillWin?: string;
   })[];
 }
 
@@ -103,6 +177,8 @@ export interface ConsensusPrediction {
   top10Pct: number;
   makeCutPct: number;
   rationale: string;
+  whyTheyWillWin?: string;
+  scenarioAnalysis?: ScenarioAnalysis;
   simulatorRank: number;
   scoutRank: number;
   analystRank: number;
