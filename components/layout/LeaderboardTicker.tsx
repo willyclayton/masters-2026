@@ -1,42 +1,102 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useLiveDataContext } from "@/lib/live-data-context";
 import type { LivePlayerScore } from "@/lib/types";
 import { ChevronRight } from "lucide-react";
 
 const PAGE_SIZE = 5;
-const AUTO_FAN_MS = 8000; // auto-fan every 8 seconds
+const AUTO_FAN_MS = 8000;
+const STAGGER_MS = 150; // delay between each cell's animation
+
+type CellState = "idle" | "dropping-out" | "dropping-in";
+
+interface AnimatedCell {
+  player: LivePlayerScore;
+  state: CellState;
+  delay: number; // stagger delay in ms
+}
 
 export function LeaderboardTicker() {
-  const { leaderboard, isLive } = useLiveDataContext();
+  const { leaderboard } = useLiveDataContext();
   const [page, setPage] = useState(0);
+  const [cells, setCells] = useState<AnimatedCell[]>([]);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const prevPageRef = useRef(0);
 
   const players = leaderboard?.players || [];
   const leader = players[0];
-  const field = players.slice(1); // everyone except the leader
+  const field = players.slice(1);
   const totalPages = Math.max(1, Math.ceil(field.length / PAGE_SIZE));
-  const pageStart = page * PAGE_SIZE;
-  const pageEnd = pageStart + PAGE_SIZE;
-  const visibleField = field.slice(pageStart, pageEnd);
+
+  // Build cells for a given page
+  const getCells = useCallback(
+    (p: number, state: CellState): AnimatedCell[] => {
+      const start = p * PAGE_SIZE;
+      return field.slice(start, start + PAGE_SIZE).map((player, i) => ({
+        player,
+        state,
+        delay: i * STAGGER_MS,
+      }));
+    },
+    [field]
+  );
+
+  // Initialize cells on first render / data change
+  useEffect(() => {
+    if (field.length > 0 && cells.length === 0) {
+      setCells(getCells(0, "idle"));
+    }
+  }, [field.length, cells.length, getCells]);
+
+  // Animate page transition
+  const animateToPage = useCallback(
+    (nextPage: number) => {
+      if (isAnimating || field.length === 0) return;
+      setIsAnimating(true);
+
+      // Phase 1: Drop out current cells
+      setCells((prev) =>
+        prev.map((c, i) => ({ ...c, state: "dropping-out" as CellState, delay: i * STAGGER_MS }))
+      );
+
+      // Phase 2: After drop-out completes, swap to new cells dropping in
+      const dropOutDuration = (PAGE_SIZE - 1) * STAGGER_MS + 250;
+      setTimeout(() => {
+        const newCells = getCells(nextPage, "dropping-in");
+        setCells(newCells);
+        setPage(nextPage);
+
+        // Phase 3: After drop-in, set to idle
+        const dropInDuration = (PAGE_SIZE - 1) * STAGGER_MS + 400;
+        setTimeout(() => {
+          setCells((prev) => prev.map((c) => ({ ...c, state: "idle" as CellState })));
+          setIsAnimating(false);
+        }, dropInDuration);
+      }, dropOutDuration * 0.6); // overlap for smoothness
+    },
+    [isAnimating, field.length, getCells]
+  );
 
   const nextPage = useCallback(() => {
-    setPage((p) => (p + 1) % totalPages);
-  }, [totalPages]);
+    const next = (page + 1) % totalPages;
+    animateToPage(next);
+  }, [page, totalPages, animateToPage]);
 
-  // Auto-fan through pages
+  // Auto-fan
   useEffect(() => {
     if (totalPages <= 1) return;
     const timer = setInterval(nextPage, AUTO_FAN_MS);
     return () => clearInterval(timer);
   }, [nextPage, totalPages]);
 
-  // Reset page when leaderboard updates
+  // Reset on new leaderboard data
   useEffect(() => {
     setPage(0);
-  }, [leaderboard?.lastUpdated]);
+    setCells(getCells(0, "idle"));
+    setIsAnimating(false);
+  }, [leaderboard?.lastUpdated, getCells]);
 
-  // Don't render if no data
   if (!leader) return null;
 
   const round = leaderboard?.currentRound || 1;
@@ -45,6 +105,20 @@ export function LeaderboardTicker() {
 
   return (
     <div className="w-full border-b-2 border-masters-green bg-white">
+      {/* Gravity drop keyframes */}
+      <style>{`
+        @keyframes grav-out {
+          0% { transform: translateY(0); opacity: 1; }
+          100% { transform: translateY(36px); opacity: 0; }
+        }
+        @keyframes grav-in {
+          0% { transform: translateY(-50px); opacity: 0; }
+          70% { transform: translateY(2px); opacity: 1; }
+          85% { transform: translateY(-1px); }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+      `}</style>
+
       <div className="mx-auto flex max-w-7xl items-stretch">
         {/* Live badge */}
         <div className="flex shrink-0 items-center gap-1.5 bg-masters-green px-3 sm:px-4">
@@ -56,7 +130,7 @@ export function LeaderboardTicker() {
           </span>
         </div>
 
-        {/* Pinned leader */}
+        {/* Pinned leader — never animates */}
         <div className="flex shrink-0 items-center gap-1.5 border-r-2 border-masters-green bg-masters-green-light px-3 py-1.5 sm:px-4">
           <span className="text-[10px] font-extrabold text-masters-gold sm:text-xs">
             1
@@ -76,52 +150,72 @@ export function LeaderboardTicker() {
           )}
         </div>
 
-        {/* Fanning field cells */}
-        <div className="flex min-w-0 flex-1 items-stretch overflow-x-auto">
-          {visibleField.map((p, i) => (
-            <div
-              key={p.name}
-              className={`flex shrink-0 items-center gap-1 px-2 py-1.5 sm:gap-1.5 sm:px-3 ${
-                i < visibleField.length - 1
-                  ? "border-r border-[var(--border-color)]"
-                  : ""
-              }`}
-            >
-              <span className="text-[10px] font-bold text-[var(--text-muted)]">
-                {p.positionNum}
-              </span>
-              <span className="text-[11px] font-semibold text-[var(--text-secondary)] sm:text-xs">
-                {lastName(p.name)}
-              </span>
-              <span className="text-[11px] font-extrabold text-masters-red sm:text-xs">
-                {formatScore(p.totalScore)}
-              </span>
-              {p.thru && p.thru !== "-" && p.thru !== "F" && (
-                <span className="hidden text-[10px] text-[var(--text-muted)] lg:inline">
-                  thru {p.thru}
+        {/* Animated field cells */}
+        <div className="flex min-w-0 flex-1 items-stretch overflow-hidden">
+          {cells.map((cell, i) => {
+            const animStyle: React.CSSProperties =
+              cell.state === "dropping-out"
+                ? {
+                    animation: `grav-out 250ms ease ${cell.delay}ms forwards`,
+                  }
+                : cell.state === "dropping-in"
+                  ? {
+                      opacity: 0,
+                      animation: `grav-in 400ms ease ${cell.delay + 130}ms forwards`,
+                    }
+                  : {};
+
+            return (
+              <div
+                key={`${cell.player.name}-${cell.state}-${page}`}
+                className={`flex shrink-0 items-center gap-1 px-2 py-1.5 sm:gap-1.5 sm:px-3 ${
+                  i < cells.length - 1
+                    ? "border-r border-[var(--border-color)]"
+                    : ""
+                }`}
+                style={animStyle}
+              >
+                <span className="text-[10px] font-bold text-[var(--text-muted)]">
+                  {cell.player.positionNum}
                 </span>
-              )}
-              {p.thru === "F" && (
-                <span className="hidden text-[10px] text-[var(--text-muted)] lg:inline">
-                  {roundScore(p, round)}
+                <span className="text-[11px] font-semibold text-[var(--text-secondary)] sm:text-xs">
+                  {lastName(cell.player.name)}
                 </span>
-              )}
-            </div>
-          ))}
+                <span className="text-[11px] font-extrabold text-masters-red sm:text-xs">
+                  {formatScore(cell.player.totalScore)}
+                </span>
+                {cell.player.thru &&
+                  cell.player.thru !== "-" &&
+                  cell.player.thru !== "F" && (
+                    <span className="hidden text-[10px] text-[var(--text-muted)] lg:inline">
+                      thru {cell.player.thru}
+                    </span>
+                  )}
+                {cell.player.thru === "F" && (
+                  <span className="hidden text-[10px] text-[var(--text-muted)] lg:inline">
+                    {roundScore(cell.player, round)}
+                  </span>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Fan navigation */}
         {totalPages > 1 && (
           <div className="flex shrink-0 items-center gap-1 px-2">
             <span className="text-[9px] font-semibold text-[var(--text-muted)]">
-              {pageStart + 2}-{Math.min(pageStart + PAGE_SIZE + 1, players.length)}
+              {page * PAGE_SIZE + 2}-
+              {Math.min(page * PAGE_SIZE + PAGE_SIZE + 1, players.length)}
             </span>
             <div className="flex gap-1">
               {Array.from({ length: Math.min(totalPages, 5) }).map((_, i) => (
                 <span
                   key={i}
                   className={`h-1 w-1 rounded-full transition-colors ${
-                    i === page ? "bg-masters-green" : "bg-[var(--border-color)]"
+                    i === page
+                      ? "bg-masters-green"
+                      : "bg-[var(--border-color)]"
                   }`}
                 />
               ))}
@@ -143,12 +237,6 @@ export function LeaderboardTicker() {
 function lastName(fullName: string): string {
   const parts = fullName.split(" ");
   return parts[parts.length - 1];
-}
-
-function shortName(fullName: string): string {
-  const parts = fullName.split(" ");
-  if (parts.length < 2) return fullName;
-  return parts[0][0] + ". " + parts[parts.length - 1];
 }
 
 function formatScore(score: number): string {

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticker Fan Animations — 10 Variations</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006B54; --green-dark: #004D3C; --green-light: #E8F5F0;
+    --gold: #C8A951; --gold-light: #FBF5E6;
+    --red: #C0392B; --bg: #FAFAF7; --text: #1A1A1A; --text2: #4A4A4A; --muted: #8A8A8A; --border: #E5E5DC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+  .heading { font-family: 'Playfair Display', serif; }
+
+  .top-bar { position: sticky; top: 0; z-index: 50; background: var(--green-dark); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .top-bar h1 { color: white; font-family: 'Playfair Display', serif; font-size: 18px; }
+  .top-bar span { color: var(--gold); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+  .selector { max-width: 940px; margin: 32px auto 0; padding: 0 20px; }
+  .selector-title { font-family: 'Playfair Display', serif; font-size: 26px; text-align: center; margin-bottom: 6px; }
+  .selector-sub { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 20px; line-height: 1.5; }
+  .selector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 8px; }
+  .selector-btn { padding: 10px 12px; border-radius: 8px; border: 2px solid var(--border); background: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; text-align: left; }
+  .selector-btn:hover { border-color: var(--green); color: var(--green); }
+  .selector-btn.active { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .selector-btn .num { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-bottom: 2px; }
+
+  .mockup-wrap { max-width: 940px; margin: 24px auto 60px; padding: 0 20px; }
+  .mockup { display: none; }
+  .mockup.active { display: block; }
+
+  .desc { background: var(--bg); border: 1px dashed var(--border); border-radius: 8px; padding: 14px; margin-top: 14px; font-size: 13px; color: var(--text2); line-height: 1.6; }
+  .desc strong { color: var(--text); }
+
+  .fake-header { background: var(--green); padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+  .fake-header h2 { color: white; font-family: 'Playfair Display', serif; font-size: 16px; }
+  .fake-body { border: 1px solid var(--border); border-top: 0; border-radius: 0 0 10px 10px; background: white; padding: 20px; min-height: 30px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.4} }
+  .pulse { animation: pulse 2s infinite; }
+
+  /* ── Shared ticker shell ── */
+  .ticker { border-bottom: 2px solid var(--green); background: white; border-radius: 10px 10px 0 0; overflow: hidden; }
+  .ticker-inner { display: flex; align-items: stretch; }
+  .badge { display: flex; align-items: center; gap: 5px; background: var(--green); padding: 7px 12px; flex-shrink: 0; }
+  .badge span { font-size: 10px; color: white; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+  .badge .dot { width: 5px; height: 5px; border-radius: 50%; background: #4ADE80; }
+  .leader { display: flex; align-items: center; gap: 6px; background: var(--green-light); border-right: 2px solid var(--green); padding: 6px 14px; flex-shrink: 0; }
+  .leader .pos { font-size: 11px; font-weight: 800; color: var(--gold); }
+  .leader .name { font-size: 13px; font-weight: 700; }
+  .leader .score { font-size: 14px; font-weight: 800; color: var(--red); }
+  .fan-area { flex: 1; min-width: 0; overflow: hidden; position: relative; }
+
+  /* Player cell */
+  .cell { display: flex; align-items: center; gap: 5px; padding: 7px 12px; border-right: 1px solid var(--border); flex-shrink: 0; }
+  .cell:last-child { border-right: none; }
+  .cell .p { font-size: 10px; font-weight: 700; color: var(--muted); }
+  .cell .n { font-size: 12px; font-weight: 600; color: var(--text2); }
+  .cell .s { font-size: 12px; font-weight: 800; color: var(--red); }
+
+  /* Fan nav */
+  .fan-nav { display: flex; align-items: center; padding: 0 8px; flex-shrink: 0; }
+  .fan-nav .dots { display: flex; gap: 4px; margin-right: 6px; }
+  .fan-nav .d { width: 5px; height: 5px; border-radius: 50%; background: var(--border); transition: .3s; }
+  .fan-nav .d.on { background: var(--green); }
+  .arrow-btn { background: none; border: none; cursor: pointer; color: var(--green); font-size: 16px; padding: 4px; }
+
+  /* Play/pause */
+  .controls { display: flex; align-items: center; gap: 12px; margin-top: 12px; justify-content: center; }
+  .play-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid var(--green); background: white; color: var(--green); font-size: 12px; font-weight: 600; cursor: pointer; }
+  .play-btn:hover { background: var(--green-light); }
+  .speed-label { font-size: 11px; color: var(--muted); }
+
+  /* ── Animation helpers ── */
+  .fan-row { display: flex; }
+
+  /* 1: Crossfade */
+  @keyframes fadeIn { from{opacity:0}to{opacity:1} }
+  @keyframes fadeOut { from{opacity:1}to{opacity:0} }
+  .crossfade-enter { animation: fadeIn .5s ease forwards; }
+  .crossfade-exit { animation: fadeOut .3s ease forwards; }
+
+  /* 2: Slide left */
+  @keyframes slideInLeft { from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1} }
+  @keyframes slideOutLeft { from{transform:translateX(0);opacity:1}to{transform:translateX(-100%);opacity:0} }
+  .slide-left-enter { animation: slideInLeft .4s ease forwards; }
+  .slide-left-exit { animation: slideOutLeft .3s ease forwards; }
+
+  /* 3: Slide up */
+  @keyframes slideInUp { from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1} }
+  @keyframes slideOutUp { from{transform:translateY(0);opacity:1}to{transform:translateY(-100%);opacity:0} }
+  .slide-up-enter { animation: slideInUp .35s ease forwards; }
+  .slide-up-exit { animation: slideOutUp .25s ease forwards; }
+
+  /* 4: Cascade stagger */
+  @keyframes cascadeIn { from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1} }
+  .cascade-enter .cell:nth-child(1){animation:cascadeIn .3s ease .0s forwards;opacity:0}
+  .cascade-enter .cell:nth-child(2){animation:cascadeIn .3s ease .06s forwards;opacity:0}
+  .cascade-enter .cell:nth-child(3){animation:cascadeIn .3s ease .12s forwards;opacity:0}
+  .cascade-enter .cell:nth-child(4){animation:cascadeIn .3s ease .18s forwards;opacity:0}
+  .cascade-enter .cell:nth-child(5){animation:cascadeIn .3s ease .24s forwards;opacity:0}
+
+  /* 5: Scale pop */
+  @keyframes scaleIn { from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1} }
+  .scale-enter .cell:nth-child(1){animation:scaleIn .3s ease .0s forwards;opacity:0}
+  .scale-enter .cell:nth-child(2){animation:scaleIn .3s ease .05s forwards;opacity:0}
+  .scale-enter .cell:nth-child(3){animation:scaleIn .3s ease .1s forwards;opacity:0}
+  .scale-enter .cell:nth-child(4){animation:scaleIn .3s ease .15s forwards;opacity:0}
+  .scale-enter .cell:nth-child(5){animation:scaleIn .3s ease .2s forwards;opacity:0}
+
+  /* 6: Flip */
+  @keyframes flipIn { from{transform:rotateX(90deg);opacity:0}to{transform:rotateX(0);opacity:1} }
+  .flip-enter { perspective: 600px; }
+  .flip-enter .cell:nth-child(1){animation:flipIn .4s ease .0s forwards;opacity:0}
+  .flip-enter .cell:nth-child(2){animation:flipIn .4s ease .06s forwards;opacity:0}
+  .flip-enter .cell:nth-child(3){animation:flipIn .4s ease .12s forwards;opacity:0}
+  .flip-enter .cell:nth-child(4){animation:flipIn .4s ease .18s forwards;opacity:0}
+  .flip-enter .cell:nth-child(5){animation:flipIn .4s ease .24s forwards;opacity:0}
+
+  /* 7: Blur in */
+  @keyframes blurIn { from{filter:blur(8px);opacity:0}to{filter:blur(0);opacity:1} }
+  .blur-enter { animation: blurIn .45s ease forwards; }
+
+  /* 8: Typewriter reveal */
+  @keyframes typeIn { from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)} }
+  .type-enter .cell:nth-child(1){animation:typeIn .25s ease .0s forwards;clip-path:inset(0 100% 0 0)}
+  .type-enter .cell:nth-child(2){animation:typeIn .25s ease .1s forwards;clip-path:inset(0 100% 0 0)}
+  .type-enter .cell:nth-child(3){animation:typeIn .25s ease .2s forwards;clip-path:inset(0 100% 0 0)}
+  .type-enter .cell:nth-child(4){animation:typeIn .25s ease .3s forwards;clip-path:inset(0 100% 0 0)}
+  .type-enter .cell:nth-child(5){animation:typeIn .25s ease .4s forwards;clip-path:inset(0 100% 0 0)}
+
+  /* 9: Accordion expand */
+  @keyframes accordionIn { from{max-width:0;padding:7px 0;opacity:0}to{max-width:200px;padding:7px 12px;opacity:1} }
+  .accordion-enter .cell{animation:accordionIn .35s ease forwards;overflow:hidden;max-width:0;padding:7px 0;opacity:0}
+  .accordion-enter .cell:nth-child(1){animation-delay:.0s}
+  .accordion-enter .cell:nth-child(2){animation-delay:.07s}
+  .accordion-enter .cell:nth-child(3){animation-delay:.14s}
+  .accordion-enter .cell:nth-child(4){animation-delay:.21s}
+  .accordion-enter .cell:nth-child(5){animation-delay:.28s}
+
+  /* 10: Bounce settle */
+  @keyframes bounceIn { 0%{transform:translateY(-20px);opacity:0}60%{transform:translateY(3px);opacity:1}100%{transform:translateY(0);opacity:1} }
+  .bounce-enter .cell:nth-child(1){animation:bounceIn .4s ease .0s forwards;opacity:0}
+  .bounce-enter .cell:nth-child(2){animation:bounceIn .4s ease .06s forwards;opacity:0}
+  .bounce-enter .cell:nth-child(3){animation:bounceIn .4s ease .12s forwards;opacity:0}
+  .bounce-enter .cell:nth-child(4){animation:bounceIn .4s ease .18s forwards;opacity:0}
+  .bounce-enter .cell:nth-child(5){animation:bounceIn .4s ease .24s forwards;opacity:0}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1 class="heading">Ticker Animations</h1>
+  <span>10 Variations</span>
+</div>
+
+<div class="selector">
+  <h2 class="selector-title heading">Fan Transition Animations</h2>
+  <p class="selector-sub">Each demo auto-fans every 3 seconds. Click "Replay" to see it again. The leader stays pinned — only the field cells animate.</p>
+  <div class="selector-grid">
+    <button class="selector-btn active" onclick="show(0)"><span class="num">#1</span>Crossfade</button>
+    <button class="selector-btn" onclick="show(1)"><span class="num">#2</span>Slide Left</button>
+    <button class="selector-btn" onclick="show(2)"><span class="num">#3</span>Slide Up</button>
+    <button class="selector-btn" onclick="show(3)"><span class="num">#4</span>Cascade Drop</button>
+    <button class="selector-btn" onclick="show(4)"><span class="num">#5</span>Scale Pop</button>
+    <button class="selector-btn" onclick="show(5)"><span class="num">#6</span>Flip Board</button>
+    <button class="selector-btn" onclick="show(6)"><span class="num">#7</span>Blur Resolve</button>
+    <button class="selector-btn" onclick="show(7)"><span class="num">#8</span>Typewriter</button>
+    <button class="selector-btn" onclick="show(8)"><span class="num">#9</span>Accordion</button>
+    <button class="selector-btn" onclick="show(9)"><span class="num">#10</span>Bounce Settle</button>
+  </div>
+</div>
+
+<div class="mockup-wrap">
+<script>
+const PAGES = [
+  [{p:'2',n:'McIlroy',s:'-10'},{p:'3',n:'Åberg',s:'-9'},{p:'4',n:'Schauffele',s:'-8'},{p:'5',n:'Morikawa',s:'-7'},{p:'6',n:'Rahm',s:'-6'}],
+  [{p:'7',n:'DeChambeau',s:'-5'},{p:'8',n:'Hovland',s:'-4'},{p:'9',n:'Cantlay',s:'-3'},{p:'T10',n:'Koepka',s:'-3'},{p:'T10',n:'Fleetwood',s:'-3'}],
+  [{p:'12',n:'Matsuyama',s:'-2'},{p:'13',n:'Theegala',s:'-2'},{p:'14',n:'Rose',s:'-1'},{p:'15',n:'Lowry',s:'-1'},{p:'T16',n:'Spieth',s:'E'}],
+];
+const ANIM_CLASSES = [
+  'crossfade-enter',
+  'slide-left-enter',
+  'slide-up-enter',
+  'cascade-enter',
+  'scale-enter',
+  'flip-enter',
+  'blur-enter',
+  'type-enter',
+  'accordion-enter',
+  'bounce-enter',
+];
+const ANIM_NAMES = ['Crossfade','Slide Left','Slide Up','Cascade Drop','Scale Pop','Flip Board','Blur Resolve','Typewriter','Accordion','Bounce Settle'];
+const DESCS = [
+  'Smooth opacity crossfade. Old group fades out, new fades in. Subtle, professional. No spatial movement — just a gentle dissolve. Best for: clean, understated transitions.',
+  'Entire group slides in from the right while old slides out left. Classic ESPN/scoreboard feel. Directional — clearly communicates "next page." Best for: familiar sports ticker UX.',
+  'New group slides up from below, old slides up and out. Vertical reveal like a departures board. Best for: compact tickers where horizontal motion feels cramped.',
+  'Each cell drops in one-by-one with a slight stagger (60ms apart). Creates a "loading" cascade effect. Best for: making each player entry feel distinct and intentional.',
+  'Cells scale from 85% to 100% with a stagger. A subtle "pop" appearance. Best for: modern, app-like feel without being distracting.',
+  'Cells flip in on the X-axis like a mechanical split-flap display. Retro scoreboard energy. Best for: the Augusta manual scoreboard aesthetic.',
+  'Group blurs in from an 8px gaussian blur to sharp. Dreamy, cinematic. Best for: premium editorial feel.',
+  'Each cell reveals left-to-right with a clip-path wipe, staggered. Like names being typed or printed. Best for: data-entry / results-coming-in feel.',
+  'Cells accordion-expand from zero width to full, staggered. Feels like slots opening up. Best for: emphasizing that new data is appearing.',
+  'Cells drop from above with a slight bounce overshoot at the end. Playful, energetic. Best for: game-day excitement without being over the top.',
+];
+
+let currentMockup = 0;
+let timers = [];
+
+function buildCells(page) {
+  return page.map(c => `<div class="cell"><span class="p">${c.p}</span><span class="n">${c.n}</span><span class="s">${c.s}</span></div>`).join('');
+}
+
+function makeTicker(idx) {
+  return `
+  <div class="ticker" id="ticker-${idx}">
+    <div class="ticker-inner">
+      <div class="badge"><span class="dot pulse"></span><span>R3</span></div>
+      <div class="leader"><span class="pos">1</span><span class="name">Scheffler</span><span class="score">-12</span></div>
+      <div class="fan-area">
+        <div class="fan-row ${ANIM_CLASSES[idx]}" id="fan-${idx}">${buildCells(PAGES[0])}</div>
+      </div>
+      <div class="fan-nav">
+        <div class="dots" id="dots-${idx}"><span class="d on"></span><span class="d"></span><span class="d"></span></div>
+        <button class="arrow-btn" onclick="manualNext(${idx})">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="fake-header"><h2 class="heading">The Green Jacket Lab</h2><span style="font-size:18px;">⛳</span></div>
+  <div class="fake-body">Page content...</div>
+  <div class="controls">
+    <button class="play-btn" onclick="replay(${idx})">Replay</button>
+    <span class="speed-label">Auto-fans every 3s</span>
+  </div>
+  <div class="desc"><strong>#${idx+1} ${ANIM_NAMES[idx]}</strong> — ${DESCS[idx]}</div>`;
+}
+
+// Generate all 10 mockups
+const wrap = document.querySelector('.mockup-wrap');
+for (let i = 0; i < 10; i++) {
+  const div = document.createElement('div');
+  div.className = 'mockup' + (i === 0 ? ' active' : '');
+  div.id = 'm' + i;
+  div.innerHTML = makeTicker(i);
+  wrap.appendChild(div);
+}
+
+// Page state per mockup
+const pageState = Array(10).fill(0);
+
+function animateFan(idx, pageNum) {
+  const fan = document.getElementById('fan-' + idx);
+  const dots = document.getElementById('dots-' + idx);
+  if (!fan || !dots) return;
+
+  // Remove animation class, swap content, re-add
+  const cls = ANIM_CLASSES[idx];
+  fan.classList.remove(cls);
+  void fan.offsetWidth; // force reflow
+  fan.innerHTML = buildCells(PAGES[pageNum]);
+  fan.classList.add(cls);
+
+  // Update dots
+  dots.querySelectorAll('.d').forEach((d, i) => d.classList.toggle('on', i === pageNum));
+  pageState[idx] = pageNum;
+}
+
+function manualNext(idx) {
+  const next = (pageState[idx] + 1) % PAGES.length;
+  animateFan(idx, next);
+}
+
+function replay(idx) {
+  // Reset to page 0 then restart auto
+  clearTimersFor(idx);
+  animateFan(idx, 0);
+  startAuto(idx);
+}
+
+function clearTimersFor(idx) {
+  timers.filter(t => t.idx === idx).forEach(t => clearInterval(t.id));
+  timers = timers.filter(t => t.idx !== idx);
+}
+
+function startAuto(idx) {
+  clearTimersFor(idx);
+  const id = setInterval(() => {
+    const next = (pageState[idx] + 1) % PAGES.length;
+    animateFan(idx, next);
+  }, 3000);
+  timers.push({ idx, id });
+}
+
+function show(idx) {
+  document.querySelectorAll('.mockup').forEach((m, i) => m.classList.toggle('active', i === idx));
+  document.querySelectorAll('.selector-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
+  currentMockup = idx;
+
+  // Reset and start auto for selected
+  timers.forEach(t => clearInterval(t.id));
+  timers = [];
+  animateFan(idx, 0);
+  startAuto(idx);
+
+  document.querySelector('.mockup-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Start first one
+startAuto(0);
+</script>
+</div>
+</body>
+</html>
