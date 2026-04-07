@@ -201,10 +201,10 @@ export function LeaderboardTicker() {
           })}
         </div>
 
-        {/* Fan navigation */}
+        {/* Fan navigation — dots only on mobile, full on desktop */}
         {totalPages > 1 && (
-          <div className="flex shrink-0 items-center gap-1 px-2">
-            <span className="text-[9px] font-semibold text-[var(--text-muted)]">
+          <div className="flex shrink-0 items-center gap-1 px-1.5 sm:px-2">
+            <span className="hidden text-[9px] font-semibold text-[var(--text-muted)] sm:inline">
               {page * PAGE_SIZE + 2}-
               {Math.min(page * PAGE_SIZE + PAGE_SIZE + 1, players.length)}
             </span>
@@ -222,7 +222,7 @@ export function LeaderboardTicker() {
             </div>
             <button
               onClick={nextPage}
-              className="flex h-6 w-6 items-center justify-center rounded-full text-masters-green transition-colors hover:bg-masters-green-light"
+              className="hidden h-6 w-6 items-center justify-center rounded-full text-masters-green transition-colors hover:bg-masters-green-light sm:flex"
               aria-label="Next group"
             >
               <ChevronRight className="h-3.5 w-3.5" />
