@@ -1,0 +1,3608 @@
+{
+  "lastUpdated": "2026-04-06T20:00:00Z",
+  "source": "DraftKings",
+  "markets": {
+    "win": {
+      "label": "To Win",
+      "description": "Outright winner of the 2026 Masters"
+    },
+    "top5": {
+      "label": "Top 5 Finish",
+      "description": "Finish in the top 5"
+    },
+    "top10": {
+      "label": "Top 10 Finish",
+      "description": "Finish in the top 10"
+    },
+    "top20": {
+      "label": "Top 20 Finish",
+      "description": "Finish in the top 20"
+    },
+    "makeCut": {
+      "label": "Make the Cut",
+      "description": "Make the cut after 36 holes"
+    },
+    "topAmerican": {
+      "label": "Top American",
+      "description": "Lowest finishing American player"
+    },
+    "topEuropean": {
+      "label": "Top European",
+      "description": "Lowest finishing European player"
+    },
+    "topAsian": {
+      "label": "Top Asian",
+      "description": "Lowest finishing Asian player"
+    },
+    "topAustralasian": {
+      "label": "Top Australasian",
+      "description": "Lowest finishing Australian/NZ/Pacific player"
+    },
+    "topSouthAmerican": {
+      "label": "Top South American",
+      "description": "Lowest finishing South/Latin American player"
+    }
+  },
+  "players": [
+    {
+      "name": "Scottie Scheffler",
+      "odds": {
+        "win": {
+          "american": "+450",
+          "decimal": 5.49,
+          "impliedProb": 18.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+120",
+          "decimal": 2.2,
+          "impliedProb": 45.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "-206",
+          "decimal": 1.48,
+          "impliedProb": 67.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-233",
+          "decimal": 1.43,
+          "impliedProb": 70,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-2743",
+          "decimal": 1.04,
+          "impliedProb": 96.5,
+          "movement": "falling"
+        },
+        "topAmerican": {
+          "american": "+394",
+          "decimal": 4.94,
+          "impliedProb": 20.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Xander Schauffele",
+      "odds": {
+        "win": {
+          "american": "+700",
+          "decimal": 8,
+          "impliedProb": 12.5,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+146",
+          "decimal": 2.46,
+          "impliedProb": 40.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+102",
+          "decimal": 2.02,
+          "impliedProb": 49.6,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "-324",
+          "decimal": 1.31,
+          "impliedProb": 76.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-1452",
+          "decimal": 1.07,
+          "impliedProb": 93.6,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+824",
+          "decimal": 9.24,
+          "impliedProb": 10.8,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Rory McIlroy",
+      "odds": {
+        "win": {
+          "american": "+1000",
+          "decimal": 10.99,
+          "impliedProb": 9.1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+120",
+          "decimal": 2.2,
+          "impliedProb": 45.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "-123",
+          "decimal": 1.81,
+          "impliedProb": 55.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-220",
+          "decimal": 1.45,
+          "impliedProb": 68.8,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-603",
+          "decimal": 1.17,
+          "impliedProb": 85.8,
+          "movement": "falling"
+        },
+        "topEuropean": {
+          "american": "+673",
+          "decimal": 7.73,
+          "impliedProb": 12.9,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Jon Rahm",
+      "odds": {
+        "win": {
+          "american": "+1200",
+          "decimal": 12.99,
+          "impliedProb": 7.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+322",
+          "decimal": 4.22,
+          "impliedProb": 23.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+162",
+          "decimal": 2.62,
+          "impliedProb": 38.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-201",
+          "decimal": 1.5,
+          "impliedProb": 66.8,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "-2205",
+          "decimal": 1.05,
+          "impliedProb": 95.7,
+          "movement": "falling"
+        },
+        "topEuropean": {
+          "american": "+610",
+          "decimal": 7.1,
+          "impliedProb": 14.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Ludvig Åberg",
+      "odds": {
+        "win": {
+          "american": "+800",
+          "decimal": 9.01,
+          "impliedProb": 11.1,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+220",
+          "decimal": 3.2,
+          "impliedProb": 31.3,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+111",
+          "decimal": 2.11,
+          "impliedProb": 47.4,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "-175",
+          "decimal": 1.57,
+          "impliedProb": 63.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-513",
+          "decimal": 1.19,
+          "impliedProb": 83.7,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+438",
+          "decimal": 5.38,
+          "impliedProb": 18.6,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Collin Morikawa",
+      "odds": {
+        "win": {
+          "american": "+1600",
+          "decimal": 16.95,
+          "impliedProb": 5.9,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+257",
+          "decimal": 3.57,
+          "impliedProb": 28,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+164",
+          "decimal": 2.64,
+          "impliedProb": 37.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-208",
+          "decimal": 1.48,
+          "impliedProb": 67.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-3711",
+          "decimal": 1.03,
+          "impliedProb": 97.4,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+1266",
+          "decimal": 13.66,
+          "impliedProb": 7.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Bryson DeChambeau",
+      "odds": {
+        "win": {
+          "american": "+2200",
+          "decimal": 23.26,
+          "impliedProb": 4.3,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+410",
+          "decimal": 5.1,
+          "impliedProb": 19.6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+210",
+          "decimal": 3.1,
+          "impliedProb": 32.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-111",
+          "decimal": 1.9,
+          "impliedProb": 52.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-431",
+          "decimal": 1.23,
+          "impliedProb": 81.2,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+1736",
+          "decimal": 18.36,
+          "impliedProb": 5.4,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Wyndham Clark",
+      "odds": {
+        "win": {
+          "american": "+2500",
+          "decimal": 26.32,
+          "impliedProb": 3.8,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+862",
+          "decimal": 9.62,
+          "impliedProb": 10.4,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+412",
+          "decimal": 5.12,
+          "impliedProb": 19.5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+128",
+          "decimal": 2.28,
+          "impliedProb": 43.8,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "-200",
+          "decimal": 1.5,
+          "impliedProb": 66.6,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+2895",
+          "decimal": 29.95,
+          "impliedProb": 3.3,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Viktor Hovland",
+      "odds": {
+        "win": {
+          "american": "+1400",
+          "decimal": 14.93,
+          "impliedProb": 6.7,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+551",
+          "decimal": 6.51,
+          "impliedProb": 15.4,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+234",
+          "decimal": 3.34,
+          "impliedProb": 30,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "-128",
+          "decimal": 1.78,
+          "impliedProb": 56.2,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-314",
+          "decimal": 1.32,
+          "impliedProb": 75.9,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+670",
+          "decimal": 7.7,
+          "impliedProb": 13,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Patrick Cantlay",
+      "odds": {
+        "win": {
+          "american": "+2000",
+          "decimal": 20.83,
+          "impliedProb": 4.8,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+579",
+          "decimal": 6.79,
+          "impliedProb": 14.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+318",
+          "decimal": 4.18,
+          "impliedProb": 23.9,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "-101",
+          "decimal": 1.99,
+          "impliedProb": 50.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-512",
+          "decimal": 1.2,
+          "impliedProb": 83.7,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+1996",
+          "decimal": 20.96,
+          "impliedProb": 4.8,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Tommy Fleetwood",
+      "odds": {
+        "win": {
+          "american": "+3000",
+          "decimal": 31.25,
+          "impliedProb": 3.2,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+884",
+          "decimal": 9.84,
+          "impliedProb": 10.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+380",
+          "decimal": 4.8,
+          "impliedProb": 20.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+134",
+          "decimal": 2.34,
+          "impliedProb": 42.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-245",
+          "decimal": 1.41,
+          "impliedProb": 71,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+1745",
+          "decimal": 18.45,
+          "impliedProb": 5.4,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Hideki Matsuyama",
+      "odds": {
+        "win": {
+          "american": "+2500",
+          "decimal": 26.32,
+          "impliedProb": 3.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+522",
+          "decimal": 6.22,
+          "impliedProb": 16.1,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+316",
+          "decimal": 4.16,
+          "impliedProb": 24,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "-129",
+          "decimal": 1.78,
+          "impliedProb": 56.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-895",
+          "decimal": 1.11,
+          "impliedProb": 90,
+          "movement": "rising"
+        },
+        "topAsian": {
+          "american": "+120",
+          "decimal": 2.2,
+          "impliedProb": 45.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Brooks Koepka",
+      "odds": {
+        "win": {
+          "american": "+3500",
+          "decimal": 35.71,
+          "impliedProb": 2.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+674",
+          "decimal": 7.74,
+          "impliedProb": 12.9,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+358",
+          "decimal": 4.58,
+          "impliedProb": 21.8,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "-104",
+          "decimal": 1.96,
+          "impliedProb": 51.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-291",
+          "decimal": 1.34,
+          "impliedProb": 74.4,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+3582",
+          "decimal": 36.82,
+          "impliedProb": 2.7,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Cameron Smith",
+      "odds": {
+        "win": {
+          "american": "+4000",
+          "decimal": 41.67,
+          "impliedProb": 2.4,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+716",
+          "decimal": 8.16,
+          "impliedProb": 12.3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+320",
+          "decimal": 4.2,
+          "impliedProb": 23.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+106",
+          "decimal": 2.06,
+          "impliedProb": 48.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-223",
+          "decimal": 1.45,
+          "impliedProb": 69.1,
+          "movement": "stable"
+        },
+        "topAustralasian": {
+          "american": "+156",
+          "decimal": 2.56,
+          "impliedProb": 39.1,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Shane Lowry",
+      "odds": {
+        "win": {
+          "american": "+4000",
+          "decimal": 41.67,
+          "impliedProb": 2.4,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+1082",
+          "decimal": 11.82,
+          "impliedProb": 8.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+603",
+          "decimal": 7.03,
+          "impliedProb": 14.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+159",
+          "decimal": 2.59,
+          "impliedProb": 38.6,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "-198",
+          "decimal": 1.5,
+          "impliedProb": 66.5,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+2005",
+          "decimal": 21.05,
+          "impliedProb": 4.7,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Sahith Theegala",
+      "odds": {
+        "win": {
+          "american": "+2200",
+          "decimal": 23.26,
+          "impliedProb": 4.3,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+1100",
+          "decimal": 12,
+          "impliedProb": 8.3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+445",
+          "decimal": 5.45,
+          "impliedProb": 18.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+102",
+          "decimal": 2.02,
+          "impliedProb": 49.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-257",
+          "decimal": 1.39,
+          "impliedProb": 72,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+2301",
+          "decimal": 24.01,
+          "impliedProb": 4.2,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Justin Thomas",
+      "odds": {
+        "win": {
+          "american": "+4000",
+          "decimal": 41.67,
+          "impliedProb": 2.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4152",
+          "decimal": 42.52,
+          "impliedProb": 2.4,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1513",
+          "decimal": 16.13,
+          "impliedProb": 6.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+186",
+          "decimal": 2.86,
+          "impliedProb": 35,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+104",
+          "decimal": 2.04,
+          "impliedProb": 49,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+3166",
+          "decimal": 32.66,
+          "impliedProb": 3.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Tony Finau",
+      "odds": {
+        "win": {
+          "american": "+4500",
+          "decimal": 45.45,
+          "impliedProb": 2.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1399",
+          "decimal": 14.99,
+          "impliedProb": 6.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+755",
+          "decimal": 8.55,
+          "impliedProb": 11.7,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+134",
+          "decimal": 2.34,
+          "impliedProb": 42.8,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "-329",
+          "decimal": 1.3,
+          "impliedProb": 76.7,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+3552",
+          "decimal": 36.52,
+          "impliedProb": 2.7,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Jordan Spieth",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1062",
+          "decimal": 11.62,
+          "impliedProb": 8.6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+555",
+          "decimal": 6.55,
+          "impliedProb": 15.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+109",
+          "decimal": 2.09,
+          "impliedProb": 47.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-251",
+          "decimal": 1.4,
+          "impliedProb": 71.5,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+4080",
+          "decimal": 41.8,
+          "impliedProb": 2.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Max Homa",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4755",
+          "decimal": 48.55,
+          "impliedProb": 2.1,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1699",
+          "decimal": 17.99,
+          "impliedProb": 5.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+198",
+          "decimal": 2.98,
+          "impliedProb": 33.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-103",
+          "decimal": 1.97,
+          "impliedProb": 50.7,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+4310",
+          "decimal": 44.1,
+          "impliedProb": 2.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Dustin Johnson",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2974",
+          "decimal": 30.74,
+          "impliedProb": 3.3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1187",
+          "decimal": 12.87,
+          "impliedProb": 7.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+251",
+          "decimal": 3.51,
+          "impliedProb": 28.5,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "-139",
+          "decimal": 1.72,
+          "impliedProb": 58.2,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+9109",
+          "decimal": 92.09,
+          "impliedProb": 1.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Joaquin Niemann",
+      "odds": {
+        "win": {
+          "american": "+3500",
+          "decimal": 35.71,
+          "impliedProb": 2.8,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+1564",
+          "decimal": 16.64,
+          "impliedProb": 6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+645",
+          "decimal": 7.45,
+          "impliedProb": 13.4,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+153",
+          "decimal": 2.53,
+          "impliedProb": 39.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-211",
+          "decimal": 1.47,
+          "impliedProb": 67.8,
+          "movement": "stable"
+        },
+        "topSouthAmerican": {
+          "american": "-139",
+          "decimal": 1.72,
+          "impliedProb": 58.2,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Cameron Young",
+      "odds": {
+        "win": {
+          "american": "+4500",
+          "decimal": 45.45,
+          "impliedProb": 2.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3007",
+          "decimal": 31.07,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1093",
+          "decimal": 11.93,
+          "impliedProb": 8.4,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+188",
+          "decimal": 2.88,
+          "impliedProb": 34.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-157",
+          "decimal": 1.64,
+          "impliedProb": 61.1,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+5047",
+          "decimal": 51.47,
+          "impliedProb": 1.9,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Tom Kim",
+      "odds": {
+        "win": {
+          "american": "+4000",
+          "decimal": 41.67,
+          "impliedProb": 2.4,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+6708",
+          "decimal": 68.08,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1918",
+          "decimal": 20.18,
+          "impliedProb": 5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+206",
+          "decimal": 3.06,
+          "impliedProb": 32.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-130",
+          "decimal": 1.77,
+          "impliedProb": 56.5,
+          "movement": "stable"
+        },
+        "topAsian": {
+          "american": "+258",
+          "decimal": 3.58,
+          "impliedProb": 28,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Robert MacIntyre",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+1677",
+          "decimal": 17.77,
+          "impliedProb": 5.6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1040",
+          "decimal": 11.4,
+          "impliedProb": 8.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+213",
+          "decimal": 3.13,
+          "impliedProb": 31.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-195",
+          "decimal": 1.51,
+          "impliedProb": 66.1,
+          "movement": "rising"
+        },
+        "topEuropean": {
+          "american": "+2619",
+          "decimal": 27.19,
+          "impliedProb": 3.7,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Sungjae Im",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1981",
+          "decimal": 20.81,
+          "impliedProb": 4.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+795",
+          "decimal": 8.95,
+          "impliedProb": 11.2,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+136",
+          "decimal": 2.36,
+          "impliedProb": 42.3,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "-118",
+          "decimal": 1.85,
+          "impliedProb": 54.2,
+          "movement": "stable"
+        },
+        "topAsian": {
+          "american": "+484",
+          "decimal": 5.84,
+          "impliedProb": 17.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Corey Conners",
+      "odds": {
+        "win": {
+          "american": "+7000",
+          "decimal": 71.43,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4342",
+          "decimal": 44.42,
+          "impliedProb": 2.3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1876",
+          "decimal": 19.76,
+          "impliedProb": 5.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+174",
+          "decimal": 2.74,
+          "impliedProb": 36.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-119",
+          "decimal": 1.84,
+          "impliedProb": 54.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Sam Burns",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+5314",
+          "decimal": 54.14,
+          "impliedProb": 1.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1947",
+          "decimal": 20.47,
+          "impliedProb": 4.9,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+290",
+          "decimal": 3.9,
+          "impliedProb": 25.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-116",
+          "decimal": 1.86,
+          "impliedProb": 53.7,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+5022",
+          "decimal": 51.22,
+          "impliedProb": 2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Keegan Bradley",
+      "odds": {
+        "win": {
+          "american": "+7000",
+          "decimal": 71.43,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4320",
+          "decimal": 44.2,
+          "impliedProb": 2.3,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+1528",
+          "decimal": 16.28,
+          "impliedProb": 6.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+194",
+          "decimal": 2.94,
+          "impliedProb": 34,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "-123",
+          "decimal": 1.81,
+          "impliedProb": 55.1,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+6155",
+          "decimal": 62.55,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Russell Henley",
+      "odds": {
+        "win": {
+          "american": "+7000",
+          "decimal": 71.43,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3333",
+          "decimal": 34.33,
+          "impliedProb": 2.9,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1507",
+          "decimal": 16.07,
+          "impliedProb": 6.2,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+165",
+          "decimal": 2.65,
+          "impliedProb": 37.7,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "-116",
+          "decimal": 1.86,
+          "impliedProb": 53.7,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+7817",
+          "decimal": 79.17,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Billy Horschel",
+      "odds": {
+        "win": {
+          "american": "+8000",
+          "decimal": 83.33,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+8364",
+          "decimal": 84.64,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3135",
+          "decimal": 32.35,
+          "impliedProb": 3.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+316",
+          "decimal": 4.16,
+          "impliedProb": 24.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+166",
+          "decimal": 2.66,
+          "impliedProb": 37.5,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+7306",
+          "decimal": 74.06,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Chris Kirk",
+      "odds": {
+        "win": {
+          "american": "+8000",
+          "decimal": 83.33,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+19336",
+          "decimal": 194.36,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+5258",
+          "decimal": 53.58,
+          "impliedProb": 1.9,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+464",
+          "decimal": 5.64,
+          "impliedProb": 17.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+106",
+          "decimal": 2.06,
+          "impliedProb": 48.5,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+6442",
+          "decimal": 65.42,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Jason Day",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+7642",
+          "decimal": 77.42,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3367",
+          "decimal": 34.67,
+          "impliedProb": 2.9,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+332",
+          "decimal": 4.32,
+          "impliedProb": 23.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+123",
+          "decimal": 2.23,
+          "impliedProb": 44.8,
+          "movement": "stable"
+        },
+        "topAustralasian": {
+          "american": "+772",
+          "decimal": 8.72,
+          "impliedProb": 11.5,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Adam Scott",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+3367",
+          "decimal": 34.67,
+          "impliedProb": 2.9,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+986",
+          "decimal": 10.86,
+          "impliedProb": 9.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+171",
+          "decimal": 2.71,
+          "impliedProb": 36.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-189",
+          "decimal": 1.53,
+          "impliedProb": 65.4,
+          "movement": "stable"
+        },
+        "topAustralasian": {
+          "american": "+644",
+          "decimal": 7.44,
+          "impliedProb": 13.4,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Sergio Garcia",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+16549",
+          "decimal": 166.49,
+          "impliedProb": 0.6,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+4664",
+          "decimal": 47.64,
+          "impliedProb": 2.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+352",
+          "decimal": 4.52,
+          "impliedProb": 22.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-104",
+          "decimal": 1.96,
+          "impliedProb": 51,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+6830",
+          "decimal": 69.3,
+          "impliedProb": 1.4,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Patrick Reed",
+      "odds": {
+        "win": {
+          "american": "+20000",
+          "decimal": 200,
+          "impliedProb": 0.5,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+4892",
+          "decimal": 49.92,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2387",
+          "decimal": 24.87,
+          "impliedProb": 4,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1814",
+          "decimal": 19.14,
+          "impliedProb": 5.2,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+195",
+          "decimal": 2.95,
+          "impliedProb": 33.9,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+20126",
+          "decimal": 202.26,
+          "impliedProb": 0.5,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Bubba Watson",
+      "odds": {
+        "win": {
+          "american": "+30000",
+          "decimal": 333.33,
+          "impliedProb": 0.3,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+6673",
+          "decimal": 67.73,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3899",
+          "decimal": 39.99,
+          "impliedProb": 2.5,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+3148",
+          "decimal": 32.48,
+          "impliedProb": 3.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+291",
+          "decimal": 3.91,
+          "impliedProb": 25.6,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+31340",
+          "decimal": 314.4,
+          "impliedProb": 0.3,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Danny Willett",
+      "odds": {
+        "win": {
+          "american": "+25000",
+          "decimal": 250,
+          "impliedProb": 0.4,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+4554",
+          "decimal": 46.54,
+          "impliedProb": 2.1,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+2954",
+          "decimal": 30.54,
+          "impliedProb": 3.3,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+2136",
+          "decimal": 22.36,
+          "impliedProb": 4.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+220",
+          "decimal": 3.2,
+          "impliedProb": 31.2,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+13781",
+          "decimal": 138.81,
+          "impliedProb": 0.7,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Charl Schwartzel",
+      "odds": {
+        "win": {
+          "american": "+30000",
+          "decimal": 333.33,
+          "impliedProb": 0.3,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+7164",
+          "decimal": 72.64,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3977",
+          "decimal": 40.77,
+          "impliedProb": 2.5,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+2728",
+          "decimal": 28.28,
+          "impliedProb": 3.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Zach Johnson",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+10849",
+          "decimal": 109.49,
+          "impliedProb": 0.9,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+7515",
+          "decimal": 76.15,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+4674",
+          "decimal": 47.74,
+          "impliedProb": 2.1,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+390",
+          "decimal": 4.9,
+          "impliedProb": 20.4,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+33233",
+          "decimal": 333.33,
+          "impliedProb": 0.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Justin Rose",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1002",
+          "decimal": 11.02,
+          "impliedProb": 9.1,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+529",
+          "decimal": 6.29,
+          "impliedProb": 15.9,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+116",
+          "decimal": 2.16,
+          "impliedProb": 46.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-269",
+          "decimal": 1.37,
+          "impliedProb": 72.9,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+6148",
+          "decimal": 62.48,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Min Woo Lee",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+1440",
+          "decimal": 15.4,
+          "impliedProb": 6.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+726",
+          "decimal": 8.26,
+          "impliedProb": 12.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+157",
+          "decimal": 2.57,
+          "impliedProb": 38.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-310",
+          "decimal": 1.32,
+          "impliedProb": 75.6,
+          "movement": "stable"
+        },
+        "topAustralasian": {
+          "american": "+216",
+          "decimal": 3.16,
+          "impliedProb": 31.7,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Tyrrell Hatton",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+6434",
+          "decimal": 65.34,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2376",
+          "decimal": 24.76,
+          "impliedProb": 4,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+272",
+          "decimal": 3.72,
+          "impliedProb": 26.9,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "-112",
+          "decimal": 1.9,
+          "impliedProb": 52.8,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+2505",
+          "decimal": 26.05,
+          "impliedProb": 3.8,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Will Zalatoris",
+      "odds": {
+        "win": {
+          "american": "+5000",
+          "decimal": 50,
+          "impliedProb": 2,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+6114",
+          "decimal": 62.14,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3149",
+          "decimal": 32.49,
+          "impliedProb": 3.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+228",
+          "decimal": 3.28,
+          "impliedProb": 30.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+112",
+          "decimal": 2.12,
+          "impliedProb": 47.2,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+4815",
+          "decimal": 49.15,
+          "impliedProb": 2,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Sepp Straka",
+      "odds": {
+        "win": {
+          "american": "+7000",
+          "decimal": 71.43,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+8254",
+          "decimal": 83.54,
+          "impliedProb": 1.2,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+2989",
+          "decimal": 30.89,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+259",
+          "decimal": 3.59,
+          "impliedProb": 27.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-107",
+          "decimal": 1.94,
+          "impliedProb": 51.6,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+3693",
+          "decimal": 37.93,
+          "impliedProb": 2.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Matt Fitzpatrick",
+      "odds": {
+        "win": {
+          "american": "+6000",
+          "decimal": 62.5,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+5738",
+          "decimal": 58.38,
+          "impliedProb": 1.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2243",
+          "decimal": 23.43,
+          "impliedProb": 4.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+281",
+          "decimal": 3.81,
+          "impliedProb": 26.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "-148",
+          "decimal": 1.68,
+          "impliedProb": 59.7,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+3062",
+          "decimal": 31.62,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Denny McCarthy",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1880",
+          "decimal": 19.8,
+          "impliedProb": 5.1,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+1336",
+          "decimal": 14.36,
+          "impliedProb": 7,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+694",
+          "decimal": 7.94,
+          "impliedProb": 12.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+120",
+          "decimal": 2.2,
+          "impliedProb": 45.4,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+7848",
+          "decimal": 79.48,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Akshay Bhatia",
+      "odds": {
+        "win": {
+          "american": "+7000",
+          "decimal": 71.43,
+          "impliedProb": 1.4,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+14824",
+          "decimal": 149.24,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3690",
+          "decimal": 37.9,
+          "impliedProb": 2.6,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+307",
+          "decimal": 4.07,
+          "impliedProb": 24.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+132",
+          "decimal": 2.32,
+          "impliedProb": 43.2,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+6388",
+          "decimal": 64.88,
+          "impliedProb": 1.5,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Davis Thompson",
+      "odds": {
+        "win": {
+          "american": "+8000",
+          "decimal": 83.33,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+19874",
+          "decimal": 199.74,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+6129",
+          "decimal": 62.29,
+          "impliedProb": 1.6,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+341",
+          "decimal": 4.41,
+          "impliedProb": 22.7,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+123",
+          "decimal": 2.23,
+          "impliedProb": 44.8,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+8140",
+          "decimal": 82.4,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Taylor Pendrith",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2085",
+          "decimal": 21.85,
+          "impliedProb": 4.6,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1548",
+          "decimal": 16.48,
+          "impliedProb": 6.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+650",
+          "decimal": 7.5,
+          "impliedProb": 13.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+135",
+          "decimal": 2.35,
+          "impliedProb": 42.5,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Eric Cole",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2570",
+          "decimal": 26.7,
+          "impliedProb": 3.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1215",
+          "decimal": 13.15,
+          "impliedProb": 7.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+689",
+          "decimal": 7.89,
+          "impliedProb": 12.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+107",
+          "decimal": 2.07,
+          "impliedProb": 48.3,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+8318",
+          "decimal": 84.18,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Brian Harman",
+      "odds": {
+        "win": {
+          "american": "+8000",
+          "decimal": 83.33,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+10020",
+          "decimal": 101.2,
+          "impliedProb": 1,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+3872",
+          "decimal": 39.72,
+          "impliedProb": 2.5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+293",
+          "decimal": 3.93,
+          "impliedProb": 25.5,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+151",
+          "decimal": 2.51,
+          "impliedProb": 39.9,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+7507",
+          "decimal": 76.07,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Nick Dunlap",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+2257",
+          "decimal": 23.57,
+          "impliedProb": 4.2,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1198",
+          "decimal": 12.98,
+          "impliedProb": 7.7,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+704",
+          "decimal": 8.04,
+          "impliedProb": 12.4,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+103",
+          "decimal": 2.03,
+          "impliedProb": 49.2,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+8567",
+          "decimal": 86.67,
+          "impliedProb": 1.2,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Byeong Hun An",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3281",
+          "decimal": 33.81,
+          "impliedProb": 3,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1833",
+          "decimal": 19.33,
+          "impliedProb": 5.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+779",
+          "decimal": 8.79,
+          "impliedProb": 11.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+130",
+          "decimal": 2.3,
+          "impliedProb": 43.4,
+          "movement": "stable"
+        },
+        "topAsian": {
+          "american": "+1015",
+          "decimal": 11.15,
+          "impliedProb": 9,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Matthieu Pavon",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+1948",
+          "decimal": 20.48,
+          "impliedProb": 4.9,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1093",
+          "decimal": 11.93,
+          "impliedProb": 8.4,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+684",
+          "decimal": 7.84,
+          "impliedProb": 12.8,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+101",
+          "decimal": 2.01,
+          "impliedProb": 49.7,
+          "movement": "falling"
+        },
+        "topEuropean": {
+          "american": "+5167",
+          "decimal": 52.67,
+          "impliedProb": 1.9,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Stephan Jaeger",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2613",
+          "decimal": 27.13,
+          "impliedProb": 3.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1958",
+          "decimal": 20.58,
+          "impliedProb": 4.9,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+903",
+          "decimal": 10.03,
+          "impliedProb": 10,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+142",
+          "decimal": 2.42,
+          "impliedProb": 41.4,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+7775",
+          "decimal": 78.75,
+          "impliedProb": 1.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Si Woo Kim",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2722",
+          "decimal": 28.22,
+          "impliedProb": 3.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1568",
+          "decimal": 16.68,
+          "impliedProb": 6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+902",
+          "decimal": 10.02,
+          "impliedProb": 10,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+160",
+          "decimal": 2.6,
+          "impliedProb": 38.4,
+          "movement": "stable"
+        },
+        "topAsian": {
+          "american": "+983",
+          "decimal": 10.83,
+          "impliedProb": 9.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Thomas Detry",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2581",
+          "decimal": 26.81,
+          "impliedProb": 3.7,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+1671",
+          "decimal": 17.71,
+          "impliedProb": 5.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1177",
+          "decimal": 12.77,
+          "impliedProb": 7.8,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+224",
+          "decimal": 3.24,
+          "impliedProb": 30.9,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+9474",
+          "decimal": 95.74,
+          "impliedProb": 1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Aaron Rai",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2257",
+          "decimal": 23.57,
+          "impliedProb": 4.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1425",
+          "decimal": 15.25,
+          "impliedProb": 6.6,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+919",
+          "decimal": 10.19,
+          "impliedProb": 9.8,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+153",
+          "decimal": 2.53,
+          "impliedProb": 39.5,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+6999",
+          "decimal": 70.99,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Jake Knapp",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2551",
+          "decimal": 26.51,
+          "impliedProb": 3.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1876",
+          "decimal": 19.76,
+          "impliedProb": 5.1,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+1183",
+          "decimal": 12.83,
+          "impliedProb": 7.8,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+229",
+          "decimal": 3.29,
+          "impliedProb": 30.4,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+12906",
+          "decimal": 130.06,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Harris English",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2617",
+          "decimal": 27.17,
+          "impliedProb": 3.7,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1637",
+          "decimal": 17.37,
+          "impliedProb": 5.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1153",
+          "decimal": 12.53,
+          "impliedProb": 8,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+175",
+          "decimal": 2.75,
+          "impliedProb": 36.4,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+10141",
+          "decimal": 102.41,
+          "impliedProb": 1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Christiaan Bezuidenhout",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2548",
+          "decimal": 26.48,
+          "impliedProb": 3.8,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1880",
+          "decimal": 19.8,
+          "impliedProb": 5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1048",
+          "decimal": 11.48,
+          "impliedProb": 8.7,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+152",
+          "decimal": 2.52,
+          "impliedProb": 39.7,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Lucas Glover",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+2511",
+          "decimal": 26.11,
+          "impliedProb": 3.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1547",
+          "decimal": 16.47,
+          "impliedProb": 6.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+864",
+          "decimal": 9.64,
+          "impliedProb": 10.4,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+143",
+          "decimal": 2.43,
+          "impliedProb": 41.2,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+11796",
+          "decimal": 118.96,
+          "impliedProb": 0.8,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Abraham Ancer",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+3061",
+          "decimal": 31.61,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1996",
+          "decimal": 20.96,
+          "impliedProb": 4.8,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+1092",
+          "decimal": 11.92,
+          "impliedProb": 8.4,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+170",
+          "decimal": 2.7,
+          "impliedProb": 37.1,
+          "movement": "stable"
+        },
+        "topSouthAmerican": {
+          "american": "+389",
+          "decimal": 4.89,
+          "impliedProb": 20.4,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Mackenzie Hughes",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3048",
+          "decimal": 31.48,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1903",
+          "decimal": 20.03,
+          "impliedProb": 5,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+1146",
+          "decimal": 12.46,
+          "impliedProb": 8,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+180",
+          "decimal": 2.8,
+          "impliedProb": 35.7,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Rickie Fowler",
+      "odds": {
+        "win": {
+          "american": "+10000",
+          "decimal": 100,
+          "impliedProb": 1,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+18134",
+          "decimal": 182.34,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+6406",
+          "decimal": 65.06,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+329",
+          "decimal": 4.29,
+          "impliedProb": 23.3,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+193",
+          "decimal": 2.93,
+          "impliedProb": 34.1,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+8813",
+          "decimal": 89.13,
+          "impliedProb": 1.1,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "Gary Woodland",
+      "odds": {
+        "win": {
+          "american": "+20000",
+          "decimal": 200,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4437",
+          "decimal": 45.37,
+          "impliedProb": 2.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2311",
+          "decimal": 24.11,
+          "impliedProb": 4.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1676",
+          "decimal": 17.76,
+          "impliedProb": 5.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+223",
+          "decimal": 3.23,
+          "impliedProb": 31,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+16005",
+          "decimal": 161.05,
+          "impliedProb": 0.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Talor Gooch",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "falling"
+        },
+        "top5": {
+          "american": "+2856",
+          "decimal": 29.56,
+          "impliedProb": 3.4,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1991",
+          "decimal": 20.91,
+          "impliedProb": 4.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1202",
+          "decimal": 13.02,
+          "impliedProb": 7.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+147",
+          "decimal": 2.47,
+          "impliedProb": 40.4,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+16520",
+          "decimal": 166.2,
+          "impliedProb": 0.6,
+          "movement": "falling"
+        }
+      }
+    },
+    {
+      "name": "J.T. Poston",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3101",
+          "decimal": 32.01,
+          "impliedProb": 3.1,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1466",
+          "decimal": 15.66,
+          "impliedProb": 6.4,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+773",
+          "decimal": 8.73,
+          "impliedProb": 11.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+198",
+          "decimal": 2.98,
+          "impliedProb": 33.6,
+          "movement": "falling"
+        },
+        "topAmerican": {
+          "american": "+13729",
+          "decimal": 138.29,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Kurt Kitayama",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2346",
+          "decimal": 24.46,
+          "impliedProb": 4.1,
+          "movement": "rising"
+        },
+        "top10": {
+          "american": "+1534",
+          "decimal": 16.34,
+          "impliedProb": 6.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+846",
+          "decimal": 9.46,
+          "impliedProb": 10.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+122",
+          "decimal": 2.22,
+          "impliedProb": 45,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+11985",
+          "decimal": 120.85,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Alex Noren",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2996",
+          "decimal": 30.96,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1901",
+          "decimal": 20.01,
+          "impliedProb": 5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1104",
+          "decimal": 12.04,
+          "impliedProb": 8.3,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+199",
+          "decimal": 2.99,
+          "impliedProb": 33.4,
+          "movement": "rising"
+        },
+        "topEuropean": {
+          "american": "+7118",
+          "decimal": 72.18,
+          "impliedProb": 1.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Victor Perez",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3236",
+          "decimal": 33.36,
+          "impliedProb": 3,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1896",
+          "decimal": 19.96,
+          "impliedProb": 5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1146",
+          "decimal": 12.46,
+          "impliedProb": 8,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+138",
+          "decimal": 2.38,
+          "impliedProb": 42,
+          "movement": "rising"
+        },
+        "topEuropean": {
+          "american": "+9369",
+          "decimal": 94.69,
+          "impliedProb": 1.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Tom Hoge",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3347",
+          "decimal": 34.47,
+          "impliedProb": 2.9,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1992",
+          "decimal": 20.92,
+          "impliedProb": 4.8,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+907",
+          "decimal": 10.07,
+          "impliedProb": 9.9,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+156",
+          "decimal": 2.56,
+          "impliedProb": 39.1,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+13950",
+          "decimal": 140.5,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Dean Burmester",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+2739",
+          "decimal": 28.39,
+          "impliedProb": 3.5,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1695",
+          "decimal": 17.95,
+          "impliedProb": 5.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1005",
+          "decimal": 11.05,
+          "impliedProb": 9,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+126",
+          "decimal": 2.26,
+          "impliedProb": 44.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Adrian Meronk",
+      "odds": {
+        "win": {
+          "american": "+20000",
+          "decimal": 200,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3917",
+          "decimal": 40.17,
+          "impliedProb": 2.5,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+2372",
+          "decimal": 24.72,
+          "impliedProb": 4,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1577",
+          "decimal": 16.77,
+          "impliedProb": 6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+208",
+          "decimal": 3.08,
+          "impliedProb": 32.5,
+          "movement": "rising"
+        },
+        "topEuropean": {
+          "american": "+9661",
+          "decimal": 97.61,
+          "impliedProb": 1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Nicolai Hojgaard",
+      "odds": {
+        "win": {
+          "american": "+12500",
+          "decimal": 125,
+          "impliedProb": 0.8,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+2615",
+          "decimal": 27.15,
+          "impliedProb": 3.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1657",
+          "decimal": 17.57,
+          "impliedProb": 5.7,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1093",
+          "decimal": 11.93,
+          "impliedProb": 8.4,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+140",
+          "decimal": 2.4,
+          "impliedProb": 41.7,
+          "movement": "rising"
+        },
+        "topEuropean": {
+          "american": "+5850",
+          "decimal": 59.5,
+          "impliedProb": 1.7,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Rasmus Hojgaard",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+3016",
+          "decimal": 31.16,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2139",
+          "decimal": 22.39,
+          "impliedProb": 4.5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1136",
+          "decimal": 12.36,
+          "impliedProb": 8.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+193",
+          "decimal": 2.93,
+          "impliedProb": 34.1,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+6783",
+          "decimal": 68.83,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Ryan Fox",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+2593",
+          "decimal": 26.93,
+          "impliedProb": 3.7,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+1860",
+          "decimal": 19.6,
+          "impliedProb": 5.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1300",
+          "decimal": 14,
+          "impliedProb": 7.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+172",
+          "decimal": 2.72,
+          "impliedProb": 36.7,
+          "movement": "stable"
+        },
+        "topAustralasian": {
+          "american": "+794",
+          "decimal": 8.94,
+          "impliedProb": 11.2,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Thriston Lawrence",
+      "odds": {
+        "win": {
+          "american": "+20000",
+          "decimal": 200,
+          "impliedProb": 0.5,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4562",
+          "decimal": 46.62,
+          "impliedProb": 2.1,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+2982",
+          "decimal": 30.82,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1659",
+          "decimal": 17.59,
+          "impliedProb": 5.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+201",
+          "decimal": 3.01,
+          "impliedProb": 33.3,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Fred Couples",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+13607",
+          "decimal": 137.07,
+          "impliedProb": 0.7,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+8639",
+          "decimal": 87.39,
+          "impliedProb": 1.1,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+3390",
+          "decimal": 34.9,
+          "impliedProb": 2.9,
+          "movement": "falling"
+        },
+        "makeCut": {
+          "american": "+303",
+          "decimal": 4.03,
+          "impliedProb": 24.8,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+33233",
+          "decimal": 333.33,
+          "impliedProb": 0.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Jose Maria Olazabal",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+11712",
+          "decimal": 118.12,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+5991",
+          "decimal": 60.91,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+3373",
+          "decimal": 34.73,
+          "impliedProb": 2.9,
+          "movement": "rising"
+        },
+        "makeCut": {
+          "american": "+286",
+          "decimal": 3.86,
+          "impliedProb": 25.9,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+27966",
+          "decimal": 280.66,
+          "impliedProb": 0.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Vijay Singh",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+13104",
+          "decimal": 132.04,
+          "impliedProb": 0.8,
+          "movement": "falling"
+        },
+        "top10": {
+          "american": "+8336",
+          "decimal": 84.36,
+          "impliedProb": 1.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+3628",
+          "decimal": 37.28,
+          "impliedProb": 2.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+295",
+          "decimal": 3.95,
+          "impliedProb": 25.3,
+          "movement": "rising"
+        },
+        "topAustralasian": {
+          "american": "+3714",
+          "decimal": 38.14,
+          "impliedProb": 2.6,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Mike Weir",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+10181",
+          "decimal": 102.81,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+6211",
+          "decimal": 63.11,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+3727",
+          "decimal": 38.27,
+          "impliedProb": 2.6,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+284",
+          "decimal": 3.84,
+          "impliedProb": 26.1,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Larry Mize",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+12551",
+          "decimal": 126.51,
+          "impliedProb": 0.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+6604",
+          "decimal": 67.04,
+          "impliedProb": 1.5,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+4857",
+          "decimal": 49.57,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+257",
+          "decimal": 3.57,
+          "impliedProb": 28,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+33233",
+          "decimal": 333.33,
+          "impliedProb": 0.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Sandy Lyle",
+      "odds": {
+        "win": {
+          "american": "+50000",
+          "decimal": 500,
+          "impliedProb": 0.2,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+9804",
+          "decimal": 99.04,
+          "impliedProb": 1,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+5960",
+          "decimal": 60.6,
+          "impliedProb": 1.7,
+          "movement": "falling"
+        },
+        "top20": {
+          "american": "+3839",
+          "decimal": 39.39,
+          "impliedProb": 2.5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+233",
+          "decimal": 3.33,
+          "impliedProb": 30,
+          "movement": "stable"
+        },
+        "topEuropean": {
+          "american": "+32259",
+          "decimal": 323.59,
+          "impliedProb": 0.3,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Luke Clanton",
+      "odds": {
+        "win": {
+          "american": "+15000",
+          "decimal": 142.86,
+          "impliedProb": 0.7,
+          "movement": "rising"
+        },
+        "top5": {
+          "american": "+2554",
+          "decimal": 26.54,
+          "impliedProb": 3.8,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+1642",
+          "decimal": 17.42,
+          "impliedProb": 5.7,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+999",
+          "decimal": 10.99,
+          "impliedProb": 9.1,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+169",
+          "decimal": 2.69,
+          "impliedProb": 37.1,
+          "movement": "stable"
+        },
+        "topAmerican": {
+          "american": "+11979",
+          "decimal": 120.79,
+          "impliedProb": 0.8,
+          "movement": "rising"
+        }
+      }
+    },
+    {
+      "name": "Noah Kent",
+      "odds": {
+        "win": {
+          "american": "+25000",
+          "decimal": 250,
+          "impliedProb": 0.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+4922",
+          "decimal": 50.22,
+          "impliedProb": 2,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3061",
+          "decimal": 31.61,
+          "impliedProb": 3.2,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+1916",
+          "decimal": 20.16,
+          "impliedProb": 5,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+264",
+          "decimal": 3.64,
+          "impliedProb": 27.4,
+          "movement": "rising"
+        },
+        "topAmerican": {
+          "american": "+22235",
+          "decimal": 223.35,
+          "impliedProb": 0.4,
+          "movement": "stable"
+        }
+      }
+    },
+    {
+      "name": "Santiago de la Fuente",
+      "odds": {
+        "win": {
+          "american": "+25000",
+          "decimal": 250,
+          "impliedProb": 0.4,
+          "movement": "stable"
+        },
+        "top5": {
+          "american": "+6125",
+          "decimal": 62.25,
+          "impliedProb": 1.6,
+          "movement": "stable"
+        },
+        "top10": {
+          "american": "+3609",
+          "decimal": 37.09,
+          "impliedProb": 2.7,
+          "movement": "rising"
+        },
+        "top20": {
+          "american": "+2031",
+          "decimal": 21.31,
+          "impliedProb": 4.7,
+          "movement": "stable"
+        },
+        "makeCut": {
+          "american": "+276",
+          "decimal": 3.76,
+          "impliedProb": 26.6,
+          "movement": "rising"
+        },
+        "topSouthAmerican": {
+          "american": "+793",
+          "decimal": 8.93,
+          "impliedProb": 11.2,
+          "movement": "stable"
+        }
+      }
+    }
+  ]
+}

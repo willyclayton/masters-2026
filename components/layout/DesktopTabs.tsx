@@ -9,6 +9,7 @@ interface DesktopTabsProps {
 
 const tabs: { id: Section; label: string }[] = [
   { id: "predictions", label: "AI Predictions" },
+  { id: "betting", label: "Betting Edge" },
   { id: "players", label: "Player Profiles" },
   { id: "methodology", label: "Methodology & Live Data" },
 ];

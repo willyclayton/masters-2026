@@ -9,6 +9,7 @@ import { ModelCard } from "@/components/cards/ModelCard";
 import { ModelAgreement } from "@/components/ui/ModelAgreement";
 import { InitialsAvatar } from "@/components/ui/InitialsAvatar";
 import { WinProbBar } from "@/components/ui/WinProbBar";
+import { ScoutBreakdownCard } from "@/components/cards/ScoutBreakdownCard";
 import { ChevronDown } from "lucide-react";
 
 const predictions = predictionsData as unknown as PredictionsData;
@@ -25,8 +26,12 @@ function getInitials(name: string): string {
 
 export function Predictions() {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
+  const [showWinCase, setShowWinCase] = useState<number | null>(null);
   const consensus = predictions.consensus.rankings;
   const winner = consensus[0];
+
+  const displayCount = showAll ? Math.min(consensus.length, 30) : 15;
 
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-6">
@@ -53,13 +58,13 @@ export function Predictions() {
         <ModelAgreement predictions={predictions} />
       </div>
 
-      {/* Top 10 Leaderboard */}
+      {/* Leaderboard */}
       <div className="mb-8">
         <h3 className="mb-3 font-heading text-lg font-bold text-[var(--text-primary)]">
-          Top 10 Leaderboard
+          Top {displayCount} Leaderboard
         </h3>
         <div className="overflow-hidden rounded-lg border border-[var(--border-color)] bg-white">
-          {consensus.slice(0, 10).map((player, i) => {
+          {consensus.slice(0, displayCount).map((player, i) => {
             const isExpanded = expandedRow === i;
             const simRanking = predictions.simulator.rankings.find(
               (r) => r.name === player.name
@@ -70,6 +75,7 @@ export function Predictions() {
             const analystRanking = predictions.analyst.rankings.find(
               (r) => r.name === player.name
             );
+            const isWinCaseOpen = showWinCase === i;
 
             return (
               <div
@@ -106,22 +112,16 @@ export function Predictions() {
                 </button>
 
                 {isExpanded && (
-                  <div className="border-t border-[var(--border-color)] bg-[var(--bg-primary)] px-4 py-3">
+                  <div className="border-t border-[var(--border-color)] bg-[var(--bg-primary)] px-4 py-3 space-y-3">
+                    {/* Model Breakdown */}
                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                       {simRanking && (
                         <div>
                           <p className="text-xs font-medium text-[var(--text-muted)]">
                             🎲 Simulator
                           </p>
-                          <WinProbBar
-                            value={simRanking.winPct}
-                            label="Win"
-                          />
-                          <WinProbBar
-                            value={simRanking.top10Pct}
-                            max={100}
-                            label="Top 10"
-                          />
+                          <WinProbBar value={simRanking.winPct} label="Win" />
+                          <WinProbBar value={simRanking.top10Pct} max={100} label="Top 10" />
                         </div>
                       )}
                       {scoutRanking && (
@@ -129,15 +129,8 @@ export function Predictions() {
                           <p className="text-xs font-medium text-[var(--text-muted)]">
                             🔍 Scout
                           </p>
-                          <WinProbBar
-                            value={scoutRanking.winPct}
-                            label="Win"
-                          />
-                          <WinProbBar
-                            value={scoutRanking.top10Pct}
-                            max={100}
-                            label="Top 10"
-                          />
+                          <WinProbBar value={scoutRanking.winPct} label="Win" />
+                          <WinProbBar value={scoutRanking.top10Pct} max={100} label="Top 10" />
                         </div>
                       )}
                       {analystRanking && (
@@ -145,28 +138,89 @@ export function Predictions() {
                           <p className="text-xs font-medium text-[var(--text-muted)]">
                             🧠 Analyst
                           </p>
-                          <WinProbBar
-                            value={analystRanking.winPct}
-                            label="Win"
-                          />
-                          <WinProbBar
-                            value={analystRanking.top10Pct}
-                            max={100}
-                            label="Top 10"
-                          />
+                          <WinProbBar value={analystRanking.winPct} label="Win" />
+                          <WinProbBar value={analystRanking.top10Pct} max={100} label="Top 10" />
                         </div>
                       )}
                     </div>
-                    <p className="mt-2 text-xs italic text-[var(--text-secondary)]">
-                      {player.rationale}
-                    </p>
+
+                    {/* Scout Score Breakdown */}
+                    {scoutRanking && "scores" in scoutRanking && (
+                      <ScoutBreakdownCard
+                        scores={scoutRanking.scores}
+                        explanations={"scoreExplanations" in scoutRanking ? (scoutRanking as any).scoreExplanations : undefined}
+                      />
+                    )}
+
+                    {/* Rationale */}
+                    <div className="text-xs text-[var(--text-secondary)] leading-relaxed">
+                      <p className="italic line-clamp-4">{player.rationale}</p>
+                    </div>
+
+                    {/* Scenario Analysis */}
+                    {player.scenarioAnalysis && (
+                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+                        <div className="rounded-md bg-masters-green-light/50 p-2">
+                          <p className="text-[10px] font-medium uppercase text-masters-green">Best Case</p>
+                          <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{player.scenarioAnalysis.bestCase}</p>
+                        </div>
+                        <div className="rounded-md bg-gray-50 p-2">
+                          <p className="text-[10px] font-medium uppercase text-[var(--text-muted)]">Most Likely</p>
+                          <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{player.scenarioAnalysis.mostLikely}</p>
+                        </div>
+                        <div className="rounded-md bg-red-50/50 p-2">
+                          <p className="text-[10px] font-medium uppercase text-masters-red">Worst Case</p>
+                          <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{player.scenarioAnalysis.worstCase}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Why They Will Win - Collapsible */}
+                    {player.whyTheyWillWin && (
+                      <div>
+                        <button
+                          onClick={() => setShowWinCase(isWinCaseOpen ? null : i)}
+                          className="flex items-center gap-1 text-xs font-medium text-masters-green hover:underline"
+                        >
+                          {isWinCaseOpen ? "Hide" : "Read"} Full Win Case
+                          <ChevronDown className={`h-3 w-3 transition-transform ${isWinCaseOpen ? "rotate-180" : ""}`} />
+                        </button>
+                        {isWinCaseOpen && (
+                          <div className="mt-2 rounded-md bg-white p-3 text-xs text-[var(--text-secondary)] leading-relaxed whitespace-pre-line border border-[var(--border-color)]">
+                            {player.whyTheyWillWin}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
             );
           })}
         </div>
+
+        {/* Show More / Less */}
+        {consensus.length > 15 && (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="mt-3 w-full rounded-md border border-[var(--border-color)] bg-white py-2 text-xs font-medium text-[var(--text-secondary)] hover:bg-masters-green-light/50 transition-colors"
+          >
+            {showAll ? "Show Top 15 Only" : `Show Top 30 (${consensus.length - 15} more)`}
+          </button>
+        )}
       </div>
+
+      {/* Analyst Narrative */}
+      {predictions.analyst.narrative && (
+        <div className="mb-8 rounded-lg border border-[var(--border-color)] bg-white p-5">
+          <h3 className="mb-3 font-heading text-lg font-bold text-[var(--text-primary)]">
+            🧠 The Analyst&apos;s Tournament Preview
+          </h3>
+          <div className="text-sm text-[var(--text-secondary)] leading-relaxed whitespace-pre-line">
+            {predictions.analyst.narrative}
+          </div>
+        </div>
+      )}
 
       {/* Model Breakdown */}
       <div>

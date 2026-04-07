@@ -212,3 +212,59 @@ export interface WeatherForecast {
   days: WeatherDay[];
   lastUpdated: string;
 }
+
+// ── Betting Edge Types ──────────────────────────────────────────
+
+export type BetMarket =
+  | "win"
+  | "top5"
+  | "top10"
+  | "top20"
+  | "makeCut"
+  | "topAmerican"
+  | "topEuropean"
+  | "topAsian"
+  | "topAustralasian"
+  | "topSouthAmerican";
+
+export interface MarketOdds {
+  american: string;
+  decimal: number;
+  impliedProb: number;
+  movement: "rising" | "falling" | "stable";
+}
+
+export interface MarketInfo {
+  label: string;
+  description: string;
+}
+
+export interface PlayerBettingOdds {
+  name: string;
+  odds: Partial<Record<BetMarket, MarketOdds>>;
+}
+
+export interface BettingOddsData {
+  lastUpdated: string;
+  source: string;
+  markets: Record<BetMarket, MarketInfo>;
+  players: PlayerBettingOdds[];
+}
+
+export interface BettingEdgeResult {
+  playerName: string;
+  initials: string;
+  worldRanking: number;
+  country: string;
+  market: BetMarket;
+  marketLabel: string;
+  dkImpliedProb: number;
+  aiProb: number;
+  edge: number;
+  edgePct: number;
+  americanOdds: string;
+  decimalOdds: number;
+  movement: "rising" | "falling" | "stable";
+  confidence: "high" | "medium" | "low";
+  tags: PlayerTag[];
+}
