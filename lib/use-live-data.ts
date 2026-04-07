@@ -3,32 +3,39 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { LiveLeaderboard, LiveOddsUpdate, LiveData } from "./types";
 
-const POLL_INTERVAL_MS = 30_000; // 30 seconds
-const TOURNAMENT_START = "2026-04-09"; // Thursday
-const TOURNAMENT_END = "2026-04-13"; // day after Sunday
+// ── Polling intervals ───────────────────────────────────────────
+//
+// Scores (ESPN): Free, unlimited
+//   - During round: every 30s
+//   - Between rounds / pre-tournament: every 2 min
+//   - Outside tournament dates: every 5 min (just checking)
+//
+// Odds (The Odds API): 500 credits/month free tier
+//   - Only fetched when a round is actually in progress
+//   - Server caches for 15 min, so even at 30s client polls
+//     we only burn ~1 credit per 15 min
+//   - During round: piggybacks on score polls (server handles caching)
+//   - Between rounds / not in progress: skip odds entirely
+//
+// Budget: 4 rounds × ~6 hrs avg = 24 hrs of play
+//   24 hrs × 4 calls/hr (15-min cache) = ~96 credits. Well within 500.
+// ─────────────────────────────────────────────────────────────────
 
-// Active polling window: 5:00 AM – 10:00 PM Eastern
-const ACTIVE_HOUR_START = 5;
-const ACTIVE_HOUR_END = 22;
+const SCORES_FAST_MS = 30_000;    // 30s during active round
+const SCORES_SLOW_MS = 120_000;   // 2 min between rounds
+const SCORES_IDLE_MS = 300_000;   // 5 min outside tournament
 
-/**
- * Checks if we should be actively polling.
- * True during tournament week between 5 AM and 10 PM Eastern.
- */
-function isWithinActiveWindow(): boolean {
+const TOURNAMENT_START = "2026-04-09";
+const TOURNAMENT_END = "2026-04-13";
+
+function getTournamentPhase(): "outside" | "tournament" {
   const now = new Date();
-
-  // Convert to Eastern Time
   const et = new Date(
     now.toLocaleString("en-US", { timeZone: "America/New_York" })
   );
-
-  const hour = et.getHours();
-  if (hour < ACTIVE_HOUR_START || hour >= ACTIVE_HOUR_END) return false;
-
-  // Check if we're within tournament dates
   const dateStr = et.toISOString().slice(0, 10);
-  return dateStr >= TOURNAMENT_START && dateStr < TOURNAMENT_END;
+  if (dateStr >= TOURNAMENT_START && dateStr < TOURNAMENT_END) return "tournament";
+  return "outside";
 }
 
 async function fetchScores(): Promise<LiveLeaderboard | null> {
@@ -57,31 +64,48 @@ export function useLiveData(): LiveData & { forceRefresh: () => void } {
   const [isLive, setIsLive] = useState(false);
   const [lastFetch, setLastFetch] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [quotaRemaining, setQuotaRemaining] = useState<number | null>(null);
+  const [oddsSource, setOddsSource] = useState<string>("");
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isMounted = useRef(true);
+  const roundInProgressRef = useRef(false);
 
-  const fetchAll = useCallback(async () => {
+  const fetchAll = useCallback(async (forceOdds = false) => {
     if (!isMounted.current) return;
 
     try {
-      const [scores, liveOdds] = await Promise.all([
-        fetchScores(),
-        fetchOdds(),
-      ]);
+      // Always fetch scores (free)
+      const scores = await fetchScores();
 
       if (!isMounted.current) return;
+      if (scores) {
+        setLeaderboard(scores);
+        roundInProgressRef.current = scores.roundStatus === "in_progress";
+      }
 
-      if (scores) setLeaderboard(scores);
-      if (liveOdds) setOdds(liveOdds);
+      const roundActive = scores?.roundStatus === "in_progress";
+      setIsLive(roundActive || scores?.roundStatus === "complete" || false);
+
+      // Only fetch odds when round is in progress OR forced
+      // The server-side 15-min cache protects the quota regardless
+      if (roundActive || forceOdds) {
+        const liveOdds = await fetchOdds();
+        if (!isMounted.current) return;
+        if (liveOdds) {
+          setOdds(liveOdds);
+          if (liveOdds.quotaRemaining !== null && liveOdds.quotaRemaining !== undefined) {
+            setQuotaRemaining(liveOdds.quotaRemaining);
+          }
+          setOddsSource(
+            liveOdds.cached
+              ? `${liveOdds.source} (cached)`
+              : liveOdds.source
+          );
+        }
+      }
+
       setLastFetch(new Date().toISOString());
       setError(null);
-
-      // We're "live" if we got scores back and the round is in progress
-      setIsLive(
-        scores?.roundStatus === "in_progress" ||
-          scores?.roundStatus === "complete" ||
-          false
-      );
     } catch (e) {
       if (isMounted.current) {
         setError(e instanceof Error ? e.message : "Fetch failed");
@@ -90,44 +114,41 @@ export function useLiveData(): LiveData & { forceRefresh: () => void } {
   }, []);
 
   const startPolling = useCallback(() => {
-    // Clear any existing interval
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
 
-    if (!isWithinActiveWindow()) {
-      // Outside active window — do a single fetch for latest state,
-      // then check again in 5 minutes if the window has opened
-      fetchAll();
+    const phase = getTournamentPhase();
+
+    if (phase === "outside") {
+      // Outside tournament — single fetch + slow check
+      fetchAll(true); // force odds on initial load for pre-tournament display
       intervalRef.current = setInterval(() => {
-        if (isWithinActiveWindow()) {
-          // Window opened — switch to 30s polling
+        const p = getTournamentPhase();
+        if (p === "tournament") {
+          // Tournament started — restart with faster polling
           if (intervalRef.current) clearInterval(intervalRef.current);
-          fetchAll();
-          intervalRef.current = setInterval(fetchAll, POLL_INTERVAL_MS);
+          startPolling();
         }
-      }, 300_000); // check every 5 min
+      }, SCORES_IDLE_MS);
       return;
     }
 
-    // Within active window — poll every 30s
-    fetchAll();
+    // During tournament week — adaptive polling
+    fetchAll(true); // initial fetch with odds
+
     intervalRef.current = setInterval(() => {
-      if (!isWithinActiveWindow()) {
-        // Window closed — slow down
+      const p = getTournamentPhase();
+      if (p === "outside") {
+        // Tournament over
         if (intervalRef.current) clearInterval(intervalRef.current);
-        intervalRef.current = setInterval(() => {
-          if (isWithinActiveWindow()) {
-            if (intervalRef.current) clearInterval(intervalRef.current);
-            fetchAll();
-            intervalRef.current = setInterval(fetchAll, POLL_INTERVAL_MS);
-          }
-        }, 300_000);
+        startPolling();
         return;
       }
+      // fetchAll will check roundInProgress internally to decide on odds
       fetchAll();
-    }, POLL_INTERVAL_MS);
+    }, roundInProgressRef.current ? SCORES_FAST_MS : SCORES_SLOW_MS);
   }, [fetchAll]);
 
   useEffect(() => {
@@ -149,6 +170,8 @@ export function useLiveData(): LiveData & { forceRefresh: () => void } {
     isLive,
     lastFetch,
     error,
-    forceRefresh: fetchAll,
+    quotaRemaining,
+    oddsSource,
+    forceRefresh: () => fetchAll(true),
   };
 }

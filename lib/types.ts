@@ -385,6 +385,9 @@ export interface LiveLeaderboard {
 export interface LiveOddsUpdate {
   lastUpdated: string;
   source: string;
+  quotaRemaining: number | null;
+  quotaUsed: number | null;
+  cached: boolean;
   players: {
     name: string;
     odds: Partial<Record<BetMarket, {
@@ -403,4 +406,6 @@ export interface LiveData {
   isLive: boolean;
   lastFetch: string | null;
   error: string | null;
+  quotaRemaining: number | null;
+  oddsSource: string;
 }

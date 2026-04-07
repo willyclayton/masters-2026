@@ -27,6 +27,8 @@ export function useLiveDataContext(): LiveDataContextValue {
       isLive: false,
       lastFetch: null,
       error: null,
+      quotaRemaining: null,
+      oddsSource: "",
       forceRefresh: () => {},
     };
   }

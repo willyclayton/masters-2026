@@ -4,8 +4,15 @@ import { useLiveDataContext } from "@/lib/live-data-context";
 import { RefreshCw } from "lucide-react";
 
 export function LiveStatusBar() {
-  const { leaderboard, isLive, lastFetch, error, forceRefresh } =
-    useLiveDataContext();
+  const {
+    leaderboard,
+    isLive,
+    lastFetch,
+    error,
+    quotaRemaining,
+    oddsSource,
+    forceRefresh,
+  } = useLiveDataContext();
 
   const lastFetchTime = lastFetch
     ? new Date(lastFetch).toLocaleTimeString("en-US", {
@@ -16,7 +23,16 @@ export function LiveStatusBar() {
       })
     : null;
 
-  // If tournament hasn't started and no live data, show pre-tournament bar
+  const quotaColor =
+    quotaRemaining === null
+      ? "text-[var(--text-muted)]"
+      : quotaRemaining < 20
+        ? "text-masters-red"
+        : quotaRemaining < 50
+          ? "text-yellow-600"
+          : "text-[var(--text-muted)]";
+
+  // Pre-tournament bar
   if (!isLive && !leaderboard) {
     return (
       <div className="border-b border-[var(--border-color)] bg-[var(--bg-primary)]">
@@ -31,9 +47,15 @@ export function LiveStatusBar() {
             {error && (
               <span className="text-[10px] text-masters-red">{error}</span>
             )}
+            {quotaRemaining !== null && (
+              <span className={`text-[10px] font-medium ${quotaColor}`}>
+                {quotaRemaining < 20 ? "Quota low: " : "Credits: "}
+                {quotaRemaining}/500
+              </span>
+            )}
             {lastFetchTime && (
               <span className="text-[10px] text-[var(--text-muted)]">
-                Last check: {lastFetchTime} ET
+                {lastFetchTime} ET
               </span>
             )}
             <button
@@ -98,8 +120,21 @@ export function LiveStatusBar() {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Quota indicator */}
+          {quotaRemaining !== null && (
+            <span className={`text-[10px] font-medium ${quotaColor}`}>
+              {quotaRemaining < 20
+                ? `Quota low (${quotaRemaining})`
+                : `${quotaRemaining} credits`}
+            </span>
+          )}
+          {oddsSource && oddsSource.includes("cached") && (
+            <span className="text-[10px] text-masters-green/60">
+              (cached)
+            </span>
+          )}
           <span className="text-[10px] text-masters-green/70">
-            Updates every 30s
+            Scores: 30s &middot; Odds: 15min
             {lastFetchTime && <> &middot; {lastFetchTime} ET</>}
           </span>
           <button
