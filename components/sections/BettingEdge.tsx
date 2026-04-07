@@ -310,26 +310,26 @@ export function BettingEdge() {
               AI-powered value detection across DraftKings markets. Find where
               our models see odds the book has wrong.
             </p>
-            <div className="mt-4 flex items-center justify-center gap-6 text-sm">
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm sm:gap-x-6">
               <div>
-                <span className="text-xl font-bold text-masters-gold">
+                <span className="text-lg font-bold text-masters-gold sm:text-xl">
                   {positiveEdges}
                 </span>
-                <span className="ml-1 text-white/70">value bets</span>
+                <span className="ml-1 text-xs text-white/70 sm:text-sm">value bets</span>
               </div>
-              <div className="h-6 w-px bg-white/20" />
+              <div className="hidden h-6 w-px bg-white/20 sm:block" />
               <div>
-                <span className="text-xl font-bold text-masters-gold">
+                <span className="text-lg font-bold text-masters-gold sm:text-xl">
                   {allEdges.length}
                 </span>
-                <span className="ml-1 text-white/70">markets</span>
+                <span className="ml-1 text-xs text-white/70 sm:text-sm">markets</span>
               </div>
-              <div className="h-6 w-px bg-white/20" />
+              <div className="hidden h-6 w-px bg-white/20 sm:block" />
               <div>
-                <span className="text-xl font-bold text-masters-gold">
+                <span className="text-lg font-bold text-masters-gold sm:text-xl">
                   +${totalEV.toFixed(0)}
                 </span>
-                <span className="ml-1 text-white/70">total EV</span>
+                <span className="ml-1 text-xs text-white/70 sm:text-sm">total EV</span>
               </div>
             </div>
           </div>

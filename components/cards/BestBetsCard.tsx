@@ -36,34 +36,37 @@ export function BestBetsCard({ bets }: BestBetsCardProps) {
           {bets.map((bet, i) => (
             <div
               key={`${bet.playerName}-${bet.market}`}
-              className="flex items-center gap-3 rounded-lg bg-[var(--bg-primary)] p-3 transition-colors hover:bg-masters-green-light"
+              className="rounded-lg bg-[var(--bg-primary)] p-3 transition-colors hover:bg-masters-green-light"
             >
-              {/* Rank */}
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-masters-gold-light text-xs font-bold text-masters-gold">
-                {i + 1}
-              </span>
+              {/* Mobile: stacked layout */}
+              <div className="flex items-start gap-3">
+                {/* Rank */}
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-masters-gold-light text-xs font-bold text-masters-gold">
+                  {i + 1}
+                </span>
 
-              {/* Player */}
-              <InitialsAvatar initials={bet.initials} size="sm" />
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="truncate text-sm font-semibold text-[var(--text-primary)]">
-                    {bet.playerName}
-                  </span>
-                  <MarketBadge market={bet.market} />
+                {/* Player info */}
+                <InitialsAvatar initials={bet.initials} size="sm" className="mt-0.5" />
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                    <span className="text-sm font-semibold text-[var(--text-primary)]">
+                      {bet.playerName}
+                    </span>
+                    <MarketBadge market={bet.market} />
+                  </div>
+                  <div className="mt-0.5 text-xs text-[var(--text-muted)]">
+                    DK: {bet.americanOdds} ({bet.dkImpliedProb.toFixed(1)}%)
+                  </div>
                 </div>
-                <div className="mt-0.5 text-xs text-[var(--text-muted)]">
-                  DK: {bet.americanOdds} ({bet.dkImpliedProb.toFixed(1)}%)
-                </div>
-              </div>
 
-              {/* Edge + EV */}
-              <div className="shrink-0 text-right">
-                <div className="text-sm font-bold text-masters-green">
-                  +{bet.edge.toFixed(1)}%
-                </div>
-                <div className="text-[10px] font-semibold tabular-nums text-masters-green">
-                  EV: +${bet.ev100.toFixed(2)}
+                {/* Edge + EV */}
+                <div className="shrink-0 text-right">
+                  <div className="text-sm font-bold text-masters-green">
+                    +{bet.edge.toFixed(1)}%
+                  </div>
+                  <div className="text-[10px] font-semibold tabular-nums text-masters-green">
+                    EV: +${bet.ev100.toFixed(2)}
+                  </div>
                 </div>
               </div>
             </div>

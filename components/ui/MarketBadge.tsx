@@ -20,12 +20,12 @@ const MARKET_LABELS: Record<BetMarket, string> = {
   top5: "Top 5",
   top10: "Top 10",
   top20: "Top 20",
-  makeCut: "Make Cut",
-  topAmerican: "Top American",
-  topEuropean: "Top European",
-  topAsian: "Top Asian",
-  topAustralasian: "Top Australasian",
-  topSouthAmerican: "Top S. American",
+  makeCut: "Cut",
+  topAmerican: "Top USA",
+  topEuropean: "Top EUR",
+  topAsian: "Top Asia",
+  topAustralasian: "Top AUS",
+  topSouthAmerican: "Top SA",
 };
 
 interface MarketBadgeProps {

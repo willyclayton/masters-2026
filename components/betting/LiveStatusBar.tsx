@@ -36,26 +36,17 @@ export function LiveStatusBar() {
   if (!isLive && !leaderboard) {
     return (
       <div className="border-b border-[var(--border-color)] bg-[var(--bg-primary)]">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-2">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-yellow-400" />
-            <span className="text-xs font-medium text-[var(--text-muted)]">
-              Pre-Tournament — Live data activates Apr 9, 5:00 AM ET
+        <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-4 py-2">
+          <div className="flex min-w-0 items-center gap-2">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-yellow-400" />
+            <span className="truncate text-[10px] font-medium text-[var(--text-muted)] sm:text-xs">
+              Pre-Tournament — Live Apr 9
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            {error && (
-              <span className="text-[10px] text-masters-red">{error}</span>
-            )}
+          <div className="flex shrink-0 items-center gap-1.5">
             {quotaRemaining !== null && (
-              <span className={`text-[10px] font-medium ${quotaColor}`}>
-                {quotaRemaining < 20 ? "Quota low: " : "Credits: "}
+              <span className={`hidden text-[10px] font-medium sm:inline ${quotaColor}`}>
                 {quotaRemaining}/500
-              </span>
-            )}
-            {lastFetchTime && (
-              <span className="text-[10px] text-[var(--text-muted)]">
-                {lastFetchTime} ET
               </span>
             )}
             <button
@@ -119,23 +110,16 @@ export function LiveStatusBar() {
           )}
         </div>
 
-        <div className="flex items-center gap-2">
-          {/* Quota indicator */}
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           {quotaRemaining !== null && (
-            <span className={`text-[10px] font-medium ${quotaColor}`}>
+            <span className={`hidden text-[10px] font-medium sm:inline ${quotaColor}`}>
               {quotaRemaining < 20
                 ? `Quota low (${quotaRemaining})`
                 : `${quotaRemaining} credits`}
             </span>
           )}
-          {oddsSource && oddsSource.includes("cached") && (
-            <span className="text-[10px] text-masters-green/60">
-              (cached)
-            </span>
-          )}
-          <span className="text-[10px] text-masters-green/70">
-            Scores: 30s &middot; Odds: 15min
-            {lastFetchTime && <> &middot; {lastFetchTime} ET</>}
+          <span className="hidden text-[10px] text-masters-green/70 sm:inline">
+            {lastFetchTime && <>{lastFetchTime} ET</>}
           </span>
           <button
             onClick={forceRefresh}

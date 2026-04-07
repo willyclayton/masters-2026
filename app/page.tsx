@@ -19,8 +19,12 @@ export default function Home() {
   return (
     <LiveDataProvider>
       <div className="flex min-h-screen flex-col">
-        <LeaderboardTicker />
-        <Header onMenuToggle={() => setMobileNavOpen(true)} />
+        {/* Sticky top block: ticker + header together */}
+        <div className="sticky top-0 z-50">
+          <LeaderboardTicker />
+          <Header onMenuToggle={() => setMobileNavOpen(true)} />
+        </div>
+
         <MobileNav
           open={mobileNavOpen}
           onOpenChange={setMobileNavOpen}

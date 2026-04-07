@@ -77,11 +77,11 @@ export function LeaderboardTicker() {
         </div>
 
         {/* Fanning field cells */}
-        <div className="flex min-w-0 flex-1 items-stretch overflow-hidden">
+        <div className="flex min-w-0 flex-1 items-stretch overflow-x-auto">
           {visibleField.map((p, i) => (
             <div
               key={p.name}
-              className={`flex shrink-0 items-center gap-1.5 px-2.5 py-1.5 sm:px-3 ${
+              className={`flex shrink-0 items-center gap-1 px-2 py-1.5 sm:gap-1.5 sm:px-3 ${
                 i < visibleField.length - 1
                   ? "border-r border-[var(--border-color)]"
                   : ""
@@ -90,13 +90,10 @@ export function LeaderboardTicker() {
               <span className="text-[10px] font-bold text-[var(--text-muted)]">
                 {p.positionNum}
               </span>
-              <span className="hidden text-xs font-semibold text-[var(--text-secondary)] sm:inline">
+              <span className="text-[11px] font-semibold text-[var(--text-secondary)] sm:text-xs">
                 {lastName(p.name)}
               </span>
-              <span className="text-xs font-semibold text-[var(--text-secondary)] sm:hidden">
-                {shortName(p.name)}
-              </span>
-              <span className="text-xs font-extrabold text-masters-red">
+              <span className="text-[11px] font-extrabold text-masters-red sm:text-xs">
                 {formatScore(p.totalScore)}
               </span>
               {p.thru && p.thru !== "-" && p.thru !== "F" && (

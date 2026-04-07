@@ -41,25 +41,26 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
         onClick={() => setExpanded(!expanded)}
         className="w-full text-left"
       >
-        {/* Main row */}
-        <div className="flex items-center gap-3 p-3 sm:p-4">
-          {/* Rank */}
+        <div className="flex items-start gap-2 p-3 sm:items-center sm:gap-3 sm:p-4">
+          {/* Rank — desktop only */}
           {rank != null && (
             <span className="hidden w-6 shrink-0 text-center text-xs font-medium text-[var(--text-muted)] sm:block">
               {rank}
             </span>
           )}
 
-          {/* Player */}
-          <InitialsAvatar initials={edge.initials} size="sm" />
+          {/* Avatar */}
+          <InitialsAvatar initials={edge.initials} size="sm" className="mt-0.5 sm:mt-0" />
+
+          {/* Player info — wraps on mobile */}
           <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2">
-              <span className="truncate text-sm font-semibold text-[var(--text-primary)]">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span className="text-sm font-semibold text-[var(--text-primary)]">
                 {edge.playerName}
               </span>
               <MarketBadge market={edge.market} />
             </div>
-            <div className="mt-0.5 flex items-center gap-2 text-xs text-[var(--text-muted)]">
+            <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-[var(--text-muted)]">
               <span>#{edge.worldRanking}</span>
               <span className="hidden sm:inline">{edge.country}</span>
               <span className="flex items-center gap-1">
@@ -68,10 +69,20 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
                 />
                 <span className="hidden sm:inline">{conf.label}</span>
               </span>
+              {/* DK odds — show inline on mobile since the separate block is hidden */}
+              <span className="sm:hidden">
+                {edge.americanOdds} ({edge.dkImpliedProb.toFixed(1)}%)
+                {edge.movement === "rising" && (
+                  <span className="ml-0.5 text-masters-green">▲</span>
+                )}
+                {edge.movement === "falling" && (
+                  <span className="ml-0.5 text-masters-red">▼</span>
+                )}
+              </span>
             </div>
           </div>
 
-          {/* Odds */}
+          {/* Odds — desktop only */}
           <div className="hidden shrink-0 text-right sm:block">
             <div className="text-sm font-bold text-[var(--text-primary)]">
               {edge.americanOdds}
@@ -95,12 +106,21 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
               {edge.edge > 0 ? "+" : ""}
               {edge.edge.toFixed(1)}%
             </span>
-            <div className="mt-0.5 text-[10px] font-semibold tabular-nums" style={{ color: edge.ev100 >= 0 ? "var(--color-masters-green)" : "var(--color-masters-red)" }}>
-              EV: {edge.ev100 >= 0 ? "+$" : "-$"}{Math.abs(edge.ev100).toFixed(2)}
+            <div
+              className="mt-0.5 text-[10px] font-semibold tabular-nums"
+              style={{
+                color:
+                  edge.ev100 >= 0
+                    ? "var(--color-masters-green)"
+                    : "var(--color-masters-red)",
+              }}
+            >
+              EV: {edge.ev100 >= 0 ? "+$" : "-$"}
+              {Math.abs(edge.ev100).toFixed(2)}
             </div>
           </div>
 
-          {/* Expand chevron */}
+          {/* Chevron */}
           <ChevronDown
             className={`h-4 w-4 shrink-0 text-[var(--text-muted)] transition-transform ${
               expanded ? "rotate-180" : ""
@@ -111,15 +131,13 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
 
       {/* Expanded detail */}
       {expanded && (
-        <div className="border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4 space-y-4">
-          {/* Comparison bar */}
+        <div className="space-y-4 border-t border-[var(--border-color)] bg-[var(--bg-primary)] p-4">
           <EdgeComparisonBar
             dkProb={edge.dkImpliedProb}
             aiProb={edge.aiProb}
             maxValue={maxBarValue}
           />
 
-          {/* Details grid */}
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
             <div>
               <p className="text-[10px] font-medium uppercase text-[var(--text-muted)]">
@@ -171,12 +189,12 @@ export function EdgeCard({ edge, rank }: EdgeCardProps) {
                   edge.ev100 >= 0 ? "text-masters-green" : "text-masters-red"
                 }`}
               >
-                {edge.ev100 >= 0 ? "+$" : "-$"}{Math.abs(edge.ev100).toFixed(2)}
+                {edge.ev100 >= 0 ? "+$" : "-$"}
+                {Math.abs(edge.ev100).toFixed(2)}
               </p>
             </div>
           </div>
 
-          {/* Tags */}
           {edge.tags.length > 0 && (
             <div className="flex flex-wrap gap-1">
               {edge.tags.map((tag) => (

@@ -111,8 +111,8 @@ export function WeatherEdge({ edges, players }: WeatherEdgeProps) {
                 >
                   <InitialsAvatar initials={wb.initials} size="sm" />
                   <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="truncate text-sm font-semibold text-[var(--text-primary)]">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span className="text-sm font-semibold text-[var(--text-primary)]">
                         {wb.playerName}
                       </span>
                       <MarketBadge market={wb.market} />

@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export function Header({ onMenuToggle }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 w-full bg-masters-green shadow-sm">
+    <header className="w-full bg-masters-green shadow-sm">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
         <Button
           variant="ghost"
