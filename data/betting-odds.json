@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-08T21:52:31.560Z",
-  "source": "DraftKings (win odds real, props derived from win implied probability)",
+  "lastUpdated": "2026-04-08T22:25:49.262Z",
+  "source": "DraftKings (all odds real from DK as of 2026-04-08)",
   "markets": {
     "win": {
       "label": "To Win",
@@ -54,33 +54,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+115",
-          "decimal": 2.15,
-          "impliedProb": 46.5,
+          "american": "+110",
+          "decimal": 2.1,
+          "impliedProb": 47.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "-184",
+          "american": "-186",
           "decimal": 1.54,
-          "impliedProb": 64.8,
+          "impliedProb": 65,
           "movement": "stable"
         },
         "top20": {
-          "american": "-367",
+          "american": "-370",
           "decimal": 1.27,
-          "impliedProb": 78.6,
+          "impliedProb": 78.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-1216",
-          "decimal": 1.08,
-          "impliedProb": 92.4,
+          "american": "-1400",
+          "decimal": 1.07,
+          "impliedProb": 93.3,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+327",
-          "decimal": 4.27,
-          "impliedProb": 23.4,
+          "american": "+300",
+          "decimal": 4,
+          "impliedProb": 25,
           "movement": "stable"
         }
       }
@@ -95,33 +95,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+189",
-          "decimal": 2.89,
-          "impliedProb": 34.6,
+          "american": "+174",
+          "decimal": 2.74,
+          "impliedProb": 36.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "-112",
-          "decimal": 1.89,
-          "impliedProb": 52.9,
+          "american": "-122",
+          "decimal": 1.82,
+          "impliedProb": 55,
           "movement": "stable"
         },
         "top20": {
-          "american": "-230",
-          "decimal": 1.43,
-          "impliedProb": 69.7,
+          "american": "-240",
+          "decimal": 1.42,
+          "impliedProb": 70.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-801",
-          "decimal": 1.12,
-          "impliedProb": 88.9,
+          "american": "-1000",
+          "decimal": 1.1,
+          "impliedProb": 90.9,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+355",
-          "decimal": 4.55,
-          "impliedProb": 22,
+          "american": "+360",
+          "decimal": 4.6,
+          "impliedProb": 21.7,
           "movement": "stable"
         }
       }
@@ -136,9 +136,9 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+217",
-          "decimal": 3.17,
-          "impliedProb": 31.5,
+          "american": "+210",
+          "decimal": 3.1,
+          "impliedProb": 32.3,
           "movement": "stable"
         },
         "top10": {
@@ -148,21 +148,21 @@
           "movement": "stable"
         },
         "top20": {
-          "american": "-201",
-          "decimal": 1.5,
-          "impliedProb": 66.8,
+          "american": "-188",
+          "decimal": 1.53,
+          "impliedProb": 65.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-706",
-          "decimal": 1.14,
-          "impliedProb": 87.6,
+          "american": "-750",
+          "decimal": 1.13,
+          "impliedProb": 88.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+706",
-          "decimal": 8.06,
-          "impliedProb": 12.4,
+          "american": "+610",
+          "decimal": 7.1,
+          "impliedProb": 14.1,
           "movement": "stable"
         }
       }
@@ -177,33 +177,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+252",
-          "decimal": 3.52,
-          "impliedProb": 28.4,
+          "american": "+230",
+          "decimal": 3.3,
+          "impliedProb": 30.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+118",
-          "decimal": 2.18,
-          "impliedProb": 45.8,
+          "american": "+112",
+          "decimal": 2.12,
+          "impliedProb": 47.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "-175",
+          "american": "-174",
           "decimal": 1.57,
-          "impliedProb": 63.6,
+          "impliedProb": 63.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-625",
-          "decimal": 1.16,
-          "impliedProb": 86.2,
+          "american": "-750",
+          "decimal": 1.13,
+          "impliedProb": 88.2,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+506",
-          "decimal": 6.06,
-          "impliedProb": 16.5,
+          "american": "+490",
+          "decimal": 5.9,
+          "impliedProb": 16.9,
           "movement": "stable"
         }
       }
@@ -218,33 +218,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+310",
-          "decimal": 4.1,
-          "impliedProb": 24.4,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "top10": {
-          "american": "+146",
-          "decimal": 2.46,
-          "impliedProb": 40.7,
+          "american": "+126",
+          "decimal": 2.26,
+          "impliedProb": 44.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "-144",
-          "decimal": 1.69,
-          "impliedProb": 59,
+          "american": "-162",
+          "decimal": 1.62,
+          "impliedProb": 61.8,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-525",
-          "decimal": 1.19,
-          "impliedProb": 84,
+          "american": "-700",
+          "decimal": 1.14,
+          "impliedProb": 87.5,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+1049",
-          "decimal": 11.49,
-          "impliedProb": 8.7,
+          "american": "+870",
+          "decimal": 9.7,
+          "impliedProb": 10.3,
           "movement": "stable"
         }
       }
@@ -259,33 +259,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+320",
-          "decimal": 4.2,
-          "impliedProb": 23.8,
+          "american": "+310",
+          "decimal": 4.1,
+          "impliedProb": 24.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+151",
-          "decimal": 2.51,
-          "impliedProb": 39.9,
+          "american": "+150",
+          "decimal": 2.5,
+          "impliedProb": 40,
           "movement": "stable"
         },
         "top20": {
-          "american": "-139",
-          "decimal": 1.72,
-          "impliedProb": 58.2,
+          "american": "-128",
+          "decimal": 1.78,
+          "impliedProb": 56.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-510",
-          "decimal": 1.2,
-          "impliedProb": 83.6,
+          "american": "-525",
+          "decimal": 1.19,
+          "impliedProb": 84,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+669",
-          "decimal": 7.69,
-          "impliedProb": 13,
+          "american": "+650",
+          "decimal": 7.5,
+          "impliedProb": 13.3,
           "movement": "stable"
         }
       }
@@ -300,33 +300,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+421",
-          "decimal": 5.21,
-          "impliedProb": 19.2,
+          "american": "+365",
+          "decimal": 4.65,
+          "impliedProb": 21.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+198",
-          "decimal": 2.98,
-          "impliedProb": 33.6,
+          "american": "+170",
+          "decimal": 2.7,
+          "impliedProb": 37,
           "movement": "stable"
         },
         "top20": {
-          "american": "-107",
-          "decimal": 1.93,
-          "impliedProb": 51.8,
+          "american": "-118",
+          "decimal": 1.85,
+          "impliedProb": 54.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-405",
-          "decimal": 1.25,
-          "impliedProb": 80.2,
+          "american": "-490",
+          "decimal": 1.2,
+          "impliedProb": 83.1,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+1462",
-          "decimal": 15.63,
-          "impliedProb": 6.4,
+          "american": "+1150",
+          "decimal": 12.5,
+          "impliedProb": 8,
           "movement": "stable"
         }
       }
@@ -341,33 +341,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+462",
-          "decimal": 5.62,
-          "impliedProb": 17.8,
+          "american": "+380",
+          "decimal": 4.8,
+          "impliedProb": 20.8,
           "movement": "stable"
         },
         "top10": {
-          "american": "+216",
-          "decimal": 3.16,
-          "impliedProb": 31.6,
+          "american": "+170",
+          "decimal": 2.7,
+          "impliedProb": 37,
           "movement": "stable"
         },
         "top20": {
-          "american": "+102",
-          "decimal": 2.02,
-          "impliedProb": 49.6,
+          "american": "-120",
+          "decimal": 1.83,
+          "impliedProb": 54.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-374",
-          "decimal": 1.27,
-          "impliedProb": 78.9,
+          "american": "-600",
+          "decimal": 1.17,
+          "impliedProb": 85.7,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+1011",
-          "decimal": 11.11,
-          "impliedProb": 9,
+          "american": "+850",
+          "decimal": 9.5,
+          "impliedProb": 10.5,
           "movement": "stable"
         }
       }
@@ -382,33 +382,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+590",
-          "decimal": 6.9,
-          "impliedProb": 14.5,
+          "american": "+465",
+          "decimal": 5.65,
+          "impliedProb": 17.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+277",
-          "decimal": 3.77,
-          "impliedProb": 26.5,
+          "american": "+205",
+          "decimal": 3.05,
+          "impliedProb": 32.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+128",
-          "decimal": 2.28,
-          "impliedProb": 43.8,
+          "american": "+102",
+          "decimal": 2.02,
+          "impliedProb": 49.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-303",
-          "decimal": 1.33,
-          "impliedProb": 75.2,
+          "american": "-490",
+          "decimal": 1.2,
+          "impliedProb": 83.1,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+109",
-          "decimal": 2.09,
-          "impliedProb": 47.8,
+          "american": "+132",
+          "decimal": 2.32,
+          "impliedProb": 43.1,
           "movement": "stable"
         }
       }
@@ -423,33 +423,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+609",
-          "decimal": 7.09,
-          "impliedProb": 14.1,
+          "american": "+485",
+          "decimal": 5.85,
+          "impliedProb": 17.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+286",
-          "decimal": 3.86,
-          "impliedProb": 25.9,
+          "american": "+215",
+          "decimal": 3.15,
+          "impliedProb": 31.7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+133",
-          "decimal": 2.33,
-          "impliedProb": 43,
+          "american": "+106",
+          "decimal": 2.06,
+          "impliedProb": 48.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-295",
-          "decimal": 1.34,
-          "impliedProb": 74.7,
+          "american": "-450",
+          "decimal": 1.22,
+          "impliedProb": 81.8,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+2173",
-          "decimal": 22.73,
-          "impliedProb": 4.4,
+          "american": "+1600",
+          "decimal": 17,
+          "impliedProb": 5.9,
           "movement": "stable"
         }
       }
@@ -464,33 +464,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+652",
-          "decimal": 7.52,
-          "impliedProb": 13.3,
+          "american": "+560",
+          "decimal": 6.6,
+          "impliedProb": 15.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+307",
-          "decimal": 4.07,
-          "impliedProb": 24.6,
+          "american": "+255",
+          "decimal": 3.55,
+          "impliedProb": 28.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "+141",
-          "decimal": 2.41,
-          "impliedProb": 41.5,
+          "american": "+132",
+          "decimal": 2.32,
+          "impliedProb": 43.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-279",
-          "decimal": 1.36,
-          "impliedProb": 73.6,
+          "american": "-340",
+          "decimal": 1.29,
+          "impliedProb": 77.3,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+1462",
-          "decimal": 15.63,
-          "impliedProb": 6.4,
+          "american": "+1250",
+          "decimal": 13.5,
+          "impliedProb": 7.4,
           "movement": "stable"
         }
       }
@@ -505,33 +505,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+675",
-          "decimal": 7.75,
-          "impliedProb": 12.9,
+          "american": "+540",
+          "decimal": 6.4,
+          "impliedProb": 15.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+318",
-          "decimal": 4.18,
-          "impliedProb": 23.9,
+          "american": "+240",
+          "decimal": 3.4,
+          "impliedProb": 29.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+146",
-          "decimal": 2.46,
-          "impliedProb": 40.7,
+          "american": "+118",
+          "decimal": 2.18,
+          "impliedProb": 45.9,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-270",
-          "decimal": 1.37,
-          "impliedProb": 73,
+          "american": "-400",
+          "decimal": 1.25,
+          "impliedProb": 80,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+1513",
-          "decimal": 16.13,
-          "impliedProb": 6.2,
+          "american": "+1225",
+          "decimal": 13.25,
+          "impliedProb": 7.5,
           "movement": "stable"
         }
       }
@@ -546,33 +546,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+726",
-          "decimal": 8.26,
-          "impliedProb": 12.1,
+          "american": "+580",
+          "decimal": 6.8,
+          "impliedProb": 14.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+342",
-          "decimal": 4.42,
-          "impliedProb": 22.6,
+          "american": "+260",
+          "decimal": 3.6,
+          "impliedProb": 27.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+156",
-          "decimal": 2.56,
-          "impliedProb": 39,
+          "american": "+128",
+          "decimal": 2.28,
+          "impliedProb": 43.9,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-255",
-          "decimal": 1.39,
-          "impliedProb": 71.8,
+          "american": "-410",
+          "decimal": 1.24,
+          "impliedProb": 80.4,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+170",
-          "decimal": 2.7,
-          "impliedProb": 37.1,
+          "american": "+198",
+          "decimal": 2.98,
+          "impliedProb": 33.6,
           "movement": "stable"
         }
       }
@@ -587,33 +587,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+726",
-          "decimal": 8.26,
-          "impliedProb": 12.1,
+          "american": "+600",
+          "decimal": 7,
+          "impliedProb": 14.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+342",
-          "decimal": 4.42,
-          "impliedProb": 22.6,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "top20": {
-          "american": "+156",
-          "decimal": 2.56,
-          "impliedProb": 39,
+          "american": "+134",
+          "decimal": 2.34,
+          "impliedProb": 42.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-255",
-          "decimal": 1.39,
-          "impliedProb": 71.8,
+          "american": "-350",
+          "decimal": 1.29,
+          "impliedProb": 77.8,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+2603",
-          "decimal": 27.03,
-          "impliedProb": 3.7,
+          "american": "+2000",
+          "decimal": 21,
+          "impliedProb": 4.8,
           "movement": "stable"
         }
       }
@@ -628,33 +628,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+726",
-          "decimal": 8.26,
-          "impliedProb": 12.1,
+          "american": "+620",
+          "decimal": 7.2,
+          "impliedProb": 13.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+342",
-          "decimal": 4.42,
-          "impliedProb": 22.6,
+          "american": "+285",
+          "decimal": 3.85,
+          "impliedProb": 26,
           "movement": "stable"
         },
         "top20": {
-          "american": "+156",
-          "decimal": 2.56,
-          "impliedProb": 39,
+          "american": "+148",
+          "decimal": 2.48,
+          "impliedProb": 40.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-255",
-          "decimal": 1.39,
-          "impliedProb": 71.8,
+          "american": "-320",
+          "decimal": 1.31,
+          "impliedProb": 76.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+2603",
-          "decimal": 27.03,
-          "impliedProb": 3.7,
+          "american": "+2000",
+          "decimal": 21,
+          "impliedProb": 4.8,
           "movement": "stable"
         }
       }
@@ -669,33 +669,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+755",
-          "decimal": 8.55,
-          "impliedProb": 11.7,
+          "american": "+620",
+          "decimal": 7.2,
+          "impliedProb": 13.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+357",
-          "decimal": 4.57,
-          "impliedProb": 21.9,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "top20": {
-          "american": "+162",
-          "decimal": 2.62,
-          "impliedProb": 38.1,
+          "american": "+138",
+          "decimal": 2.38,
+          "impliedProb": 42,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-246",
-          "decimal": 1.41,
-          "impliedProb": 71.1,
+          "american": "-340",
+          "decimal": 1.29,
+          "impliedProb": 77.3,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+2678",
-          "decimal": 27.78,
-          "impliedProb": 3.6,
+          "american": "+2050",
+          "decimal": 21.5,
+          "impliedProb": 4.7,
           "movement": "stable"
         }
       }
@@ -710,33 +710,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+862",
-          "decimal": 9.62,
-          "impliedProb": 10.4,
+          "american": "+690",
+          "decimal": 7.9,
+          "impliedProb": 12.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+405",
-          "decimal": 5.05,
-          "impliedProb": 19.8,
+          "american": "+310",
+          "decimal": 4.1,
+          "impliedProb": 24.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+183",
-          "decimal": 2.83,
-          "impliedProb": 35.3,
+          "american": "+154",
+          "decimal": 2.54,
+          "impliedProb": 39.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-221",
-          "decimal": 1.45,
-          "impliedProb": 68.8,
+          "american": "-310",
+          "decimal": 1.32,
+          "impliedProb": 75.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+1983",
-          "decimal": 20.83,
-          "impliedProb": 4.8,
+          "american": "+1550",
+          "decimal": 16.5,
+          "impliedProb": 6.1,
           "movement": "stable"
         }
       }
@@ -751,33 +751,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+942",
-          "decimal": 10.42,
-          "impliedProb": 9.6,
+          "american": "+690",
+          "decimal": 7.9,
+          "impliedProb": 12.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+443",
-          "decimal": 5.43,
-          "impliedProb": 18.4,
+          "american": "+295",
+          "decimal": 3.95,
+          "impliedProb": 25.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+200",
-          "decimal": 3,
-          "impliedProb": 33.3,
+          "american": "+142",
+          "decimal": 2.42,
+          "impliedProb": 41.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-203",
-          "decimal": 1.49,
-          "impliedProb": 67,
+          "american": "-370",
+          "decimal": 1.27,
+          "impliedProb": 78.7,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+234",
-          "decimal": 3.34,
-          "impliedProb": 29.9,
+          "american": "+194",
+          "decimal": 2.94,
+          "impliedProb": 34,
           "movement": "stable"
         }
       }
@@ -792,33 +792,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+999",
-          "decimal": 10.99,
-          "impliedProb": 9.1,
+          "american": "+750",
+          "decimal": 8.5,
+          "impliedProb": 11.8,
           "movement": "stable"
         },
         "top10": {
-          "american": "+468",
-          "decimal": 5.68,
-          "impliedProb": 17.6,
+          "american": "+325",
+          "decimal": 4.25,
+          "impliedProb": 23.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+211",
-          "decimal": 3.11,
-          "impliedProb": 32.2,
+          "american": "+160",
+          "decimal": 2.6,
+          "impliedProb": 38.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-195",
-          "decimal": 1.51,
-          "impliedProb": 66.1,
+          "american": "-310",
+          "decimal": 1.32,
+          "impliedProb": 75.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+3604",
-          "decimal": 37.04,
-          "impliedProb": 2.7,
+          "american": "+2600",
+          "decimal": 27,
+          "impliedProb": 3.7,
           "movement": "stable"
         }
       }
@@ -833,33 +833,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1049",
-          "decimal": 11.49,
-          "impliedProb": 8.7,
+          "american": "+730",
+          "decimal": 8.3,
+          "impliedProb": 12,
           "movement": "stable"
         },
         "top10": {
-          "american": "+495",
-          "decimal": 5.95,
-          "impliedProb": 16.8,
+          "american": "+310",
+          "decimal": 4.1,
+          "impliedProb": 24.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+222",
-          "decimal": 3.22,
-          "impliedProb": 31.1,
+          "american": "+146",
+          "decimal": 2.46,
+          "impliedProb": 40.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-186",
-          "decimal": 1.54,
-          "impliedProb": 65,
+          "american": "-390",
+          "decimal": 1.26,
+          "impliedProb": 79.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2600",
+          "decimal": 27,
+          "impliedProb": 3.7,
           "movement": "stable"
         }
       }
@@ -874,33 +874,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1105",
-          "decimal": 12.05,
-          "impliedProb": 8.3,
+          "american": "+900",
+          "decimal": 10,
+          "impliedProb": 10,
           "movement": "stable"
         },
         "top10": {
-          "american": "+521",
-          "decimal": 6.21,
-          "impliedProb": 16.1,
+          "american": "+400",
+          "decimal": 5,
+          "impliedProb": 20,
           "movement": "stable"
         },
         "top20": {
-          "american": "+234",
-          "decimal": 3.34,
-          "impliedProb": 29.9,
+          "american": "+200",
+          "decimal": 3,
+          "impliedProb": 33.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-177",
-          "decimal": 1.56,
-          "impliedProb": 63.9,
+          "american": "-265",
+          "decimal": 1.38,
+          "impliedProb": 72.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+4067",
-          "decimal": 41.67,
-          "impliedProb": 2.4,
+          "american": "+3000",
+          "decimal": 31,
+          "impliedProb": 3.2,
           "movement": "stable"
         }
       }
@@ -915,33 +915,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1182",
-          "decimal": 12.82,
-          "impliedProb": 7.8,
+          "american": "+840",
+          "decimal": 9.4,
+          "impliedProb": 10.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+554",
-          "decimal": 6.54,
-          "impliedProb": 15.3,
+          "american": "+360",
+          "decimal": 4.6,
+          "impliedProb": 21.7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+248",
-          "decimal": 3.48,
-          "impliedProb": 28.7,
+          "american": "+175",
+          "decimal": 2.75,
+          "impliedProb": 36.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-168",
-          "decimal": 1.59,
-          "impliedProb": 62.7,
+          "american": "-300",
+          "decimal": 1.33,
+          "impliedProb": 75,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+337",
-          "decimal": 4.37,
-          "impliedProb": 22.9,
+          "american": "+280",
+          "decimal": 3.8,
+          "impliedProb": 26.3,
           "movement": "stable"
         }
       }
@@ -956,33 +956,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1251",
-          "decimal": 13.51,
-          "impliedProb": 7.4,
+          "american": "+930",
+          "decimal": 10.3,
+          "impliedProb": 9.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+594",
-          "decimal": 6.94,
-          "impliedProb": 14.4,
+          "american": "+405",
+          "decimal": 5.05,
+          "impliedProb": 19.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+264",
-          "decimal": 3.64,
-          "impliedProb": 27.5,
+          "american": "+198",
+          "decimal": 2.98,
+          "impliedProb": 33.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-159",
-          "decimal": 1.63,
-          "impliedProb": 61.4,
+          "american": "-265",
+          "decimal": 1.38,
+          "impliedProb": 72.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+3200",
+          "decimal": 33,
+          "impliedProb": 3,
           "movement": "stable"
         }
       }
@@ -997,33 +997,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1251",
-          "decimal": 13.51,
-          "impliedProb": 7.4,
+          "american": "+890",
+          "decimal": 9.9,
+          "impliedProb": 10.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+594",
-          "decimal": 6.94,
-          "impliedProb": 14.4,
+          "american": "+375",
+          "decimal": 4.75,
+          "impliedProb": 21.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+264",
-          "decimal": 3.64,
-          "impliedProb": 27.5,
+          "american": "+180",
+          "decimal": 2.8,
+          "impliedProb": 35.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-159",
-          "decimal": 1.63,
-          "impliedProb": 61.4,
+          "american": "-310",
+          "decimal": 1.32,
+          "impliedProb": 75.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+2100",
+          "decimal": 22,
+          "impliedProb": 4.5,
           "movement": "stable"
         }
       }
@@ -1038,33 +1038,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1251",
-          "decimal": 13.51,
-          "impliedProb": 7.4,
+          "american": "+890",
+          "decimal": 9.9,
+          "impliedProb": 10.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+594",
-          "decimal": 6.94,
-          "impliedProb": 14.4,
+          "american": "+380",
+          "decimal": 4.8,
+          "impliedProb": 20.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+264",
-          "decimal": 3.64,
-          "impliedProb": 27.5,
+          "american": "+184",
+          "decimal": 2.84,
+          "impliedProb": 35.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-159",
-          "decimal": 1.63,
-          "impliedProb": 61.4,
+          "american": "-300",
+          "decimal": 1.33,
+          "impliedProb": 75,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+3100",
+          "decimal": 32,
+          "impliedProb": 3.1,
           "movement": "stable"
         }
       }
@@ -1079,33 +1079,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1349",
-          "decimal": 14.49,
-          "impliedProb": 6.9,
+          "american": "+980",
+          "decimal": 10.8,
+          "impliedProb": 9.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+635",
-          "decimal": 7.35,
-          "impliedProb": 13.6,
+          "american": "+420",
+          "decimal": 5.2,
+          "impliedProb": 19.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "+282",
-          "decimal": 3.82,
-          "impliedProb": 26.2,
+          "american": "+200",
+          "decimal": 3,
+          "impliedProb": 33.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-150",
-          "decimal": 1.67,
-          "impliedProb": 60,
+          "american": "-270",
+          "decimal": 1.37,
+          "impliedProb": 73,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+4900",
-          "decimal": 50,
-          "impliedProb": 2,
+          "american": "+3500",
+          "decimal": 36,
+          "impliedProb": 2.8,
           "movement": "stable"
         }
       }
@@ -1120,33 +1120,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1349",
-          "decimal": 14.49,
-          "impliedProb": 6.9,
+          "american": "+910",
+          "decimal": 10.1,
+          "impliedProb": 9.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+635",
-          "decimal": 7.35,
-          "impliedProb": 13.6,
+          "american": "+385",
+          "decimal": 4.85,
+          "impliedProb": 20.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+282",
-          "decimal": 3.82,
-          "impliedProb": 26.2,
+          "american": "+182",
+          "decimal": 2.82,
+          "impliedProb": 35.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-150",
-          "decimal": 1.67,
-          "impliedProb": 60,
+          "american": "-300",
+          "decimal": 1.33,
+          "impliedProb": 75,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+400",
-          "decimal": 5,
-          "impliedProb": 20,
+          "american": "+295",
+          "decimal": 3.95,
+          "impliedProb": 25.3,
           "movement": "stable"
         }
       }
@@ -1161,33 +1161,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1462",
-          "decimal": 15.63,
-          "impliedProb": 6.4,
+          "american": "+1050",
+          "decimal": 11.5,
+          "impliedProb": 8.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+681",
-          "decimal": 7.81,
-          "impliedProb": 12.8,
+          "american": "+450",
+          "decimal": 5.5,
+          "impliedProb": 18.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "+302",
-          "decimal": 4.02,
-          "impliedProb": 24.9,
+          "american": "+215",
+          "decimal": 3.15,
+          "impliedProb": 31.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-141",
-          "decimal": 1.71,
-          "impliedProb": 58.5,
+          "american": "-265",
+          "decimal": 1.38,
+          "impliedProb": 72.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+3348",
-          "decimal": 34.48,
-          "impliedProb": 2.9,
+          "american": "+2500",
+          "decimal": 26,
+          "impliedProb": 3.8,
           "movement": "stable"
         }
       }
@@ -1202,33 +1202,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1462",
-          "decimal": 15.63,
-          "impliedProb": 6.4,
+          "american": "+1025",
+          "decimal": 11.25,
+          "impliedProb": 8.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+681",
-          "decimal": 7.81,
-          "impliedProb": 12.8,
+          "american": "+430",
+          "decimal": 5.3,
+          "impliedProb": 18.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+302",
-          "decimal": 4.02,
-          "impliedProb": 24.9,
+          "american": "+205",
+          "decimal": 3.05,
+          "impliedProb": 32.8,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-141",
-          "decimal": 1.71,
-          "impliedProb": 58.5,
+          "american": "-265",
+          "decimal": 1.38,
+          "impliedProb": 72.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+3348",
-          "decimal": 34.48,
-          "impliedProb": 2.9,
+          "american": "+2400",
+          "decimal": 25,
+          "impliedProb": 4,
           "movement": "stable"
         }
       }
@@ -1243,27 +1243,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1567",
-          "decimal": 16.67,
-          "impliedProb": 6,
+          "american": "+1100",
+          "decimal": 12,
+          "impliedProb": 8.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+740",
-          "decimal": 8.4,
-          "impliedProb": 11.9,
+          "american": "+455",
+          "decimal": 5.55,
+          "impliedProb": 18,
           "movement": "stable"
         },
         "top20": {
-          "american": "+326",
-          "decimal": 4.26,
-          "impliedProb": 23.5,
+          "american": "+215",
+          "decimal": 3.15,
+          "impliedProb": 31.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-131",
-          "decimal": 1.76,
-          "impliedProb": 56.8,
+          "american": "-260",
+          "decimal": 1.38,
+          "impliedProb": 72.2,
           "movement": "stable"
         }
       }
@@ -1278,33 +1278,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1567",
-          "decimal": 16.67,
-          "impliedProb": 6,
+          "american": "+1075",
+          "decimal": 11.75,
+          "impliedProb": 8.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+740",
-          "decimal": 8.4,
-          "impliedProb": 11.9,
+          "american": "+455",
+          "decimal": 5.55,
+          "impliedProb": 18,
           "movement": "stable"
         },
         "top20": {
-          "american": "+326",
-          "decimal": 4.26,
-          "impliedProb": 23.5,
+          "american": "+215",
+          "decimal": 3.15,
+          "impliedProb": 31.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-131",
-          "decimal": 1.76,
-          "impliedProb": 56.8,
+          "american": "-255",
+          "decimal": 1.39,
+          "impliedProb": 71.8,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2500",
+          "decimal": 26,
+          "impliedProb": 3.8,
           "movement": "stable"
         }
       }
@@ -1319,33 +1319,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1567",
-          "decimal": 16.67,
-          "impliedProb": 6,
+          "american": "+1075",
+          "decimal": 11.75,
+          "impliedProb": 8.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+740",
-          "decimal": 8.4,
-          "impliedProb": 11.9,
+          "american": "+455",
+          "decimal": 5.55,
+          "impliedProb": 18,
           "movement": "stable"
         },
         "top20": {
-          "american": "+326",
-          "decimal": 4.26,
-          "impliedProb": 23.5,
+          "american": "+215",
+          "decimal": 3.15,
+          "impliedProb": 31.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-131",
-          "decimal": 1.76,
-          "impliedProb": 56.8,
+          "american": "-265",
+          "decimal": 1.38,
+          "impliedProb": 72.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+5782",
-          "decimal": 58.82,
-          "impliedProb": 1.7,
+          "american": "+3700",
+          "decimal": 38,
+          "impliedProb": 2.6,
           "movement": "stable"
         }
       }
@@ -1360,33 +1360,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1718",
-          "decimal": 18.18,
-          "impliedProb": 5.5,
+          "american": "+1125",
+          "decimal": 12.25,
+          "impliedProb": 8.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+809",
-          "decimal": 9.09,
-          "impliedProb": 11,
+          "american": "+470",
+          "decimal": 5.7,
+          "impliedProb": 17.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+355",
-          "decimal": 4.55,
-          "impliedProb": 22,
+          "american": "+220",
+          "decimal": 3.2,
+          "impliedProb": 31.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-122",
-          "decimal": 1.82,
-          "impliedProb": 55,
+          "american": "-260",
+          "decimal": 1.38,
+          "impliedProb": 72.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+4200",
+          "decimal": 43,
+          "impliedProb": 2.3,
           "movement": "stable"
         }
       }
@@ -1401,33 +1401,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1900",
-          "decimal": 20,
-          "impliedProb": 5,
+          "american": "+1300",
+          "decimal": 14,
+          "impliedProb": 7.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+890",
-          "decimal": 9.9,
-          "impliedProb": 10.1,
+          "american": "+520",
+          "decimal": 6.2,
+          "impliedProb": 16.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+388",
-          "decimal": 4.88,
-          "impliedProb": 20.5,
+          "american": "+245",
+          "decimal": 3.45,
+          "impliedProb": 29,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-113",
-          "decimal": 1.89,
-          "impliedProb": 53,
+          "american": "-255",
+          "decimal": 1.39,
+          "impliedProb": 71.8,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+7043",
-          "decimal": 71.43,
-          "impliedProb": 1.4,
+          "american": "+4900",
+          "decimal": 50,
+          "impliedProb": 2,
           "movement": "stable"
         }
       }
@@ -1442,33 +1442,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+1900",
-          "decimal": 20,
-          "impliedProb": 5,
+          "american": "+1275",
+          "decimal": 13.75,
+          "impliedProb": 7.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+890",
-          "decimal": 9.9,
-          "impliedProb": 10.1,
+          "american": "+510",
+          "decimal": 6.1,
+          "impliedProb": 16.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+388",
-          "decimal": 4.88,
-          "impliedProb": 20.5,
+          "american": "+240",
+          "decimal": 3.4,
+          "impliedProb": 29.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-113",
-          "decimal": 1.89,
-          "impliedProb": 53,
+          "american": "-240",
+          "decimal": 1.42,
+          "impliedProb": 70.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+7043",
-          "decimal": 71.43,
-          "impliedProb": 1.4,
+          "american": "+4800",
+          "decimal": 49,
+          "impliedProb": 2,
           "movement": "stable"
         }
       }
@@ -1483,33 +1483,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2122",
-          "decimal": 22.22,
-          "impliedProb": 4.5,
+          "american": "+1450",
+          "decimal": 15.5,
+          "impliedProb": 6.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+987",
-          "decimal": 10.87,
-          "impliedProb": 9.2,
+          "american": "+590",
+          "decimal": 6.9,
+          "impliedProb": 14.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+429",
-          "decimal": 5.29,
-          "impliedProb": 18.9,
+          "american": "+280",
+          "decimal": 3.8,
+          "impliedProb": 26.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-103",
-          "decimal": 1.97,
-          "impliedProb": 50.8,
+          "american": "-210",
+          "decimal": 1.48,
+          "impliedProb": 67.7,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+675",
-          "decimal": 7.75,
-          "impliedProb": 12.9,
+          "american": "+460",
+          "decimal": 5.6,
+          "impliedProb": 17.9,
           "movement": "stable"
         }
       }
@@ -1524,33 +1524,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2122",
-          "decimal": 22.22,
-          "impliedProb": 4.5,
+          "american": "+1450",
+          "decimal": 15.5,
+          "impliedProb": 6.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+987",
-          "decimal": 10.87,
-          "impliedProb": 9.2,
+          "american": "+580",
+          "decimal": 6.8,
+          "impliedProb": 14.7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+429",
-          "decimal": 5.29,
-          "impliedProb": 18.9,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-103",
-          "decimal": 1.97,
-          "impliedProb": 50.8,
+          "american": "-220",
+          "decimal": 1.45,
+          "impliedProb": 68.8,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+646",
-          "decimal": 7.46,
-          "impliedProb": 13.4,
+          "american": "+390",
+          "decimal": 4.9,
+          "impliedProb": 20.4,
           "movement": "stable"
         }
       }
@@ -1565,33 +1565,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2122",
-          "decimal": 22.22,
-          "impliedProb": 4.5,
+          "american": "+1350",
+          "decimal": 14.5,
+          "impliedProb": 6.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+987",
-          "decimal": 10.87,
-          "impliedProb": 9.2,
+          "american": "+540",
+          "decimal": 6.4,
+          "impliedProb": 15.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+429",
-          "decimal": 5.29,
-          "impliedProb": 18.9,
+          "american": "+250",
+          "decimal": 3.5,
+          "impliedProb": 28.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "-103",
-          "decimal": 1.97,
-          "impliedProb": 50.8,
+          "american": "-235",
+          "decimal": 1.43,
+          "impliedProb": 70.1,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+7592",
-          "decimal": 76.92,
-          "impliedProb": 1.3,
+          "american": "+5100",
+          "decimal": 52,
+          "impliedProb": 1.9,
           "movement": "stable"
         }
       }
@@ -1606,33 +1606,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2339",
-          "decimal": 24.39,
-          "impliedProb": 4.1,
+          "american": "+1600",
+          "decimal": 17,
+          "impliedProb": 5.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1105",
-          "decimal": 12.05,
-          "impliedProb": 8.3,
+          "american": "+660",
+          "decimal": 7.6,
+          "impliedProb": 13.2,
           "movement": "stable"
         },
         "top20": {
-          "american": "+478",
-          "decimal": 5.78,
-          "impliedProb": 17.3,
+          "american": "+310",
+          "decimal": 4.1,
+          "impliedProb": 24.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+107",
-          "decimal": 2.07,
-          "impliedProb": 48.3,
+          "american": "-205",
+          "decimal": 1.49,
+          "impliedProb": 67.2,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+5456",
-          "decimal": 55.56,
-          "impliedProb": 1.8,
+          "american": "+3900",
+          "decimal": 40,
+          "impliedProb": 2.5,
           "movement": "stable"
         }
       }
@@ -1647,33 +1647,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2339",
-          "decimal": 24.39,
-          "impliedProb": 4.1,
+          "american": "+1425",
+          "decimal": 15.25,
+          "impliedProb": 6.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1105",
-          "decimal": 12.05,
-          "impliedProb": 8.3,
+          "american": "+580",
+          "decimal": 6.8,
+          "impliedProb": 14.7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+478",
-          "decimal": 5.78,
-          "impliedProb": 17.3,
+          "american": "+265",
+          "decimal": 3.65,
+          "impliedProb": 27.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+107",
-          "decimal": 2.07,
-          "impliedProb": 48.3,
+          "american": "-225",
+          "decimal": 1.44,
+          "impliedProb": 69.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+8991",
-          "decimal": 90.91,
-          "impliedProb": 1.1,
+          "american": "+5500",
+          "decimal": 56,
+          "impliedProb": 1.8,
           "movement": "stable"
         }
       }
@@ -1688,33 +1688,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2339",
-          "decimal": 24.39,
-          "impliedProb": 4.1,
+          "american": "+1500",
+          "decimal": 16,
+          "impliedProb": 6.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1105",
-          "decimal": 12.05,
-          "impliedProb": 8.3,
+          "american": "+610",
+          "decimal": 7.1,
+          "impliedProb": 14.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+478",
-          "decimal": 5.78,
-          "impliedProb": 17.3,
+          "american": "+285",
+          "decimal": 3.85,
+          "impliedProb": 26,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+107",
-          "decimal": 2.07,
-          "impliedProb": 48.3,
+          "american": "-205",
+          "decimal": 1.49,
+          "impliedProb": 67.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+8991",
-          "decimal": 90.91,
-          "impliedProb": 1.1,
+          "american": "+5700",
+          "decimal": 58,
+          "impliedProb": 1.7,
           "movement": "stable"
         }
       }
@@ -1729,33 +1729,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2678",
-          "decimal": 27.78,
-          "impliedProb": 3.6,
+          "american": "+1850",
+          "decimal": 19.5,
+          "impliedProb": 5.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1270",
-          "decimal": 13.7,
-          "impliedProb": 7.3,
+          "american": "+750",
+          "decimal": 8.5,
+          "impliedProb": 11.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+545",
-          "decimal": 6.45,
-          "impliedProb": 15.5,
+          "american": "+350",
+          "decimal": 4.5,
+          "impliedProb": 22.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+120",
-          "decimal": 2.2,
-          "impliedProb": 45.4,
+          "american": "-194",
+          "decimal": 1.52,
+          "impliedProb": 66,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+7000",
+          "decimal": 71,
+          "impliedProb": 1.4,
           "movement": "stable"
         }
       }
@@ -1770,33 +1770,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2678",
-          "decimal": 27.78,
-          "impliedProb": 3.6,
+          "american": "+1650",
+          "decimal": 17.5,
+          "impliedProb": 5.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1270",
-          "decimal": 13.7,
-          "impliedProb": 7.3,
+          "american": "+670",
+          "decimal": 7.7,
+          "impliedProb": 13,
           "movement": "stable"
         },
         "top20": {
-          "american": "+545",
-          "decimal": 6.45,
-          "impliedProb": 15.5,
+          "american": "+305",
+          "decimal": 4.05,
+          "impliedProb": 24.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+120",
-          "decimal": 2.2,
-          "impliedProb": 45.4,
+          "american": "-200",
+          "decimal": 1.5,
+          "impliedProb": 66.7,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+6500",
+          "decimal": 66,
+          "impliedProb": 1.5,
           "movement": "stable"
         }
       }
@@ -1811,33 +1811,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2678",
-          "decimal": 27.78,
-          "impliedProb": 3.6,
+          "american": "+1750",
+          "decimal": 18.5,
+          "impliedProb": 5.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1270",
-          "decimal": 13.7,
-          "impliedProb": 7.3,
+          "american": "+700",
+          "decimal": 8,
+          "impliedProb": 12.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+545",
-          "decimal": 6.45,
-          "impliedProb": 15.5,
+          "american": "+320",
+          "decimal": 4.2,
+          "impliedProb": 23.8,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+120",
-          "decimal": 2.2,
-          "impliedProb": 45.4,
+          "american": "-194",
+          "decimal": 1.52,
+          "impliedProb": 66,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+6567",
-          "decimal": 66.67,
-          "impliedProb": 1.5,
+          "american": "+4300",
+          "decimal": 44,
+          "impliedProb": 2.3,
           "movement": "stable"
         }
       }
@@ -1852,33 +1852,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+2678",
-          "decimal": 27.78,
-          "impliedProb": 3.6,
+          "american": "+1750",
+          "decimal": 18.5,
+          "impliedProb": 5.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1270",
-          "decimal": 13.7,
-          "impliedProb": 7.3,
+          "american": "+710",
+          "decimal": 8.1,
+          "impliedProb": 12.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+545",
-          "decimal": 6.45,
-          "impliedProb": 15.5,
+          "american": "+330",
+          "decimal": 4.3,
+          "impliedProb": 23.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+120",
-          "decimal": 2.2,
-          "impliedProb": 45.4,
+          "american": "-178",
+          "decimal": 1.56,
+          "impliedProb": 64,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+6567",
-          "decimal": 66.67,
-          "impliedProb": 1.5,
+          "american": "+4300",
+          "decimal": 44,
+          "impliedProb": 2.3,
           "movement": "stable"
         }
       }
@@ -1893,33 +1893,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3126",
-          "decimal": 32.26,
-          "impliedProb": 3.1,
+          "american": "+1750",
+          "decimal": 18.5,
+          "impliedProb": 5.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1487",
-          "decimal": 15.87,
-          "impliedProb": 6.3,
+          "american": "+700",
+          "decimal": 8,
+          "impliedProb": 12.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+630",
-          "decimal": 7.3,
-          "impliedProb": 13.7,
+          "american": "+315",
+          "decimal": 4.15,
+          "impliedProb": 24.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+137",
-          "decimal": 2.37,
-          "impliedProb": 42.2,
+          "american": "-200",
+          "decimal": 1.5,
+          "impliedProb": 66.7,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+11011",
-          "decimal": 111.11,
-          "impliedProb": 0.9,
+          "american": "+7000",
+          "decimal": 71,
+          "impliedProb": 1.4,
           "movement": "stable"
         }
       }
@@ -1934,33 +1934,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2250",
+          "decimal": 23.5,
+          "impliedProb": 4.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+870",
+          "decimal": 9.7,
+          "impliedProb": 10.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+395",
+          "decimal": 4.95,
+          "impliedProb": 20.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-168",
+          "decimal": 1.6,
+          "impliedProb": 62.7,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+1308",
-          "decimal": 14.08,
-          "impliedProb": 7.1,
+          "american": "+650",
+          "decimal": 7.5,
+          "impliedProb": 13.3,
           "movement": "stable"
         }
       }
@@ -1975,33 +1975,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2350",
+          "decimal": 24.5,
+          "impliedProb": 4.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+920",
+          "decimal": 10.2,
+          "impliedProb": 9.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+415",
+          "decimal": 5.15,
+          "impliedProb": 19.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-160",
+          "decimal": 1.63,
+          "impliedProb": 61.5,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+9400",
+          "decimal": 95,
+          "impliedProb": 1.1,
           "movement": "stable"
         }
       }
@@ -2016,33 +2016,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+940",
+          "decimal": 10.4,
+          "impliedProb": 9.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+420",
+          "decimal": 5.2,
+          "impliedProb": 19.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-160",
+          "decimal": 1.63,
+          "impliedProb": 61.5,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+8991",
-          "decimal": 90.91,
-          "impliedProb": 1.1,
+          "american": "+6100",
+          "decimal": 62,
+          "impliedProb": 1.6,
           "movement": "stable"
         }
       }
@@ -2057,27 +2057,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2050",
+          "decimal": 21.5,
+          "impliedProb": 4.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+780",
+          "decimal": 8.8,
+          "impliedProb": 11.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+345",
+          "decimal": 4.45,
+          "impliedProb": 22.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-190",
+          "decimal": 1.53,
+          "impliedProb": 65.5,
           "movement": "stable"
         }
       }
@@ -2092,33 +2092,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2100",
+          "decimal": 22,
+          "impliedProb": 4.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+800",
+          "decimal": 9,
+          "impliedProb": 11.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+355",
+          "decimal": 4.55,
+          "impliedProb": 22,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-190",
+          "decimal": 1.53,
+          "impliedProb": 65.5,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+8400",
+          "decimal": 85,
+          "impliedProb": 1.2,
           "movement": "stable"
         }
       }
@@ -2133,33 +2133,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+970",
+          "decimal": 10.7,
+          "impliedProb": 9.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+450",
+          "decimal": 5.5,
+          "impliedProb": 18.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-146",
+          "decimal": 1.68,
+          "impliedProb": 59.3,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+9400",
+          "decimal": 95,
+          "impliedProb": 1.1,
           "movement": "stable"
         }
       }
@@ -2174,33 +2174,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+3746",
-          "decimal": 38.46,
-          "impliedProb": 2.6,
+          "american": "+2300",
+          "decimal": 24,
+          "impliedProb": 4.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+890",
+          "decimal": 9.9,
+          "impliedProb": 10.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+747",
-          "decimal": 8.47,
-          "impliedProb": 11.8,
+          "american": "+390",
+          "decimal": 4.9,
+          "impliedProb": 20.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+160",
-          "decimal": 2.6,
-          "impliedProb": 38.5,
+          "american": "-170",
+          "decimal": 1.59,
+          "impliedProb": 63,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+9600",
+          "decimal": 97,
+          "impliedProb": 1,
           "movement": "stable"
         }
       }
@@ -2215,33 +2215,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2800",
+          "decimal": 29,
+          "impliedProb": 3.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+1075",
+          "decimal": 11.75,
+          "impliedProb": 8.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+470",
+          "decimal": 5.7,
+          "impliedProb": 17.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-152",
+          "decimal": 1.66,
+          "impliedProb": 60.3,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+1567",
-          "decimal": 16.67,
-          "impliedProb": 6,
+          "american": "+680",
+          "decimal": 7.8,
+          "impliedProb": 12.8,
           "movement": "stable"
         }
       }
@@ -2256,33 +2256,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2500",
+          "decimal": 26,
+          "impliedProb": 3.8,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+970",
+          "decimal": 10.7,
+          "impliedProb": 9.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+435",
+          "decimal": 5.35,
+          "impliedProb": 18.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-158",
+          "decimal": 1.63,
+          "impliedProb": 61.2,
           "movement": "stable"
         },
         "topSouthAmerican": {
-          "american": "-133",
-          "decimal": 1.75,
-          "impliedProb": 57.1,
+          "american": "+2200",
+          "decimal": 23,
+          "impliedProb": 4.3,
           "movement": "stable"
         }
       }
@@ -2297,33 +2297,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2900",
+          "decimal": 30,
+          "impliedProb": 3.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+1075",
+          "decimal": 11.75,
+          "impliedProb": 8.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+470",
+          "decimal": 5.7,
+          "impliedProb": 17.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-154",
+          "decimal": 1.65,
+          "impliedProb": 60.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+16567",
-          "decimal": 166.67,
-          "impliedProb": 0.6,
+          "american": "+12000",
+          "decimal": 121,
+          "impliedProb": 0.8,
           "movement": "stable"
         }
       }
@@ -2338,27 +2338,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+940",
+          "decimal": 10.4,
+          "impliedProb": 9.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+420",
+          "decimal": 5.2,
+          "impliedProb": 19.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-162",
+          "decimal": 1.62,
+          "impliedProb": 61.8,
           "movement": "stable"
         }
       }
@@ -2373,33 +2373,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2700",
+          "decimal": 28,
+          "impliedProb": 3.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+1025",
+          "decimal": 11.25,
+          "impliedProb": 8.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+460",
+          "decimal": 5.6,
+          "impliedProb": 17.9,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-150",
+          "decimal": 1.67,
+          "impliedProb": 60,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+16567",
-          "decimal": 166.67,
-          "impliedProb": 0.6,
+          "american": "+11000",
+          "decimal": 111,
+          "impliedProb": 0.9,
           "movement": "stable"
         }
       }
@@ -2414,33 +2414,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+940",
+          "decimal": 10.4,
+          "impliedProb": 9.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+420",
+          "decimal": 5.2,
+          "impliedProb": 19.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-166",
+          "decimal": 1.6,
+          "impliedProb": 62.4,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+16567",
-          "decimal": 166.67,
-          "impliedProb": 0.6,
+          "american": "+10000",
+          "decimal": 101,
+          "impliedProb": 1,
           "movement": "stable"
         }
       }
@@ -2455,33 +2455,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2700",
+          "decimal": 28,
+          "impliedProb": 3.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+1000",
+          "decimal": 11,
+          "impliedProb": 9.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+450",
+          "decimal": 5.5,
+          "impliedProb": 18.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-154",
+          "decimal": 1.65,
+          "impliedProb": 60.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+11011",
-          "decimal": 111.11,
-          "impliedProb": 0.9,
+          "american": "+6700",
+          "decimal": 68,
+          "impliedProb": 1.5,
           "movement": "stable"
         }
       }
@@ -2496,33 +2496,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+4662",
-          "decimal": 47.62,
-          "impliedProb": 2.1,
+          "american": "+2600",
+          "decimal": 27,
+          "impliedProb": 3.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2226",
-          "decimal": 23.26,
-          "impliedProb": 4.3,
+          "american": "+1000",
+          "decimal": 11,
+          "impliedProb": 9.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+931",
-          "decimal": 10.31,
-          "impliedProb": 9.7,
+          "american": "+440",
+          "decimal": 5.4,
+          "impliedProb": 18.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+193",
-          "decimal": 2.93,
-          "impliedProb": 34.1,
+          "american": "-158",
+          "decimal": 1.63,
+          "impliedProb": 61.2,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+11011",
-          "decimal": 111.11,
-          "impliedProb": 0.9,
+          "american": "+6700",
+          "decimal": 68,
+          "impliedProb": 1.5,
           "movement": "stable"
         }
       }
@@ -2537,33 +2537,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3200",
+          "decimal": 33,
+          "impliedProb": 3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1175",
+          "decimal": 12.75,
+          "impliedProb": 7.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+520",
+          "decimal": 6.2,
+          "impliedProb": 16.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-142",
+          "decimal": 1.7,
+          "impliedProb": 58.7,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+8000",
+          "decimal": 81,
+          "impliedProb": 1.2,
           "movement": "stable"
         }
       }
@@ -2578,27 +2578,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3700",
+          "decimal": 38,
+          "impliedProb": 2.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1375",
+          "decimal": 14.75,
+          "impliedProb": 6.8,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+600",
+          "decimal": 7,
+          "impliedProb": 14.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-124",
+          "decimal": 1.81,
+          "impliedProb": 55.4,
           "movement": "stable"
         }
       }
@@ -2613,33 +2613,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3600",
+          "decimal": 37,
+          "impliedProb": 2.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1275",
+          "decimal": 13.75,
+          "impliedProb": 7.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+550",
+          "decimal": 6.5,
+          "impliedProb": 15.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-140",
+          "decimal": 1.71,
+          "impliedProb": 58.3,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+9000",
+          "decimal": 91,
+          "impliedProb": 1.1,
           "movement": "stable"
         }
       }
@@ -2654,33 +2654,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3200",
+          "decimal": 33,
+          "impliedProb": 3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1200",
+          "decimal": 13,
+          "impliedProb": 7.7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+510",
+          "decimal": 6.1,
+          "impliedProb": 16.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-142",
+          "decimal": 1.7,
+          "impliedProb": 58.7,
           "movement": "stable"
         },
         "topSouthAmerican": {
-          "american": "+133",
-          "decimal": 2.33,
-          "impliedProb": 42.9,
+          "american": "+2700",
+          "decimal": 28,
+          "impliedProb": 3.6,
           "movement": "stable"
         }
       }
@@ -2695,33 +2695,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3000",
+          "decimal": 31,
+          "impliedProb": 3.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1100",
+          "decimal": 12,
+          "impliedProb": 8.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+485",
+          "decimal": 5.85,
+          "impliedProb": 17.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-150",
+          "decimal": 1.67,
+          "impliedProb": 60,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+12500",
+          "decimal": 126,
+          "impliedProb": 0.8,
           "movement": "stable"
         }
       }
@@ -2736,33 +2736,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3000",
+          "decimal": 31,
+          "impliedProb": 3.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1100",
+          "decimal": 12,
+          "impliedProb": 8.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+475",
+          "decimal": 5.75,
+          "impliedProb": 17.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-152",
+          "decimal": 1.66,
+          "impliedProb": 60.3,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+14186",
-          "decimal": 142.86,
-          "impliedProb": 0.7,
+          "american": "+7400",
+          "decimal": 75,
+          "impliedProb": 1.3,
           "movement": "stable"
         }
       }
@@ -2777,33 +2777,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+6150",
-          "decimal": 62.5,
-          "impliedProb": 1.6,
+          "american": "+3900",
+          "decimal": 40,
+          "impliedProb": 2.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+2930",
-          "decimal": 30.3,
-          "impliedProb": 3.3,
+          "american": "+1425",
+          "decimal": 15.25,
+          "impliedProb": 6.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1216",
-          "decimal": 13.16,
-          "impliedProb": 7.6,
+          "american": "+610",
+          "decimal": 7.1,
+          "impliedProb": 14.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+247",
-          "decimal": 3.47,
-          "impliedProb": 28.8,
+          "american": "-122",
+          "decimal": 1.82,
+          "impliedProb": 55,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+16500",
+          "decimal": 166,
+          "impliedProb": 0.6,
           "movement": "stable"
         }
       }
@@ -2818,27 +2818,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+5400",
+          "decimal": 55,
+          "impliedProb": 1.8,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
-          "movement": "stable"
-        },
-        "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
+          "american": "+1800",
+          "decimal": 19,
           "impliedProb": 5.3,
           "movement": "stable"
         },
+        "top20": {
+          "american": "+740",
+          "decimal": 8.4,
+          "impliedProb": 11.9,
+          "movement": "stable"
+        },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-116",
+          "decimal": 1.86,
+          "impliedProb": 53.7,
           "movement": "stable"
         }
       }
@@ -2853,32 +2853,32 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+4900",
+          "decimal": 50,
+          "impliedProb": 2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+1700",
+          "decimal": 18,
+          "impliedProb": 5.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+710",
+          "decimal": 8.1,
+          "impliedProb": 12.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-116",
+          "decimal": 1.86,
+          "impliedProb": 53.7,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
+          "american": "+21000",
+          "decimal": 211,
           "impliedProb": 0.5,
           "movement": "stable"
         }
@@ -2894,32 +2894,32 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+4700",
+          "decimal": 48,
+          "impliedProb": 2.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+1600",
+          "decimal": 17,
+          "impliedProb": 5.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+650",
+          "decimal": 7.5,
+          "impliedProb": 13.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-128",
+          "decimal": 1.78,
+          "impliedProb": 56.1,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
+          "american": "+21000",
+          "decimal": 211,
           "impliedProb": 0.5,
           "movement": "stable"
         }
@@ -2929,39 +2929,39 @@
       "name": "Johnny Keefer",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+36000",
+          "decimal": 361,
+          "impliedProb": 0.3,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+3600",
+          "decimal": 37,
+          "impliedProb": 2.7,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+1325",
+          "decimal": 14.25,
+          "impliedProb": 7,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+570",
+          "decimal": 6.7,
+          "impliedProb": 14.9,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-132",
+          "decimal": 1.76,
+          "impliedProb": 56.9,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+15500",
+          "decimal": 156,
+          "impliedProb": 0.6,
           "movement": "stable"
         }
       }
@@ -2970,39 +2970,39 @@
       "name": "Matt Fitzpatrick",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+2150",
+          "decimal": 22.5,
+          "impliedProb": 4.4,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+355",
+          "decimal": 4.55,
+          "impliedProb": 22,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+164",
+          "decimal": 2.64,
+          "impliedProb": 37.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "-124",
+          "decimal": 1.81,
+          "impliedProb": 55.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-550",
+          "decimal": 1.18,
+          "impliedProb": 84.6,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+790",
+          "decimal": 8.9,
+          "impliedProb": 11.2,
           "movement": "stable"
         }
       }
@@ -3011,39 +3011,39 @@
       "name": "Alex Noren",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+16000",
+          "decimal": 161,
+          "impliedProb": 0.6,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
-          "movement": "stable"
-        },
-        "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
-          "movement": "stable"
-        },
-        "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
+          "american": "+1800",
+          "decimal": 19,
           "impliedProb": 5.3,
           "movement": "stable"
         },
+        "top10": {
+          "american": "+710",
+          "decimal": 8.1,
+          "impliedProb": 12.3,
+          "movement": "stable"
+        },
+        "top20": {
+          "american": "+320",
+          "decimal": 4.2,
+          "impliedProb": 23.8,
+          "movement": "stable"
+        },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-196",
+          "decimal": 1.51,
+          "impliedProb": 66.2,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+4500",
+          "decimal": 46,
+          "impliedProb": 2.2,
           "movement": "stable"
         }
       }
@@ -3052,39 +3052,39 @@
       "name": "Fifa Laopakdee",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+350000",
+          "decimal": 3501,
+          "impliedProb": 0,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+26000",
+          "decimal": 261,
+          "impliedProb": 0.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+7600",
+          "decimal": 77,
+          "impliedProb": 1.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+2700",
+          "decimal": 28,
+          "impliedProb": 3.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "+200",
+          "decimal": 3,
+          "impliedProb": 33.3,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+3233",
-          "decimal": 33.33,
-          "impliedProb": 3,
+          "american": "+3500",
+          "decimal": 36,
+          "impliedProb": 2.8,
           "movement": "stable"
         }
       }
@@ -3093,39 +3093,39 @@
       "name": "J.J. Spaun",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+7200",
+          "decimal": 73,
+          "impliedProb": 1.4,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+1000",
+          "decimal": 11,
+          "impliedProb": 9.1,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+430",
+          "decimal": 5.3,
+          "impliedProb": 18.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+210",
+          "decimal": 3.1,
+          "impliedProb": 32.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-260",
+          "decimal": 1.38,
+          "impliedProb": 72.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+3600",
+          "decimal": 37,
+          "impliedProb": 2.7,
           "movement": "stable"
         }
       }
@@ -3134,39 +3134,39 @@
       "name": "Chris Gotterup",
       "odds": {
         "win": {
-          "american": "+50000",
-          "decimal": 501,
-          "impliedProb": 0.2,
+          "american": "+4800",
+          "decimal": 49,
+          "impliedProb": 2,
           "movement": "stable"
         },
         "top5": {
-          "american": "+9900",
-          "decimal": 100,
-          "impliedProb": 1,
+          "american": "+740",
+          "decimal": 8.4,
+          "impliedProb": 11.9,
           "movement": "stable"
         },
         "top10": {
-          "american": "+4445",
-          "decimal": 45.45,
-          "impliedProb": 2.2,
+          "american": "+330",
+          "decimal": 4.3,
+          "impliedProb": 23.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+1787",
-          "decimal": 18.87,
-          "impliedProb": 5.3,
+          "american": "+166",
+          "decimal": 2.66,
+          "impliedProb": 37.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+348",
-          "decimal": 4.48,
-          "impliedProb": 22.3,
+          "american": "-320",
+          "decimal": 1.31,
+          "impliedProb": 76.2,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+2500",
+          "decimal": 26,
+          "impliedProb": 3.8,
           "movement": "stable"
         }
       }
@@ -3181,33 +3181,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+7200",
+          "decimal": 73,
+          "impliedProb": 1.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+8991",
-          "decimal": 90.91,
-          "impliedProb": 1.1,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "top20": {
-          "american": "+3471",
-          "decimal": 35.71,
-          "impliedProb": 2.8,
+          "american": "+1000",
+          "decimal": 11,
+          "impliedProb": 9.1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+630",
-          "decimal": 7.3,
-          "impliedProb": 13.7,
+          "american": "+110",
+          "decimal": 2.1,
+          "impliedProb": 47.6,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+32500",
+          "decimal": 326,
+          "impliedProb": 0.3,
           "movement": "stable"
         }
       }
@@ -3222,33 +3222,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+32500",
+          "decimal": 326,
+          "impliedProb": 0.3,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+9000",
+          "decimal": 91,
+          "impliedProb": 1.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+3000",
+          "decimal": 31,
+          "impliedProb": 3.2,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+196",
+          "decimal": 2.96,
+          "impliedProb": 33.8,
           "movement": "stable"
         },
         "topAsian": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+3700",
+          "decimal": 38,
+          "impliedProb": 2.6,
           "movement": "stable"
         }
       }
@@ -3263,33 +3263,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+35000",
+          "decimal": 351,
+          "impliedProb": 0.3,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+10000",
+          "decimal": 101,
+          "impliedProb": 1,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+345",
+          "decimal": 4.45,
+          "impliedProb": 22.5,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3304,33 +3304,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+22000",
+          "decimal": 221,
+          "impliedProb": 0.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+6600",
+          "decimal": 67,
+          "impliedProb": 1.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+2450",
+          "decimal": 25.5,
+          "impliedProb": 3.9,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+186",
+          "decimal": 2.86,
+          "impliedProb": 35,
           "movement": "stable"
         },
         "topSouthAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+16500",
+          "decimal": 166,
+          "impliedProb": 0.6,
           "movement": "stable"
         }
       }
@@ -3345,33 +3345,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+18500",
+          "decimal": 186,
+          "impliedProb": 0.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+5900",
+          "decimal": 60,
+          "impliedProb": 1.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+280",
+          "decimal": 3.8,
+          "impliedProb": 26.3,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3386,33 +3386,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+17500",
+          "decimal": 176,
+          "impliedProb": 0.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+5400",
+          "decimal": 55,
+          "impliedProb": 1.8,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+260",
+          "decimal": 3.6,
+          "impliedProb": 27.8,
           "movement": "stable"
         },
         "topAustralasian": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+7600",
+          "decimal": 77,
+          "impliedProb": 1.3,
           "movement": "stable"
         }
       }
@@ -3427,33 +3427,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+41000",
+          "decimal": 411,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+16500",
+          "decimal": 166,
+          "impliedProb": 0.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+6300",
+          "decimal": 64,
+          "impliedProb": 1.6,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3468,33 +3468,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+15500",
+          "decimal": 156,
+          "impliedProb": 0.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+4700",
+          "decimal": 48,
+          "impliedProb": 2.1,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+1750",
+          "decimal": 18.5,
+          "impliedProb": 5.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+152",
+          "decimal": 2.52,
+          "impliedProb": 39.7,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3509,33 +3509,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+21000",
+          "decimal": 211,
+          "impliedProb": 0.5,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+6000",
+          "decimal": 61,
+          "impliedProb": 1.6,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+2100",
+          "decimal": 22,
+          "impliedProb": 4.5,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+158",
+          "decimal": 2.58,
+          "impliedProb": 38.8,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3550,27 +3550,27 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+23000",
+          "decimal": 231,
+          "impliedProb": 0.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+7000",
+          "decimal": 71,
+          "impliedProb": 1.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+300",
+          "decimal": 4,
+          "impliedProb": 25,
           "movement": "stable"
         }
       }
@@ -3585,33 +3585,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+24000",
+          "decimal": 241,
+          "impliedProb": 0.4,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+7400",
+          "decimal": 75,
+          "impliedProb": 1.3,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+315",
+          "decimal": 4.15,
+          "impliedProb": 24.1,
           "movement": "stable"
         },
         "topSouthAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3626,33 +3626,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+16500",
+          "decimal": 166,
+          "impliedProb": 0.6,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+4900",
+          "decimal": 50,
+          "impliedProb": 2,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+1750",
+          "decimal": 18.5,
+          "impliedProb": 5.4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+146",
+          "decimal": 2.46,
+          "impliedProb": 40.7,
           "movement": "stable"
         },
         "topEuropean": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+43000",
+          "decimal": 431,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3667,33 +3667,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+23000",
+          "decimal": 231,
+          "impliedProb": 0.4,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+6700",
+          "decimal": 68,
+          "impliedProb": 1.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+2400",
+          "decimal": 25,
+          "impliedProb": 4,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+182",
+          "decimal": 2.82,
+          "impliedProb": 35.5,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
@@ -3708,33 +3708,33 @@
           "movement": "stable"
         },
         "top5": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+49000",
+          "decimal": 491,
+          "impliedProb": 0.2,
           "movement": "stable"
         },
         "top10": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+18500",
+          "decimal": 186,
+          "impliedProb": 0.5,
           "movement": "stable"
         },
         "top20": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+5700",
+          "decimal": 58,
+          "impliedProb": 1.7,
           "movement": "stable"
         },
         "makeCut": {
-          "american": "+Infinity",
-          "decimal": null,
-          "impliedProb": 0,
+          "american": "+270",
+          "decimal": 3.7,
+          "impliedProb": 27,
           "movement": "stable"
         },
         "topAmerican": {
-          "american": "+19900",
-          "decimal": 200,
-          "impliedProb": 0.5,
+          "american": "+50000",
+          "decimal": 501,
+          "impliedProb": 0.2,
           "movement": "stable"
         }
       }
