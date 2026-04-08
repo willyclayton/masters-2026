@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate-field": "node scripts/validate-field.mjs",
+    "validate-field:fix": "node scripts/validate-field.mjs --fix --update-odds"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
