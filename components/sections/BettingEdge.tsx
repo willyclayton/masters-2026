@@ -19,6 +19,7 @@ import { ParlayBuilder } from "@/components/betting/ParlayBuilder";
 import { WeatherEdge } from "@/components/betting/WeatherEdge";
 import { LiveTracker } from "@/components/betting/LiveTracker";
 import { RoundPropsComponent } from "@/components/betting/RoundProps";
+import { MakeMoneyBets } from "@/components/betting/MakeMoneyBets";
 import { LiveStatusBar } from "@/components/betting/LiveStatusBar";
 import {
   Search,
@@ -28,6 +29,7 @@ import {
   CloudRain,
   Radio,
   Target,
+  DollarSign,
 } from "lucide-react";
 
 import bettingData from "@/data/betting-odds.json";
@@ -36,7 +38,7 @@ import playersData from "@/data/players-2026.json";
 
 // ── Sub-tab types ───────────────────────────────────────────────
 
-type SubTab = "edge" | "parlays" | "weather" | "live" | "rounds";
+type SubTab = "edge" | "parlays" | "weather" | "live" | "rounds" | "money";
 
 const SUB_TABS: { id: SubTab; label: string; icon: React.ElementType }[] = [
   { id: "edge", label: "Edge Finder", icon: TrendingUp },
@@ -44,6 +46,7 @@ const SUB_TABS: { id: SubTab; label: string; icon: React.ElementType }[] = [
   { id: "weather", label: "Weather Edge", icon: CloudRain },
   { id: "live", label: "Live Tracker", icon: Radio },
   { id: "rounds", label: "Round Props", icon: Target },
+  { id: "money", label: "Let's Make Money", icon: DollarSign },
 ];
 
 // ── Edge Finder types ───────────────────────────────────────────
@@ -378,6 +381,12 @@ export function BettingEdge() {
           {activeTab === "live" && <LiveTracker edges={allEdges} />}
           {activeTab === "rounds" && (
             <RoundPropsComponent
+              edges={allEdges}
+              players={playersData as unknown as Player[]}
+            />
+          )}
+          {activeTab === "money" && (
+            <MakeMoneyBets
               edges={allEdges}
               players={playersData as unknown as Player[]}
             />

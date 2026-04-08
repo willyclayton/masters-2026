@@ -584,4 +584,185 @@ export function generateRoundProps(
   return { firstRoundLeader: frl, roundOU };
 }
 
+// ── Let's Make Money ───────────────────────────────────────────
+
+export interface MoneyBet extends BettingEdgeResult {
+  reason: string;
+}
+
+export interface MoneyBets {
+  locks: MoneyBet[];
+  valuePlays: MoneyBet[];
+  longshots: MoneyBet[];
+  totalDailyEV: number;
+  topParlayEV: number;
+}
+
+function buildReason(
+  e: BettingEdgeResult,
+  player: Player | undefined
+): string {
+  const parts: string[] = [];
+
+  // Confidence / model agreement
+  if (e.confidence === "high") {
+    parts.push("All 3 AI models agree on this pick");
+  }
+
+  // Form
+  if (player) {
+    const recent = player.momentumLast5 || [];
+    const wins = recent.filter((r) => r === "W").length;
+    const topFinishes = recent.filter((r) =>
+      ["W", "T2", "T3", "T5"].includes(r)
+    ).length;
+    if (wins >= 2) parts.push(`${wins} wins in last 5 events`);
+    else if (topFinishes >= 3)
+      parts.push(`${topFinishes} top-5s in last 5 starts`);
+
+    // Augusta history
+    if (player.mastersWins > 0) {
+      parts.push(
+        `${player.mastersWins}x Masters champion — knows how to win here`
+      );
+    } else if (player.mastersBestFinish) {
+      const bestNum = parseInt(player.mastersBestFinish);
+      if (!isNaN(bestNum) && bestNum <= 5)
+        parts.push(`Best Masters finish: ${player.mastersBestFinish}`);
+    }
+
+    // Strokes gained
+    if (player.strokesGained?.total > 2.0) {
+      parts.push(
+        `Elite strokes gained total of ${player.strokesGained.total.toFixed(1)}`
+      );
+    } else if (player.strokesGained?.approach > 1.0) {
+      parts.push(
+        `SG Approach of ${player.strokesGained.approach.toFixed(1)} — Augusta is a second-shot course`
+      );
+    }
+
+    // Season form
+    if (player.season2026?.wins >= 2) {
+      parts.push(`${player.season2026.wins} wins already in 2026`);
+    }
+  }
+
+  // Edge size
+  if (e.edgePct > 20) {
+    parts.push(`Book is mispricing this by ${e.edgePct.toFixed(0)}%`);
+  }
+
+  return parts.length > 0
+    ? parts.slice(0, 3).join(". ") + "."
+    : `AI sees ${e.edge.toFixed(1)}% more probability than the book is offering.`;
+}
+
+export function generateMoneyBets(
+  edges: BettingEdgeResult[],
+  players: Player[]
+): MoneyBets {
+  const playerMap: Record<string, Player> = {};
+  for (const p of players) playerMap[p.name] = p;
+
+  // Only consider positive-edge bets
+  const positive = edges.filter((e) => e.edge > 0);
+
+  // ── LOCKS: High confidence + strong edge + safer markets ──
+  const lockCandidates = positive
+    .filter((e) => {
+      const isHighConf = e.confidence === "high" || e.confidence === "medium";
+      const isSaferMarket = ["top10", "top20", "makeCut", "top5"].includes(
+        e.market
+      );
+      return isHighConf && isSaferMarket && e.edge > 2;
+    })
+    .sort((a, b) => {
+      // Sort by combination of edge and confidence
+      const confScore = (c: string) =>
+        c === "high" ? 10 : c === "medium" ? 5 : 0;
+      return (
+        b.edge + confScore(b.confidence) - (a.edge + confScore(a.confidence))
+      );
+    });
+
+  // Deduplicate by player — take best edge per player
+  const locksByPlayer = new Map<string, BettingEdgeResult>();
+  for (const e of lockCandidates) {
+    if (
+      !locksByPlayer.has(e.playerName) ||
+      e.edge > locksByPlayer.get(e.playerName)!.edge
+    ) {
+      locksByPlayer.set(e.playerName, e);
+    }
+  }
+  const locks: MoneyBet[] = Array.from(locksByPlayer.values())
+    .slice(0, 8)
+    .map((e) => ({
+      ...e,
+      reason: buildReason(e, playerMap[e.playerName]),
+    }));
+
+  // ── BEST VALUE: Highest EV per $100 across all markets ──
+  const valueCandidates = positive
+    .filter((e) => e.ev100 > 0 && e.edge > 1)
+    .sort((a, b) => b.ev100 - a.ev100);
+
+  // Deduplicate by player-market combo isn't needed, but dedup by player
+  // to give variety
+  const valueByPlayer = new Map<string, BettingEdgeResult>();
+  for (const e of valueCandidates) {
+    if (!valueByPlayer.has(e.playerName)) {
+      valueByPlayer.set(e.playerName, e);
+    }
+  }
+  const valuePlays: MoneyBet[] = Array.from(valueByPlayer.values())
+    .slice(0, 10)
+    .map((e) => ({
+      ...e,
+      reason: buildReason(e, playerMap[e.playerName]),
+    }));
+
+  // ── LONGSHOTS: High odds + meaningful edge (the lotto tickets worth buying) ──
+  const longshotCandidates = positive
+    .filter((e) => {
+      const isLongOdds = e.decimalOdds >= 5; // +400 or longer
+      return isLongOdds && e.edge > 0.5;
+    })
+    .sort((a, b) => {
+      // Sort by edge-weighted-by-payout: edge * decimalOdds
+      return b.edge * b.decimalOdds - a.edge * a.decimalOdds;
+    });
+
+  const longshotByPlayer = new Map<string, BettingEdgeResult>();
+  for (const e of longshotCandidates) {
+    if (!longshotByPlayer.has(e.playerName)) {
+      longshotByPlayer.set(e.playerName, e);
+    }
+  }
+  const longshots: MoneyBet[] = Array.from(longshotByPlayer.values())
+    .slice(0, 8)
+    .map((e) => ({
+      ...e,
+      reason: buildReason(e, playerMap[e.playerName]),
+    }));
+
+  // Total EV across all recommended bets
+  const allRecs = [...locks, ...valuePlays, ...longshots];
+  const seen = new Set<string>();
+  let totalDailyEV = 0;
+  for (const bet of allRecs) {
+    const key = `${bet.playerName}-${bet.market}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      totalDailyEV += bet.ev100;
+    }
+  }
+
+  // Top parlay EV (just sum of top 3 lock EVs for display)
+  const topParlayEV = locks.slice(0, 3).reduce((s, b) => s + b.ev100, 0);
+
+  return { locks, valuePlays, longshots, totalDailyEV, topParlayEV };
+}
+
 export { MARKET_LABELS };
