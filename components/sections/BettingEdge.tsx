@@ -21,6 +21,7 @@ import { LiveTracker } from "@/components/betting/LiveTracker";
 import { RoundPropsComponent } from "@/components/betting/RoundProps";
 import { MakeMoneyBets } from "@/components/betting/MakeMoneyBets";
 import { LiveStatusBar } from "@/components/betting/LiveStatusBar";
+import { BetsTracking } from "@/components/betting/BetsTracking";
 import {
   Search,
   TrendingUp,
@@ -30,6 +31,7 @@ import {
   Radio,
   Target,
   DollarSign,
+  ClipboardList,
 } from "lucide-react";
 
 import bettingData from "@/data/betting-odds.json";
@@ -38,9 +40,17 @@ import playersData from "@/data/players-2026.json";
 
 // ── Sub-tab types ───────────────────────────────────────────────
 
-type SubTab = "edge" | "parlays" | "weather" | "live" | "rounds" | "money";
+type SubTab =
+  | "tracking"
+  | "edge"
+  | "parlays"
+  | "weather"
+  | "live"
+  | "rounds"
+  | "money";
 
 const SUB_TABS: { id: SubTab; label: string; icon: React.ElementType }[] = [
+  { id: "tracking", label: "Bets Tracking", icon: ClipboardList },
   { id: "edge", label: "Edge Finder", icon: TrendingUp },
   { id: "parlays", label: "Parlay Builder", icon: Layers },
   { id: "weather", label: "Weather Edge", icon: CloudRain },
@@ -278,7 +288,7 @@ function EdgeFinder({ allEdges }: { allEdges: BettingEdgeResult[] }) {
 // ── Main BettingEdge Section ────────────────────────────────────
 
 export function BettingEdge() {
-  const [activeTab, setActiveTab] = useState<SubTab>("edge");
+  const [activeTab, setActiveTab] = useState<SubTab>("tracking");
 
   const allEdges = useMemo(
     () =>
@@ -370,6 +380,7 @@ export function BettingEdge() {
 
         {/* Content */}
         <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
+          {activeTab === "tracking" && <BetsTracking />}
           {activeTab === "edge" && <EdgeFinder allEdges={allEdges} />}
           {activeTab === "parlays" && <ParlayBuilder edges={allEdges} />}
           {activeTab === "weather" && (

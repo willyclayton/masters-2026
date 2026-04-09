@@ -409,3 +409,53 @@ export interface LiveData {
   quotaRemaining: number | null;
   oddsSource: string;
 }
+
+// ── Bets Tracking Types ─────────────────────────────────────────
+//
+// Markets we may see in the manual bet log that the edge-finder
+// doesn't model (no AI probability available).
+export type ExtraBetMarket = "topDebutant" | "topFormer";
+export type TrackedBetMarket = BetMarket | ExtraBetMarket;
+
+export interface TrackedBetLeg {
+  player: string;
+  market: TrackedBetMarket;
+  marketLabel: string;
+  americanOdds: string;
+}
+
+export interface TrackedBet {
+  id: number;
+  type: "Straight" | "Parlay";
+  stake: number;
+  potentialPayout: number;
+  combinedAmericanOdds: string;
+  placedAt: string;
+  legs: TrackedBetLeg[];
+}
+
+export interface TrackedBetsFile {
+  lastUpdated: string;
+  source: string;
+  bets: TrackedBet[];
+}
+
+export type LegStatus = "won" | "lost" | "live";
+export type BetStatus = "won" | "lost" | "live";
+
+export interface LegResult {
+  status: LegStatus;
+  prob: number;        // 0–100
+  detail: string;      // e.g. "T8 thru 12", "Made cut", "Pre-tournament"
+  position: string | null;
+  thru: string | null;
+}
+
+export interface BetResult {
+  status: BetStatus;
+  overallProb: number;  // 0–100
+  legResults: LegResult[];
+  legsWon: number;
+  legsLost: number;
+  legsLive: number;
+}

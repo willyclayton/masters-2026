@@ -1,0 +1,360 @@
+{
+  "lastUpdated": "2026-04-09T17:33:40Z",
+  "source": "masters_bets.xlsx",
+  "bets": [
+    {
+      "id": 1,
+      "type": "Parlay",
+      "stake": 5,
+      "potentialPayout": 70,
+      "combinedAmericanOdds": "+1300",
+      "placedAt": "Apr 8, 6:36 PM",
+      "legs": [
+        {
+          "player": "Chris Gotterup",
+          "market": "topDebutant",
+          "marketLabel": "Top Debutant Golfer",
+          "americanOdds": "+400"
+        },
+        {
+          "player": "Scottie Scheffler",
+          "market": "topFormer",
+          "marketLabel": "Top Former Masters Winner",
+          "americanOdds": "+180"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Straight",
+      "stake": 10,
+      "potentialPayout": 510,
+      "combinedAmericanOdds": "+5000",
+      "placedAt": "Apr 8, 6:28 PM",
+      "legs": [
+        {
+          "player": "Viktor Hovland",
+          "market": "win",
+          "marketLabel": "Tournament Winner",
+          "americanOdds": "+5000"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Parlay",
+      "stake": 5,
+      "potentialPayout": 161.94,
+      "combinedAmericanOdds": "+3139",
+      "placedAt": "Apr 8, 6:27 PM",
+      "legs": [
+        {
+          "player": "Viktor Hovland",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+190"
+        },
+        {
+          "player": "Brooks Koepka",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+160"
+        },
+        {
+          "player": "Jordan Spieth",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+125"
+        },
+        {
+          "player": "Hideki Matsuyama",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "-110"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Parlay",
+      "stake": 5,
+      "potentialPayout": 456.75,
+      "combinedAmericanOdds": "+9035",
+      "placedAt": "Apr 8, 6:27 PM",
+      "legs": [
+        {
+          "player": "Collin Morikawa",
+          "market": "top5",
+          "marketLabel": "Top 5 Finish",
+          "americanOdds": "+800"
+        },
+        {
+          "player": "Robert MacIntyre",
+          "market": "top10",
+          "marketLabel": "Top 10 Finish",
+          "americanOdds": "+250"
+        },
+        {
+          "player": "Viktor Hovland",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+190"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Straight",
+      "stake": 5,
+      "potentialPayout": 630,
+      "combinedAmericanOdds": "+12500",
+      "placedAt": "Apr 8, 6:25 PM",
+      "legs": [
+        {
+          "player": "Gary Woodland",
+          "market": "win",
+          "marketLabel": "Tournament Winner",
+          "americanOdds": "+12500"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Parlay",
+      "stake": 5,
+      "potentialPayout": 46,
+      "combinedAmericanOdds": "+820",
+      "placedAt": "Apr 8, 6:24 PM",
+      "legs": [
+        {
+          "player": "Xander Schauffele",
+          "market": "top10",
+          "marketLabel": "Top 10 Finish",
+          "americanOdds": "+140"
+        },
+        {
+          "player": "Bryson DeChambeau",
+          "market": "top10",
+          "marketLabel": "Top 10 Finish",
+          "americanOdds": "+130"
+        },
+        {
+          "player": "Scottie Scheffler",
+          "market": "top10",
+          "marketLabel": "Top 10 Finish",
+          "americanOdds": "-150"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Parlay",
+      "stake": 10,
+      "potentialPayout": 37.97,
+      "combinedAmericanOdds": "+280",
+      "placedAt": "Apr 8, 5:58 PM",
+      "legs": [
+        {
+          "player": "Jordan Spieth",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-400"
+        },
+        {
+          "player": "Justin Rose",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-450"
+        },
+        {
+          "player": "Hideki Matsuyama",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-800"
+        },
+        {
+          "player": "Akshay Bhatia",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-300"
+        },
+        {
+          "player": "Scottie Scheffler",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-2000"
+        },
+        {
+          "player": "Tommy Fleetwood",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-800"
+        },
+        {
+          "player": "Viktor Hovland",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-350"
+        },
+        {
+          "player": "Xander Schauffele",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-1100"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Straight",
+      "stake": 10,
+      "potentialPayout": 150,
+      "combinedAmericanOdds": "+1400",
+      "placedAt": "Apr 8, 5:56 PM",
+      "legs": [
+        {
+          "player": "Xander Schauffele",
+          "market": "win",
+          "marketLabel": "Tournament Winner",
+          "americanOdds": "+1400"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Straight",
+      "stake": 5,
+      "potentialPayout": 32.5,
+      "combinedAmericanOdds": "+550",
+      "placedAt": "Apr 8, 5:56 PM",
+      "legs": [
+        {
+          "player": "Wyndham Clark",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+550"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Straight",
+      "stake": 10,
+      "potentialPayout": 22.5,
+      "combinedAmericanOdds": "+125",
+      "placedAt": "Apr 8, 5:55 PM",
+      "legs": [
+        {
+          "player": "Jordan Spieth",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+125"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Straight",
+      "stake": 5,
+      "potentialPayout": 13,
+      "combinedAmericanOdds": "+160",
+      "placedAt": "Apr 8, 5:54 PM",
+      "legs": [
+        {
+          "player": "Brooks Koepka",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+160"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "Straight",
+      "stake": 5,
+      "potentialPayout": 14.5,
+      "combinedAmericanOdds": "+190",
+      "placedAt": "Apr 8, 5:54 PM",
+      "legs": [
+        {
+          "player": "Viktor Hovland",
+          "market": "top20",
+          "marketLabel": "Top 20 Finish",
+          "americanOdds": "+190"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "Straight",
+      "stake": 5,
+      "potentialPayout": 10.25,
+      "combinedAmericanOdds": "+105",
+      "placedAt": "Apr 8, 5:53 PM",
+      "legs": [
+        {
+          "player": "Hideki Matsuyama",
+          "market": "topAsian",
+          "marketLabel": "Top Asian Golfer",
+          "americanOdds": "+105"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "Straight",
+      "stake": 10,
+      "potentialPayout": 410,
+      "combinedAmericanOdds": "+4000",
+      "placedAt": "Apr 8, 4:45 PM",
+      "legs": [
+        {
+          "player": "Jordan Spieth",
+          "market": "win",
+          "marketLabel": "Tournament Winner",
+          "americanOdds": "+4000"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Parlay",
+      "stake": 5,
+      "potentialPayout": 12.62,
+      "combinedAmericanOdds": "+152",
+      "placedAt": "Apr 7, 7:30 PM",
+      "legs": [
+        {
+          "player": "Tommy Fleetwood",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-800"
+        },
+        {
+          "player": "Sungjae Im",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-200"
+        },
+        {
+          "player": "Scottie Scheffler",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-2000"
+        },
+        {
+          "player": "Hideki Matsuyama",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-800"
+        },
+        {
+          "player": "Collin Morikawa",
+          "market": "makeCut",
+          "marketLabel": "Make The Cut",
+          "americanOdds": "-375"
+        }
+      ]
+    }
+  ]
+}
