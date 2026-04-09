@@ -232,11 +232,19 @@ function BetCard({ bet, result }: BetCardProps) {
         )}
       </div>
 
-      {/* Legs */}
+      {/* Legs — sorted by likelihood desc (won → live → lost) */}
       <div className="divide-y divide-[var(--border-color)] border-t border-[var(--border-color)] pt-1">
-        {bet.legs.map((leg, i) => (
-          <LegRow key={`${bet.id}-${i}`} leg={leg} result={result.legResults[i]} />
-        ))}
+        {bet.legs
+          .map((leg, i) => ({ leg, result: result.legResults[i], originalIdx: i }))
+          .sort((a, b) => {
+            const order = { won: 0, live: 1, lost: 2 } as const;
+            const so = order[a.result.status] - order[b.result.status];
+            if (so !== 0) return so;
+            return b.result.prob - a.result.prob;
+          })
+          .map(({ leg, result: legResult, originalIdx }) => (
+            <LegRow key={`${bet.id}-${originalIdx}`} leg={leg} result={legResult} />
+          ))}
       </div>
     </div>
   );
