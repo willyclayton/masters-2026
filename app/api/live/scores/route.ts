@@ -59,7 +59,6 @@ export async function GET() {
     }
 
     const competition = event.competitions?.[0];
-    const statusDetail = competition?.status?.type?.detail || "";
     const roundNum = competition?.status?.period || 1;
     const isInProgress = competition?.status?.type?.state === "in";
     const isComplete = competition?.status?.type?.completed === true;
@@ -80,19 +79,42 @@ export async function GET() {
           String(c.order || "")
         );
 
-        // Linescores are per-round scores
-        const linescores = (c.linescores as { value: number }[]) || [];
+        // Linescores: each period (round) has a value and a nested linescores
+        // array of per-hole entries. Hole count = nested array length.
+        const linescores =
+          (c.linescores as
+            | { value: number | null; linescores?: unknown[] }[]
+            | undefined) || [];
         const round = (idx: number) =>
-          linescores[idx] ? linescores[idx].value : null;
+          linescores[idx] && typeof linescores[idx].value === "number"
+            ? (linescores[idx].value as number)
+            : null;
 
         const totalScore = parseScore(
           (c.score as Record<string, unknown>)?.displayValue ?? c.score
         );
 
-        // "thru" comes from status
-        const thru =
-          (c.status as Record<string, unknown>)?.thru as string ||
-          (isComplete ? "F" : "-");
+        // "thru": prefer status.thru, otherwise derive from current-period
+        // linescores. If the current period has no per-hole entries the
+        // player has not teed off yet → "-".
+        const statusThru = (c.status as Record<string, unknown>)?.thru as
+          | string
+          | undefined;
+        let thru: string;
+        if (statusThru) {
+          thru = statusThru;
+        } else if (isComplete) {
+          thru = "F";
+        } else {
+          const currentRoundIdx = Math.max(0, (roundNum as number) - 1);
+          const currentRoundEntry = linescores[currentRoundIdx];
+          const holes = Array.isArray(currentRoundEntry?.linescores)
+            ? (currentRoundEntry!.linescores as unknown[]).length
+            : 0;
+          if (holes === 0) thru = "-";
+          else if (holes >= 18) thru = "F";
+          else thru = String(holes);
+        }
 
         const today = parseScore(
           (c as Record<string, unknown>).todayScore ??

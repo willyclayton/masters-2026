@@ -25,6 +25,7 @@ import type {
 } from "@/lib/types";
 import {
   buildEvaluators,
+  computeCutLine,
   evaluateBet,
   summarizeBets,
 } from "@/lib/bet-tracking";
@@ -256,12 +257,14 @@ export function BetsTracking() {
     []
   );
 
+  const cut = useMemo(() => computeCutLine(leaderboard), [leaderboard]);
+
   const evaluations = useMemo(() => {
     return file.bets.map((bet) => ({
       bet,
-      result: evaluateBet(bet, predMap, natProbs, leaderboard),
+      result: evaluateBet(bet, predMap, natProbs, leaderboard, cut),
     }));
-  }, [file.bets, predMap, natProbs, leaderboard]);
+  }, [file.bets, predMap, natProbs, leaderboard, cut]);
 
   // Sort: live (by prob desc) → won → lost
   const sorted = useMemo(() => {
@@ -346,6 +349,21 @@ export function BetsTracking() {
             Showing AI hit-likelihood for each bet. Live progress will update
             once Round 1 begins.
           </div>
+        </div>
+      )}
+
+      {/* Cut line banner */}
+      {cut && !preTournament && (
+        <div className="flex items-center justify-between rounded-lg border border-[var(--border-color)] bg-white px-3 py-2 text-xs">
+          <span className="text-[var(--text-muted)]">
+            Masters cut (top 50 + ties after 36 holes)
+          </span>
+          <span className="font-mono font-semibold text-[var(--text-primary)]">
+            {cut.line === 0 ? "E" : cut.line > 0 ? `+${cut.line}` : cut.line}{" "}
+            <span className="ml-1 text-[10px] font-normal text-[var(--text-muted)]">
+              {cut.final ? "official" : "projected"}
+            </span>
+          </span>
         </div>
       )}
 
